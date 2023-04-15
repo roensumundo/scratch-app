@@ -85,7 +85,7 @@ function setPassword(id, hashedPassword) {
    
 }
 
-function checkPassword(username, password, connection_id) {
+function checkPassword(username, password) {
     /* Given a username that already exists in the database, it first retrieves the 
     * corresponding id, and then it checks if the password is correct. 
     * Returns "logged" when correct and "error" when incorrect. */
@@ -121,7 +121,7 @@ function get_and_incr_count(counter) {
         console.log("Error: " + counter + " counter doesn't exist in this database");
     }
 }
-function createNewCredentials(username, password, connection_id) {
+function createNewCredentials(username, password) {
     /* Given a username that doesn't exist in the database, it first retrieves the 
     * id counter, and assigns an id to the user. Then, it stores the username and the id 
     * in the database. It also creates a session token. Finally, it also stores the password in the database. 
@@ -165,7 +165,7 @@ function createNewCredentials(username, password, connection_id) {
       });
   }
 
-  function checkCredentials(connection_id, username, password) {
+  function existUsername( username) {
     /* Checks if the user already exists in the database. If so, check if password matches. 
     * Elsewise sets the new user and its password. 
     */ 
@@ -174,12 +174,12 @@ function createNewCredentials(username, password, connection_id) {
       .then((reply) => {
         if (reply === 1) {
           // Key exists, get its value
-          return checkPassword(username, password, connection_id);
+          return true
         } else {
           // Key does not exist in the database
           console.log("Non-registered user.");
   
-          return createNewCredentials(username, password, connection_id);
+          return false
         }
       });
 }
@@ -194,9 +194,16 @@ app.post('/signup', (req, res) => {
 
   // Logic to handle signup request
   // ... (here you can implement your own signup logic)
+  if(!existUsername(username)){
+    createNewCredentials(username, password);
+    // Send a response to the client
+    res.json({ type: "signup" , message: 'Succesful' });
+  } else{
+    // Send a response to the client
+    res.json({ type: "signup" , message: 'Error' });
+  }
 
-  // Send a response to the client
-  res.json({ message: 'Signup successful' });
+  
 });
 
 // Handle POST requests for a login route
@@ -207,9 +214,19 @@ app.post('/login', (req, res) => {
 
   // Logic to handle login request
   // ... (here you can implement your own login logic)
-
-  // Send a response to the client
-  res.json({ message: 'Login successful' });
+  if(existUsername(username)){
+    const result = checkPassword(username, password);
+    if (result == 'logged'){
+      // Send a response to the client
+      res.json({type: 'login', message: 'Successful' });
+    }else{
+      // Send a response to the client
+      res.json({type: 'login', message: 'Wrong password' });
+    }
+  }else{
+    res.json({type: 'login', message: 'User dont exist' });
+  }
+  
 });
 
 // Start the server on port 9026
