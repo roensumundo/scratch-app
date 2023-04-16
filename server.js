@@ -25,13 +25,17 @@ app.get('/', function (req, res) {
 
 
 var redis_cli = redis.createClient({
-    password: 'HohwRB2zokVq2WFBZY8xCJPcNXjtRwEj',
-    socket: {
-        host: 'redis-17135.c135.eu-central-1-1.ec2.cloud.redislabs.com',
-        port: 17135
-    }
-}
+  password: 'qjZNOGmQEyYMpatAxDSDFizuQ45q4WH4',
+  host: 'redis-13549.c3.eu-west-1-1.ec2.cloud.redislabs.com',
+  port: 13549
+  }
+
 );
+
+
+
+
+
 
 redis_cli.on('connect', function() {
     console.log('Connected to redis');
