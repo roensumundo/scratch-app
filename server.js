@@ -33,6 +33,9 @@ var redis_cli = redis.createClient({
 
 );
 
+redis_cli.set(DB + ":test","hello world").then(() => {
+  console.log("Setting test succesfull");
+})
 
 
 
@@ -199,14 +202,19 @@ app.post('/signup', (req, res) => {
 
   // Logic to handle signup request
   // ... (here you can implement your own signup logic)
-  if(!existUsername(username)){
-    createNewCredentials(username, password);
-    // Send a response to the client
-    res.json({ type: "signup" , message: 'Succesful' });
-  } else{
-    // Send a response to the client
-    res.json({ type: "signup" , message: 'Error' });
-  }
+  existUsername(username).then((exists) => {
+    if (!exists) {
+      createNewCredentials(username, password);
+      // Send a response to the client
+      res.json({ type: "signup", message: 'Succesful' });
+      console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
+    } else {
+      // Send a response to the client
+      res.json({ type: "signup", message: 'Error' });
+      console.log("Sign up of: " + username + " with password: " + password + " --> Unsuccesful");
+    }
+  });
+  
 
   
 });
@@ -219,18 +227,22 @@ app.post('/login', (req, res) => {
 
   // Logic to handle login request
   // ... (here you can implement your own login logic)
-  if(existUsername(username)){
-    const result = checkPassword(username, password);
-    if (result == 'logged'){
-      // Send a response to the client
-      res.json({type: 'login', message: 'Successful' });
-    }else{
-      // Send a response to the client
-      res.json({type: 'login', message: 'Wrong password' });
-    }
-  }else{
-    res.json({type: 'login', message: 'User dont exist' });
-  }
+  existUsername(username).then((exists) => {
+    if (exists) {
+      checkPassword(username, password).then((result) => {
+      if (result == 'logged') {
+        // Send a response to the client
+        res.json({ type: 'login', message: 'Successful' });
+      } else {
+        // Send a response to the client
+        res.json({ type: 'login', message: 'Wrong password' });
+        }
+      });
+    } else {
+      res.json({ type: 'login', message: 'User dont exist' });
+    }  
+      
+  });
   
 });
 
