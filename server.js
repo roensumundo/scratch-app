@@ -1,4 +1,3 @@
-//HOLA MIAMOR
 var express = require('express');
 var http = require('http');
 var redis = require('promise-redis')();
@@ -214,9 +213,6 @@ app.post('/signup', (req, res) => {
       console.log("Sign up of: " + username + " with password: " + password + " --> Unsuccesful");
     }
   });
-  
-
-  
 });
 
 // Handle POST requests for a login route
