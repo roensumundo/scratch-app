@@ -20,4 +20,4 @@ const signup = async (username, password) => {
     console.log(data); // Handle server response
   };
 
-  signup("john", "pass123");
+  login("melanie", "pass123");
