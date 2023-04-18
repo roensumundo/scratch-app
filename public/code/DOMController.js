@@ -68,3 +68,9 @@ function explore_switcher(){
         recommendedButton.classList.remove('active');
         });
 }
+
+function submitLogin() {
+    var username = document.getElementById('login-username').value;
+    var password = document.getElementById('login-password').value;
+    login(username, password);
+}

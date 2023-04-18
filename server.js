@@ -10,20 +10,23 @@ const bodyParser = require('body-parser');
 const server = http.createServer( app );
 
 //to handle static files, redirect to public folder
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 
 // Configure body-parser middleware to parse JSON
 app.use(bodyParser.json());
 
-// create a md5 hasher
-const secret = "a secret"; //salt
-//to handle request of type GET to path '/'
-app.get('/', function (req, res) {
-    res.send("HELLO WORLD!");
-  });
+//When starting the app, send the login page to the client
+app.get('/', (req, res) => {
+  res.sendFile( __dirname+'/public/login/login.html');
+});
+
+app.get('/main', (req, res) => {
+  res.sendFile(__dirname+'/public/main/main.html');
+});
+app.get('/explore', (req, res) => {
+  res.sendFile(__dirname+'/public/explore/explore.html');
+});
   
-
-
 var redis_cli = redis.createClient({
   password: 'qjZNOGmQEyYMpatAxDSDFizuQ45q4WH4',
   host: 'redis-13549.c3.eu-west-1-1.ec2.cloud.redislabs.com',
