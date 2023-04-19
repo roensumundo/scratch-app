@@ -72,5 +72,31 @@ function explore_switcher(){
 function submitLogin() {
     var username = document.getElementById('login-username').value;
     var password = document.getElementById('login-password').value;
+    //console.log("password: " +password + ", encripted "+Buffer.from(password, 'base64'));
     login(username, password);
+}
+function submitSignUp() {
+    var username = document.getElementById('signup-username').value;
+    var password = document.getElementById('signup-password').value;
+    var repeated_password = document.getElementById('signup-rep-password').value;
+    //console.log("password: " +password + ", encripted "+Buffer.from(password, 'base64'));
+    signup(username,password);
+}
+
+function isTrainer(response) {
+    //TODO: Manage button choice and let the server know which kind of user it would be
+
+    const signUpForm = document.getElementById('signup-form');
+    const trainerChoiceForm = document.getElementById('trainer-choice-form');
+    
+    signUpForm.style.display = null;
+    trainerChoiceForm.style.display = 'none';
+    
+}
+function showSignUpForm() { 
+    const trainerChoiceForm = document.getElementById('trainer-choice-form');
+    const loginForm = document.getElementById('login-form');
+    trainerChoiceForm.style.display = null;
+    loginForm.style.display = 'none';
+
 }

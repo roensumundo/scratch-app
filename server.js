@@ -35,14 +35,6 @@ var redis_cli = redis.createClient({
 
 );
 
-redis_cli.set(DB + ":test","hello world").then(() => {
-  console.log("Setting test succesfull");
-})
-
-
-
-
-
 redis_cli.on('connect', function() {
     console.log('Connected to redis');
 });
@@ -159,15 +151,6 @@ function createNewCredentials(username, password) {
            setPassword(id, hash);
           
         });
-        // Create a random session token
-        //const session_token = Math.random().toString(16);
-        // Saves session token and sends it to the client
-        //DB.set(credential_query + ':token', session_token);
-        //DB.set('GR:token_to_id:' + session_token, id);
-        //sendToken(session_token, connection_id);
-  
-        // Save connection's id and user's id in the local records. 
-        //updateRecords(connection_id, id);
         return "registered";
       })
       .catch((error) => {
@@ -193,15 +176,17 @@ function createNewCredentials(username, password) {
         }
       });
 }
+
+
   
-/* Express server. COMMUNICATION with clients */
+/*********** Express server. COMMUNICATION with clients*********/
 
 // Handle POST requests for a signup route
 app.post('/signup', (req, res) => {
   // Access the JSON data sent in the request body
   const username = req.body.username;
   const password = req.body.password;
-
+  
   // Logic to handle signup request
   // ... (here you can implement your own signup logic)
   existUsername(username).then((exists) => {
@@ -223,7 +208,7 @@ app.post('/login', (req, res) => {
   // Access the JSON data sent in the request body
   const username = req.body.username;
   const password = req.body.password;
-
+  
   // Logic to handle login request
   // ... (here you can implement your own login logic)
   existUsername(username).then((exists) => {

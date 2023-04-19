@@ -7,6 +7,16 @@ const signup = async (username, password) => {
     });
     const data = await response.json();
     console.log(data); // Handle server response
+    // Handle the response based on its type
+    if (data.type === 'signup') {
+      if (data.message === 'Successful') {
+        // Do something when login is successful, such as redirecting the user
+        main_page();
+      } else {
+        // Display an error message to the user
+        alert(data.message);
+      }
+    }
   };
   
   // For login request
