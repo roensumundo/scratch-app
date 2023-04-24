@@ -176,7 +176,95 @@ function createNewCredentials(username, password) {
         }
       });
 }
+/*function saveClassOffer(class_id, title, creator, description, datetime, duration) {
+  /* Save a class offer in the database. class id is used as a key whereas the parameters title, 
+  * creator, description, datetime and duration are the values stored. 
+  return new Promise((resolve, reject) => {
+    redis_cli
+      .multi()
+      .set(DB + ":class_offers:" + class_id + ":title", title)
+      .set(DB + ":class_offers:" + class_id + ":creator", creator)
+      .set(DB + ":class_offers:" + class_id + ":description", description)
+      .set(DB + ":class_offers:" + class_id + ":datetime", datetime)
+      .set(DB + ":class_offers:" + class_id + ":duration", duration)
+      .exec((err, replies) => {
+        if (err) {
+          console.log("Error saving class :", err);
+          reject(false);
+        } else {
+          console.log("Class saved successfully");
+          resolve(true);
+        }
+      });
+  }).catch((err) => {
+    console.log("Error saving class: ", err);
+    return false;
+  });
+}*/
+function saveClassOffer(class_id, title, creator, description, datetime, duration) {
+  console.log("Class id = " + class_id);
+  const common_key = DB + ":class_offers:" +class_id;
+  const keyValuePairs = [
+    { key: common_key + ":title" , value: title},
+    { key: common_key + ":creator", value: creator},
+    { key: common_key + ":description", value: description },
+    { key: common_key + ":datetime", value: datetime },
+    { key: common_key + ":duration", value: duration }
+  ];
+  //console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
+  return new Promise((resolve, reject) => {
+    const multi = redis_cli.multi();
 
+    keyValuePairs.forEach(pair => {
+      multi.set( pair.key, pair.value);
+    });
+    multi.exec((err, replies) => {
+      if (err) {
+        reject(err);
+      } else {
+        const failedReply = replies.find(reply => !reply || reply.toString().toLowerCase() !== 'ok');
+
+        if (failedReply) {
+          reject(new Error(`Failed to set value for key ${failedReply}`));
+        } else {
+          console.log('Class offer set successfully');
+          resolve();
+        }
+      }
+    });
+  });
+}
+
+function addElementToList(list, element) {
+  redis_cli.exists(list).then((reply) => {
+    if (reply == 1) {
+      redis_cli.rpush(list, element);
+    }
+    else {
+      redis_cli.lpush(list, element);
+    }
+  });
+}
+function getElementFromList(list_path, index) {
+  return redis_cli.lindex(list_path, index).then((element) => {
+    return element;
+  });
+}
+
+function enroll_to_class(class_id, user_id) {
+  const users_list = DB + ":class_offers:" + class_id + ":enrolled_users";
+  addElementToList(users_list, user_id);
+
+  const classes_list = DB + ":enrolled_classes:" + user_id;
+  addElementToList(classes_list, class_id);
+}
+
+function saveSubscription(subscriptor_id, trainer_id ) {
+  const subscription = DB + ":subscriptions:" + subscriptor_id;
+  addElementToList(subscription, trainer_id);
+  const followers = DB + ":followers:" + trainer_id;
+  addElementToList(followers, subscriptor_id);
+}
 
   
 /*********** Express server. COMMUNICATION with clients*********/
@@ -193,7 +281,7 @@ app.post('/signup', (req, res) => {
     if (!exists) {
       createNewCredentials(username, password);
       // Send a response to the client
-      res.json({ type: "signup", message: 'Succesful' });
+      res.json({ type: "signup", message: 'Successful' });
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
     } else {
       // Send a response to the client
@@ -228,6 +316,26 @@ app.post('/login', (req, res) => {
       
   });
   
+});
+
+app.post('/publish_class', (req, res) => {
+  const class_object = req.body;
+  console.log("publishing class " + JSON.stringify(class_object));
+  
+  // Take class id from database. Increment counter.
+  get_and_incr_count("class_id_count").then((id) => {
+    // Save class in database.
+    //TODO Extract username from class_object and take its id.
+    saveClassOffer(id, class_object.title, "1", class_object.description, class_object.datetime, class_object.duration)
+    .then(() => {
+      res.json({ type: 'saved_class', id: id, message: 'Successful' });
+    })
+      .catch((error) => {
+        console.log("Error publishing class: " + error.message);
+      res.json({ type: 'saved_class', id: null, message: 'Unsuccessful' });
+    });
+  });
+
 });
 
 // Start the server on port 9026

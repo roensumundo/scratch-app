@@ -74,6 +74,7 @@ function submitLogin() {
     var password = document.getElementById('login-password').value;
     //console.log("password: " +password + ", encripted "+Buffer.from(password, 'base64'));
     login(username, password);
+    
 }
 function submitSignUp() {
     var username = document.getElementById('signup-username').value;
@@ -91,7 +92,7 @@ function isTrainer(response) {
     
     signUpForm.style.display = null;
     trainerChoiceForm.style.display = 'none';
-    
+
 }
 function showSignUpForm() { 
     const trainerChoiceForm = document.getElementById('trainer-choice-form');
