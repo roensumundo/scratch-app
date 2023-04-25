@@ -8,7 +8,8 @@ var APP = {
 }
 
 class Class {
-  constructor(title, description, dateTime, duration, creator) {
+  constructor(id, title, description, dateTime, duration, creator) {
+    this.id = id;
     this.title = title;
     this.description = description;
     this.datetime = dateTime;
@@ -50,8 +51,8 @@ class Trainer extends User {
     this.publishedClasses = {};
   }
 
-  createClass(title, description, dateTime, duration) {
-    const newClass = new Class(title, description, dateTime, duration, this);
+  createClass(id,title, description, dateTime, duration) {
+    const newClass = new Class(id, title, description, dateTime, duration, this);
     return newClass;
   }
 

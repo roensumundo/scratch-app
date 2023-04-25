@@ -251,12 +251,12 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
 }
 
 function addElementToList(list, element) {
-  redis_cli.exists(list).then((reply) => {
+  return redis_cli.exists(list).then((reply) => {
     if (reply == 1) {
-      redis_cli.rpush(list, element);
+      return redis_cli.rpush(list, element);
     }
     else {
-      redis_cli.lpush(list, element);
+      return redis_cli.lpush(list, element);
     }
   });
 }
@@ -266,12 +266,13 @@ function getElementFromList(list_path, index) {
   });
 }
 
-function enroll_to_class(class_id, user_id) {
+function enroll_to_class(user_id, class_id) {
   const users_list = DB + ":class_offers:" + class_id + ":enrolled_users";
-  addElementToList(users_list, user_id);
+  users_promise = addElementToList(users_list, user_id);
 
   const classes_list = DB + ":enrolled_classes:" + user_id;
-  addElementToList(classes_list, class_id);
+  classes_promise = addElementToList(classes_list, class_id);
+  return Promise.all([users_promise, classes_promise]);
 }
 
 function saveSubscription(subscriptor_id, trainer_id ) {
@@ -355,6 +356,23 @@ app.post('/publish_class', (req, res) => {
 
 });
 
+
+app.post('/enrollment', (req, res) => {
+  const username = req.body.username;
+  const class_id = req.body.class_id;
+  getIdByUsername(username).then((user_id) => {
+    enroll_to_class(user_id, class_id).then(() => {
+      console.log(username + " Enrolled successfully to a class.");
+      res.json({type:"enrollment", message: "Successful"})
+     });
+  });
+
+
+
+  
+  
+
+});
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');

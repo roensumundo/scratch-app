@@ -58,9 +58,29 @@ const sendClass = async (class_object) => {
       console.log("Class not published properly");
     }
   }
+}
+
+const sendEnrollment = async (username, class_id) => {
+  const response = await fetch('http://localhost:9026/enrollment', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({username, class_id})
+  });
+  const data = await response.json();
+  if (data.type === 'enrollment') {
+    if (data.message === 'Successful') {
+      
+      console.log('Enrollment completed successfully');
+    }
+    else {
+      console.log("Enrollment could not be completed.");
+    }
+  }
   
 
 }
+
+
   // For main page request 
   const main_page = async () => {
     const response = await fetch('http://localhost:9026/main');
@@ -76,3 +96,4 @@ const sendClass = async (class_object) => {
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
+sendEnrollment("ma", "22");
