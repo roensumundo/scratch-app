@@ -61,9 +61,9 @@ function getIdByUsername(username) {
 function retrieveUserInfo(username) {
   /* Retrieves user information from the database */
   return getIdByUsername(username).then((id) => {
-    return DB
+    return redis_cli
     .multi()
-    .get(DB + ':credentials:' + id + ':username')
+    .get(DB + ':credentials:' + id + ':full_name')
     .get(DB + ':credentials:' + id + ':is_trainer')
     .exec()
     .then(([fullName, isTrainer]) => {
@@ -290,10 +290,9 @@ app.post('/signup', (req, res) => {
   const password = req.body.password;
   const isTrainer = req.body.isTrainer;
   const fullName = req.body.fullname;
-  
   // Logic to handle signup request
-  // ... (here you can implement your own signup logic)
   existUsername(username).then((exists) => {
+    //User already exists in the database
     if (!exists) {
       createNewCredentials(username, password, isTrainer, fullName);
       // Send a response to the client
@@ -301,7 +300,7 @@ app.post('/signup', (req, res) => {
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
     } else {
       // Send a response to the client
-      res.json({ type: "signup", message: 'Error' });
+      res.json({ type: "signup", message: 'Error. This username already exists. Choose another username.' });
       console.log("Sign up of: " + username + " with password: " + password + " --> Unsuccesful");
     }
   });
@@ -320,8 +319,9 @@ app.post('/login', (req, res) => {
       checkPassword(username, password).then((result) => {
       if (result == 'logged') {
         // Send a response to the client
-        const [fullName, _isTrainer] = retrieveUserInfo(username);
-        res.json({ type: 'login', message: 'Successful' , content:{username: username, name: fullName, _isTrainer: _isTrainer} });
+        retrieveUserInfo(username).then(([fullName, _isTrainer]) => {
+          res.json({ type: 'login', message: 'Successful' , content:{username: username, name: fullName, _isTrainer: _isTrainer} });
+        });
       } else {
         // Send a response to the client
         res.json({ type: 'login', message: 'Wrong password' });

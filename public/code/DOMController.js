@@ -77,25 +77,36 @@ function submitLogin() {
     
 }
 function submitSignUp() {
+    var fullname = document.getElementById('signup-fullname').value;
     var username = document.getElementById('signup-username').value;
     var password = document.getElementById('signup-password').value;
     var repeated_password = document.getElementById('signup-rep-password').value;
-    //console.log("password: " +password + ", encripted "+Buffer.from(password, 'base64'));
     const regex = /(?=.*\d)(?=.*[A-Z])/;
 
+    //TODO Make the password to be greater than 12 characters. 
     if (!regex.test(password)) {
+        //TODO change it by text in DOM
         alert("Password must contain at least one uppercase letter and one digit.");
         return;
     }
-    else if (password = !repeated_password) {
+    else if (password !== repeated_password) {
+         //TODO change it by text in DOM
         alert("Passwords do not match");
         return;
     }
-    signup(username, password, APP.IAmTrainer, APP.myFullName);
+    else {
+        signup(username, password, APP.IAmTrainer, fullname);
+    }
+    if (APP.IAmTrainer)
+        APP.myuser = new Trainer(fullname, username);
+    else {
+        APP.myuser = new User(fullname, username);
+    }
+    console.log("User object: " + JSON.stringify(APP.myuser));
 }
 
 function isTrainer(response) {
-    //TODO: Manage button choice and let the server know which kind of user it would be
+    // Manage trainer-choice screen. Saves the option picked by the user on whether it is a trainer.
     APP.IAmTrainer = response;
     const signUpForm = document.getElementById('signup-form');
     const trainerChoiceForm = document.getElementById('trainer-choice-form');

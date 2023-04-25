@@ -15,6 +15,7 @@ const signup = async (username, password, isTrainer, fullname) => {
         main_page();
       } else {
         // Display an error message to the user
+        //TODO add text to DOM instead. 
         alert(data.message);
       }
     }
@@ -70,8 +71,8 @@ const sendClass = async (class_object) => {
 
   // TESTS 
 //signup("rosa", "asdf");
-const trainer = new Trainer("Ro", "roensumundo");
-const class_offer = trainer.createClass("Yoga", "A very easy yoga class", "9 AM", "2h");
-console.log(JSON.stringify(class_offer));
+//const trainer = new Trainer("Ro", "roensumundo");
+//const class_offer = trainer.createClass("Yoga", "A very easy yoga class", "9 AM", "2h");
+//console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
-signup("admin", "Rosaro77", true, "Rosa Alos");
+//signup("new", "Rosaro77", true, "Rosa Alos");
