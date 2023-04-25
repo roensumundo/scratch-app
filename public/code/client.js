@@ -1,10 +1,10 @@
 
 // For sign-up request
-const signup = async (username, password) => {
+const signup = async (username, password, isTrainer, fullname) => {
     const response = await fetch('http://localhost:9026/signup', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+      body: JSON.stringify({ username, password, isTrainer, fullname })
     });
     const data = await response.json();
     console.log(data); // Handle server response
@@ -73,4 +73,5 @@ const sendClass = async (class_object) => {
 const trainer = new Trainer("Ro", "roensumundo");
 const class_offer = trainer.createClass("Yoga", "A very easy yoga class", "9 AM", "2h");
 console.log(JSON.stringify(class_offer));
-sendClass(class_offer);
+//sendClass(class_offer);
+signup("admin", "Rosaro77", true, "Rosa Alos");

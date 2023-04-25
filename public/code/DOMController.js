@@ -81,12 +81,22 @@ function submitSignUp() {
     var password = document.getElementById('signup-password').value;
     var repeated_password = document.getElementById('signup-rep-password').value;
     //console.log("password: " +password + ", encripted "+Buffer.from(password, 'base64'));
-    signup(username,password);
+    const regex = /(?=.*\d)(?=.*[A-Z])/;
+
+    if (!regex.test(password)) {
+        alert("Password must contain at least one uppercase letter and one digit.");
+        return;
+    }
+    else if (password = !repeated_password) {
+        alert("Passwords do not match");
+        return;
+    }
+    signup(username, password, APP.IAmTrainer, APP.myFullName);
 }
 
 function isTrainer(response) {
     //TODO: Manage button choice and let the server know which kind of user it would be
-
+    APP.IAmTrainer = response;
     const signUpForm = document.getElementById('signup-form');
     const trainerChoiceForm = document.getElementById('trainer-choice-form');
     

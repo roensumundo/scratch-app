@@ -58,17 +58,19 @@ function getIdByUsername(username) {
     return redis_cli.get(DB+':username_to_id:' + username);
 }
 
-function retrieveUserInfo(id) {
-    /* Retrieves user information from the database */
-    
+function retrieveUserInfo(username) {
+  /* Retrieves user information from the database */
+  return getIdByUsername(username).then((id) => {
     return DB
-      .multi()
-      .get(DB+':credentials:' + id + ':username')
-      .get(DB+':credentials:' + id + ':is_teacher')
-      .exec()
-      .then(([username, isTeacher]) => {
-        return { username: username,  is_teacher: JSON.parse(isTeacher) };
-      });
+    .multi()
+    .get(DB + ':credentials:' + id + ':username')
+    .get(DB + ':credentials:' + id + ':is_trainer')
+    .exec()
+    .then(([fullName, isTrainer]) => {
+      return [fullName, isTrainer];
+});
+  })
+  
 }
 
 function getPassword(id) {
@@ -83,8 +85,19 @@ function setPassword(id, hashedPassword) {
     redis_cli.set(credential_query + ':password', hashedPassword).then(() => {
         console.log("Password saved successfully");
     });
-    
    
+}
+
+function setIsTrainer(id, isTrainer) {
+  /* Save in database a boolean to control if it is a trainer account or not. */
+  const credential_query = DB+':credentials:' + id; 
+  redis_cli.set(credential_query + ':is_trainer', isTrainer);
+}
+
+function setFullName(id, fullname) {
+  /* Save user's full name in the database. */
+  const credential_query = DB+':credentials:' + id; 
+  redis_cli.set(credential_query + ':full_name', fullname);
 }
 
 function checkPassword(username, password) {
@@ -123,7 +136,7 @@ function get_and_incr_count(counter) {
         console.log("Error: " + counter + " counter doesn't exist in this database");
     }
 }
-function createNewCredentials(username, password) {
+function createNewCredentials(username, password, isTrainer, fullName) {
     /* Given a username that doesn't exist in the database, it first retrieves the 
     * id counter, and assigns an id to the user. Then, it stores the username and the id 
     * in the database. It also creates a session token. Finally, it also stores the password in the database. 
@@ -148,7 +161,9 @@ function createNewCredentials(username, password) {
           const hash = hashPassword(password);
           
           // Save password in credentials table
-           setPassword(id, hash);
+          setPassword(id, hash);
+          setIsTrainer(id, isTrainer);
+          setFullName(id, fullName);
           
         });
         return "registered";
@@ -268,18 +283,19 @@ function saveSubscription(subscriptor_id, trainer_id ) {
 
   
 /*********** Express server. COMMUNICATION with clients*********/
-
 // Handle POST requests for a signup route
 app.post('/signup', (req, res) => {
   // Access the JSON data sent in the request body
   const username = req.body.username;
   const password = req.body.password;
+  const isTrainer = req.body.isTrainer;
+  const fullName = req.body.fullname;
   
   // Logic to handle signup request
   // ... (here you can implement your own signup logic)
   existUsername(username).then((exists) => {
     if (!exists) {
-      createNewCredentials(username, password);
+      createNewCredentials(username, password, isTrainer, fullName);
       // Send a response to the client
       res.json({ type: "signup", message: 'Successful' });
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
@@ -304,7 +320,8 @@ app.post('/login', (req, res) => {
       checkPassword(username, password).then((result) => {
       if (result == 'logged') {
         // Send a response to the client
-        res.json({ type: 'login', message: 'Successful' });
+        const [fullName, _isTrainer] = retrieveUserInfo(username);
+        res.json({ type: 'login', message: 'Successful' , content:{username: username, name: fullName, _isTrainer: _isTrainer} });
       } else {
         // Send a response to the client
         res.json({ type: 'login', message: 'Wrong password' });

@@ -1,6 +1,7 @@
 
 var APP = {
   my_user: null,
+  myFullName: "",
   IAmTrainer: false,
   recommendations: {},
   offers: {}
