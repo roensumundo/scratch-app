@@ -20,7 +20,7 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const titleH2 = document.createElement('h2');
     titleH2.innerText = classname
     const titleP = document.createElement('p');
-    titleP.className = 'username';
+    titleP.className = 'username-offer';
     titleP.innerText = '@' + creator;
     titleDiv.appendChild(titleH2);
     titleDiv.appendChild(titleP);

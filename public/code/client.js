@@ -136,11 +136,12 @@ const askForEnrolledClasses = async (username) => {
 //signup("rosa", "asdf");
 const trainer = new Trainer("Ro", "ro");
 const myDate = new Date(2023, 4, 30, 14, 30);
-
-const class_offer = trainer.createClass("Squads", "infinit squads ", myDate.toString(), "2h");
+const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', min: 'numeric'};
+const formattedDate = myDate.toLocaleDateString('en-US', options);
+const class_offer = trainer.createClass("Squads", "infinit squads ", formattedDate, "2h");
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
 //sendEnrollment("ma", "26");
 //askForEnrolledClasses("ma");
-sendEnrollment("ma", "28");
+sendEnrollment("ma", "30");
