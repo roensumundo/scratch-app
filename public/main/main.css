@@ -205,10 +205,10 @@ main{
   }
   
   .username {
-    margin: 0;
+    margin-left: 5px;
     color: #080808;
   }
-  
+
   .options {
     display: flex;
     flex-direction: column;

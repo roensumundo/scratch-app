@@ -1,4 +1,4 @@
-function displayClassOffer(id, classname, creator, datetime, description) {
+function displayClassOffer(id, classname, creator, datetime, description, duration) {
     // create the outer div with class "class_offer" and id "class_offer_1"
     const classOfferDiv = document.createElement('div');
     classOfferDiv.className = 'class_offer';
@@ -27,7 +27,7 @@ function displayClassOffer(id, classname, creator, datetime, description) {
   
     const subtitleP = document.createElement('p');
     subtitleP.className = 'date-time';
-    subtitleP.innerText = datetime;
+    subtitleP.innerText = datetime + "-" + duration;
   
     const button = document.createElement('button');
     button.className = 'go-button';

@@ -16,9 +16,9 @@ var APP = {
   offers: {},
   setUser: (username,fullname) => {
     if (APP.IAmTrainer) {
-      APP.my_user = new Trainer(username, fullname);
+      APP.my_user = new Trainer(fullname, username);
     } else {
-      APP.my_user = new User(username, fullname);
+      APP.my_user = new User(fullname, username);
     }
   }
 }
@@ -94,4 +94,13 @@ function init() {
         }
     });
   explore_switcher();
+}
+
+function runMain() {
+  const enrolledClasses = APP.my_user.enrolledClasses;
+  for (const class_id in enrolledClasses) {
+    let class_object = enrolledClasses[class_id];
+    //TODO include duration in displayClassOffer function
+    displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration);
+  }
 }

@@ -59,6 +59,11 @@ function getIdByUsername(username) {
     return redis_cli.get(DB+':username_to_id:' + username);
 }
 
+function getUsernameById(user_id) {
+  /* Given a user_id, look for his username in the database*/
+  return redis_cli.get(DB + ":credentials:" + user_id + ":username");
+}
+
 function retrieveUserInfo(username) {
   /* Retrieves user information from the database */
   return getIdByUsername(username).then((id) => {
@@ -294,21 +299,26 @@ function retrieveClassInfo(classId) {
 }
 function createClassesDict(classes_ids) {
   return new Promise((resolve, reject) => {
-    const enrolled_classes_dict = {};
     const promises = [];
-
+    const enrolled_classes_dict = {};
+    
     for (const class_id of classes_ids) {
+      let class_info;
       const promise = retrieveClassInfo(class_id)
-        .then((class_info) => {
+        .then((class_obj) => {
+           class_info = Object.assign({}, class_obj);
+          return getUsernameById(class_obj.creator);
+        })
+        .then((username) => {
+          class_info.creator = username;
           enrolled_classes_dict[class_id] = class_info;
-          //console.log("DICT = " + JSON.stringify(enrolled_classes_dict));
+          return class_info;
         })
         .catch((err) => {
           console.log("Could not retrieve info from class: " + class_id);
           console.error(err);
         });
       promises.push(promise);
-
     }
 
     Promise.all(promises)
@@ -435,7 +445,7 @@ app.post('/my_enrollments', (req, res) => {
     return getList(DB + ":enrolled_classes:" + user_id);
   })
     .then((enrolled_classes_ids) => {
-      //console.log("Classes ids list: "+enrolled_classes_ids);
+      console.log("Classes ids list: "+ enrolled_classes_ids);
     return createClassesDict(enrolled_classes_ids);
   })
     .then((enrolled_classes_dict) => {
@@ -448,7 +458,6 @@ app.post('/my_enrollments', (req, res) => {
     console.error(err);
   });
 });
-
 
 // Start the server on port 9026
 app.listen(9026, () => {

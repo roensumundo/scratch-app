@@ -97,8 +97,22 @@ const askForEnrolledClasses = async (username) => {
   const data = await response.json();
   if (data.type == "enrollments_list") {
     if (data.message == "Successful") {
-      //console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
-      APP.my_user.enrolledClasses = data.content;
+      console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
+      let classes_dict = data.content;
+      console.log("data received by server" + JSON.stringify(classes_dict));
+      for (const class_id in classes_dict) {
+        let class_object = classes_dict[class_id]
+        console.log(JSON.stringify(class_object));
+        let title = class_object.title;
+        let description = class_object.description;
+        let datetime = class_object.datetime;
+        let duration = class_object.duration;
+        let creator = class_object.creator;
+        APP.my_user.enrolledClasses[class_id] = new Class(title, description, datetime, duration, creator);
+        APP.my_user.enrolledClasses[class_id].id = class_id;
+      }
+      runMain();
+      console.log(APP.my_user.enrolledClasses);
     } else {
       console.log("Couldn't retrieve enrolled classes");
     }
@@ -120,11 +134,13 @@ const askForEnrolledClasses = async (username) => {
 
   // TESTS 
 //signup("rosa", "asdf");
-//const trainer = new Trainer("Ro", "ro");
-//const class_offer = trainer.createClass("Zumba", "A very easy zumba class", "10 AM", "2h");
+const trainer = new Trainer("Ro", "ro");
+const myDate = new Date(2023, 4, 30, 14, 30);
+
+const class_offer = trainer.createClass("Squads", "infinit squads ", myDate.toString(), "2h");
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
 //sendEnrollment("ma", "26");
-askForEnrolledClasses("ma");
-//sendEnrollment("ma", "27");
+//askForEnrolledClasses("ma");
+sendEnrollment("ma", "28");
