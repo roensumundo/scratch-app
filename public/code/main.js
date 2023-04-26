@@ -9,7 +9,7 @@ const PAGES = {
 };
 
 var APP = {
-  current_page: LOGIN,
+  current_page: PAGES.LOGIN,
   my_user: null,
   IAmTrainer: false,
   recommendations: {},

@@ -273,22 +273,42 @@ function enroll_to_class(user_id, class_id) {
   classes_promise = addElementToList(classes_list, class_id);
   return Promise.all([users_promise, classes_promise]);
 }
-
+function retrieveClassInfo(classId) {
+  /* Retrieves class information from the database. It returns a promise that resolves a list 
+  of class attributes.*/
+  return redis_cli
+    .multi()
+    .get(DB + ':class_offers:' + classId + ':title')
+    .get(DB + ':class_offers:' + classId + ':description')
+    .get(DB + ':class_offers:' + classId + ':datetime')
+    .get(DB + ':class_offers:' + classId + ':duration')
+    .get(DB + ':class_offers:' + classId + ':creator')
+    .exec()
+    .then(([title, description, datetime, duration, creator]) => {
+      return { title, description, datetime, duration, creator };
+    })
+    .catch((err) => {
+      console.error(`Could not retrieve class with id ${classId}: ${err}`);
+      throw err;
+    });
+}
 function createClassesDict(classes_ids) {
   return new Promise((resolve, reject) => {
     const enrolled_classes_dict = {};
     const promises = [];
 
-    for (const class_id in classes_ids) {
+    for (const class_id of classes_ids) {
       const promise = retrieveClassInfo(class_id)
-        .then(([title, description, datetime, duration, creator]) => {
-          enrolled_classes_dict[class_id] = { title, description, datetime, duration, creator };
+        .then((class_info) => {
+          enrolled_classes_dict[class_id] = class_info;
+          //console.log("DICT = " + JSON.stringify(enrolled_classes_dict));
         })
         .catch((err) => {
           console.log("Could not retrieve info from class: " + class_id);
           console.error(err);
         });
       promises.push(promise);
+
     }
 
     Promise.all(promises)
@@ -408,19 +428,23 @@ app.post('/enrollment', (req, res) => {
 });
 
 app.post('/my_enrollments', (req, res) => {
+  
   var username = req.body.username;
+  console.log("Enrollment list requested for user: " + username);
   getIdByUsername(username).then((user_id) => {
     return getList(DB + ":enrolled_classes:" + user_id);
   })
-  .then((enrolled_classes_ids) => {
+    .then((enrolled_classes_ids) => {
+      //console.log("Classes ids list: "+enrolled_classes_ids);
     return createClassesDict(enrolled_classes_ids);
   })
     .then((enrolled_classes_dict) => {
+      //console.log("enrollments dict" + JSON.stringify(enrolled_classes_dict));
       res.json({type:"enrollments_list", message: "Successful", content: enrolled_classes_dict})
   })
   .catch(err => {
     console.log("Imposible to retrive enrolled classes dict from user " + username);
-
+    res.json({ type: "enrollments_list", message: "Unsuccessful" });
     console.error(err);
   });
 });

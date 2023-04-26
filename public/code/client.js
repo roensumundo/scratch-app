@@ -95,7 +95,14 @@ const askForEnrolledClasses = async (username) => {
     body: JSON.stringify({ username})
   });
   const data = await response.json();
-
+  if (data.type == "enrollments_list") {
+    if (data.message == "Successful") {
+      //console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
+      APP.my_user.enrolledClasses = data.content;
+    } else {
+      console.log("Couldn't retrieve enrolled classes");
+    }
+  }
 }
   // For main page request 
   const main_page = async () => {
@@ -114,8 +121,10 @@ const askForEnrolledClasses = async (username) => {
   // TESTS 
 //signup("rosa", "asdf");
 //const trainer = new Trainer("Ro", "ro");
-//const class_offer = trainer.createClass("Yoga", "A very easy yoga class", "9 AM", "2h");
+//const class_offer = trainer.createClass("Zumba", "A very easy zumba class", "10 AM", "2h");
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
 //sendEnrollment("ma", "26");
+askForEnrolledClasses("ma");
+//sendEnrollment("ma", "27");
