@@ -14,11 +14,11 @@ var APP = {
   IAmTrainer: false,
   recommendations: {},
   offers: {},
-  setUser: (username,fullname) => {
+  setUser: (username,fullname, age, location, gender) => {
     if (APP.IAmTrainer) {
-      APP.my_user = new Trainer(fullname, username);
+      APP.my_user = new Trainer(fullname, username, age, location, gender);
     } else {
-      APP.my_user = new User(fullname, username);
+      APP.my_user = new User(fullname, username, age, location, gender);
     }
   }
 }
@@ -26,13 +26,15 @@ var APP = {
 
 
 class Class {
-  constructor(title, description, dateTime, duration, creator) {
+  constructor(title, description, dateTime, duration, creator, level, price) {
     this.id = null;
     this.title = title;
     this.description = description;
     this.datetime = dateTime;
     this.duration = duration;
     this.creator = creator;
+    this.level = level;
+    this.price = price;
     this.enrolledUsers = [];
   }
 
@@ -47,9 +49,12 @@ class Class {
 }
 
 class User {
-  constructor(name, username) {
+  constructor(name, username, age, location, gender) {
     this.name = name;
     this.username = username;
+    this.age = age;
+    this.gender = gender;
+    this.location = location;
     this.enrolledClasses = {};
   }
 
@@ -69,8 +74,8 @@ class Trainer extends User {
     this.publishedClasses = {};
   }
 
-  createClass(title, description, dateTime, duration) {
-    const newClass = new Class(title, description, dateTime, duration, this.username);
+  createClass(title, description, dateTime, duration, level, price) {
+    const newClass = new Class(title, description, dateTime, duration, this.username, level, price);
     return newClass;
   }
 

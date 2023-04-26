@@ -197,8 +197,11 @@ function createNewCredentials(username, password, isTrainer, fullName) {
         }
       });
 }
-
-function saveClassOffer(class_id, title, creator, description, datetime, duration) {
+function saveUserInfo(user_id, fullName, age, location, gender) {
+  const table_name = DB + ":user_info:" + user_id;
+  
+}
+function saveClassOffer(class_id, title, creator, description, datetime, duration, level, price) {
   /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
   * creator, description, datetime and duration are the values stored. */
   console.log("Class id = " + class_id);
@@ -208,7 +211,9 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
     { key: common_key + ":creator", value: creator},
     { key: common_key + ":description", value: description },
     { key: common_key + ":datetime", value: datetime },
-    { key: common_key + ":duration", value: duration }
+    { key: common_key + ":duration", value: duration },
+    { key: common_key + ":level", value: level },
+    { key: common_key + ":price", value: price }
   ];
   console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
   return new Promise((resolve, reject) => {
@@ -288,9 +293,11 @@ function retrieveClassInfo(classId) {
     .get(DB + ':class_offers:' + classId + ':datetime')
     .get(DB + ':class_offers:' + classId + ':duration')
     .get(DB + ':class_offers:' + classId + ':creator')
+    .get(DB + ':class_offers:' + classId + ':level')
+    .get(DB + ':class_offers:' + classId + ':price')
     .exec()
-    .then(([title, description, datetime, duration, creator]) => {
-      return { title, description, datetime, duration, creator };
+    .then(([title, description, datetime, duration, creator, level, price]) => {
+      return { title, description, datetime, duration, creator, level, price };
     })
     .catch((err) => {
       console.error(`Could not retrieve class with id ${classId}: ${err}`);
@@ -405,7 +412,7 @@ app.post('/publish_class', (req, res) => {
     getIdByUsername(creator)
       .then((creator_id) => {
         trainer_id = creator_id;
-      return saveClassOffer(id, class_object.title, creator_id, class_object.description, class_object.datetime, class_object.duration)
+      return saveClassOffer(id, class_object.title, creator_id, class_object.description, class_object.datetime, class_object.duration, class_object.level, class_object.price)
      })
     .then(() => {
       // We save the class' id in a record in the database to have a follow up 

@@ -1,10 +1,10 @@
 const SERVER_URL = 'http://localhost:9026';
 // For sign-up request
-const signup = async (username, password, isTrainer, fullname) => {
+const signup = async (username, password, isTrainer, fullname, age, location, gender) => {
     const response = await fetch(SERVER_URL + '/signup', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password, isTrainer, fullname })
+      body: JSON.stringify({ username, password, isTrainer, fullname, age, location, gender })
     });
     const data = await response.json();
     console.log(data); // Handle server response
@@ -16,7 +16,7 @@ const signup = async (username, password, isTrainer, fullname) => {
         const fullname = data.content.name;
         const isTrainer = data.content._isTrainer;
         APP.IAmTrainer = isTrainer;
-        APP.setUser(username,fullname);
+        APP.setUser(username,fullname, age, location, gender);
         main_page();
       } else {
         // Display an error message to the user
@@ -40,8 +40,11 @@ const signup = async (username, password, isTrainer, fullname) => {
         const username = data.content.username;
         const fullname = data.content.name;
         const isTrainer = data.content._isTrainer;
+        const gender = data.content.gender;
+        const age = data.content.age;
+        const location = data.content.location;
         APP.IAmTrainer = isTrainer;
-        APP.setUser(username,fullname);
+        APP.setUser(username,fullname, age, location, gender);
         main_page();
       } else {
         // Display an error message to the user
@@ -138,10 +141,10 @@ const trainer = new Trainer("Ro", "ro");
 const myDate = new Date(2023, 4, 30, 14, 30);
 const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', min: 'numeric'};
 const formattedDate = myDate.toLocaleDateString('en-US', options);
-const class_offer = trainer.createClass("Squads", "infinit squads ", formattedDate, "2h");
+const class_offer = trainer.createClass("Squads", "infinit squads ", formattedDate, "2h", "advanced", "10");
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
 //sendEnrollment("ma", "26");
 //askForEnrolledClasses("ma");
-sendEnrollment("ma", "30");
+//sendEnrollment("ma", "30");
