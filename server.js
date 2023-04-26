@@ -253,20 +253,59 @@ function getElementFromList(list_path, index) {
     return element;
   });
 }
+function getList(listName) {
+  return new Promise((resolve, reject) => {
+    redis_cli.lrange(listName, 0, -1, (err, result) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(result);
+      }
+    });
+  });
+}
 
 function enroll_to_class(user_id, class_id) {
-  const users_list = DB + ":class_offers:" + class_id + ":enrolled_users";
+  var users_list = DB + ":class_offers:" + class_id + ":enrolled_users";
   users_promise = addElementToList(users_list, user_id);
 
-  const classes_list = DB + ":enrolled_classes:" + user_id;
+  var classes_list = DB + ":enrolled_classes:" + user_id;
   classes_promise = addElementToList(classes_list, class_id);
   return Promise.all([users_promise, classes_promise]);
 }
 
+function createClassesDict(classes_ids) {
+  return new Promise((resolve, reject) => {
+    const enrolled_classes_dict = {};
+    const promises = [];
+
+    for (const class_id in classes_ids) {
+      const promise = retrieveClassInfo(class_id)
+        .then(([title, description, datetime, duration, creator]) => {
+          enrolled_classes_dict[class_id] = { title, description, datetime, duration, creator };
+        })
+        .catch((err) => {
+          console.log("Could not retrieve info from class: " + class_id);
+          console.error(err);
+        });
+      promises.push(promise);
+    }
+
+    Promise.all(promises)
+      .then(() => {
+        resolve(enrolled_classes_dict);
+      })
+      .catch((err) => {
+        console.error(err);
+        reject(err);
+      });
+  });
+}
+
 function saveSubscription(subscriptor_id, trainer_id ) {
-  const subscription = DB + ":subscriptions:" + subscriptor_id;
+  var subscription = DB + ":subscriptions:" + subscriptor_id;
   addElementToList(subscription, trainer_id);
-  const followers = DB + ":followers:" + trainer_id;
+  var followers = DB + ":followers:" + trainer_id;
   addElementToList(followers, subscriptor_id);
 }
 
@@ -275,17 +314,17 @@ function saveSubscription(subscriptor_id, trainer_id ) {
 // Handle POST requests for a signup route
 app.post('/signup', (req, res) => {
   // Access the JSON data sent in the request body
-  const username = req.body.username;
-  const password = req.body.password;
-  const isTrainer = req.body.isTrainer;
-  const fullName = req.body.fullname;
+  var username = req.body.username;
+  var password = req.body.password;
+  var isTrainer = req.body.isTrainer;
+  var fullName = req.body.fullname;
   // Logic to handle signup request
   existUsername(username).then((exists) => {
     //User already exists in the database
     if (!exists) {
       createNewCredentials(username, password, isTrainer, fullName);
       // Send a response to the client
-      res.json({ type: "signup", message: 'Successful' });
+      res.json({ type: "signup", message: 'Successful', content:{username: username, name: fullName, _isTrainer: isTrainer}  });
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
     } else {
       // Send a response to the client
@@ -298,8 +337,8 @@ app.post('/signup', (req, res) => {
 // Handle POST requests for a login route
 app.post('/login', (req, res) => {
   // Access the JSON data sent in the request body
-  const username = req.body.username;
-  const password = req.body.password;
+  var username = req.body.username;
+  var password = req.body.password;
   
   // Logic to handle login request
   // ... (here you can implement your own login logic)
@@ -325,13 +364,13 @@ app.post('/login', (req, res) => {
 });
 
 app.post('/publish_class', (req, res) => {
-  const class_object = req.body;
+  var class_object = req.body;
   console.log("publishing class " + JSON.stringify(class_object));
   
   // Take class id from database. Increment counter.
   get_and_incr_count("class_id_count").then((id) => {
     // Save class in database.
-    const creator = class_object.creator;
+    var creator = class_object.creator;
     let trainer_id;
     getIdByUsername(creator)
       .then((creator_id) => {
@@ -358,21 +397,35 @@ app.post('/publish_class', (req, res) => {
 
 
 app.post('/enrollment', (req, res) => {
-  const username = req.body.username;
-  const class_id = req.body.class_id;
+  var username = req.body.username;
+  var class_id = req.body.class_id;
   getIdByUsername(username).then((user_id) => {
     enroll_to_class(user_id, class_id).then(() => {
       console.log(username + " Enrolled successfully to a class.");
       res.json({type:"enrollment", message: "Successful"})
      });
   });
-
-
-
- 
-  
-
 });
+
+app.post('/my_enrollments', (req, res) => {
+  var username = req.body.username;
+  getIdByUsername(username).then((user_id) => {
+    return getList(DB + ":enrolled_classes:" + user_id);
+  })
+  .then((enrolled_classes_ids) => {
+    return createClassesDict(enrolled_classes_ids);
+  })
+    .then((enrolled_classes_dict) => {
+      res.json({type:"enrollments_list", message: "Successful", content: enrolled_classes_dict})
+  })
+  .catch(err => {
+    console.log("Imposible to retrive enrolled classes dict from user " + username);
+
+    console.error(err);
+  });
+});
+
+
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');

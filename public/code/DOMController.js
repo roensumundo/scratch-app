@@ -97,12 +97,6 @@ function submitSignUp() {
     else {
         signup(username, password, APP.IAmTrainer, fullname);
     }
-    if (APP.IAmTrainer)
-        APP.myuser = new Trainer(fullname, username);
-    else {
-        APP.myuser = new User(fullname, username);
-    }
-    console.log("User object: " + JSON.stringify(APP.myuser));
 }
 
 function isTrainer(response) {

@@ -1,11 +1,29 @@
 
+const PAGES = {
+  LOGIN: 'login',
+  MAIN: 'main',
+  EXPLORE: 'explore',
+  PERSONAL_SPACE: 'personal_space',
+  CLASS_DETAIL: 'class_detail',
+  PROFILE: 'profile'
+};
+
 var APP = {
+  current_page: LOGIN,
   my_user: null,
-  myFullName: "",
   IAmTrainer: false,
   recommendations: {},
-  offers: {}
+  offers: {},
+  setUser: (username,fullname) => {
+    if (APP.IAmTrainer) {
+      APP.my_user = new Trainer(username, fullname);
+    } else {
+      APP.my_user = new User(username, fullname);
+    }
+  }
 }
+
+
 
 class Class {
   constructor(title, description, dateTime, duration, creator) {

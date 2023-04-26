@@ -1,7 +1,7 @@
-
+const SERVER_URL = 'http://localhost:9026';
 // For sign-up request
 const signup = async (username, password, isTrainer, fullname) => {
-    const response = await fetch('http://localhost:9026/signup', { 
+    const response = await fetch(SERVER_URL + '/signup', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password, isTrainer, fullname })
@@ -12,6 +12,11 @@ const signup = async (username, password, isTrainer, fullname) => {
     if (data.type === 'signup') {
       if (data.message === 'Successful') {
         // Do something when login is successful, such as redirecting the user
+        const username = data.content.username;
+        const fullname = data.content.name;
+        const isTrainer = data.content._isTrainer;
+        APP.IAmTrainer = isTrainer;
+        APP.setUser(username,fullname);
         main_page();
       } else {
         // Display an error message to the user
@@ -23,7 +28,7 @@ const signup = async (username, password, isTrainer, fullname) => {
   
   // For login request
   const login = async (username, password) => {
-    const response = await fetch('http://localhost:9026/login', { 
+    const response = await fetch(SERVER_URL +'/login', { 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password })
@@ -32,6 +37,11 @@ const signup = async (username, password, isTrainer, fullname) => {
     // Handle the response based on its type
     if (data.type === 'login') {
       if (data.message === 'Successful') {
+        const username = data.content.username;
+        const fullname = data.content.name;
+        const isTrainer = data.content._isTrainer;
+        APP.IAmTrainer = isTrainer;
+        APP.setUser(username,fullname);
         main_page();
       } else {
         // Display an error message to the user
@@ -41,7 +51,7 @@ const signup = async (username, password, isTrainer, fullname) => {
   };
 // For publishing a class
 const sendClass = async (class_object) => {
-  const response = await fetch('http://localhost:9026/publish_class', {
+  const response = await fetch(SERVER_URL +'/publish_class', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(class_object)
@@ -61,7 +71,7 @@ const sendClass = async (class_object) => {
 }
 // For class enrollment. 
 const sendEnrollment = async (username, class_id) => {
-  const response = await fetch('http://localhost:9026/enrollment', {
+  const response = await fetch(SERVER_URL +'/enrollment', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({username, class_id})
@@ -77,12 +87,28 @@ const sendEnrollment = async (username, class_id) => {
     }
   }
 }
+// Ask for enrolled classes.
+const askForEnrolledClasses = async (username) => {
+  const response = await fetch(SERVER_URL +'/my_enrollments', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username})
+  });
+  const data = await response.json();
 
+}
   // For main page request 
   const main_page = async () => {
-    const response = await fetch('http://localhost:9026/main');
+    const response = await fetch(SERVER_URL +'/main');
     const html = await response.text(); // get the response as text
     document.documentElement.innerHTML = html;
+    APP.current_page = PAGES.MAIN;
+    askForEnrolledClasses(APP.my_user.username);
+    //TODO recomendation system
+    //askForRecommendations();
+    if (APP.IAmTrainer) {
+      //askForPublishedClasses();
+    }
   };
 
   // TESTS 
