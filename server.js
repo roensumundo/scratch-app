@@ -199,7 +199,7 @@ function createNewCredentials(username, password, isTrainer, fullName) {
 }
 function saveUserInfo(user_id, fullName, age, location, gender) {
   const table_name = DB + ":user_info:" + user_id;
-  
+
 }
 function saveClassOffer(class_id, title, creator, description, datetime, duration, level, price) {
   /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
