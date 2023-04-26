@@ -29,11 +29,9 @@ const signup = async (username, password, isTrainer, fullname) => {
       body: JSON.stringify({ username, password })
     });
     const data = await response.json();
-    console.log(data); // Handle server response
     // Handle the response based on its type
     if (data.type === 'login') {
       if (data.message === 'Successful') {
-        // Do something when login is successful, such as redirecting the user
         main_page();
       } else {
         // Display an error message to the user
@@ -41,7 +39,7 @@ const signup = async (username, password, isTrainer, fullname) => {
       }
     }
   };
-
+// For publishing a class
 const sendClass = async (class_object) => {
   const response = await fetch('http://localhost:9026/publish_class', {
     method: 'POST',
@@ -52,6 +50,8 @@ const sendClass = async (class_object) => {
   if (data.type === 'saved_class') {
     if (data.message === 'Successful') {
       //APP.my_user.createClass(data.id, class_object);
+      //Save the class id assigned by the server.
+      class_object.id = data.id;
       console.log('Class Successfully created');
     }
     else {
@@ -59,7 +59,7 @@ const sendClass = async (class_object) => {
     }
   }
 }
-
+// For class enrollment. 
 const sendEnrollment = async (username, class_id) => {
   const response = await fetch('http://localhost:9026/enrollment', {
     method: 'POST',
@@ -76,10 +76,7 @@ const sendEnrollment = async (username, class_id) => {
       console.log("Enrollment could not be completed.");
     }
   }
-  
-
 }
-
 
   // For main page request 
   const main_page = async () => {
@@ -88,12 +85,11 @@ const sendEnrollment = async (username, class_id) => {
     document.documentElement.innerHTML = html;
   };
 
-
   // TESTS 
 //signup("rosa", "asdf");
-//const trainer = new Trainer("Ro", "roensumundo");
+//const trainer = new Trainer("Ro", "ro");
 //const class_offer = trainer.createClass("Yoga", "A very easy yoga class", "9 AM", "2h");
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");
-sendEnrollment("ma", "22");
+//sendEnrollment("ma", "26");

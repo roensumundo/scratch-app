@@ -36,7 +36,8 @@ var redis_cli = redis.createClient({
 );
 
 redis_cli.on('connect', function() {
-    console.log('Connected to redis');
+  console.log('Connected to redis');
+  /* TESTING */
 });
 
 
@@ -191,32 +192,10 @@ function createNewCredentials(username, password, isTrainer, fullName) {
         }
       });
 }
-/*function saveClassOffer(class_id, title, creator, description, datetime, duration) {
-  /* Save a class offer in the database. class id is used as a key whereas the parameters title, 
-  * creator, description, datetime and duration are the values stored. 
-  return new Promise((resolve, reject) => {
-    redis_cli
-      .multi()
-      .set(DB + ":class_offers:" + class_id + ":title", title)
-      .set(DB + ":class_offers:" + class_id + ":creator", creator)
-      .set(DB + ":class_offers:" + class_id + ":description", description)
-      .set(DB + ":class_offers:" + class_id + ":datetime", datetime)
-      .set(DB + ":class_offers:" + class_id + ":duration", duration)
-      .exec((err, replies) => {
-        if (err) {
-          console.log("Error saving class :", err);
-          reject(false);
-        } else {
-          console.log("Class saved successfully");
-          resolve(true);
-        }
-      });
-  }).catch((err) => {
-    console.log("Error saving class: ", err);
-    return false;
-  });
-}*/
+
 function saveClassOffer(class_id, title, creator, description, datetime, duration) {
+  /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
+  * creator, description, datetime and duration are the values stored. */
   console.log("Class id = " + class_id);
   const common_key = DB + ":class_offers:" +class_id;
   const keyValuePairs = [
@@ -226,7 +205,7 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
     { key: common_key + ":datetime", value: datetime },
     { key: common_key + ":duration", value: duration }
   ];
-  //console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
+  console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
   return new Promise((resolve, reject) => {
     const multi = redis_cli.multi();
 
@@ -240,6 +219,7 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
         const failedReply = replies.find(reply => !reply || reply.toString().toLowerCase() !== 'ok');
 
         if (failedReply) {
+          console.log("Failed to set value for key: " + failedReply)
           reject(new Error(`Failed to set value for key ${failedReply}`));
         } else {
           console.log('Class offer set successfully');
@@ -251,15 +231,23 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
 }
 
 function addElementToList(list, element) {
-  return redis_cli.exists(list).then((reply) => {
-    if (reply == 1) {
-      return redis_cli.rpush(list, element);
-    }
-    else {
-      return redis_cli.lpush(list, element);
-    }
-  });
+  /* Given a list name and an element, it first checks the element didn't already exist 
+   in the list and adds it if so. If the list doesn't exist, Redis creates an empty list 
+   with the name provided and adds the element all followed.  */
+  return redis_cli.lrange(list, 0, -1)
+    .then((reply) => {
+      if (!reply.includes(element)) {
+        console.log("Element didn't exist before: " + element);
+        return redis_cli.rpush(list, element)
+          .then((reply) => {
+            return reply;
+          });
+      }
+      console.log("Element existed before: " + element);
+      return Promise.resolve(0);
+    });
 }
+
 function getElementFromList(list_path, index) {
   return redis_cli.lindex(list_path, index).then((element) => {
     return element;
@@ -343,15 +331,27 @@ app.post('/publish_class', (req, res) => {
   // Take class id from database. Increment counter.
   get_and_incr_count("class_id_count").then((id) => {
     // Save class in database.
-    //TODO Extract username from class_object and take its id.
-    saveClassOffer(id, class_object.title, "1", class_object.description, class_object.datetime, class_object.duration)
+    const creator = class_object.creator;
+    let trainer_id;
+    getIdByUsername(creator)
+      .then((creator_id) => {
+        trainer_id = creator_id;
+      return saveClassOffer(id, class_object.title, creator_id, class_object.description, class_object.datetime, class_object.duration)
+     })
+    .then(() => {
+      // We save the class' id in a record in the database to have a follow up 
+      return addElementToList(DB + ":classes_record", id); 
+    })
+    .then(() => {
+      return addElementToList(DB + ":published_classes:" + trainer_id, id)
+    })
     .then(() => {
       res.json({ type: 'saved_class', id: id, message: 'Successful' });
     })
-      .catch((error) => {
-        console.log("Error publishing class: " + error.message);
+    .catch((error) => {
+      console.log("Error publishing class: " + error.message);
       res.json({ type: 'saved_class', id: null, message: 'Unsuccessful' });
-    });
+  });
   });
 
 });
@@ -369,11 +369,12 @@ app.post('/enrollment', (req, res) => {
 
 
 
-  
+ 
   
 
 });
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');
+   
 });
