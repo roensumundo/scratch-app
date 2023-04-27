@@ -142,42 +142,33 @@ function get_and_incr_count(counter) {
         console.log("Error: " + counter + " counter doesn't exist in this database");
     }
 }
-function createNewCredentials(username, password, isTrainer, fullName) {
-    /* Given a username that doesn't exist in the database, it first retrieves the 
-    * id counter, and assigns an id to the user. Then, it stores the username and the id 
-    * in the database. It also creates a session token. Finally, it also stores the password in the database. 
-    * Returns "registered" if everything went right. */
+function createNewCredentials(username, password, isTrainer) {
+  return new Promise((resolve, reject) => {
     let id = -1;
-    
-    return get_and_incr_count("user_id_count")
+
+    get_and_incr_count("user_id_count")
       .then((count) => {
-        // New count after increment
         console.log("id : " + count);
         id = count;
-        // Saves the username and its id in the database
         const save_id = DB+':username_to_id:' + username;
         return redis_cli.set(save_id, id.toString());
       })
       .then(() => {
         console.log('Id count set successfully');
-        // Save username and id in credentials table 
         const credential_query = DB+':credentials:' + id;
         redis_cli.set(credential_query + ':username', username).then(() => {
-          // Hash password
           const hash = hashPassword(password);
-          
-          // Save password in credentials table
           setPassword(id, hash);
           setIsTrainer(id, isTrainer);
-          setFullName(id, fullName);
-          
+          resolve(id.toString()); // resolve the promise with the id value
         });
-        return "registered";
       })
       .catch((error) => {
         console.error(error);
+        reject(error); // reject the promise with the error value
       });
-  }
+  });
+}
 
   function existUsername( username) {
     /* Checks if the user already exists in the database. If so, check if password matches. 
@@ -200,6 +191,21 @@ function createNewCredentials(username, password, isTrainer, fullName) {
 function saveUserInfo(user_id, fullName, age, location, gender) {
   const table_name = DB + ":user_info:" + user_id;
 
+  const multi = redis_cli.multi();
+  multi.set(table_name + ":fullName", fullName);
+  multi.set(table_name + ":age", age);
+  multi.set(table_name + ":location", location);
+  multi.set(table_name + ":gender", gender);
+
+  return new Promise((resolve, reject) => {
+    multi.exec((err, replies) => {
+      if (err) {
+        reject(err);
+      } else {
+        resolve(replies);
+      }
+    });
+  });
 }
 function saveClassOffer(class_id, title, creator, description, datetime, duration, level, price) {
   /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
@@ -355,14 +361,25 @@ app.post('/signup', (req, res) => {
   var password = req.body.password;
   var isTrainer = req.body.isTrainer;
   var fullName = req.body.fullname;
+  var age = req.body.age;
+  var gender = req.body.gender;
+  var location = req.body.location;
   // Logic to handle signup request
   existUsername(username).then((exists) => {
     //User already exists in the database
     if (!exists) {
-      createNewCredentials(username, password, isTrainer, fullName);
-      // Send a response to the client
+      createNewCredentials(username, password, isTrainer)
+      .then((user_id) => {
+        return saveUserInfo(user_id, fullName, age, location, gender);
+      })
+      .then(() => {
+        // Send a response to the client
       res.json({ type: "signup", message: 'Successful', content:{username: username, name: fullName, _isTrainer: isTrainer}  });
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
+        }).catch((err) => {
+          console.error(err);
+      });
+      
     } else {
       // Send a response to the client
       res.json({ type: "signup", message: 'Error. This username already exists. Choose another username.' });

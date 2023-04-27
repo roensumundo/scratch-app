@@ -95,7 +95,7 @@ function submitSignUp() {
         return;
     }
     else {
-        signup(username, password, APP.IAmTrainer, fullname);
+        signup(username, password, APP.IAmTrainer, fullname,"30", "Sant Francisco", "women");
     }
 }
 
