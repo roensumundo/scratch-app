@@ -69,8 +69,8 @@ class User {
 }
 
 class Trainer extends User {
-  constructor(name, username) {
-    super(name, username);
+  constructor(name, username, age, location, gender) {
+    super(name, username, age, location, gender);
     this.publishedClasses = {};
   }
 

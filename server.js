@@ -69,11 +69,14 @@ function retrieveUserInfo(username) {
   return getIdByUsername(username).then((id) => {
     return redis_cli
     .multi()
-    .get(DB + ':credentials:' + id + ':full_name')
+    .get(DB + ':user_info:' + id + ':full_name')
     .get(DB + ':credentials:' + id + ':is_trainer')
+    .get(DB + ':user_info:' + id + ':age')
+    .get(DB + ':user_info:' + id + ':gender')
+    .get(DB + ':user_info:' + id + ':location')
     .exec()
-    .then(([fullName, isTrainer]) => {
-      return [fullName, isTrainer];
+    .then(([fullName, isTrainer, age, gender, location]) => {
+      return [fullName, isTrainer, age, gender, location];
 });
   })
   
@@ -374,7 +377,7 @@ app.post('/signup', (req, res) => {
       })
       .then(() => {
         // Send a response to the client
-      res.json({ type: "signup", message: 'Successful', content:{username: username, name: fullName, _isTrainer: isTrainer}  });
+      res.json({ type: "signup", message: 'Successful', content:{username: username, name: fullName, _isTrainer: isTrainer, age, location, gender}  });
       console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
         }).catch((err) => {
           console.error(err);
@@ -401,8 +404,8 @@ app.post('/login', (req, res) => {
       checkPassword(username, password).then((result) => {
       if (result == 'logged') {
         // Send a response to the client
-        retrieveUserInfo(username).then(([fullName, _isTrainer]) => {
-          res.json({ type: 'login', message: 'Successful' , content:{username: username, name: fullName, _isTrainer: _isTrainer} });
+        retrieveUserInfo(username).then(([fullName, _isTrainer,age, gender, location ]) => {
+          res.json({ type: 'login', message: 'Successful' , content:{username, name: fullName, _isTrainer, age, gender, location} });
         });
       } else {
         // Send a response to the client

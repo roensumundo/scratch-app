@@ -76,7 +76,13 @@ function submitLogin() {
     login(username, password);
     
 }
-function submitSignUp() {
+
+function continueSignUp() {
+    const signUpForm1 = document.getElementById("signup-form");
+    const signUpForm2 = document.getElementById("signup-form2");
+    signUpForm1.style.display = 'none';
+    signUpForm2.style.display = null;
+
     var fullname = document.getElementById('signup-fullname').value;
     var username = document.getElementById('signup-username').value;
     var password = document.getElementById('signup-password').value;
@@ -97,6 +103,23 @@ function submitSignUp() {
     else {
         signup(username, password, APP.IAmTrainer, fullname,"30", "Sant Francisco", "women");
     }
+
+
+    
+
+}
+function submitSignUp() {
+
+    const birthdateString = document.getElementById('signup-birthdate').value;
+    const gender = document.getElementById('signup-gender').value;
+    const location = document.getElementById('signup-location').value;
+
+    let birthdate = new Date(birthdateString);
+    // Calculate the difference between the birthdate and the current date
+    let ageDifference = Date.now() - birthdate.getTime();
+    // Convert the difference to years
+    let ageDate = new Date(ageDifference);
+    let age = Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
 function isTrainer(response) {

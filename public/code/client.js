@@ -12,9 +12,6 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
     if (data.type === 'signup') {
       if (data.message === 'Successful') {
         // Do something when login is successful, such as redirecting the user
-        const username = data.content.username;
-        const fullname = data.content.name;
-        const isTrainer = data.content._isTrainer;
         APP.IAmTrainer = isTrainer;
         APP.setUser(username,fullname, age, location, gender);
         main_page();
