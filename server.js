@@ -69,7 +69,7 @@ function retrieveUserInfo(username) {
   return getIdByUsername(username).then((id) => {
     return redis_cli
     .multi()
-    .get(DB + ':user_info:' + id + ':full_name')
+    .get(DB + ':user_info:' + id + ':fullName')
     .get(DB + ':credentials:' + id + ':is_trainer')
     .get(DB + ':user_info:' + id + ':age')
     .get(DB + ':user_info:' + id + ':gender')

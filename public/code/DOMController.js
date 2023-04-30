@@ -78,13 +78,24 @@ function submitLogin() {
 }
 
 function continueSignUp() {
-
+    var fullname = document.getElementById('signup-fullname').value;
+    var username = document.getElementById('signup-username').value;
     var password = document.getElementById('signup-password').value;
     var repeated_password = document.getElementById('signup-rep-password').value;
     const regex = /(?=.*\d)(?=.*[A-Z])/;
 
     //TODO Make the password to be greater than 12 characters. 
-    if (!regex.test(password)) {
+    if (username == null) {
+        //TODO change it by text in DOM
+        alert("Username is required");
+        return;
+    }
+    else if (fullname == null) {
+        //TODO change it by text in DOM
+        alert("Full name is required");
+        return;
+    }
+    else if (!regex.test(password)) {
         //TODO change it by text in DOM
         alert("Password must contain at least one uppercase letter and one digit.");
         return;
@@ -96,20 +107,33 @@ function continueSignUp() {
     }
 
     const signUpForm1 = document.getElementById("signup-form");
-    const signUpForm2 = document.getElementById("signup-form2");
+    const signUpForm2 = document.getElementById("signup-form-2");
     signUpForm1.style.display = 'none';
     signUpForm2.style.display = null;
 
 }
 function submitSignUp() {
 
-    const birthdateString = document.getElementById('signup-birthdate').value;
-    const gender = document.getElementById('signup-gender').value;
-    const location = document.getElementById('signup-location').value;
+    const birthdateString = document.getElementById('birthdate').value;
+    const gender = document.getElementById('gender').value;
+    const location = document.getElementById('location').value;
 
-    var fullname = document.getElementById('signup-fullname').value;
-    var username = document.getElementById('signup-username').value;
-    var password = document.getElementById('signup-password').value;
+    if (birthdateString == null) {
+        //TODO change it by text in DOM
+        alert("Birthday is required");
+        return;
+    }
+    else if (gender == null) {
+        //TODO change it by text in DOM
+        alert("Gender is required");
+        return;
+    }
+    else if (location == null) {
+        //TODO change it by text in DOM
+        alert("Location is required");
+        return;
+    }
+
 
     let birthdate = new Date(birthdateString);
     // Calculate the difference between the birthdate and the current date
@@ -118,6 +142,10 @@ function submitSignUp() {
     let ageDate = new Date(ageDifference);
     let age = Math.abs(ageDate.getUTCFullYear() - 1970);
 
+    var fullname = document.getElementById('signup-fullname').value;
+    var username = document.getElementById('signup-username').value;
+    var password = document.getElementById('signup-password').value;
+    // Send the sign-up message to the server
     signup(username, password, APP.IAmTrainer, fullname, age, location, gender);
 }
 
