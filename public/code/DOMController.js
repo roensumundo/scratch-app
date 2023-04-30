@@ -78,13 +78,7 @@ function submitLogin() {
 }
 
 function continueSignUp() {
-    const signUpForm1 = document.getElementById("signup-form");
-    const signUpForm2 = document.getElementById("signup-form2");
-    signUpForm1.style.display = 'none';
-    signUpForm2.style.display = null;
 
-    var fullname = document.getElementById('signup-fullname').value;
-    var username = document.getElementById('signup-username').value;
     var password = document.getElementById('signup-password').value;
     var repeated_password = document.getElementById('signup-rep-password').value;
     const regex = /(?=.*\d)(?=.*[A-Z])/;
@@ -100,12 +94,11 @@ function continueSignUp() {
         alert("Passwords do not match");
         return;
     }
-    else {
-        signup(username, password, APP.IAmTrainer, fullname,"30", "Sant Francisco", "women");
-    }
 
-
-    
+    const signUpForm1 = document.getElementById("signup-form");
+    const signUpForm2 = document.getElementById("signup-form2");
+    signUpForm1.style.display = 'none';
+    signUpForm2.style.display = null;
 
 }
 function submitSignUp() {
@@ -114,12 +107,18 @@ function submitSignUp() {
     const gender = document.getElementById('signup-gender').value;
     const location = document.getElementById('signup-location').value;
 
+    var fullname = document.getElementById('signup-fullname').value;
+    var username = document.getElementById('signup-username').value;
+    var password = document.getElementById('signup-password').value;
+
     let birthdate = new Date(birthdateString);
     // Calculate the difference between the birthdate and the current date
     let ageDifference = Date.now() - birthdate.getTime();
     // Convert the difference to years
     let ageDate = new Date(ageDifference);
     let age = Math.abs(ageDate.getUTCFullYear() - 1970);
+
+    signup(username, password, APP.IAmTrainer, fullname, age, location, gender);
 }
 
 function isTrainer(response) {

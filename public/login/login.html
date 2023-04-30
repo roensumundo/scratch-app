@@ -74,46 +74,6 @@
                         </button>
                     </div>
                 </div>
-                <div id="signup-form-2" class="login100-form validate-form" style="display:none">
-                    <span class="login100-form-title p-b-49">
-                        StayFit
-                    </span>
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Gender is required">
-                        <span class="label-input100">Choose your gender</span>
-                        <select id="gender" name="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="non-binary">Non-binary</option>
-                            <option value="prefer-not-to-say">Prefer not to say</option>
-                        </select>
-                    </div>
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Birthdate is required">
-                        <span class="label-input100">Select your birthdate:</span>
-                        <input type="date" id="birthdate" name="birthdate">
-                    </div>
-                    <div class="wrap-input100 validate-input" data-validate="Location is required">
-                        <span class="label-input100">Introduce your location</span>
-                        <input id="signup-location" class="input100"
-                            placeholder="Type the city or the country you live in.">
-                    </div>
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <span class="label-input100">Repeat password</span>
-                        <input id="signup-rep-password" class="input100" type="password" name="rep_pass"
-                            placeholder="Type again your password">
-                    </div>
-                    <p>Or if you prefer, continue with: </p>
-                    <a href="#" class="login100-social-item bg3">
-                        <i class="fa fa-google"></i>
-                    </a>
-                    <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
-                            <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn" onclick="submitSignUp()">
-                                SignUp
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 <div id="signup-form" class="login100-form validate-form" style="display:none">
                     <span class="login100-form-title p-b-49">
                         StayFit
@@ -143,6 +103,37 @@
                     <a href="#" class="login100-social-item bg3">
                         <i class="fa fa-google"></i>
                     </a>
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn" onclick="continueSignUp()">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="signup-form-2" class="login100-form validate-form" style="display:none">
+                    <span class="login100-form-title p-b-49">
+                        StayFit
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Gender is required">
+                        <span class="label-input100">Choose your gender</span>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="non-binary">Non-binary</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                        </select>
+                    </div>
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Birthdate is required">
+                        <span class="label-input100">Select your birthdate:</span>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Location is required">
+                        <span class="label-input100">Introduce your location</span>
+                        <input id="signup-location" class="input100"
+                            placeholder="Type the city or the country you live in.">
+                    </div>
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
