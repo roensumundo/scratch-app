@@ -113,10 +113,11 @@
                     </div>
                 </div>
                 <div id="signup-form-2" class="login100-form validate-form" style="display:none">
-                    <span class="login100-form-title p-b-49">
+                    <span id="signup-title" class="login100-form-title p-b-49">
                         StayFit
                     </span>
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Gender is required">
+                    <div class="wrap-input100 validate-input m-b-23 signup-wrap-input"
+                        data-validate="Gender is required">
                         <span class="label-input100">Choose your gender</span>
                         <select id="gender" name="gender">
                             <option value="male">Male</option>
@@ -125,11 +126,12 @@
                             <option value="prefer-not-to-say">Prefer not to say</option>
                         </select>
                     </div>
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Birthdate is required">
+                    <div class="wrap-input100 validate-input m-b-23 signup-wrap-input"
+                        data-validate="Birthdate is required">
                         <span class="label-input100">Select your birthdate:</span>
                         <input type="date" id="birthdate" name="birthdate">
                     </div>
-                    <div class="wrap-input100 validate-input" data-validate="Location is required">
+                    <div class="wrap-input100 validate-input signup-wrap-input" data-validate="Location is required">
                         <span class="label-input100">Introduce your location</span>
                         <input id="location" class="input100" placeholder="Type the city or the country you live in.">
                     </div>

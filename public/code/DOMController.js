@@ -85,12 +85,14 @@ function continueSignUp() {
     const regex = /(?=.*\d)(?=.*[A-Z])/;
 
     //TODO Make the password to be greater than 12 characters. 
-    if (username == null) {
+    console.log("username= " + username);
+    console.log("fullname= " + fullname);
+    if (!username.trim()) {
         //TODO change it by text in DOM
         alert("Username is required");
         return;
     }
-    else if (fullname == null) {
+    else if (!fullname.trim()) {
         //TODO change it by text in DOM
         alert("Full name is required");
         return;

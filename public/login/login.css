@@ -210,13 +210,22 @@ iframe {
     font-size: 39px;
     color: #333;
     line-height: 1.2;
-    text-align: center
+    text-align: center;
+    
 }
 
 .wrap-input100 {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #d9d9d9
+    border-bottom: 2px solid #d9d9d9;
+      
+}
+#signup-title {
+    margin-bottom: 60px;
+}
+
+.signup-wrap-input{
+    margin-bottom: 60px;
 }
 
 .label-input100 {
