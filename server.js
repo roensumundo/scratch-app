@@ -20,12 +20,6 @@ app.get('/', (req, res) => {
   res.sendFile( __dirname+'/public/login/login.html');
 });
 
-app.get('/main', (req, res) => {
-  res.sendFile(__dirname+'/public/main/main.html');
-});
-app.get('/explore', (req, res) => {
-  res.sendFile(__dirname+'/public/explore/explore.html');
-});
   
 var redis_cli = redis.createClient({
   password: 'qjZNOGmQEyYMpatAxDSDFizuQ45q4WH4',

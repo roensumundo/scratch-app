@@ -14,7 +14,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
         // Do something when login is successful, such as redirecting the user
         APP.IAmTrainer = isTrainer;
         APP.setUser(username,fullname, age, location, gender);
-        main_page();
+        goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
         //TODO add text to DOM instead. 
@@ -42,7 +42,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
         const location = data.content.location;
         APP.IAmTrainer = isTrainer;
         APP.setUser(username,fullname, age, location, gender);
-        main_page();
+        goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
         alert(data.message);
@@ -118,6 +118,12 @@ const askForEnrolledClasses = async (username) => {
     }
   }
 }
+
+function goToPage(page) {
+  window.location.href = '/' + page + '/' + page + '.html';
+  APP.current_page = page;
+}
+/*
   // For main page request 
   const main_page = async () => {
     const response = await fetch(SERVER_URL +'/main');
@@ -131,7 +137,7 @@ const askForEnrolledClasses = async (username) => {
       //askForPublishedClasses();
     }
   };
-
+*/
   // TESTS 
 //signup("rosa", "asdf");
 const trainer = new Trainer("Ro", "ro");
