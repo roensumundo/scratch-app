@@ -176,7 +176,7 @@ main{
     width: 250px;
     background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+    z-index: 200;
     width: 250px;
     height: 100%;
     box-sizing: border-box;
@@ -226,6 +226,7 @@ main{
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Montserrat', cursive;
+    color: white;
   }
   
   button:hover {
