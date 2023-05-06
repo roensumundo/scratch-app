@@ -138,7 +138,7 @@ const trainer = new Trainer("Ro", "ro");
 const myDate = new Date(2023, 4, 30, 14, 30);
 const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', min: 'numeric'};
 const formattedDate = myDate.toLocaleDateString('en-US', options);
-const class_offer = trainer.createClass("Squads", "infinit squads ", formattedDate, "2h", "advanced", "10");
+const class_offer = trainer.createClass("Squads", "infinit squads ", formattedDate, "2h", "advanced", "10", 8);
 //console.log(JSON.stringify(class_offer));
 //sendClass(class_offer);
 //signup("new", "Rosaro77", true, "Rosa Alos");

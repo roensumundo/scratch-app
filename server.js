@@ -210,7 +210,7 @@ function saveUserInfo(user_id, fullName, age, location, gender) {
     });
   });
 }
-function saveClassOffer(class_id, title, creator, description, datetime, duration, level, price) {
+function saveClassOffer(class_id, title, creator, description, datetime, duration, level, price, maxUsers) {
   /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
   * creator, description, datetime and duration are the values stored. */
   console.log("Class id = " + class_id);
@@ -222,7 +222,8 @@ function saveClassOffer(class_id, title, creator, description, datetime, duratio
     { key: common_key + ":datetime", value: datetime },
     { key: common_key + ":duration", value: duration },
     { key: common_key + ":level", value: level },
-    { key: common_key + ":price", value: price }
+    { key: common_key + ":price", value: price },
+    { key: common_key + ":maxUsers", value: maxUsers },
   ];
   console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
   return new Promise((resolve, reject) => {
@@ -304,9 +305,10 @@ function retrieveClassInfo(classId) {
     .get(DB + ':class_offers:' + classId + ':creator')
     .get(DB + ':class_offers:' + classId + ':level')
     .get(DB + ':class_offers:' + classId + ':price')
+    .get(DB + ':class_offers:' + classId + ':maxUsers')
     .exec()
-    .then(([title, description, datetime, duration, creator, level, price]) => {
-      return { title, description, datetime, duration, creator, level, price };
+    .then(([title, description, datetime, duration, creator, level, price, maxUsers]) => {
+      return { title, description, datetime, duration, creator, level, price, maxUsers };
     })
     .catch((err) => {
       console.error(`Could not retrieve class with id ${classId}: ${err}`);
@@ -432,7 +434,7 @@ app.post('/publish_class', (req, res) => {
     getIdByUsername(creator)
       .then((creator_id) => {
         trainer_id = creator_id;
-      return saveClassOffer(id, class_object.title, creator_id, class_object.description, class_object.datetime, class_object.duration, class_object.level, class_object.price)
+      return saveClassOffer(id, class_object.title, creator_id, class_object.description, class_object.datetime, class_object.duration, class_object.level, class_object.price, class_object.maxUsers)
      })
     .then(() => {
       // We save the class' id in a record in the database to have a follow up 

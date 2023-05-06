@@ -26,7 +26,7 @@ var APP = {
 
 
 class Class {
-  constructor(title, description, dateTime, duration, creator, level, price) {
+  constructor(title, description, dateTime, duration, creator, level, price, maxUsers) {
     this.id = null;
     this.title = title;
     this.description = description;
@@ -35,11 +35,18 @@ class Class {
     this.creator = creator;
     this.level = level;
     this.price = price;
+    this.maxUsers = maxUsers;
     this.enrolledUsers = [];
   }
 
   enrollUser(user_id) {
-    this.enrolledUsers.push(user_id);
+    if (this.enrolledUsers.length == this.maxUsers) {
+      return false;
+    } else {
+      this.enrolledUsers.push(user_id);
+      return true;
+    }
+    
   }
 
   toJSON() {
@@ -74,8 +81,8 @@ class Trainer extends User {
     this.publishedClasses = {};
   }
 
-  createClass(title, description, dateTime, duration, level, price) {
-    const newClass = new Class(title, description, dateTime, duration, this.username, level, price);
+  createClass(title, description, dateTime, duration, level, price, maxUsers) {
+    const newClass = new Class(title, description, dateTime, duration, this.username, level, price, maxUsers);
     return newClass;
   }
 
