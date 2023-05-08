@@ -7,3 +7,9 @@ function displayMenu() {
         menuContainer.style.display = 'none';
     }
 }
+function addNameToMenu(fullname, username) {
+    const nameMenu = document.querySelector('.name')
+    const usernameMenu = document.querySelector('.username')
+    nameMenu.innerHTML = fullname;
+    usernameMenu.innerHTML = "@" + username;
+}

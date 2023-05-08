@@ -15,12 +15,7 @@ app.use(express.static(__dirname + '/public'));
 // Configure body-parser middleware to parse JSON
 app.use(bodyParser.json());
 
-//When starting the app, send the login page to the client
-app.get('/', (req, res) => {
-  res.sendFile( __dirname+'/public/login/login.html');
-});
 
-  
 var redis_cli = redis.createClient({
   password: 'qjZNOGmQEyYMpatAxDSDFizuQ45q4WH4',
   host: 'redis-13549.c3.eu-west-1-1.ec2.cloud.redislabs.com',
@@ -400,7 +395,8 @@ app.post('/login', (req, res) => {
       checkPassword(username, password).then((result) => {
       if (result == 'logged') {
         // Send a response to the client
-        retrieveUserInfo(username).then(([fullName, _isTrainer,age, gender, location ]) => {
+        retrieveUserInfo(username).then(([fullName, _isTrainer, age, gender, location]) => {
+          console.log("Sending login data to client");
           res.json({ type: 'login', message: 'Successful' , content:{username, name: fullName, _isTrainer, age, gender, location} });
         });
       } else {

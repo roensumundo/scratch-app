@@ -13,7 +13,8 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
       if (data.message === 'Successful') {
         // Do something when login is successful, such as redirecting the user
         APP.IAmTrainer = isTrainer;
-        APP.setUser(username,fullname, age, location, gender);
+        APP.setUser(username, fullname, age, location, gender);
+        localStorage.setItem('APP', JSON.stringify(APP));
         goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
@@ -32,6 +33,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
     });
     const data = await response.json();
     // Handle the response based on its type
+    console.log(data);
     if (data.type === 'login') {
       if (data.message === 'Successful') {
         const username = data.content.username;
@@ -41,7 +43,8 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
         const age = data.content.age;
         const location = data.content.location;
         APP.IAmTrainer = isTrainer;
-        APP.setUser(username,fullname, age, location, gender);
+        APP.setUser(username, fullname, age, location, gender);
+        localStorage.setItem('APP', JSON.stringify(APP));
         goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
@@ -49,6 +52,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
       }
     }
   };
+
 // For publishing a class
 const sendClass = async (class_object) => {
   const response = await fetch(SERVER_URL +'/publish_class', {
@@ -111,7 +115,6 @@ const askForEnrolledClasses = async (username) => {
         APP.my_user.enrolledClasses[class_id] = new Class(title, description, datetime, duration, creator);
         APP.my_user.enrolledClasses[class_id].id = class_id;
       }
-      runMain();
       console.log(APP.my_user.enrolledClasses);
     } else {
       console.log("Couldn't retrieve enrolled classes");
@@ -120,7 +123,9 @@ const askForEnrolledClasses = async (username) => {
 }
 
 function goToPage(page) {
-  window.location.href = '/' + page + '/' + page + '.html';
+  const new_page = '/' + page + '/' + page + '.html';
+  history.pushState({}, null, new_page);
+  window.location.href = new_page;
   APP.current_page = page;
 }
 /*

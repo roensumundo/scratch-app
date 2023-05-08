@@ -96,23 +96,37 @@ class Trainer extends User {
   }
 }
 
-
-var count_id = 0;
-
-function init() {
-    document.addEventListener('keydown', function(event) {
-        if (event.code === 'Space') {
-          displayClassOffer();
-        }
-    });
-  explore_switcher();
-}
-
 function runMain() {
+  APP.current_page = PAGES.MAIN
+  //Loads client information from browser's local storage 
+  loadClientInfo();
+  const my_user = APP.my_user;
+
+  addNameToMenu(my_user.name, my_user.username);
+  // Remove the link to publish-offer from the menu. 
+  if (!APP.IAmTrainer) {
+    const button = document.querySelector('.publish-offer');
+    button.remove();
+  }
+
+  
+  //Displays enrolled classes information
   const enrolledClasses = APP.my_user.enrolledClasses;
   for (const class_id in enrolledClasses) {
     let class_object = enrolledClasses[class_id];
     //TODO include duration in displayClassOffer function
     displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration);
+  }
+}
+
+// Retrieve the APP information from localStorage when the main page loads
+function loadClientInfo() {
+  if (APP.current_page === PAGES.MAIN) {
+    const storedAPP = localStorage.getItem('APP');
+    if (storedAPP) {
+      const APPinfo = JSON.parse(storedAPP);
+      APP.IAmTrainer = APPinfo.IAmTrainer;
+      APP.my_user = APPinfo.my_user
+    }
   }
 }
