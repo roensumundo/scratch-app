@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>StayFit</title>
+    <link rel="stylesheet" href="publish_offer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../code/main.js"></script>
+    <script type="text/javascript" src="../code/DOMController.js"></script>
+    <script type="text/javascript" src="../code/client.js"></script>
+    <script type="text/javascript" src="publish_offer.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="icon menu">
+            <img width="35" height="35" src="../data/menu.png">
+            <button class="menu-button" onclick="displayMenu()"></button>
+        </div>
+    </header>
+
+    <div class="menu-container" style="display:none">
+        <div class="profile">
+            <img src="../data/profile-picture.png" alt="Profile Picture" class="profile-pic">
+            <h2 class="name">John Doe</h2>
+
+            <p class="username">@johndoe</p>
+        </div>
+        <div class="options">
+            <button class="main" onclick="goToPage('main')">Main</button>
+            <button class="personal-space">Personal Space</button>
+            <button class="explore" onclick="goToPage('explore')">Explore</button>
+            <button class="direct-messages">Direct Messages</button>
+            <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
+        </div>
+    </div>
+    <form id="form-container">
+        <h1>Create a new class</h1>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title"><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+
+        <label for="dateTime">Date and Time:</label>
+        <input type="datetime-local" id="dateTime" name="dateTime"><br><br>
+
+        <label for="duration">Duration (in minutes):</label>
+        <input type="number" id="duration" name="duration" min="1" max="9999"><br><br>
+
+        <label for="level">Level:</label>
+        <select id="level" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" min="0" max="999999"><br><br>
+
+        <label for="maxUsers">Maximum Users:</label>
+        <input type="number" id="maxUsers" name="maxUsers" min="1" max="50"><br><br>
+
+        <div class="decision-buttons">
+            <button id='cancel-button' type="button" onclick="cancelForm()">Cancel</button>
+            <button id='submit-button' type="submit">Submit</button>
+        </div>
+    </form>
+
+
+
+</body>
+<script>loadClientInfo()</script>
+
+</html>
