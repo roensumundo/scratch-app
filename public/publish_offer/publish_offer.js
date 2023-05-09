@@ -11,8 +11,9 @@ function submitForm(){
     const my_user = APP.my_user;
     const class_object = my_user.createClass(titleValue, descriptionValue, dateTimeValue, durationValue, levelValue, priceValue, maxUsersValue);
     // Send class to server
-    sendClass(class_object);
-    my_user.saveClass(class_object.id, class_object);
+    const id = sendClass(class_object);
+    class_object.id = id;
+    my_user.saveClass(id, class_object);
     goToPage(PAGES.MAIN);
 }
 

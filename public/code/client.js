@@ -65,11 +65,12 @@ const sendClass = async (class_object) => {
     if (data.message === 'Successful') {
       //APP.my_user.createClass(data.id, class_object);
       //Save the class id assigned by the server.
-      class_object.id = data.id;
       console.log('Class Successfully created');
+      return data.id;
     }
     else {
       console.log("Class not published properly");
+      return null;
     }
   }
 }
