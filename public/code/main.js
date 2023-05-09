@@ -128,9 +128,9 @@ class Trainer extends User {
   });
 }
   static fromJSON(jsonString) {
-    const trainerData = JSON.parse(jsonString);
+    const { publishedClasses, ...trainerData } = JSON.parse(jsonString);
     const trainer = new Trainer(trainerData.name, trainerData.username, trainerData.age, trainerData.location, trainerData.gender);
-    trainer.publishedClasses = trainerData.publishedClasses || {};
+    trainer.publishedClasses = publishedClasses;
     return trainer;
   }
 }
@@ -138,7 +138,7 @@ class Trainer extends User {
 function runMain() {
   APP.current_page = PAGES.MAIN
   //Loads client information from browser's local storage 
-  loadClientInfo();
+  //loadClientInfo();
   const my_user = APP.my_user;
 
   addNameToMenu(my_user.name, my_user.username);
