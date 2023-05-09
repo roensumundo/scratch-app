@@ -122,13 +122,15 @@ class Trainer extends User {
   }
 
   toJSON() {
-    const { publishedClasses, ...trainerData } = this;
-    return trainerData;
-  }
+  return JSON.stringify({
+    ...super.toJSON(),
+    publishedClasses: this.publishedClasses
+  });
+}
   static fromJSON(jsonString) {
-    const { publishedClasses, ...trainerData } = JSON.parse(jsonString);
+    const trainerData = JSON.parse(jsonString);
     const trainer = new Trainer(trainerData.name, trainerData.username, trainerData.age, trainerData.location, trainerData.gender);
-    trainer.publishedClasses = publishedClasses;
+    trainer.publishedClasses = trainerData.publishedClasses || {};
     return trainer;
   }
 }
