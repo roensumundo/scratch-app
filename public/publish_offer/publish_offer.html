@@ -38,7 +38,7 @@
             <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
         </div>
     </div>
-    <form id="form-container">
+    <div id="form-container">
         <h1>Create a new class</h1>
         <label for="title">Title:</label>
         <input type="text" id="title" name="title"><br><br>
@@ -60,16 +60,16 @@
         </select><br><br>
 
         <label for="price">Price:</label>
-        <input type="number" id="price" name="price" min="0" max="999999"><br><br>
+        <input type="number" id="price" name="price" min="0" max="100"><br><br>
 
         <label for="maxUsers">Maximum Users:</label>
         <input type="number" id="maxUsers" name="maxUsers" min="1" max="50"><br><br>
 
         <div class="decision-buttons">
             <button id='cancel-button' type="button" onclick="cancelForm()">Cancel</button>
-            <button id='submit-button' type="submit">Submit</button>
+            <button id='submit-button' type="submit" onclick="submitForm()">Submit</button>
         </div>
-    </form>
+    </div>
 
 
 

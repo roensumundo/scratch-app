@@ -53,6 +53,26 @@ class Class {
     const { enrolledUsers, ...classData } = this;
     return classData;
   }
+
+  static fromJSON(json) {
+    const classData = JSON.parse(json);
+    const {
+      id,
+      title,
+      description,
+      datetime,
+      duration,
+      creator,
+      level,
+      price,
+      maxUsers,
+      enrolledUsers
+    } = classData;
+    const newClass = new Class(title, description, datetime, duration, creator, level, price, maxUsers);
+    newClass.id = id;
+    newClass.enrolledUsers = enrolledUsers;
+    return newClass;
+  }
 }
 
 class User {
@@ -72,6 +92,17 @@ class User {
   toJSON() {
     const { enrolledClasses, ...userData } = this;
     return userData;
+  }
+  static fromJSON(json) {
+    const user = new User();
+    Object.assign(user, json);
+    const enrolledClasses = {};
+    for (const classId in json.enrolledClasses) {
+      const classObj = Class.fromJSON(json.enrolledClasses[classId]);
+      enrolledClasses[classId] = classObj;
+    }
+    user.enrolledClasses = enrolledClasses;
+    return user;
   }
 }
 
@@ -93,6 +124,12 @@ class Trainer extends User {
   toJSON() {
     const { publishedClasses, ...trainerData } = this;
     return trainerData;
+  }
+  static fromJSON(jsonString) {
+    const { publishedClasses, ...trainerData } = JSON.parse(jsonString);
+    const trainer = new Trainer(trainerData.name, trainerData.username, trainerData.age, trainerData.location, trainerData.gender);
+    trainer.publishedClasses = publishedClasses;
+    return trainer;
   }
 }
 
@@ -121,12 +158,16 @@ function runMain() {
 
 // Retrieve the APP information from localStorage when the main page loads
 function loadClientInfo() {
-  if (APP.current_page === PAGES.MAIN) {
-    const storedAPP = localStorage.getItem('APP');
-    if (storedAPP) {
-      const APPinfo = JSON.parse(storedAPP);
-      APP.IAmTrainer = APPinfo.IAmTrainer;
-      APP.my_user = APPinfo.my_user
-    }
+  const storedAPP = localStorage.getItem('APP');
+  if (storedAPP) {
+    const APPinfo = JSON.parse(storedAPP);
+    APP.IAmTrainer = APPinfo.IAmTrainer;
+    const jsonUser = JSON.stringify(APPinfo.my_user)
+
+    if(APP.IAmTrainer)
+      APP.my_user = Trainer.fromJSON(jsonUser)
+    else
+      APP.my_user = User.fromJSON(jsonUser)
   }
+  
 }

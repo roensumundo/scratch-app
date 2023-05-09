@@ -14,7 +14,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
         // Do something when login is successful, such as redirecting the user
         APP.IAmTrainer = isTrainer;
         APP.setUser(username, fullname, age, location, gender);
-        localStorage.setItem('APP', JSON.stringify(APP));
+        //localStorage.setItem('APP', JSON.stringify(APP));
         goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
@@ -44,7 +44,7 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
         const location = data.content.location;
         APP.IAmTrainer = isTrainer;
         APP.setUser(username, fullname, age, location, gender);
-        localStorage.setItem('APP', JSON.stringify(APP));
+        //localStorage.setItem('APP', JSON.stringify(APP));
         goToPage(PAGES.MAIN);
       } else {
         // Display an error message to the user
@@ -123,6 +123,7 @@ const askForEnrolledClasses = async (username) => {
 }
 
 function goToPage(page) {
+  localStorage.setItem('APP', JSON.stringify(APP));
   const new_page = '/' + page + '/' + page + '.html';
   history.pushState({}, null, new_page);
   window.location.href = new_page;

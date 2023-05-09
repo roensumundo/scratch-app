@@ -1,6 +1,9 @@
 /* GENERAL STYLING*/
 
 /* General Styles */
+html {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +17,12 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
 }
 p {
     font-family: 'Montserrat', cursive;
@@ -179,7 +188,7 @@ p {
     display: flex;
     flex-direction: column;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 15%;
   }
   
@@ -193,8 +202,9 @@ p {
     font-family: 'Montserrat', cursive;
   }
   textarea {
-    max-width: 95%;
+    max-width: 93%;
     max-height: 200px;
+    margin-left: 2%;
   }
   
   label {
@@ -230,6 +240,15 @@ p {
   #cancel-button{
     border:rgba(0, 0, 0, 0.2);
     background-color: lightgray; 
+  }
+  #level{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 50%;
+    height: 10%;
+  }
+  #dateTime{
+    width: 50%;
   }
 
 
