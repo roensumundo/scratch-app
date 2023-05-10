@@ -136,7 +136,6 @@ class Trainer extends User {
 }
 
 function runMain() {
-  APP.current_page = PAGES.MAIN
   //Loads client information from browser's local storage 
   //loadClientInfo();
   const my_user = APP.my_user;

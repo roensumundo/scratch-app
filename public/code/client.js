@@ -1,74 +1,77 @@
 const SERVER_URL = 'http://localhost:9026';
 // For sign-up request
 const signup = async (username, password, isTrainer, fullname, age, location, gender) => {
-    const response = await fetch(SERVER_URL + '/signup', { 
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password, isTrainer, fullname, age, location, gender })
-    });
-    const data = await response.json();
-    console.log(data); // Handle server response
-    // Handle the response based on its type
-    if (data.type === 'signup') {
-      if (data.message === 'Successful') {
-        // Do something when login is successful, such as redirecting the user
-        APP.IAmTrainer = isTrainer;
-        APP.setUser(username, fullname, age, location, gender);
-        //localStorage.setItem('APP', JSON.stringify(APP));
-        goToPage(PAGES.MAIN);
-      } else {
-        // Display an error message to the user
-        //TODO add text to DOM instead. 
-        alert(data.message);
-      }
+  // Send a POST request with user information to the server
+  const response = await fetch(SERVER_URL + '/signup', { 
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, password, isTrainer, fullname, age, location, gender })
+  });
+  // Parse the response JSON data
+  const data = await response.json();
+  // Handle the response based on its type
+  if (data.type === 'signup') {
+    if (data.message === 'Successful') {
+      // If signup was successful, set user information and redirect to main page
+      APP.IAmTrainer = isTrainer;
+      APP.setUser(username, fullname, age, location, gender);
+      goToPage(PAGES.MAIN);
+    } else {
+      // Display an error message to the user
+      //TODO add text to DOM instead. 
+      alert(data.message);
     }
-  };
+  }
+};
   
   // For login request
-  const login = async (username, password) => {
-    const response = await fetch(SERVER_URL +'/login', { 
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
-    });
-    const data = await response.json();
-    // Handle the response based on its type
-    console.log(data);
-    if (data.type === 'login') {
-      if (data.message === 'Successful') {
-        const username = data.content.username;
-        const fullname = data.content.name;
-        const isTrainer = data.content._isTrainer;
-        const gender = data.content.gender;
-        const age = data.content.age;
-        const location = data.content.location;
-        APP.IAmTrainer = isTrainer;
-        APP.setUser(username, fullname, age, location, gender);
-        //localStorage.setItem('APP', JSON.stringify(APP));
-        goToPage(PAGES.MAIN);
-      } else {
-        // Display an error message to the user
-        alert(data.message);
-      }
+const login = async (username, password) => {
+  // Send a POST request with login information to the server
+  const response = await fetch(SERVER_URL +'/login', { 
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username, password })
+  });
+  // Parse the response JSON data
+  const data = await response.json();
+  // Handle the response based on its type
+  if (data.type === 'login') {
+    if (data.message === 'Successful') {
+      // If login was successful, set user information and redirect to main page
+      const username = data.content.username;
+      const fullname = data.content.name;
+      const isTrainer = data.content._isTrainer;
+      const gender = data.content.gender;
+      const age = data.content.age;
+      const location = data.content.location;
+      APP.IAmTrainer = isTrainer;
+      APP.setUser(username, fullname, age, location, gender);
+      goToPage(PAGES.MAIN);
+    } else {
+      // Display an error message to the user
+      alert(data.message);
     }
-  };
+  }
+};
 
 // For publishing a class
 const sendClass = async (class_object) => {
+  // Send a POST request with class information to the server
   const response = await fetch(SERVER_URL +'/publish_class', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(class_object)
   });
+  // Parse the response JSON data
   const data = await response.json();
   if (data.type === 'saved_class') {
     if (data.message === 'Successful') {
-      //APP.my_user.createClass(data.id, class_object);
-      //Save the class id assigned by the server.
+      // If class publishing was successful, return the class id assigned by the server
       console.log('Class Successfully created');
       return data.id;
     }
     else {
+      // If class publishing failed, return null
       console.log("Class not published properly");
       return null;
     }
@@ -76,11 +79,13 @@ const sendClass = async (class_object) => {
 }
 // For class enrollment. 
 const sendEnrollment = async (username, class_id) => {
+  // Send a POST request with enrollment information to the server
   const response = await fetch(SERVER_URL +'/enrollment', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({username, class_id})
   });
+  // Parse the response JSON data
   const data = await response.json();
   if (data.type === 'enrollment') {
     if (data.message === 'Successful') {
@@ -94,17 +99,21 @@ const sendEnrollment = async (username, class_id) => {
 }
 // Ask for enrolled classes.
 const askForEnrolledClasses = async (username) => {
+  // Send a POST request with username information to the server
   const response = await fetch(SERVER_URL +'/my_enrollments', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username})
   });
+  // Parse the response JSON data
   const data = await response.json();
   if (data.type == "enrollments_list") {
     if (data.message == "Successful") {
-      console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
+      //console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
       let classes_dict = data.content;
       console.log("data received by server" + JSON.stringify(classes_dict));
+
+      // Loop through the received classes and add them to the user's enrolled classes
       for (const class_id in classes_dict) {
         let class_object = classes_dict[class_id]
         console.log(JSON.stringify(class_object));
@@ -113,6 +122,7 @@ const askForEnrolledClasses = async (username) => {
         let datetime = class_object.datetime;
         let duration = class_object.duration;
         let creator = class_object.creator;
+        // Save class in enrolled classes user's list. 
         APP.my_user.enrolledClasses[class_id] = new Class(title, description, datetime, duration, creator);
         APP.my_user.enrolledClasses[class_id].id = class_id;
       }
@@ -122,13 +132,14 @@ const askForEnrolledClasses = async (username) => {
     }
   }
 }
-
+// Function to navigate to a new page and update the app state
 function goToPage(page) {
+  APP.current_page = page;
   localStorage.setItem('APP', JSON.stringify(APP));
   const new_page = '/' + page + '/' + page + '.html';
   history.pushState({}, null, new_page);
   window.location.href = new_page;
-  APP.current_page = page;
+  
 }
 /*
   // For main page request 
