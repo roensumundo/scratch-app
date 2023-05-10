@@ -14,7 +14,7 @@ function submitForm(){
     sendClass(class_object).then((id) => {
         class_object.id = id;
         my_user.saveClass(id, class_object);
-        //goToPage(PAGES.MAIN);
+        goToPage(PAGES.MAIN);
     });
     
 }

@@ -164,12 +164,12 @@ function loadClientInfo() {
   if (storedAPP) {
     const APPinfo = JSON.parse(storedAPP);
     APP.IAmTrainer = APPinfo.IAmTrainer;
-    const jsonUser = JSON.stringify(APPinfo.my_user)
+    //const jsonUser = JSON.stringify(APPinfo.my_user)
 
     if(APP.IAmTrainer)
-      APP.my_user = Trainer.fromJSON(jsonUser)
+      APP.my_user = Trainer.fromJSON(APPinfo.my_user)
     else
-      APP.my_user = User.fromJSON(jsonUser)
+      APP.my_user = User.fromJSON(APPinfo.my_user)
   }
   
 }
