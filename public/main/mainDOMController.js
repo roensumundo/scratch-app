@@ -36,7 +36,9 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const descriptionDiv = document.createElement('div');
     descriptionDiv.className = 'offer-description';
     const descriptionP = document.createElement('p');
-    descriptionP.innerText = description;
+    // Cut description in limited characters 
+    description.substring(0, 255);
+    descriptionP.innerText = description + "...";
     descriptionDiv.appendChild(descriptionP);
   
     // append all child elements to the "offer-content" div
@@ -52,5 +54,45 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     // select element with class "upcoming-classes" and append class offer div
     const upcomingClasses = document.querySelector(".upcomming-classes");
     upcomingClasses.appendChild(classOfferDiv);
+}
+
+function runMain() {
+    //Loads client information from browser's local storage 
+    const my_user = APP.my_user;
+    
+    addNameToMenu(my_user.name, my_user.username);
+    // Remove the link to publish-offer from the menu. 
+    if (!APP.IAmTrainer) {
+        const button = document.querySelector('.publish-offer');
+        button.remove();
+    }
+    askForEnrolledClasses(APP.my_user.username).then(() => {
+        //Displays enrolled classes information
+        const enrolledClasses = APP.my_user.enrolledClasses;
+        for (const class_id in enrolledClasses) {
+            let class_object = enrolledClasses[class_id];
+            //TODO include duration in displayClassOffer function
+            displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration);
+        }
+    })
+     
+}
+function returnToMain() {
+    const class_detail_div = document.querySelector('.class-detail');
+    const mainElement = document.querySelector('main');
+
+    class_detail_div.style.display = 'none';
+    mainElement.style.display = null;
+}
+  
+function showDetail() {
+    const class_detail_div = document.querySelector('.class-detail');
+    const mainElement = document.querySelector('main');
+
+    class_detail_div.style.display = null;
+    mainElement.style.display = 'none';
+
+    //TODO show class
+
 }
   

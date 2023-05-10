@@ -236,3 +236,16 @@ main{
   button:focus {
     outline: none;
   }
+
+  /* Detailed class */
+
+  .arrow-button {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    padding: 10px;
+    border: none;
+    width: 5%;
+    background-color: #cd2121;
+  }
+  

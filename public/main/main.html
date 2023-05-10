@@ -72,13 +72,18 @@
             </div>
             <p class="date-time">Subtitle</p>
           </div>
-          <button class="go-button">View details</button>
-          < <div class="offer-description">
+          <button class="go-button" onclick="showDetail()">View details</button>
+          <div class="offer-description">
             <p>Large text description here</p>
+          </div>
         </div>
       </div>
-    </div>
   </main>
+  <div class="class-detail" style="display:none">
+    <button class="arrow-button" onclick="returnToMain()">
+      <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
+    </button>
+  </div>
 
 </body>
 <script>loadClientInfo()</script>
