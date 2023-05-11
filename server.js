@@ -456,6 +456,18 @@ app.post('/enrollment', (req, res) => {
   });
 });
 
+app.post('/class_info', (req, res) => { 
+  var class_id = req.body.class_id;
+  retrieveClassInfo(class_id)
+    .then((class_obj) => {
+      res.json({ type: "class_info", message: "Successful", content: class_obj });
+    })
+    .catch((err) => {
+      res.json({ type: "class_info", message: "Unuccessful" });
+      console.error(err);
+  } )
+});
+
 app.post('/my_enrollments', (req, res) => {
   
   var username = req.body.username;

@@ -1,4 +1,4 @@
-function displayClassOffer(id, classname, creator, datetime, description, duration) {
+function displayClassOffer(id, classname, creator, datetime, description, duration, price, detail, type) {
     // create the outer div with class "class_offer" and id "class_offer_1"
     const classOfferDiv = document.createElement('div');
     classOfferDiv.className = 'class_offer';
@@ -8,8 +8,14 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const smallTextDiv = document.createElement('div');
     smallTextDiv.className = 'offer-small-text';
     const smallTextP = document.createElement('p');
-    smallTextP.innerText = 'Starts in 5 min';
-    smallTextDiv.appendChild(smallTextP);
+    if (type == 'recommendation'){
+        smallTextP.innerText = price + '€';
+    } else {
+        // TODO: Calculate time left and only show when a threshold is reached
+        smallTextP.innerText = 'Starts in 5 min';
+        smallTextDiv.appendChild(smallTextP);
+    }
+    
   
     // create the div with class "offer-content" and its child elements
     const contentDiv = document.createElement('div');
@@ -36,10 +42,12 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const descriptionDiv = document.createElement('div');
     descriptionDiv.className = 'offer-description';
     const descriptionP = document.createElement('p');
-    // Cut description in limited characters 
-    description.substring(0, 255);
+    // Cut description in limited characters in the non-detailed version of the class offer
+    if (!detail) description.substring(0, 255);
     descriptionP.innerText = description + "...";
     descriptionDiv.appendChild(descriptionP);
+
+    //Add price information
   
     // append all child elements to the "offer-content" div
     contentDiv.appendChild(titleDiv);
@@ -50,10 +58,16 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     // append the "offer-small-text" and "offer-content" divs to the "class_offer" div
     classOfferDiv.appendChild(smallTextDiv);
     classOfferDiv.appendChild(contentDiv);
-  
-    // select element with class "upcoming-classes" and append class offer div
-    const upcomingClasses = document.querySelector(".upcomming-classes");
-    upcomingClasses.appendChild(classOfferDiv);
+    
+    if (detail) {
+        const class_detail = document.querySelector(".class-detail");
+        class_detail.appendChild(classOfferDiv);
+    } else {
+        // select element with class "upcoming-classes" and append class offer div
+        const upcomingClasses = document.querySelector(".upcomming-classes");
+        upcomingClasses.appendChild(classOfferDiv);
+    }
+    
 }
 
 function runMain() {
@@ -72,7 +86,7 @@ function runMain() {
         for (const class_id in enrolledClasses) {
             let class_object = enrolledClasses[class_id];
             //TODO include duration in displayClassOffer function
-            displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration);
+            displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, false, 'enrolled');
         }
     })
      
@@ -85,7 +99,7 @@ function returnToMain() {
     mainElement.style.display = null;
 }
   
-function showDetail() {
+function showDetail(id) {
     const class_detail_div = document.querySelector('.class-detail');
     const mainElement = document.querySelector('main');
 
@@ -93,6 +107,13 @@ function showDetail() {
     mainElement.style.display = 'none';
 
     //TODO show class
+
+    askForClassInfo(id)
+        .then((class_obj) => {
+            
+        })
+
+
 
 }
   

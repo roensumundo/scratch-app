@@ -97,6 +97,29 @@ const sendEnrollment = async (username, class_id) => {
     }
   }
 }
+
+// Ask for a certain class offer by id
+
+const askForClassInfo = async (class_id) => {
+  // Send a POST request with enrollment information to the server
+  const response = await fetch(SERVER_URL +'/class_info', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({class_id})
+  });
+  // Parse the response JSON data
+  const data = await response.json();
+  if (data.type === 'class_info') {
+    if (data.message === 'Successful') {
+      
+      console.log('Class info retrieved successfully');
+      return data.content;
+    }
+    else {
+      console.log("Enrollment could not be completed.");
+    }
+  }
+}
 // Ask for enrolled classes.
 const askForEnrolledClasses = async (username) => {
   // Send a POST request with username information to the server
