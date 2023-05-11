@@ -108,10 +108,8 @@ function showDetail(id) {
 
     //TODO show class
 
-    askForClassInfo(id)
-        .then((class_obj) => {
-            
-        })
+    const class_object = APP.recommendations[id];
+    displayClassOffer(id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
 
 
 
