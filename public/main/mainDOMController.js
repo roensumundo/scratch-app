@@ -1,8 +1,12 @@
 function displayClassOffer(id, classname, creator, datetime, description, duration, price, detail, type) {
     // create the outer div with class "class_offer" and id "class_offer_1"
     const classOfferDiv = document.createElement('div');
-    classOfferDiv.className = 'class_offer';
-    classOfferDiv.id = 'class_offer_' +id ;
+    let div_class_name = 'class_offer';
+    classOfferDiv.className = div_class_name;
+    if (detail) {
+        div_class_name += '_detail'
+    }
+    classOfferDiv.id = div_class_name + '_' +id ;
   
     // create the div with class "offer-small-text" and inner p element
     const smallTextDiv = document.createElement('div');
@@ -10,12 +14,15 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const smallTextP = document.createElement('p');
     if (type == 'recommendation'){
         smallTextP.innerText = price + '€';
+        smallTextDiv.className += ' price';
+        classOfferDiv.className += ' recommended';
+        
     } else {
         // TODO: Calculate time left and only show when a threshold is reached
+        
         smallTextP.innerText = 'Starts in 5 min';
-        smallTextDiv.appendChild(smallTextP);
     }
-    
+    smallTextDiv.appendChild(smallTextP);
   
     // create the div with class "offer-content" and its child elements
     const contentDiv = document.createElement('div');
@@ -37,7 +44,17 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
   
     const button = document.createElement('button');
     button.className = 'go-button';
-    button.innerText = 'Go';
+    if (type == 'recommendation') {
+        if (detail) {
+            button.innerText = 'Book';
+        } else {
+            button.innerText = 'View details';
+        }
+        
+    } else {
+        button.innerText = 'Go';
+    }
+    
   
     const descriptionDiv = document.createElement('div');
     descriptionDiv.className = 'offer-description';
@@ -108,7 +125,9 @@ function showDetail(id) {
 
     //TODO show class
 
-    const class_object = APP.recommendations[id];
+    //const class_object = APP.recommendations[id];
+    const description = "As a language model, I've been trained on vast amounts of text data, allowing me to generate natural - sounding responses to a wide range of prompts.Whether you're looking for information, advice, or just a friendly chat, I'm here to help.From philosophy to technology, history to pop culture, I can engage in conversations on almost any topic.So don't hesitate to ask me a question or strike up a conversation.I'm always ready to learn and grow, just like the humans who created me.";
+    const class_object = new Class('title', description, 'datetime', '20 min', 'user', 'advanced', 10, 20);
     displayClassOffer(id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
 
 

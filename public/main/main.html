@@ -35,7 +35,6 @@
         <button class="main" onclick="goToPage('main')">Main</button>
         <button class="personal-space">Personal Space</button>
         <button class="explore" onclick="goToPage('explore')">Explore</button>
-        <button class="direct-messages">Direct Messages</button>
         <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
       </div>
     </div>
@@ -54,16 +53,22 @@
                 </div>
                 <p class="date-time">Subtitle</p>
               </div>
-              <button class="go-button">Go</button>
-              < <div class="offer-description">
+              <div class="offer-description">
                 <p>Large text description here</p>
+              </div>
+              <button class="go-button">Go</button>
             </div>
           </div>
         </div>
     </div>
-    <h2 class="separator">You may also like</h2>
+    <div class="recommendations-heading">
+      <h2 class="separator">You may also like</h2>
+      <button class="explore-button" onclick="goPage('explore')">Explore more
+        options</button>
+    </div>
+
     <div class="recommendations">
-      <div class="class_offer detail" id="class_offer_2">
+      <div class="class_offer recommended" id="class_offer_2">
         <div class="offer-small-text price">
           <p>5€</p>
         </div>

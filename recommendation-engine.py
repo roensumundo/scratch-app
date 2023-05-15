@@ -29,7 +29,7 @@ for user in users:
 for course in courses:
     fake_redis.hmset(f"course:{course['id']}", course)
 
-
+print(fake_redis)
 """-------------------"""
 import numpy as np
 
