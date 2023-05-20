@@ -123,7 +123,7 @@ function showDetail(id) {
 
     class_detail_div.style.display = null;
     mainElement.style.display = 'none';
-
+    APP.class_in_detail = id;
     //TODO show class
 
     //const class_object = APP.recommendations[id];

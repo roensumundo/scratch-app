@@ -12,6 +12,7 @@ var APP = {
   current_page: PAGES.LOGIN,
   my_user: null,
   IAmTrainer: false,
+  class_in_detail: null,
   recommendations: {},
   offers: {},
   setUser: (username,fullname, age, location, gender) => {
