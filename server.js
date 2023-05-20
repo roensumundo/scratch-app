@@ -202,7 +202,6 @@ function saveUserInfo(user_id, fullName, age, location, gender) {
 function saveClassOffer(class_id, title, category, creator, description, datetime, duration, level, price, maxUsers) {
   /* Save a class offer in the database. lass id is used as a key whereas the parameters title, 
   * creator, description, datetime and duration are the values stored. */
-  console.log("Class id = " + class_id);
   const common_key = DB + ":class_offers:" +class_id;
   const keyValuePairs = [
     { key: common_key + ":title", value: title },
@@ -215,7 +214,6 @@ function saveClassOffer(class_id, title, category, creator, description, datetim
     { key: common_key + ":price", value: price },
     { key: common_key + ":maxUsers", value: maxUsers },
   ];
-  console.log("keyValuePairs = " + JSON.stringify(keyValuePairs));
   return new Promise((resolve, reject) => {
     const multi = redis_cli.multi();
 

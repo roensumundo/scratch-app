@@ -13,6 +13,7 @@
   <script type="text/javascript" src="../code/DOMController.js"></script>
   <script type="text/javascript" src="mainDOMController.js"></script>
   <script type="text/javascript" src="../code/client.js"></script>
+  <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
 </head>
 
 <body>
@@ -92,6 +93,49 @@
       <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
     </button>
   </div>
+
+  <div id="payment-form" style="display:none">
+    <h4 class="title-payment-form">Add payment method </h4>
+    <label for="cardholder-name">Cardholder Name:</label>
+    <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+
+    <div id="wrapper">
+      <div id="card"></div>
+      <div class="decision-buttons">
+        <button id='cancel-button' type="button" onclick="goToPage('main')">Cancel</button>
+        <button id='pay' type="submit" onclick="enrollToClass()">Pay</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    (async () => {
+      const payments = Square.payments(
+        'sandbox-sq0idb-YUaNbH9vsWUkOL-RWc06Kw',
+        'EAAAEGdpSrpv_2BiHgaj9fUQlj_X2gnZVOvcW-6fkDtarZic2XVE3hZJ3MvtoK33',
+      );
+      const cardOptions = {
+        style: {
+          input: {
+            backgroundColor: 'white'
+          },
+        }
+      };
+      try {
+        const card = await payments.card(cardOptions);
+        await card.attach('#card');
+        const payButton = document.getElementById('pay')
+        payButton.addEventListener('click', async () => {
+          const result = await card.tokenize();
+          alert(JSON.stringify(result, null, 2));
+        });
+      }
+      catch (e) {
+        console.error(e);
+      }
+    })()
+  </script>
 
 </body>
 <script>loadClientInfo()</script>

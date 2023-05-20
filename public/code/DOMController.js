@@ -13,3 +13,10 @@ function addNameToMenu(fullname, username) {
     nameMenu.innerHTML = fullname;
     usernameMenu.innerHTML = "@" + username;
 }
+
+function enrollToClass() {
+    const username = APP.my_user.username;
+    //TODO: take class id ???
+    //const class_id = ;
+    sendEnrollment(username, class_id);
+}

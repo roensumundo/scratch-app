@@ -47,6 +47,7 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     if (type == 'recommendation') {
         if (detail) {
             button.innerText = 'Book';
+            button.onclick = showPaymentForm;
         } else {
             button.innerText = 'View details';
         }
@@ -131,6 +132,14 @@ function showDetail(id) {
     displayClassOffer(id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
 
 
-
 }
+
+function showPaymentForm() {
+    const class_detail_div = document.querySelector('.class-detail');
+    const paymentForm = document.getElementById('payment-form');
+
+    class_detail_div.style.display = 'none';
+    paymentForm.style.display = null;
+}
+
   
