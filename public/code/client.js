@@ -141,12 +141,13 @@ const askForEnrolledClasses = async (username) => {
         let class_object = classes_dict[class_id]
         console.log(JSON.stringify(class_object));
         let title = class_object.title;
+        let category = class_object.category;
         let description = class_object.description;
         let datetime = class_object.datetime;
         let duration = class_object.duration;
         let creator = class_object.creator;
         // Save class in enrolled classes user's list. 
-        APP.my_user.enrolledClasses[class_id] = new Class(title, description, datetime, duration, creator);
+        APP.my_user.enrolledClasses[class_id] = new Class(title, category, description, datetime, duration, creator);
         APP.my_user.enrolledClasses[class_id].id = class_id;
       }
       console.log(APP.my_user.enrolledClasses);

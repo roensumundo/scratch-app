@@ -26,9 +26,10 @@ var APP = {
 
 
 class Class {
-  constructor(title, description, dateTime, duration, creator, level, price, maxUsers) {
+  constructor(title, category, description, dateTime, duration, creator, level, price, maxUsers) {
     this.id = null;
     this.title = title;
+    this.category = category;
     this.description = description;
     this.datetime = dateTime;
     this.duration = duration;
@@ -112,8 +113,8 @@ class Trainer extends User {
     this.publishedClasses = {};
   }
 
-  createClass(title, description, dateTime, duration, level, price, maxUsers) {
-    const newClass = new Class(title, description, dateTime, duration, this.username, level, price, maxUsers);
+  createClass(title, category, description, dateTime, duration, level, price, maxUsers) {
+    const newClass = new Class(title, category, description, dateTime, duration, this.username, level, price, maxUsers);
     return newClass;
   }
 
