@@ -96,10 +96,13 @@
 
   <div id="payment-form" style="display:none">
     <h4 class="title-payment-form">Add payment method </h4>
-    <label for="cardholder-name">Cardholder Name:</label>
-    <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+    <div class="cardholder">
+      <label for="cardholder-name">Cardholder Name:</label>
+      <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+    </div>
 
     <div id="wrapper">
+      <label for="card">Card Credentials:</label>
       <div id="card"></div>
       <div class="decision-buttons">
         <button id='cancel-button' type="button" onclick="goToPage('main')">Cancel</button>
@@ -125,11 +128,13 @@
       try {
         const card = await payments.card(cardOptions);
         await card.attach('#card');
+        /*
         const payButton = document.getElementById('pay')
         payButton.addEventListener('click', async () => {
           const result = await card.tokenize();
           alert(JSON.stringify(result, null, 2));
         });
+        */
       }
       catch (e) {
         console.error(e);

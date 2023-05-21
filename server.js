@@ -451,7 +451,10 @@ app.post('/enrollment', (req, res) => {
   getIdByUsername(username).then((user_id) => {
     enroll_to_class(user_id, class_id).then(() => {
       console.log(username + " Enrolled successfully to a class.");
-      res.json({type:"enrollment", message: "Successful"})
+      retrieveClassInfo(class_id).then((class_obj) => {
+        res.json({ type: "enrollment", message: "Successful", content: class_obj});
+      })
+      
      });
   });
 });

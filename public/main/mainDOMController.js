@@ -98,6 +98,7 @@ function runMain() {
         const button = document.querySelector('.publish-offer');
         button.remove();
     }
+    /*
     askForEnrolledClasses(APP.my_user.username).then(() => {
         //Displays enrolled classes information
         const enrolledClasses = APP.my_user.enrolledClasses;
@@ -107,6 +108,7 @@ function runMain() {
             displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, false, 'enrolled');
         }
     })
+    */
      
 }
 function returnToMain() {

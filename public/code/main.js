@@ -24,8 +24,6 @@ var APP = {
   }
 }
 
-
-
 class Class {
   constructor(title, category, description, dateTime, duration, creator, level, price, maxUsers) {
     this.id = null;
@@ -41,11 +39,11 @@ class Class {
     this.enrolledUsers = [];
   }
 
-  enrollUser(user_id) {
+  enrollUser(username) {
     if (this.enrolledUsers.length == this.maxUsers) {
       return false;
     } else {
-      this.enrolledUsers.push(user_id);
+      this.enrolledUsers.push(username);
       return true;
     }
     

@@ -266,11 +266,13 @@ main{
 
   /* PAYMENT FORM */
   #wrapper{
-
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
   
   #payment-form{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -281,7 +283,6 @@ main{
   
   input[type="text"]{
     margin-bottom: 10px;
-    margin-left: 2%;
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px;
@@ -294,20 +295,42 @@ main{
     /*font-weight: bold;*/
     margin-bottom: 5px;
     font-family: 'Montserrat', cursive;
-    margin-left: 2%;
+  }
+
+  .cardholder{
+    margin-left:2%;
+    margin-right:2%;
+    display: flex;
+    flex-direction: column;
   }
 
   .title-payment-form{
     font-family: 'Montserrat', cursive;
     margin-bottom: 37px;
     text-align: center;
+    font-size: 22px;
   }
-  .wrapper{
-    margin-left: 2%;
-    margin-right: 2%;
 
-  }
   #pay{
-    color:black;
+    color: black;
+    background-color: #74b3e1;
+    text-align: center;
+    margin-left: 2%;
+  }
+  button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+
+  .decision-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 69%;
+    margin-left: 16%;
+  }
+  #cancel-button{
+    border: rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
+    color: black;
+    text-align: center;
   }
   

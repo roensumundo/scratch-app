@@ -91,6 +91,15 @@ const sendEnrollment = async (username, class_id) => {
     if (data.message === 'Successful') {
       
       console.log('Enrollment completed successfully');
+      const class_data = data.content;
+      //TODO Add user to class
+      const class_object = new Class(class_data.title, class_data.category, class_data.description, class_data.datetime, class_data.duration, class_data.creator, class_data.level, class_data.price, class_data.maxUsers);
+      class_object.id = class_data.id;
+      class_object.enrollUser(username);
+      //TODO Add class to user
+      APP.my_user.enrollClass(class_object.id, class_object);
+
+
     }
     else {
       console.log("Enrollment could not be completed.");

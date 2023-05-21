@@ -15,8 +15,10 @@ function addNameToMenu(fullname, username) {
 }
 
 function enrollToClass() {
-    const username = APP.my_user.username;
-    //TODO: take class id ???
-    //const class_id = ;
+    const user = APP.my_user;
+    const username = user.username;
+    const class_id = APP.class_in_detail;
     sendEnrollment(username, class_id);
+    goToPage(PAGES.MAIN);
+
 }
