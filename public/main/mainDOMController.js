@@ -13,8 +13,8 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     smallTextDiv.className = 'offer-small-text';
     const smallTextP = document.createElement('p');
     if (type == 'recommendation'){
-        smallTextP.innerText = price + '€';
-        smallTextDiv.className += ' price';
+        smallTextP.innerText = price + ' €';
+        smallTextP.className = 'price';
         classOfferDiv.className += ' recommended';
         
     } else {
@@ -80,7 +80,11 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     if (detail) {
         const class_detail = document.querySelector(".class-detail");
         class_detail.appendChild(classOfferDiv);
-    } else {
+    } else if (type == 'recommendation') {
+        const recommendations = document.querySelector(".recommendations");
+        recommendations.appendChild(classOfferDiv);
+    }
+    else{
         // select element with class "upcoming-classes" and append class offer div
         const upcomingClasses = document.querySelector(".upcomming-classes");
         upcomingClasses.appendChild(classOfferDiv);

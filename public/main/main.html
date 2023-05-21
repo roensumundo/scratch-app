@@ -24,56 +24,55 @@
     </div>
     <button class="personal-space-button">My Personal Space</button>
   </header>
-  <main>
-    <div class="menu-container" style="display:none">
-      <div class="profile">
-        <img src="../data/profile-picture.png" alt="Profile Picture" class="profile-pic">
-        <h2 class="name">John Doe</h2>
+  <div class="menu-container" style="display:none">
+    <div class="profile">
+      <img src="../data/profile-picture.png" alt="Profile Picture" class="profile-pic">
+      <h2 class="name">John Doe</h2>
 
-        <p class="username">@johndoe</p>
-      </div>
-      <div class="options">
-        <button class="main" onclick="goToPage('main')">Main</button>
-        <button class="personal-space">Personal Space</button>
-        <button class="explore" onclick="goToPage('explore')">Explore</button>
-        <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
-      </div>
+      <p class="username">@johndoe</p>
     </div>
-    <div class="main">
-      <div class="upcomming-heading">
-        <h2 class="separator">Upcomming classes</h1>
-      </div>
-      <div class="upcomming-classes">
-        <div class="class_offer" id="class_offer_1">
-          <div class="offer-small-text">
-            <p>Starts in 5 min</p>
-          </div>
-          <div class="offer-content">
-            <div>
-              <div class="offer-title">
-                <h2>Class Title</h2>
-                <p class="username-offer"> @myusername</p>
-              </div>
-              <p class="date-time">Subtitle</p>
+    <div class="options">
+      <button id="main" onclick="goToPage('main')">Main</button>
+      <button id="personal-space">Personal Space</button>
+      <button id="explore" onclick="goToPage('explore')">Explore</button>
+      <button id="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="upcomming-heading">
+      <h2 class="separator">Upcomming classes</h1>
+    </div>
+    <div class="upcomming-classes">
+      <div class="class_offer" id="class_offer_1">
+        <div class="offer-small-text">
+          <p>Starts in 5 min</p>
+        </div>
+        <div class="offer-content">
+          <div>
+            <div class="offer-title">
+              <h2>Class Title</h2>
+              <p class="username-offer"> @myusername</p>
             </div>
-            <div class="offer-description">
-              <p>Large text description here</p>
-            </div>
-            <button class="go-button">Go</button>
+            <p class="date-time">Subtitle</p>
           </div>
+          <div class="offer-description">
+            <p>Large text description here</p>
+          </div>
+          <button class="go-button">Go</button>
         </div>
       </div>
     </div>
+
     <div class="recommendations-heading">
       <h2 class="separator">You may also like</h2>
-      <button class="explore-button" onclick="goPage('explore')">Explore more
+      <button class="explore-button" onclick="goToPage('explore')">Explore more
         options</button>
     </div>
 
     <div class="recommendations">
       <div class="class_offer recommended" id="class_offer_2">
-        <div class="offer-small-text price">
-          <p>5€</p>
+        <div class="offer-small-text">
+          <p class="price">5 €</p>
         </div>
         <div class="offer-content">
           <div>
@@ -89,13 +88,13 @@
           </div>
         </div>
       </div>
-  </main>
-  <div class="class-detail" style="display:none">
-    <button class="arrow-button" onclick="returnToMain()">
-      <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
-    </button>
+    </div>
+    <div class="class-detail" style="display:none">
+      <button class="arrow-button" onclick="returnToMain()">
+        <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
+      </button>
+    </div>
   </div>
-
   <div id="payment-form" style="display:none">
     <h4 class="title-payment-form">Add payment method </h4>
     <div class="cardholder">
