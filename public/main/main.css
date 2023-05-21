@@ -102,10 +102,17 @@ main{
     flex-direction: row;
     margin: 30px 30px;
     margin-top: 80px;
+    justify-content: space-between;
+  }
+  .upcomming-heading{
+    margin: 30px 30px;
+    margin-top: 80px;
   }
   .explore-button{
     color: blue;
-    background-color: none;
+    width: 28%;
+    margin-right: 2%;
+    font-size: 120%;
   }
 
   .separator{
