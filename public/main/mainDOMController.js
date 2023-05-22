@@ -117,7 +117,7 @@ function runMain() {
 }
 function returnToMain() {
     const class_detail_div = document.querySelector('.class-detail');
-    const mainElement = document.querySelector('main');
+    const mainElement = document.querySelector('.main');
 
     class_detail_div.style.display = 'none';
     mainElement.style.display = null;
@@ -125,7 +125,7 @@ function returnToMain() {
   
 function showDetail(id) {
     const class_detail_div = document.querySelector('.class-detail');
-    const mainElement = document.querySelector('main');
+    const mainElement = document.querySelector('.main');
 
     class_detail_div.style.display = null;
     mainElement.style.display = 'none';

@@ -288,7 +288,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #ffdda975;
     opacity: 0.9;
     margin-top: 15%;
   }
@@ -307,6 +307,7 @@ body {
     /*font-weight: bold;*/
     margin-bottom: 5px;
     font-family: 'Montserrat', cursive;
+    margin-bottom: 1%;
   }
 
   .cardholder{
@@ -328,6 +329,7 @@ body {
     background-color: #74b3e1;
     text-align: center;
     margin-left: 2%;
+    font-weight: 800;
   }
   button[type="submit"]:hover, button[type="button"]:hover {
     background-color: #0056b3;
@@ -338,6 +340,7 @@ body {
     flex-direction: row;
     width: 69%;
     margin-left: 16%;
+    margin-bottom: 2%;
   }
   #cancel-button{
     border: rgba(0, 0, 0, 0.2);
@@ -345,4 +348,6 @@ body {
     color: black;
     text-align: center;
   }
-  
+  #card{
+    height: 5%;
+  }

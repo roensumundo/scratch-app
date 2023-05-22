@@ -58,7 +58,7 @@
           <div class="offer-description">
             <p>Large text description here</p>
           </div>
-          <button class="go-button">Go</button>
+          <button class="go-button" onclick="goToPage('videoroom')">Go</button>
         </div>
       </div>
     </div>
@@ -89,11 +89,11 @@
         </div>
       </div>
     </div>
-    <div class="class-detail" style="display:none">
-      <button class="arrow-button" onclick="returnToMain()">
-        <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
-      </button>
-    </div>
+  </div>
+  <div class="class-detail" style="display:none">
+    <button class="arrow-button" onclick="returnToMain()">
+      <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
+    </button>
   </div>
   <div id="payment-form" style="display:none">
     <h4 class="title-payment-form">Add payment method </h4>
@@ -124,7 +124,7 @@
           input: {
             backgroundColor: 'white'
           },
-        }
+        },
       };
       try {
         const card = await payments.card(cardOptions);

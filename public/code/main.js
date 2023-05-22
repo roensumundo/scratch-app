@@ -5,7 +5,8 @@ const PAGES = {
   EXPLORE: 'explore',
   PERSONAL_SPACE: 'personal_space',
   CLASS_DETAIL: 'class_detail',
-  PROFILE: 'profile'
+  PROFILE: 'profile',
+  VIDEOROOM: 'videoroom'
 };
 
 var APP = {

@@ -1,13 +1,29 @@
+import { ZoomMtg } from '@zoomus/websdk'
 var express = require('express');
-var http = require('http');
 var redis = require('promise-redis')();
 const crypto = require("crypto");
 const DB = 'StayFitApp';
 const app = express();
 const bodyParser = require('body-parser');
+const https = require('https');
+const http = require('http');
+const fs = require('fs');
 
-//initialize a simple http server
-const server = http.createServer( app );
+
+
+// Load SSL certificate and private key
+const options = {
+  cert: fs.readFileSync('server.crt'),
+  key: fs.readFileSync('server.key')
+};
+
+// Create HTTPS server
+//const server = https.createServer(options, app);
+const server = http.createServer(app);
+
+
+
+
 
 //to handle static files, redirect to public folder
 app.use(express.static(__dirname + '/public'));
@@ -498,3 +514,5 @@ app.listen(9026, () => {
   console.log('Server running on port 9026');
    
 });
+
+
