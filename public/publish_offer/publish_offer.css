@@ -99,17 +99,16 @@ p {
 
   .menu-container {
     display: block;
-    /*position: fixed;*/
-    top: 0;
+    position: fixed;
+    top: 97px;
     left: 0;
     bottom: 0;
-    width: 250px;
+    /* width: 250px; */
     background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 200;
     width: 250px;
-    height: 100%;
-    box-sizing: border-box;
+    height: 20%;
   }
   .profile {
     display: flex;

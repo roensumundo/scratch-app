@@ -1,4 +1,3 @@
-import { ZoomMtg } from '@zoomus/websdk'
 var express = require('express');
 var redis = require('promise-redis')();
 const crypto = require("crypto");
@@ -12,10 +11,10 @@ const fs = require('fs');
 
 
 // Load SSL certificate and private key
-const options = {
+/*const options = {
   cert: fs.readFileSync('server.crt'),
   key: fs.readFileSync('server.key')
-};
+};*/
 
 // Create HTTPS server
 //const server = https.createServer(options, app);

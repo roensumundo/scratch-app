@@ -22,3 +22,9 @@ function enrollToClass() {
     goToPage(PAGES.MAIN);
 
 }
+
+function askForRating() {
+    const ratingBox = document.querySelector(".rating-box");
+    ratingBox.style.display = 'flex';
+    ratingBox.style.flexDirection = 'column';
+}

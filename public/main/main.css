@@ -189,17 +189,16 @@ body {
 
   .menu-container {
     display: block;
-    /*position: fixed;*/
-    top: 0;
+    position: fixed;
+    top: 97px;
     left: 0;
     bottom: 0;
-    width: 250px;
+    /* width: 250px; */
     background-color: #f2f2f2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 200;
     width: 250px;
-    height: 100%;
-    box-sizing: border-box;
+    height: 20%;
   }
   .profile {
     display: flex;
@@ -350,4 +349,68 @@ body {
   }
   #card{
     height: 5%;
+  }
+
+
+  /*RATING BOX*/
+  /* CSS for the rating box */
+  .rating-box {
+    position: fixed;
+    top: 31%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+
+  .rating-box h3 {
+    text-align: center;
+    font-family: 'Montserrat', cursive;
+    font-size: 24px;
+  }
+  .rating-box .stars {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .rating-box .stars input[type="radio"] {
+    display: none;
+  }
+
+  .rating-box .stars label {
+    font-size: 35px;
+    
+    color: #ffbf00;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .rating-box .stars label:hover,
+  .rating-box .stars label:hover ~ label,
+  .rating-box .stars label:hover ~ label  {
+    color: #ccc;
+  }
+
+  .rating-box .close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .rating-box .close-btn:hover {
+    color: #ff0000;
   }
