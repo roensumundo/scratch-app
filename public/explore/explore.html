@@ -22,35 +22,181 @@
             <button class="menu-button" onclick="displayMenu()"></button>
         </div>
     </header>
-    <main>
-        <div class="menu-container" style="display:none">
-            <div class="profile">
-                <img src="../data/profile-picture.png" alt="Profile Picture" class="profile-pic">
-                <h2 class="name">John Doe</h2>
-                <p class="username">@johndoe</p>
+    <div class="menu-container" style="display:none">
+        <div class="profile">
+            <img src="../data/profile-picture.png" alt="Profile Picture" class="profile-pic">
+            <h2 class="name">John Doe</h2>
+            <p class="username">@johndoe</p>
+        </div>
+        <div class="options">
+            <button class="main">Main</button>
+            <button class="personal-space">Personal Space</button>
+            <button class="explore">Explore</button>
+            <button class="direct-messages">Direct Messages</button>
+            <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
+        </div>
+    </div>
+
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search for a class">
+        <button type="submit"><i class="fa fa-search icon-search" style="font-size:19px" ;></i></button>
+    </div>
+    <div class="switcher">
+        <button id="subscribed-to-button" class="active">Subscribed to</button>
+        <button id="recommended-button">Recommended</button>
+    </div>
+
+    <div class="main">
+        <div class="subscribed-classes">
+            <div class="class_offer" id="class_offer_1">
+                <div class="offer-small-text">
+                    <p class="price">10 €</p>
+                </div>
+                <div class="offer-content">
+                    <div class="offer-title">
+                        <h2>Gentle Flow Yoga</h2>
+                        <p class="username-offer">@yogawithme</p>
+                    </div>
+
+                    <p class="date-time">10/06/2023 17:30 - 1h</p>
+
+                    <button class="go-button" onclick="showDetail('1')">View details</button>
+                    <div class="class-info">
+                        <p class="category">- Yoga -</p>
+                        <p class="level">- Begginers -</p>
+                        <p class="maxUsers">- Max. Users: 15 </p>
+                    </div>
+                    <div class="offer-description">
+                        <p>Join us for a soothing and rejuvenating Gentle Flow Yoga class. This practice focuses on
+                            gentle
+                            movements, deep breathing, and mindfulness. Suitable for all levels, it promotes
+                            flexibility, stress
+                            relief, and inner balance. Discover the harmony of body and mind in a serene and welcoming
+                            environment.</p>
+                    </div>
+                </div>
             </div>
-            <div class="options">
-                <button class="main">Main</button>
-                <button class="personal-space">Personal Space</button>
-                <button class="explore">Explore</button>
-                <button class="direct-messages">Direct Messages</button>
-                <button class="publish-offer" onclick="goToPage('publish_offer')">Publish an Offer</button>
+            <div class="class_offer" id="class_offer_2">
+                <div class="offer-small-text">
+                    <p class="price">5 €</p>
+                </div>
+                <div class="offer-content">
+                    <div class="offer-title">
+                        <h2>High-Intensity Interval Training (HIIT)</h2>
+                        <p class="username-offer">@fitzone</p>
+                    </div>
+
+                    <p class="date-time">10/06/2023 18:30 - 45min</p>
+
+                    <button class="go-button" onclick="showDetail('2')">View details</button>
+                    <div class="class-info">
+                        <p class="category">- HIIT -</p>
+                        <p class="level">- Intermediate -</p>
+                        <p class="maxUsers">- Max. Users: 12 </p>
+                    </div>
+                    <div class="offer-description">
+                        <p>Get ready to push your limits and torch calories with our High-Intensity Interval Training
+                            (HIIT)
+                            class. This fast-paced workout alternates between intense bursts of exercise and short
+                            recovery
+                            periods to maximize fat burning and boost cardiovascular fitness. Suitable for intermediate
+                            levels,
+                            HIIT delivers a full-body workout in a dynamic and motivating group setting.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="explore">
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search for a class">
-                <button type="submit"><i class="fa fa-search icon-search"></i></button>
+        <div class="recommendations" style="display:none">
+            <div class="class_offer recommended" id="class_offer_3">
+                <div class="offer-small-text">
+                    <p class="price">5 €</p>
+                </div>
+                <div class="offer-content">
+                    <div class="offer-title">
+                        <h2>Rhythm Fusion</h2>
+                        <p class="username-offer"> @supertrainer</p>
+                    </div>
+
+                    <p class="date-time">10/06/2023 19:00 - 1h</p>
+
+                    <button class="go-button" onclick="showDetail('3')">View details</button>
+                    <div class="class-info">
+                        <p class="category">- Zumba -</p>
+                        <p class="level">- Advanced -</p>
+                        <p class="maxUsers">- Max. Users: 20 </p>
+                    </div>
+                    <div class="offer-description">
+                        <p>Welcome to "Rhythm Fusion," a sizzling and infectious dance fitness experience that will
+                            transport you to
+                            the heart of a tropical party! Our Zumba class is a high-energy, calorie-burning
+                            extravaganza that
+                            combines Latin rhythms, easy-to-follow choreography, and non-stop fun, leaving you feeling
+                            exhilarated and
+                            ready to conquer the dance floor.</p>
+                    </div>
+                </div>
             </div>
-            <div class="switcher">
-                <button id="subscribed-to-button" class="active">Subscribed to</button>
-                <button id="recommended-button">Recommended</button>
+            <div class="class_offer recommended" id="class_offer_4">
+                <div class="offer-small-text">
+                    <p class="price">15 €</p>
+                </div>
+                <div class="offer-content">
+                    <div class="offer-title">
+                        <h2>Personalized Fitness</h2>
+                        <p class="username-offer">@johndoe</p>
+                    </div>
+                    <p class="date-time">10/06/2023 19:00 - 1h</p>
+                    <button class="go-button" onclick="showDetail('4')">View details</button>
+                    <div class="class-info">
+                        <p class="category">- Personal Training -</p>
+                        <p class="level">- All Levels -</p>
+                        <p class="maxUsers">- Max. Users: 1 </p>
+                    </div>
+                    <div class="offer-description">
+                        <p>Experience the ultimate personalized fitness session tailored just for you! Our highly
+                            skilled
+                            and
+                            dedicated personal trainer will guide you through a customized workout routine designed to
+                            meet
+                            your
+                            specific goals and fitness level. Whether you're a beginner or an experienced fitness
+                            enthusiast, this class
+                            will provide individual attention and support, ensuring maximum results and a rewarding
+                            fitness
+                            journey.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+
+    </div>
+    <div class="class-detail" style="display:none">
+        <button class="arrow-button" onclick="returnToMain()">
+            <img src="../data/arrow-left-solid.svg" alt="Arrow Icon">
+        </button>
+    </div>
+    <div id="payment-form" style="display:none">
+        <h4 class="title-payment-form">Add payment method </h4>
+        <div class="cardholder">
+            <label for="cardholder-name">Cardholder Name:</label>
+            <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+        </div>
+
+        <div id="wrapper">
+            <label for="card">Card Credentials:</label>
+            <div id="card"></div>
+            <div class="decision-buttons">
+                <button id='cancel-button' type="button" onclick="goToPage('main')">Cancel</button>
+                <button id='pay' type="submit" onclick="enrollToClass()">Pay</button>
+            </div>
+        </div>
+
+    </div>
+
+
 
 </body>
-<script>init()</script>
 
 </html>

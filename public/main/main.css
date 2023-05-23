@@ -139,8 +139,8 @@ body {
   .date-time{
     font-family: 'Montserrat', cursive;
     font-weight: light;
-    margin-top: 0px;
     font-size: 18px;
+    margin-top: 5px;
   }
 
   .offer-title{
@@ -159,6 +159,13 @@ body {
   }
   .alert{
     font-size: 15px;
+  }
+  .class-info{
+    display: flex;
+  }
+  .category, .level, .maxUsers{
+    font-size: 15px;
+    color: gray;
   }
   .class_offer.recommended{
     background-color: #f5f5e0e6;
