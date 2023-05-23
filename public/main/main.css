@@ -85,7 +85,7 @@ body {
   p {
     font-family: 'Montserrat', cursive;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 10px;
   }
   h1{
     font-family: 'Montserrat', cursive;
@@ -146,15 +146,19 @@ body {
   .offer-title{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 80%;
     align-items: center;
   }
   .username-offer{
     margin: 0px;
     margin-left: 10px;
+    font-size: 20px;
   }
   .offer-description{
     margin-bottom: 13%;
+  }
+  .alert{
+    font-size: 15px;
   }
   .class_offer.recommended{
     background-color: #f5f5e0e6;

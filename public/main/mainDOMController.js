@@ -21,6 +21,7 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
         // TODO: Calculate time left and only show when a threshold is reached
         
         smallTextP.innerText = 'Starts in 5 min';
+        smallTextP.className = 'alert'
     }
     smallTextDiv.appendChild(smallTextP);
   
