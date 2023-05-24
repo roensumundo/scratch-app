@@ -1,0 +1,107 @@
+.class_offer {
+    background-color: #e0ebffeb;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    box-shadow: 10px 10px #0c0c0c33;
+  }
+
+  .offer-small-text {
+    color: rgb(233, 9, 9);
+    padding: 5px;
+    padding-top: 0px;
+    display:flex;
+    justify-content: flex-end;
+    height: 15px;
+    width: 100%;
+  }
+
+  .go-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .date-time{
+    font-family: 'Montserrat', cursive;
+    font-weight: light;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .offer-title{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+  }
+  .username-offer{
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .offer-description{
+    margin-bottom: 13%;
+  }
+  .alert{
+    font-size: 15px;
+  }
+  .class-info{
+    display: flex;
+  }
+  .category, .level, .maxUsers{
+    font-size: 16px;
+    color: gray;
+  }
+  .class_offer.recommended{
+    background-color: #f5f5e0e6;
+  }
+  .class_offer.subscribed{
+    background-color: #fb536e54;
+  }
+
+  /* Detailed class */
+
+  .arrow-button {
+    position: relative;
+    top: 6%;
+    left: 4%;
+    padding: 10px;
+    border: none;
+    width: 5%;
+    margin-top: 5%;
+    background-color: white;
+  }
+
+  .price{
+    font-weight: bold;
+    color: black;
+    font-size: 170%;
+    margin-right: 1%;
+  }
+
+
+  .arrow-button {
+    position: relative;
+    top: 6%;
+    left: 4%;
+    padding: 10px;
+    border: none;
+    width: 5%;
+    margin-top: 5%;
+  }
+  

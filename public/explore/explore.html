@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>StayFit</title>
     <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="../styles/class_offer.css">
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="stylesheet" href="../styles/payment-form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +16,7 @@
     <script type="text/javascript" src="exploreDOMController.js"></script>
     <script type="text/javascript" src="../code/DOMController.js"></script>
     <script type="text/javascript" src="../code/client.js"></script>
+    <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
 </head>
 
 <body>
@@ -48,7 +52,7 @@
 
 
         <div class="subscribed-classes">
-            <div class="class_offer" id="class_offer_1">
+            <div class="class_offer subscribed" id="class_offer_1">
                 <div class="offer-small-text">
                     <p class="price">10 €</p>
                 </div>
@@ -76,7 +80,7 @@
                     </div>
                 </div>
             </div>
-            <div class="class_offer" id="class_offer_2">
+            <div class="class_offer subscribed" id="class_offer_2">
                 <div class="offer-small-text">
                     <p class="price">5 €</p>
                 </div>
@@ -195,7 +199,35 @@
     </div>
 
 
-
+    <script>
+        (async () => {
+            const payments = Square.payments(
+                'sandbox-sq0idb-YUaNbH9vsWUkOL-RWc06Kw',
+                'EAAAEGdpSrpv_2BiHgaj9fUQlj_X2gnZVOvcW-6fkDtarZic2XVE3hZJ3MvtoK33',
+            );
+            const cardOptions = {
+                style: {
+                    input: {
+                        backgroundColor: 'white'
+                    },
+                },
+            };
+            try {
+                const card = await payments.card(cardOptions);
+                await card.attach('#card');
+                /*
+                const payButton = document.getElementById('pay')
+                payButton.addEventListener('click', async () => {
+                  const result = await card.tokenize();
+                  alert(JSON.stringify(result, null, 2));
+                });
+                */
+            }
+            catch (e) {
+                console.error(e);
+            }
+        })()
+    </script>
 </body>
 
 </html>

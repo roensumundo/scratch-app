@@ -1,0 +1,82 @@
+ /* PAYMENT FORM */
+ #wrapper{
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  #payment-form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffdda947;
+    opacity: 0.9;
+    margin-top: 26%;
+    padding: 15% 34px;
+}
+  
+  input[type="text"]{
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', cursive;
+  }
+  label {
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+    font-family: 'Montserrat', cursive;
+    margin-bottom: 1%;
+}
+
+  .cardholder{
+    margin-left:2%;
+    margin-right:2%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-payment-form {
+    font-family: 'Montserrat', cursive;
+    margin-bottom: 37px;
+    text-align: center;
+    font-size: 27px;
+}
+
+  #pay{
+    color: black;
+    background-color: #74b3e1;
+    text-align: center;
+    margin-left: 2%;
+    font-weight: 800;
+  }
+  button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #0056b3;
+  }
+
+  .decision-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 69%;
+    margin-left: 16%;
+    margin-top: 9%;
+}
+  #cancel-button{
+    border: rgba(0, 0, 0, 0.2);
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+  }
+  #card{
+    height: 5%;
+  }
+
+  
+
+
+
+

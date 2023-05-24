@@ -60,32 +60,12 @@ body {
 
   
 
-  .class_offer {
-    background-color: #e0ebffeb;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 30px 60px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: auto;
-    box-shadow: 10px 10px #0c0c0c33;
-  }
-
-  .offer-small-text {
-    color: rgb(233, 9, 9);
-    padding: 5px;
-    padding-top: 0px;
-    display:flex;
-    justify-content: flex-end;
-    height: 15px;
-    width: 100%;
-  }
+  
 
   p {
     font-family: 'Montserrat', cursive;
     margin-top: 0px;
-    font-size: 10px;
+    font-size: 63%;
   }
   h1{
     font-family: 'Montserrat', cursive;
@@ -120,131 +100,7 @@ body {
   .separator{
     /*text-shadow: 1px 1px 1px #000000;*/
   }
-  .go-button {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 5px;
-    width: 100px;
-    border: none;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .date-time{
-    font-family: 'Montserrat', cursive;
-    font-weight: light;
-    font-size: 18px;
-    margin-top: 5px;
-  }
-
-  .offer-title{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    align-items: center;
-  }
-  .username-offer{
-    margin: 0px;
-    margin-left: 10px;
-    font-size: 20px;
-  }
-  .offer-description{
-    margin-bottom: 13%;
-  }
-  .alert{
-    font-size: 15px;
-  }
-  .class-info{
-    display: flex;
-  }
-  .category, .level, .maxUsers{
-    font-size: 15px;
-    color: gray;
-  }
-  .class_offer.recommended{
-    background-color: #f5f5e0e6;
-  }
-  .icon {
-    position: relative;
-    width: 7%;
-    padding: 10px;
-  }
   
-  .icon.menu {
-    padding-left: 0px;
-    z-index: 1; /* add this to bring the menu button above the image */
-    margin-left: 22px;
-    height: inherit;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .icon .menu-button {
-    position: absolute;
-    top: 12%;
-    left: -3%;
-    opacity: 0;
-    color: white;
-    font-size: 7px;
-    padding: 12px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 2;
-  }
-
-  .menu-container {
-    display: block;
-    position: fixed;
-    top: 97px;
-    left: 0;
-    bottom: 0;
-    /* width: 250px; */
-    background-color: #f2f2f2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 200;
-    width: 250px;
-    height: 20%;
-  }
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #6a6767;
-    border-bottom: 1px solid #ccc;
-
-  }
-  
-  .profile-pic {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .name {
-    margin: 10px 0 5px 0;
-    font-weight: bold;
-    font-size: 22px;
-  }
-  
-  .username {
-    margin-left: 5px;
-    color: #080808;
-    font-size: 18px;
-  }
-
-  .options {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-  }
   
   button {
     width: 100%;
@@ -260,110 +116,10 @@ body {
     color: white;
   }
   
-  button:hover {
-    background-color: #ddd;
-  }
   
   button:focus {
     outline: none;
   }
-
-  /* Detailed class */
-
-  .arrow-button {
-    position: relative;
-    top: 6%;
-    left: 4%;
-    padding: 10px;
-    border: none;
-    width: 5%;
-    margin-top: 5%;
-  }
-  
-  .price{
-    font-weight: bold;
-    color: black;
-    font-size: 170%;
-    margin-right: 1%;
-  }
-
-  /* PAYMENT FORM */
-  #wrapper{
-    margin-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  
-  #payment-form {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background-color: #ffdda947;
-    opacity: 0.9;
-    margin-top: 26%;
-    padding: 15% 34px;
-}
-  
-  input[type="text"]{
-    margin-bottom: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    font-family: 'Montserrat', cursive;
-  }
-  label {
-    font-size: 1.5rem;
-    /* font-weight: bold; */
-    margin-bottom: 5px;
-    font-family: 'Montserrat', cursive;
-    margin-bottom: 1%;
-}
-
-  .cardholder{
-    margin-left:2%;
-    margin-right:2%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .title-payment-form {
-    font-family: 'Montserrat', cursive;
-    margin-bottom: 37px;
-    text-align: center;
-    font-size: 27px;
-}
-
-  #pay{
-    color: black;
-    background-color: #74b3e1;
-    text-align: center;
-    margin-left: 2%;
-    font-weight: 800;
-  }
-  button[type="submit"]:hover, button[type="button"]:hover {
-    background-color: #0056b3;
-  }
-
-  .decision-buttons {
-    display: flex;
-    flex-direction: row;
-    width: 69%;
-    margin-left: 16%;
-    margin-top: 9%;
-}
-  #cancel-button{
-    border: rgba(0, 0, 0, 0.2);
-    background-color: lightgray;
-    color: black;
-    text-align: center;
-  }
-  #card{
-    height: 5%;
-  }
-
 
   /*RATING BOX*/
   /* CSS for the rating box */
@@ -411,18 +167,18 @@ body {
 
   .rating-box .close-btn {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 14px;
+    left: 5px;
     width: 20px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    color: #ccc;
+    font-size: 22px;
+    color: #5a5a5a;
     cursor: pointer;
     transition: color 0.3s;
-  }
+}
 
   .rating-box .close-btn:hover {
     color: #ff0000;

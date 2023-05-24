@@ -11,7 +11,7 @@ body {
     /*background-image: url(https://www.justebien.fr/wp-content/uploads/2018/01/femme-sport-maison.jpg);
     backdrop-filter: blur(8px);*/
     backdrop-filter: blur(8px);
-    background-image: url(https://www.healthywomanusa.com/wp-content/uploads/2021/01/Sport-Home-Online-Instruction-yoga.jpeg);
+    /*background-image: url(https://www.healthywomanusa.com/wp-content/uploads/2021/01/Sport-Home-Online-Instruction-yoga.jpeg);*/
     background-position-x: center;
     align-items: center;
     justify-content: center;
@@ -66,94 +66,7 @@ p {
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Montserrat', cursive;
-    color: white;
   }
-/* MENU AND HEADER STYLING */
-.icon {
-    position: relative;
-    width: 7%;
-    padding: 10px;
-  }
-  
-  .icon.menu {
-    padding-left: 0px;
-    z-index: 1; /* add this to bring the menu button above the image */
-    margin-left: 22px;
-    height: inherit;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .icon .menu-button {
-    position: absolute;
-    top: 12%;
-    left: -3%;
-    opacity: 0;
-    color: white;
-    font-size: 7px;
-    padding: 12px 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 2;
-  }
-
-  .menu-container {
-    display: block;
-    position: fixed;
-    top: 97px;
-    left: 0;
-    bottom: 0;
-    /* width: 250px; */
-    background-color: #f2f2f2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 200;
-    width: 250px;
-    height: 20%;
-  }
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #6a6767;
-    border-bottom: 1px solid #ccc;
-
-  }
-  
-  .profile-pic {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  .name {
-    margin: 10px 0 5px 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .username {
-    margin-left: 5px;
-    color: #080808;
-  }
-
-  .options {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-  }
-  
-  
-  button:hover {
-    background-color: #ddd;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-
-  /* Header Styles */
   header {
     display: flex;
     justify-content: space-between;
@@ -162,21 +75,6 @@ p {
     color: white;
     padding: 20px;
   }
-  
-  
-  .menu-button {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-    z-index: 999;
-    font-size: 18px;
-  }
-
 
   /*FORM*/
 
