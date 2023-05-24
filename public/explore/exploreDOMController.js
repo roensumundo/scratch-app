@@ -13,6 +13,23 @@ function explore_switcher(){
         });
 }
 
+function showRecommendations() {
+    const recommendationsDiv = document.querySelector('.recommendations');
+    const subscriptionsDiv = document.querySelector('.subscribed-classes');
+
+    subscriptionsDiv.style.display = 'none';
+    recommendationsDiv.style.display = null;
+}
+
+function showSubscribed() {
+    const recommendationsDiv = document.querySelector('.recommendations');
+    const subscriptionsDiv = document.querySelector('.subscribed-classes');
+
+    subscriptionsDiv.style.display = null;
+    recommendationsDiv.style.display = 'none';
+    
+}
+
 function showDetail(id, type) {
     const class_detail_div = document.querySelector('.class-detail');
     const mainElement = document.querySelector('.main');

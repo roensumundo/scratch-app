@@ -46,8 +46,8 @@
             <button type="submit"><i class="fa fa-search icon-search" style="font-size:19px" ;></i></button>
         </div>
         <div class="switcher">
-            <button id="subscribed-to-button" class="active">Subscribed to</button>
-            <button id="recommended-button">Recommended</button>
+            <button id="subscribed-to-button" class="active" onclick="showSubscribed()">Subscribed to</button>
+            <button id="recommended-button" onclick="showRecommendations()">Recommended</button>
         </div>
 
 
@@ -198,35 +198,35 @@
 
     </div>
 
-
+    <script>explore_switcher()</script>
     <script>
-        (async () => {
-            const payments = Square.payments(
-                'sandbox-sq0idb-YUaNbH9vsWUkOL-RWc06Kw',
-                'EAAAEGdpSrpv_2BiHgaj9fUQlj_X2gnZVOvcW-6fkDtarZic2XVE3hZJ3MvtoK33',
-            );
-            const cardOptions = {
-                style: {
-                    input: {
-                        backgroundColor: 'white'
+            (async () => {
+                const payments = Square.payments(
+                    'sandbox-sq0idb-YUaNbH9vsWUkOL-RWc06Kw',
+                    'EAAAEGdpSrpv_2BiHgaj9fUQlj_X2gnZVOvcW-6fkDtarZic2XVE3hZJ3MvtoK33',
+                );
+                const cardOptions = {
+                    style: {
+                        input: {
+                            backgroundColor: 'white'
+                        },
                     },
-                },
-            };
-            try {
-                const card = await payments.card(cardOptions);
-                await card.attach('#card');
-                /*
-                const payButton = document.getElementById('pay')
-                payButton.addEventListener('click', async () => {
-                  const result = await card.tokenize();
-                  alert(JSON.stringify(result, null, 2));
-                });
-                */
-            }
-            catch (e) {
-                console.error(e);
-            }
-        })()
+                };
+                try {
+                    const card = await payments.card(cardOptions);
+                    await card.attach('#card');
+                    /*
+                    const payButton = document.getElementById('pay')
+                    payButton.addEventListener('click', async () => {
+                      const result = await card.tokenize();
+                      alert(JSON.stringify(result, null, 2));
+                    });
+                    */
+                }
+                catch (e) {
+                    console.error(e);
+                }
+            })()
     </script>
 </body>
 
