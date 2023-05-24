@@ -61,7 +61,7 @@ p {
     margin-bottom: 10px;
     border: none;
     background-color: transparent;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: left;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -180,16 +180,17 @@ p {
 
   /*FORM*/
 
-#form-container{
+#form-container {
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #b9d8f3ab;
     opacity: 0.9;
     margin-top: 15%;
-  }
+    padding: 0px 45px;
+}
   
   input[type="text"], input[type="number"], textarea {
     margin-bottom: 10px;

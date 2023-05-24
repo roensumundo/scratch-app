@@ -7,7 +7,7 @@ html,body {
     /*background-image: url(https://www.justebien.fr/wp-content/uploads/2018/01/femme-sport-maison.jpg);
   backdrop-filter: blur(8px);*/
   
-  background-image: url(https://www.healthywomanusa.com/wp-content/uploads/2021/01/Sport-Home-Online-Instruction-yoga.jpeg);
+ /* background-image: url(https://www.healthywomanusa.com/wp-content/uploads/2021/01/Sport-Home-Online-Instruction-yoga.jpeg);*/
   background-position-x: center;
   
   height: 100%;
@@ -28,20 +28,10 @@ h1 {
   margin: 0;
   font-size: 28px;
 }
+ button{
+  font-size: 1.2em;
+ }
 
-
-.menu-button {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 999;
-  font-size: 18px;
-}
 
 .search-container {
   display: flex;
@@ -83,6 +73,7 @@ h1 {
     height: 5%;
     margin-top: 3%;
     font-family: 'Montserrat', cursive;
+    width: 83%;
   }
 
   .switcher {
@@ -98,11 +89,13 @@ h1 {
     width: 25%;
     border: 1px solid #00000024;
     font-family: 'Montserrat';
+    font-size: 20px;
   }
   #recommended-button{
     border: 1px solid #00000024;
     width: 25%;
     font-family: 'Montserrat';
+    font-size: 20px;
   }
 
 button.active{
@@ -121,12 +114,12 @@ button.active{
     cursor: pointer;
     z-index: 999;
     font-size: 18px;
-  }
+}
   /* Style the button and place it in the middle of the container/image */
   .icon .menu-button {
-    position: absolute;
-    top: 12%;
-    left: -3%;
+    /* position: absolute; */
+    /* top: 12%; */
+    /* left: -3%; */
     opacity: 0;
     color: white;
     font-size: 7px;
@@ -135,20 +128,93 @@ button.active{
     cursor: pointer;
     border-radius: 5px;
     z-index: 2;
+}
+
+.menu-container {
+  display: block;
+  position: fixed;
+  top: 4.4%;
+  left: 0;
+  bottom: 0;
+  /* width: 250px; */
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 200;
+  width: 250px;
+  height: 20%;
+}
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #6a6767;
+    border-bottom: 1px solid #ccc;
+
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 
-  .menu-container {
-    display: block;
-    position: fixed;
-    top: 97px;
-    left: 0;
-    bottom: 0;
-    /* width: 250px; */
-    background-color: #f2f2f2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 200;
-    width: 250px;
-    height: 20%;
+  .name {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .username {
+    margin-left: 5px;
+    color: #080808;
+    font-size: 18px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+  }
+  
+  #main, #personal-space, #explore, #publish-offer{
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', cursive;
+    color: white;
+  }
+  
+button.main:hover,
+button.personal-space:hover,
+button.explore:hover,
+button.publish-offer:hover {
+  background-color: #ddd;
+}
+  
+  button:focus {
+    outline: none;
+  }
+
+  /* Detailed class */
+
+  .arrow-button {
+    position: relative;
+    top: 6%;
+    left: 4%;
+    padding: 10px;
+    border: none;
+    width: 5%;
+    margin-top: 5%;
+    background-color: white;
   }
 
   
@@ -178,11 +244,13 @@ button.active{
     font-family: 'Montserrat', cursive;
     margin-top: 0px;
     font-size: 10px;
+    color: black;
   }
   h1{
     font-family: 'Montserrat', cursive;
     font-weight: bold;
     font-size: 35px;
+
   }
   h2{
     font-family: 'Montserrat', cursive;
@@ -190,6 +258,7 @@ button.active{
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 30px;
+    color: black;
   }
   .recommendations-heading{
     display: flex;

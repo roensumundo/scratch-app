@@ -45,10 +45,12 @@ function showDetail(id) {
     //TODO show class
 
     //const class_object = APP.recommendations[id];
-    const description = "As a language model, I've been trained on vast amounts of text data, allowing me to generate natural - sounding responses to a wide range of prompts.Whether you're looking for information, advice, or just a friendly chat, I'm here to help.From philosophy to technology, history to pop culture, I can engage in conversations on almost any topic.So don't hesitate to ask me a question or strike up a conversation.I'm always ready to learn and grow, just like the humans who created me.";
-    const class_object = new Class('title', description, 'datetime', '20 min', 'user', 'advanced', 10, 20);
-    displayClassOffer(id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
-
+    const description = "Welcome to Rhythm Fusion, a sizzling and infectious dance fitness experience that will transport you to the heart of a tropical party! Our Zumba class is a high-energy, calorie-burning extravaganza that combines Latin rhythms, easy-to-follow choreography, and non-stop fun, leaving you feeling exhilarated and ready to conquer the dance floor. \n\n As soon as the music starts, you wil feel the electrifying beats pulsating through your body, awakening your senses and setting the stage for an unforgettable journey. Our expert instructors will guide you through a fusion of Latin-inspired dance movements, easy-to-follow choreography, and exhilarating cardio exercises, creating a dynamic and engaging atmosphere that will leave you breathless and craving more."
+    const datetime = new Date('2023', '6', '10', '19', '0');
+    const formattedDate = datetime.toLocaleString('en-US', options);
+    const class_object = new Class('Rhythm Fusion', 'Zumba',description, formattedDate, '1 h', 'supertrainer', 'Advanced', 5,20);
+    displayClassOffer(id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, formattedDate, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
+    //displayClassOffer(id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation' )
 
 }
 

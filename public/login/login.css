@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 body,html {
@@ -344,9 +345,6 @@ iframe {
     height: 100%;
     background: #a64bf4;
     background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
-    background: -o-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
-    background: -moz-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
-    background: linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
     top: 0;
     left: -100%;
     -webkit-transition: all .4s;
@@ -357,7 +355,7 @@ iframe {
 
 .login100-form-btn {
     
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     line-height: 1.2;
     text-transform: uppercase;

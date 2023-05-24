@@ -29,7 +29,33 @@ function askForRating() {
     ratingBox.style.flexDirection = 'column';
 }
 
-function displayClassOffer(id, classname, creator, datetime, description, duration, price, detail, type) {
+function addClassInfo(category, level, maxUsers) {
+    // Create the <div> element
+    var classInfoDiv = document.createElement('div');
+    classInfoDiv.className = 'class-info';
+  
+    // Create the <p> element for category
+    var categoryP = document.createElement('p');
+    categoryP.className = 'category';
+    categoryP.textContent = '- ' + category + ' -';
+    classInfoDiv.appendChild(categoryP);
+  
+    // Create the <p> element for level
+    var levelP = document.createElement('p');
+    levelP.className = 'level';
+    levelP.textContent = '- ' + level + ' -';
+    classInfoDiv.appendChild(levelP);
+  
+    // Create the <p> element for maxUsers
+    var maxUsersP = document.createElement('p');
+    maxUsersP.className = 'maxUsers';
+    maxUsersP.textContent = '- Max. Users: ' + maxUsers + ' -';
+    classInfoDiv.appendChild(maxUsersP);
+  
+    return classInfoDiv;
+  }
+
+function displayClassOffer(id, classname, category, level, maxUsers, creator, datetime, description, duration, price, detail, type) {
     // create the outer div with class "class_offer" and id "class_offer_1"
     const classOfferDiv = document.createElement('div');
     let div_class_name = 'class_offer';
@@ -48,7 +74,12 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
         smallTextP.className = 'price';
         classOfferDiv.className += ' recommended';
         
-    } else {
+    } else if (type == 'subscription') {
+        smallTextP.innerText = price + ' €';
+        smallTextP.className = 'price';
+        classOfferDiv.className += ' subscribed';
+    }
+    else {
         // TODO: Calculate time left and only show when a threshold is reached
         
         smallTextP.innerText = 'Starts in 5 min';
@@ -76,7 +107,7 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
   
     const button = document.createElement('button');
     button.className = 'go-button';
-    if (type == 'recommendation') {
+    if (type == 'recommendation' || type == 'subscription') {
         if (detail) {
             button.innerText = 'Book';
             button.onclick = showPaymentForm;
@@ -92,6 +123,8 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     const descriptionDiv = document.createElement('div');
     descriptionDiv.className = 'offer-description';
     const descriptionP = document.createElement('p');
+
+    const class_info = addClassInfo(category, level, maxUsers)
     // Cut description in limited characters in the non-detailed version of the class offer
     if (!detail) description.substring(0, 255);
     descriptionP.innerText = description + "...";
@@ -103,6 +136,7 @@ function displayClassOffer(id, classname, creator, datetime, description, durati
     contentDiv.appendChild(titleDiv);
     contentDiv.appendChild(subtitleP);
     contentDiv.appendChild(button);
+    contentDiv.appendChild(class_info);
     contentDiv.appendChild(descriptionDiv);
   
     // append the "offer-small-text" and "offer-content" divs to the "class_offer" div

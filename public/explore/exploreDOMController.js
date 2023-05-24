@@ -23,10 +23,11 @@ function showDetail(id, type) {
     //TODO show class
 
     //const class_object = APP.recommendations[id];
-    const description = "As a language model, I've been trained on vast amounts of text data, allowing me to generate natural - sounding responses to a wide range of prompts.Whether you're looking for information, advice, or just a friendly chat, I'm here to help.From philosophy to technology, history to pop culture, I can engage in conversations on almost any topic.So don't hesitate to ask me a question or strike up a conversation.I'm always ready to learn and grow, just like the humans who created me.";
-    const class_object = new Class('title', description, 'datetime', '20 min', 'user', 'advanced', 10, 20);
-    displayClassOffer(id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, type);
-
+    const description = "Join us for a soothing and rejuvenating Gentle Flow Yoga class. This practice focuses on gentle movements, deep breathing, and mindfulness. Suitable for all levels, it promotes flexibility, stress relief, and inner balance. Discover the harmony of body and mind in a serene and welcoming environment.\n \n In our Gentle Flow Yoga class, you'll have the opportunity to unwind and find solace from the demands of daily life. As you step into the tranquil space, you'll be greeted by soft lighting, calming music, and a serene ambiance that creates a sense of relaxation and peace. The atmosphere itself is designed to help you release any tension and enter a state of tranquility, setting the stage for a transformative yoga experience.\n\n Throughout the class, our experienced instructor will guide you through a series of gentle movements and poses. Each movement is carefully designed to allow your body to flow gracefully from one posture to another, encouraging a sense of fluidity and ease. Whether you're a beginner or an experienced yogi, the instructor will provide modifications and variations to ensure that the practice is accessible and beneficial for all participants."
+    const datetime = new Date('2023', '6', '10', '17', '30');
+    const formattedDate = datetime.toLocaleString('en-US', options);
+    const class_object = new Class('Gentle Flow Yoga', 'Yoga', description, formattedDate, '1 h', 'yogawithme', 'Begginers', 10,15);
+    displayClassOffer(id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, formattedDate, class_object.description, class_object.duration, class_object.price, true, 'subscription');
 
 }
 
@@ -37,4 +38,12 @@ function showPaymentForm() {
 
     class_detail_div.style.display = 'none';
     paymentForm.style.display = null;
+}
+
+function returnToExplore() {
+    const class_detail_div = document.querySelector('.class-detail');
+    const mainElement = document.querySelector('.main');
+
+    class_detail_div.style.display = 'none';
+    mainElement.style.display = null;
 }
