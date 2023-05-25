@@ -4,7 +4,9 @@ function submitForm(){
     const categoryValue = document.getElementById('category_selection').value;
     const descriptionValue = document.getElementById('description').value;
     const dateTimeValue = document.getElementById('dateTime').value;
-    const durationValue = parseInt(document.getElementById('duration').value);
+    const durationValue_h = parseInt(document.getElementById('duration_h').value);
+    const durationValue_min = parseInt(document.getElementById('duration_min').value);
+    const durationValue = durationValue_h + ' h' + durationValue_min + ' min';
     const levelValue = document.getElementById('level').value;
     const priceValue = parseInt(document.getElementById('price').value);
     const maxUsersValue = parseInt(document.getElementById('maxUsers').value);

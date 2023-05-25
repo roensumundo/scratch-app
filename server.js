@@ -361,6 +361,29 @@ function saveSubscription(subscriptor_id, trainer_id ) {
   addElementToList(followers, subscriptor_id);
 }
 
+function deleteFromDB(prefix) {
+  // Find keys with a common prefix
+  redis_cli.keys(prefix + ':*', (err, keys) => {
+    if (err) {
+      console.error('Error:', err);
+      return;
+    }
+
+    // Delete the matching keys
+    if (keys.length > 0) {
+      redis.del(...keys, (err, result) => {
+        if (err) {
+          console.error('Error:', err);
+          return;
+        }
+        console.log('Deleted keys:', result); // Output: Number of keys deleted
+      });
+    } else {
+      console.log('No matching keys found.');
+    }
+  });
+}
+
   
 /*********** Express server. COMMUNICATION with clients*********/
 // Handle POST requests for a signup route

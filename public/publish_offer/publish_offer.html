@@ -71,8 +71,15 @@
         <label for="dateTime">Date and Time:</label>
         <input type="datetime-local" id="dateTime" name="dateTime"><br><br>
 
-        <label for="duration">Duration (in minutes):</label>
-        <input type="number" id="duration" name="duration" min="1" max="9999"><br><br>
+        <label for="duration">Duration :</label>
+        <div class="duration-flex">
+            <input type="number" id="duration_h" name="duration" min="0" max="2"><br><br>
+            <p>hours</p>
+            <input type="number" id="duration_min" name="duration" min="0" max="59"><br><br>
+            <p>minutes</p>
+        </div>
+
+
 
         <label for="level">Level:</label>
         <select id="level" name="level">
