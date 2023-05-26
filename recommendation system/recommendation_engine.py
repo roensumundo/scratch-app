@@ -1,4 +1,6 @@
 import pandas as pd
+import unittest
+from datetime import datetime
 
 # Gets a list of rated classes for a user_id
 def get_rated_classes(user_id, ratings_matrix):
@@ -25,9 +27,6 @@ def print_rated_classes(user_id, rating_matrix, classes):
 def get_item_similarity(ratings_matrix):
     return ratings_matrix.corr()
 
-def from_csv_to_df(filename):
-    path = 'fake_data\\' + filename
-    return pd.read_csv(path + '.csv')
 
 def get_classes_relevance(user_id, ratings_matrix):
     
@@ -69,9 +68,51 @@ def get_recommended_classes(user_id, ratings_matrix, classes_df):
     rated_classes = get_rated_classes(user_id, ratings_matrix)
     recommended_classes = classes_relevance.drop(rated_classes)
 
+
+    recommended_classes['class_id'] = recommended_classes['class_id'].astype(int)
+    classes_df['id'] = classes_df['id'].astype(int)
+
     recommended_classes = pd.merge(recommended_classes, classes_df, left_on='class_id', right_on='id', how='left')
-    recommended_classes =  recommended_classes.drop(['datetime'], axis = 1)
+
+    recommended_classes =  recommended_classes.drop(['id'], axis = 1)
     return recommended_classes
+
+def get_classes_from_trainer(trainer_id, classes_df):
+    return classes_df[classes_df['creator'] == trainer_id]
+
+def get_earliest_class(classes_df):
+    #earliest_entry_index = classes_df['datetime'].astype(int).idxmin()
+    earliest_entry_index = pd.to_datetime(classes_df['datetime']).idxmin()
+    return classes_df.loc[earliest_entry_index]
+
+def get_earliest_classes_from_trainer_and_category(trainer_id, classes_df, category):
+    trainer_classes = get_classes_from_trainer(trainer_id, classes_df)
+    category_matching_classes = trainer_classes[trainer_classes['category'] == category]
+    return get_earliest_class(category_matching_classes)
+
+    
+
+def get_similar_classes(classes, recommendations, n):
+    similar_classes = pd.DataFrame(columns=classes.columns)
+    skipped = 0
+    for index, entry in recommendations.iterrows():
+        trainer_id = entry['creator']
+        category = entry['category']
+        # We dismiss the other category because it doesn't give any value
+        if category == 'Other':
+            skipped += 1 # Skipped classes counter
+            continue
+        similar_class = get_earliest_classes_from_trainer_and_category(trainer_id, classes, category)
+        similar_classes = similar_classes.append(similar_class)
+        if index > n + skipped:
+            similar_classes = similar_classes.reset_index(drop=True)
+            return similar_classes
+
+
+def from_csv_to_df(filename):
+    #path = 'recommendation system\\fake_data\\' + filename
+    path = 'fake_data\\' + filename
+    return pd.read_csv(path + '.csv')
 
 def main():
 
@@ -80,6 +121,8 @@ def main():
     ratings_matrix = from_csv_to_df('ratings_matrix')
     user_id = 100
     recommendations = get_recommended_classes(user_id, ratings_matrix, classes)
-    print(recommendations)
+    similar_classes = get_similar_classes(classes, recommendations, 10)
+    print(similar_classes)
+
 
 main()
