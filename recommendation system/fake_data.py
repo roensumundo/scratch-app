@@ -4,7 +4,67 @@ from datetime import date, timedelta, datetime
 import random
 from faker import Faker
 from gender_guesser.detector import Detector
+import string
 
+#  ------------------- FAKE USER DATA GENERATION -----------------------------------
+
+def calculate_age(birth_date):
+    today = date.today()
+    age = today.year - birth_date.year
+
+    # Check if birthday has not occurred yet this year
+    if today.month < birth_date.month or (today.month == birth_date.month and today.day < birth_date.day):
+        age -= 1
+
+    return age
+
+def generate_false_true(prob_false=0.8):
+    if random.random() < prob_false:
+        return False
+    else:
+        return True
+    
+def generate_username(name):
+    return name.replace(" ", "_").replace(".", "_").lower()
+    
+
+def generate_password(length=10):
+    letters = string.ascii_letters
+    digits = string.digits
+
+    password = random.choice(letters.upper())  # Ensure at least one uppercase letter
+    password += random.choice(digits)  # Ensure at least one number
+    password += ''.join(random.choice(letters + digits) for _ in range(length - 2))
+
+    password = ''.join(random.sample(password, len(password)))  # Shuffle the password
+
+    return password
+
+def generate_fake_users(n):
+    # Create an instance of the Faker class
+    fake = Faker()
+    # Create an instance of the Detector class
+    detector = Detector()
+
+    fake_data = []
+    for id in range(n):
+
+        record = {'id': id, 'password': generate_password(), 'name': fake.name(), 'birthdate': fake.date_of_birth(minimum_age=14, maximum_age=90) , 'city': fake.city(), 'trainer': generate_false_true() }
+        record['gender'] = detector.get_gender(record['name'].split(' ')[0])
+        record['age'] = calculate_age(record['birthdate'])
+        # If name is not clear if it is feminine or masculin, then set it to 'Prefer not to say'.
+        record['username'] = generate_username(record['name'])
+        if record['gender'] != 'male' and record['gender'] != 'female':
+            record['gender'] = 'Prefer not to say'
+        fake_data.append(record)
+
+    return pd.DataFrame(fake_data)
+
+
+
+
+
+#  ------------------- FAKE CLASS DATA GENERATION -----------------------------------
 
 # Create a custom provider for fitness disciplines
 class FitnessProvider:
@@ -36,43 +96,6 @@ class FitnessProvider:
     def level(self):
         levels = ['begginer', 'intermediate', 'advanced', 'all levels']
         return self.faker.random_element(levels)
-    
-
-def calculate_age(birth_date):
-    today = date.today()
-    age = today.year - birth_date.year
-
-    # Check if birthday has not occurred yet this year
-    if today.month < birth_date.month or (today.month == birth_date.month and today.day < birth_date.day):
-        age -= 1
-
-    return age
-
-def generate_false_true(prob_false=0.8):
-    if random.random() < prob_false:
-        return False
-    else:
-        return True
-
-def generate_fake_users(n):
-    # Create an instance of the Faker class
-    fake = Faker()
-    # Create an instance of the Detector class
-    detector = Detector()
-
-    fake_data = []
-    for id in range(n):
-
-        record = {'id': id, 'name': fake.name(), 'birthdate': fake.date_of_birth(minimum_age=14, maximum_age=90) , 'city': fake.city(), 'trainer': generate_false_true() }
-        record['gender'] = detector.get_gender(record['name'].split(' ')[0])
-        record['age'] = calculate_age(record['birthdate'])
-        # If name is not clear if it is feminine or masculin, then set it to 'Prefer not to say'.
-        if record['gender'] != 'male' and record['gender'] != 'female':
-            record['gender'] = 'Prefer not to say'
-        fake_data.append(record)
-
-    return pd.DataFrame(fake_data)
-
 
 def trainers_ids(users_df):
     trainers = users_df[users_df['trainer'] == True]

@@ -20,6 +20,9 @@ const signup = async (username, password, isTrainer, fullname, age, location, ge
       // Display an error message to the user
       //TODO add text to DOM instead. 
       alert(data.message);
+      setTimeout(function() {
+      }, 5000);
+      goToPage(PAGES.LOGIN)
     }
   }
 };
@@ -169,7 +172,13 @@ const askForEnrolledClasses = async (username) => {
 function goToPage(page) {
   APP.current_page = page;
   localStorage.setItem('APP', JSON.stringify(APP));
-  const new_page = '/' + page + '/' + page + '.html';
+  let new_page;
+  if (page == 'login') {
+    new_page = ''
+  } else {
+    new_page = '/' + page + '/' + page + '.html';
+  }
+  
   history.pushState({}, null, new_page);
   window.location.href = new_page;
   

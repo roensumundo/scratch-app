@@ -1,1001 +1,1001 @@
 id,category,creator,level,maxUsers,price,datetime,title,duration
-0,Kickboxing,221,advanced,28,24.42,2023-06-09 14:30:00.242262,A Kickboxing class,0 h 45 min
-1,Total Body Conditioning,675,intermediate,24,15.02,2023-06-07 20:00:00.242262,A Total Body Conditioning class,0 h 10 min
-2,Stretching,767,begginer,13,15.21,2024-02-03 22:30:00.242262,A Stretching class,1 h 30 min
-3,Personalized,601,advanced,41,11.67,2023-11-30 14:30:00.242262,A Personalized class,2 h 
-4,Zumba,28,all levels,33,12.96,2023-09-26 01:30:00.242262,A Zumba class,0 h 50 min
-5,CrossFit,175,all levels,42,11.01,2023-11-04 18:00:00.242262,A CrossFit class,2 h 
-6,ABS,853,advanced,10,16.68,2024-04-16 16:30:00.242262,A ABS class,1 h 
-7,Zumba,110,advanced,49,10.8,2023-06-27 16:30:00.242262,A Zumba class,0 h 15 min
-8,Yoga,725,advanced,26,12.21,2024-03-01 17:00:00.242262,A Yoga class,0 h 40 min
-9,CrossFit,546,all levels,17,16.48,2023-12-15 22:00:00.242262,A CrossFit class,2 h 
-10,GAP,198,all levels,29,9.35,2023-12-23 00:30:00.242262,A GAP class,0 h 55 min
-11,Spinning,584,begginer,32,21.76,2024-04-30 14:00:00.242262,A Spinning class,2 h 
-12,Kickboxing,393,advanced,28,18.66,2023-09-21 18:00:00.242262,A Kickboxing class,0 h 5 min
-13,Aerobics,684,all levels,18,15.66,2023-10-01 19:00:00.242262,A Aerobics class,0 h 55 min
-14,Aerobics,177,advanced,32,12.76,2023-08-31 20:30:00.242262,A Aerobics class,1 h 30 min
-15,GAP,370,begginer,35,15.74,2024-05-14 17:00:00.242262,A GAP class,1 h 50 min
-16,CrossFit,785,advanced,16,18.15,2024-01-11 06:30:00.242262,A CrossFit class,1 h 25 min
-17,Body Pump,235,all levels,17,17.57,2024-02-12 02:00:00.242262,A Body Pump class,0 h 10 min
-18,Kickboxing,48,begginer,40,16.24,2024-01-19 06:30:00.242262,A Kickboxing class,2 h 
-19,Kickboxing,255,all levels,46,12.91,2024-04-11 03:30:00.242262,A Kickboxing class,1 h 35 min
-20,Zumba,409,begginer,8,11.84,2023-06-28 20:00:00.242262,A Zumba class,2 h 
-21,Total Body Conditioning,905,advanced,36,14.9,2024-04-28 18:00:00.242262,A Total Body Conditioning class,0 h 55 min
-22,Stretching,861,begginer,32,16.88,2023-11-23 00:00:00.242262,A Stretching class,0 h 5 min
-23,GAP,427,all levels,41,12.32,2023-07-30 04:30:00.242262,A GAP class,1 h 45 min
-24,Stretching,708,advanced,23,11.67,2023-11-04 20:00:00.242262,A Stretching class,2 h 
-25,Personalized,533,begginer,37,14.18,2023-08-30 12:00:00.242262,A Personalized class,0 h 30 min
-26,Spinning,905,begginer,2,14.46,2023-09-26 17:30:00.242262,A Spinning class,0 h 25 min
-27,Zumba,716,all levels,36,13.86,2024-05-09 23:00:00.242262,A Zumba class,2 h 
-28,CrossFit,177,advanced,26,18.21,2023-07-29 07:30:00.242262,A CrossFit class,1 h 55 min
-29,Personalized,35,advanced,13,20.72,2023-09-26 03:00:00.242262,A Personalized class,2 h 
-30,Body Pump,191,begginer,34,13.01,2024-03-19 16:00:00.242262,A Body Pump class,1 h 10 min
-31,HIIT,808,advanced,16,13.33,2024-01-28 05:30:00.242262,A HIIT class,0 h 55 min
-32,Personalized,684,advanced,48,14.95,2023-10-10 00:30:00.242262,A Personalized class,0 h 10 min
-33,Boxing,136,intermediate,3,15.19,2023-10-13 13:00:00.242262,A Boxing class,2 h 
-34,GAP,644,intermediate,24,14.15,2023-08-13 15:30:00.242262,A GAP class,1 h 40 min
-35,Barre,62,intermediate,32,14.01,2024-01-19 13:30:00.242262,A Barre class,1 h 55 min
-36,Barre,112,advanced,44,17.32,2023-10-16 19:00:00.242262,A Barre class,1 h 30 min
-37,ABS,819,advanced,12,10.16,2023-10-29 06:30:00.242262,A ABS class,2 h 
-38,Yoga,973,all levels,49,11.86,2024-04-30 04:30:00.242262,A Yoga class,0 h 25 min
-39,Spinning,274,begginer,1,14.34,2023-11-27 11:00:00.242262,A Spinning class,2 h 
-40,Boxing,431,all levels,31,11.49,2023-06-14 21:30:00.242262,A Boxing class,1 h 25 min
-41,Spinning,852,begginer,40,12.2,2023-07-26 10:00:00.242262,A Spinning class,2 h 
-42,Zumba,529,all levels,23,14.14,2024-04-12 08:00:00.242262,A Zumba class,1 h 35 min
-43,CrossFit,244,all levels,49,10.33,2023-09-19 11:00:00.242262,A CrossFit class,2 h 
-44,Yoga,684,all levels,4,12.14,2023-11-03 05:00:00.242262,A Yoga class,1 h 
-45,Barre,112,begginer,23,8.53,2023-07-25 06:00:00.242262,A Barre class,2 h 
-46,Pilates,752,advanced,46,16.1,2023-07-17 09:00:00.242262,A Pilates class,1 h 45 min
-47,Zumba,81,advanced,18,18.78,2023-09-11 09:30:00.242262,A Zumba class,2 h 
-48,Spinning,538,all levels,3,17.84,2024-05-10 11:30:00.242262,A Spinning class,2 h 
-49,Other,716,begginer,27,20.64,2023-12-28 03:30:00.242262,A Other class,1 h 10 min
-50,GAP,861,advanced,43,14.07,2024-02-19 11:30:00.242262,A GAP class,1 h 20 min
-51,Other,807,advanced,28,15.84,2024-05-06 17:30:00.242262,A Other class,2 h 
-52,CrossFit,736,all levels,23,16.85,2023-08-03 15:00:00.242262,A CrossFit class,2 h 
-53,Zumba,826,intermediate,40,15.23,2023-06-08 20:00:00.242262,A Zumba class,0 h 15 min
-54,ABS,674,all levels,39,15.88,2023-06-03 08:00:00.242262,A ABS class,0 h 20 min
-55,Barre,561,intermediate,42,20.01,2023-06-08 13:00:00.242262,A Barre class,2 h 
-56,Zumba,819,begginer,22,14.28,2023-09-16 04:30:00.242262,A Zumba class,2 h 
-57,Body Pump,353,intermediate,17,17.82,2024-01-04 23:30:00.242262,A Body Pump class,2 h 
-58,Body Combat,427,all levels,24,11.84,2023-06-24 21:30:00.242262,A Body Combat class,2 h 
-59,ABS,899,begginer,42,9.83,2024-02-18 09:00:00.242262,A ABS class,2 h 
-60,Kickboxing,55,all levels,7,17.36,2024-04-23 10:00:00.242262,A Kickboxing class,2 h 
-61,Kickboxing,947,intermediate,8,15.7,2024-03-30 20:00:00.242262,A Kickboxing class,0 h 20 min
-62,CrossFit,632,all levels,25,11.47,2023-10-12 22:30:00.242262,A CrossFit class,2 h 
-63,HIIT,99,all levels,21,17.73,2023-10-12 08:30:00.242262,A HIIT class,0 h 5 min
-64,Body Combat,191,intermediate,16,13.44,2023-10-16 14:30:00.242262,A Body Combat class,1 h 50 min
-65,Spinning,133,begginer,4,12.95,2024-01-11 10:30:00.242262,A Spinning class,0 h 50 min
-66,CrossFit,982,all levels,14,9.45,2024-01-12 08:00:00.242262,A CrossFit class,1 h 
-67,Stretching,398,intermediate,19,16.5,2024-02-08 01:30:00.242262,A Stretching class,0 h 
-68,Pilates,868,intermediate,31,11.12,2023-12-20 02:00:00.242262,A Pilates class,0 h 30 min
-69,Other,28,intermediate,8,17.66,2023-06-18 13:30:00.242262,A Other class,0 h 
-70,Zumba,18,intermediate,41,15.8,2023-07-14 00:30:00.242262,A Zumba class,1 h 30 min
-71,Total Body Conditioning,757,advanced,41,20.26,2023-08-13 03:30:00.242262,A Total Body Conditioning class,1 h 55 min
-72,GAP,159,advanced,25,13.56,2023-10-09 20:30:00.242262,A GAP class,1 h 45 min
-73,Body Pump,275,advanced,35,11.03,2023-12-04 05:30:00.242262,A Body Pump class,0 h 15 min
-74,Yoga,684,begginer,35,15.2,2023-11-04 06:00:00.242262,A Yoga class,1 h 50 min
-75,Other,197,advanced,6,17.32,2023-11-07 09:00:00.242262,A Other class,0 h 40 min
-76,Personalized,182,intermediate,2,15.32,2023-11-10 10:00:00.242262,A Personalized class,1 h 55 min
-77,Total Body Conditioning,340,begginer,3,15.55,2023-06-04 00:30:00.242262,A Total Body Conditioning class,1 h 15 min
-78,Barre,537,intermediate,17,16.98,2023-08-06 21:30:00.242262,A Barre class,0 h 25 min
-79,HIIT,11,intermediate,5,12.51,2024-04-21 06:00:00.242262,A HIIT class,0 h 25 min
-80,Spinning,220,advanced,4,15.53,2024-04-25 12:30:00.242262,A Spinning class,1 h 15 min
-81,Aerobics,620,advanced,2,13.08,2023-07-04 05:30:00.242262,A Aerobics class,0 h 40 min
-82,Other,972,all levels,10,16.67,2024-03-10 15:00:00.242262,A Other class,2 h 
-83,Stretching,536,all levels,35,18.18,2024-05-17 20:00:00.242262,A Stretching class,1 h 10 min
-84,Yoga,239,begginer,9,16.24,2023-12-31 23:30:00.242262,A Yoga class,0 h 5 min
-85,Total Body Conditioning,105,intermediate,10,10.53,2023-11-26 15:00:00.242262,A Total Body Conditioning class,2 h 
-86,GAP,443,intermediate,40,16.35,2023-09-14 21:30:00.242262,A GAP class,1 h 25 min
-87,Yoga,467,begginer,8,13.7,2023-09-05 16:00:00.242262,A Yoga class,2 h 
-88,Pilates,422,intermediate,3,14.31,2023-11-01 02:30:00.242262,A Pilates class,0 h 50 min
-89,Spinning,632,all levels,36,17.18,2023-09-20 13:30:00.242262,A Spinning class,0 h 40 min
-90,Pilates,281,all levels,30,13.1,2023-09-02 08:00:00.242262,A Pilates class,1 h 5 min
-91,Other,48,intermediate,20,11.25,2024-01-01 19:00:00.242262,A Other class,0 h 45 min
-92,Personalized,377,all levels,29,14.3,2023-11-12 03:30:00.242262,A Personalized class,0 h 20 min
-93,Stretching,808,begginer,21,8.96,2024-02-10 13:30:00.242262,A Stretching class,0 h 30 min
-94,Zumba,239,advanced,17,12.05,2024-02-09 14:30:00.242262,A Zumba class,0 h 50 min
-95,Pilates,561,intermediate,16,15.82,2023-11-23 00:30:00.242262,A Pilates class,2 h 
-96,Barre,7,begginer,32,17.2,2024-01-08 00:00:00.242262,A Barre class,1 h 45 min
-97,Kickboxing,539,intermediate,16,21.51,2023-10-23 19:00:00.242262,A Kickboxing class,0 h 30 min
-98,Spinning,333,intermediate,37,13.8,2023-11-12 11:30:00.242262,A Spinning class,0 h 10 min
-99,Aerobics,775,intermediate,12,18.71,2023-06-29 19:00:00.242262,A Aerobics class,1 h 5 min
-100,Zumba,890,intermediate,42,8.76,2023-12-28 21:00:00.242262,A Zumba class,2 h 
-101,Aerobics,317,intermediate,46,12.78,2023-11-04 21:30:00.242262,A Aerobics class,1 h 50 min
-102,Zumba,601,all levels,41,18.34,2023-10-03 04:30:00.242262,A Zumba class,0 h 35 min
-103,Body Combat,35,advanced,18,13.51,2023-08-25 06:30:00.242262,A Body Combat class,2 h 
-104,Body Combat,305,begginer,49,11.69,2023-10-04 22:00:00.242262,A Body Combat class,0 h 25 min
-105,Body Pump,916,advanced,29,13.19,2023-11-23 23:00:00.242262,A Body Pump class,0 h 50 min
-106,Aerobics,550,intermediate,28,19.87,2023-11-08 09:00:00.242262,A Aerobics class,0 h 55 min
-107,Stretching,274,advanced,20,12.04,2023-07-04 00:00:00.242262,A Stretching class,1 h 
-108,Other,401,all levels,47,25.17,2023-11-21 20:30:00.242262,A Other class,0 h 50 min
-109,ABS,592,intermediate,16,15.63,2023-07-16 15:30:00.242262,A ABS class,2 h 
-110,HIIT,201,begginer,41,13.05,2023-11-21 13:30:00.242262,A HIIT class,1 h 15 min
-111,Yoga,77,all levels,32,23.23,2023-11-27 23:30:00.242262,A Yoga class,0 h 50 min
-112,Total Body Conditioning,513,advanced,2,18.84,2023-08-16 01:30:00.242262,A Total Body Conditioning class,2 h 
-113,Kickboxing,340,all levels,20,13.11,2023-07-06 20:00:00.242262,A Kickboxing class,0 h 30 min
-114,ABS,275,begginer,14,14.23,2024-05-18 21:30:00.242262,A ABS class,2 h 
-115,Yoga,356,all levels,43,10.71,2023-07-19 00:30:00.242262,A Yoga class,0 h 25 min
-116,Barre,335,intermediate,21,17.43,2024-01-23 23:30:00.242262,A Barre class,1 h 
-117,Personalized,449,all levels,30,19.13,2023-06-04 13:30:00.242262,A Personalized class,1 h 25 min
-118,Kickboxing,247,intermediate,18,19.23,2024-04-13 19:30:00.242262,A Kickboxing class,0 h 15 min
-119,HIIT,757,intermediate,18,12.6,2023-05-31 10:00:00.242262,A HIIT class,0 h 50 min
-120,Yoga,384,all levels,3,12.27,2024-01-08 10:30:00.242262,A Yoga class,0 h 10 min
-121,Kickboxing,159,begginer,19,17.37,2023-11-01 01:00:00.242262,A Kickboxing class,1 h 15 min
-122,Stretching,905,advanced,35,15.3,2024-05-14 02:00:00.242262,A Stretching class,1 h 35 min
-123,ABS,196,begginer,43,15.45,2023-07-18 09:30:00.242262,A ABS class,1 h 40 min
-124,Pilates,63,all levels,3,13.99,2023-06-09 19:30:00.242262,A Pilates class,1 h 5 min
-125,Yoga,854,intermediate,22,12.72,2023-11-18 05:30:00.242262,A Yoga class,1 h 50 min
-126,Stretching,201,all levels,16,13.35,2023-07-04 01:00:00.242262,A Stretching class,1 h 25 min
-127,Boxing,735,begginer,13,19.65,2024-02-15 10:30:00.242262,A Boxing class,1 h 30 min
-128,Spinning,757,all levels,47,10.26,2024-01-08 02:30:00.242262,A Spinning class,1 h 15 min
-129,Other,370,advanced,6,18.83,2024-02-23 22:00:00.242262,A Other class,1 h 25 min
-130,ABS,792,begginer,27,13.32,2023-07-12 13:00:00.242262,A ABS class,1 h 45 min
-131,Body Pump,821,intermediate,29,19.61,2024-03-06 00:00:00.242262,A Body Pump class,1 h 15 min
-132,Barre,35,advanced,26,12.32,2024-02-28 01:00:00.242262,A Barre class,2 h 
-133,Yoga,351,begginer,46,15.97,2023-09-15 20:30:00.242262,A Yoga class,1 h 30 min
-134,Boxing,675,advanced,12,14.24,2024-04-19 21:00:00.242262,A Boxing class,1 h 45 min
-135,Personalized,830,begginer,39,11.29,2023-09-21 09:00:00.242262,A Personalized class,2 h 
-136,Spinning,662,advanced,35,17.51,2023-09-04 01:00:00.242262,A Spinning class,2 h 
-137,Spinning,409,all levels,28,20.27,2024-02-19 21:00:00.242262,A Spinning class,1 h 5 min
-138,Body Pump,627,intermediate,27,19.06,2024-05-13 05:00:00.242262,A Body Pump class,1 h 25 min
-139,Spinning,540,intermediate,17,14.08,2023-11-15 21:30:00.242262,A Spinning class,0 h 35 min
-140,Other,239,begginer,41,17.53,2023-09-01 22:30:00.242262,A Other class,2 h 
-141,Body Combat,365,all levels,39,18.21,2023-10-02 05:00:00.242262,A Body Combat class,0 h 10 min
-142,Boxing,48,begginer,33,12.45,2024-05-18 03:00:00.242262,A Boxing class,1 h 
-143,Spinning,251,advanced,32,15.78,2024-05-07 15:00:00.242262,A Spinning class,0 h 25 min
-144,Body Combat,317,all levels,48,11.63,2024-05-03 02:00:00.242262,A Body Combat class,0 h 35 min
-145,GAP,858,intermediate,26,18.49,2024-04-17 23:00:00.242262,A GAP class,1 h 45 min
-146,Personalized,460,advanced,12,14.18,2023-08-03 10:00:00.242262,A Personalized class,0 h 25 min
-147,HIIT,304,advanced,30,8.41,2024-02-09 21:00:00.242262,A HIIT class,1 h 5 min
-148,Yoga,431,all levels,10,19.34,2023-10-09 13:30:00.242262,A Yoga class,2 h 
-149,Body Combat,767,all levels,13,16.97,2024-04-01 02:30:00.242262,A Body Combat class,2 h 
-150,Spinning,667,advanced,49,9.53,2024-03-13 05:00:00.242262,A Spinning class,2 h 
-151,Total Body Conditioning,335,advanced,34,10.4,2023-10-29 21:00:00.242262,A Total Body Conditioning class,1 h 10 min
-152,Zumba,939,intermediate,3,16.16,2024-01-27 15:30:00.242262,A Zumba class,0 h 25 min
-153,Pilates,54,intermediate,9,14.5,2024-05-15 05:00:00.242262,A Pilates class,0 h 15 min
-154,Barre,618,intermediate,24,16.63,2024-03-08 23:30:00.242262,A Barre class,2 h 
-155,Total Body Conditioning,365,begginer,26,18.74,2023-06-27 20:30:00.242262,A Total Body Conditioning class,1 h 45 min
-156,CrossFit,662,all levels,43,13.99,2023-09-12 15:00:00.242262,A CrossFit class,0 h 25 min
-157,ABS,761,intermediate,29,12.59,2023-12-20 22:30:00.242262,A ABS class,0 h 5 min
-158,Total Body Conditioning,914,begginer,27,16.6,2024-01-12 05:30:00.242262,A Total Body Conditioning class,1 h 30 min
-159,HIIT,241,all levels,24,12.9,2024-05-18 12:00:00.242262,A HIIT class,1 h 40 min
-160,Aerobics,205,all levels,40,20.2,2024-01-21 14:00:00.242262,A Aerobics class,2 h 
-161,Kickboxing,107,begginer,21,19.0,2023-06-21 21:00:00.242262,A Kickboxing class,0 h 40 min
-162,Body Pump,807,intermediate,33,17.32,2023-08-09 11:30:00.242262,A Body Pump class,2 h 
-163,Zumba,536,advanced,34,19.28,2024-01-27 22:30:00.242262,A Zumba class,2 h 
-164,CrossFit,471,advanced,13,16.49,2023-12-14 02:00:00.242262,A CrossFit class,0 h 5 min
-165,Kickboxing,132,advanced,42,17.43,2023-06-15 20:00:00.242262,A Kickboxing class,0 h 10 min
-166,Pilates,431,intermediate,38,17.58,2023-12-25 00:00:00.242262,A Pilates class,2 h 
-167,Personalized,17,intermediate,13,13.46,2023-09-13 16:30:00.242262,A Personalized class,0 h 10 min
-168,Body Combat,595,advanced,23,19.81,2024-03-29 05:30:00.242262,A Body Combat class,1 h 10 min
-169,Boxing,234,begginer,14,13.61,2024-05-15 15:00:00.242262,A Boxing class,2 h 
-170,Spinning,340,begginer,20,16.8,2023-05-27 13:30:00.242262,A Spinning class,2 h 
-171,ABS,908,advanced,39,18.72,2024-02-07 15:30:00.242262,A ABS class,2 h 
-172,Body Combat,384,advanced,27,13.55,2023-08-29 07:00:00.242262,A Body Combat class,2 h 
-173,Total Body Conditioning,356,begginer,48,11.7,2023-09-23 14:00:00.242262,A Total Body Conditioning class,0 h 25 min
-174,Personalized,270,advanced,42,9.85,2023-06-09 16:00:00.242262,A Personalized class,2 h 
-175,Aerobics,110,advanced,41,15.08,2023-08-04 21:30:00.242262,A Aerobics class,2 h 
-176,Boxing,745,advanced,4,20.7,2024-05-11 21:00:00.242262,A Boxing class,0 h 25 min
-177,HIIT,862,all levels,7,14.82,2023-11-09 15:00:00.242262,A HIIT class,0 h 25 min
-178,Other,217,begginer,24,21.3,2024-03-23 12:30:00.242262,A Other class,2 h 
-179,Zumba,191,advanced,26,10.13,2023-07-16 03:00:00.242262,A Zumba class,0 h 10 min
-180,Barre,258,intermediate,5,16.09,2023-07-26 21:00:00.242262,A Barre class,0 h 55 min
-181,Body Pump,621,intermediate,22,13.4,2023-06-08 11:30:00.242262,A Body Pump class,0 h 45 min
-182,Yoga,356,advanced,47,15.59,2023-08-01 20:00:00.242262,A Yoga class,1 h 45 min
-183,CrossFit,393,begginer,4,14.04,2023-10-10 01:30:00.242262,A CrossFit class,2 h 
-184,Body Combat,907,begginer,15,14.45,2023-07-10 23:00:00.242262,A Body Combat class,0 h 25 min
-185,Spinning,353,intermediate,38,13.99,2023-05-30 11:00:00.242262,A Spinning class,2 h 
-186,Other,667,intermediate,28,12.66,2023-09-03 21:00:00.242262,A Other class,1 h 25 min
-187,Zumba,255,intermediate,20,13.44,2024-05-24 11:30:00.242262,A Zumba class,1 h 40 min
-188,Total Body Conditioning,365,begginer,28,17.9,2023-09-04 07:00:00.242262,A Total Body Conditioning class,0 h 55 min
-189,Boxing,365,intermediate,22,15.53,2024-05-22 06:00:00.242262,A Boxing class,0 h 20 min
-190,Aerobics,283,advanced,20,13.82,2023-12-12 21:30:00.242262,A Aerobics class,2 h 
-191,Aerobics,274,intermediate,5,18.73,2024-04-12 07:30:00.242262,A Aerobics class,1 h 15 min
-192,Body Combat,132,intermediate,37,15.4,2024-02-22 20:00:00.242262,A Body Combat class,0 h 
-193,Yoga,982,begginer,27,12.15,2023-10-07 17:00:00.242262,A Yoga class,1 h 40 min
-194,CrossFit,401,begginer,15,20.78,2023-05-28 12:00:00.242262,A CrossFit class,0 h 55 min
-195,Aerobics,460,intermediate,36,14.08,2024-03-08 10:00:00.242262,A Aerobics class,2 h 
-196,Aerobics,17,begginer,13,10.47,2024-05-21 15:30:00.242262,A Aerobics class,0 h 30 min
-197,Boxing,618,advanced,17,16.25,2023-10-12 04:00:00.242262,A Boxing class,0 h 50 min
-198,Yoga,868,intermediate,50,12.67,2023-08-22 07:30:00.242262,A Yoga class,2 h 
-199,HIIT,258,intermediate,19,14.34,2023-11-18 02:30:00.242262,A HIIT class,2 h 
-200,Barre,943,all levels,4,14.23,2023-12-03 11:30:00.242262,A Barre class,2 h 
-201,Stretching,471,begginer,43,16.58,2023-12-14 14:00:00.242262,A Stretching class,0 h 5 min
-202,Body Pump,858,intermediate,42,20.7,2024-03-26 03:30:00.242262,A Body Pump class,1 h 5 min
-203,Aerobics,540,all levels,19,14.81,2024-01-09 20:30:00.242262,A Aerobics class,0 h 30 min
-204,Pilates,255,advanced,11,16.06,2023-06-19 21:30:00.242262,A Pilates class,2 h 
-205,Total Body Conditioning,826,intermediate,9,15.92,2023-06-13 15:30:00.242262,A Total Body Conditioning class,1 h 15 min
-206,Other,495,all levels,30,10.84,2023-07-09 21:00:00.242262,A Other class,2 h 
-207,Zumba,783,begginer,17,14.79,2023-09-30 01:00:00.242262,A Zumba class,1 h 5 min
-208,Aerobics,987,all levels,6,18.12,2023-09-16 04:30:00.242262,A Aerobics class,2 h 
-209,Aerobics,954,all levels,7,18.37,2023-07-11 20:30:00.242262,A Aerobics class,2 h 
-210,Personalized,220,begginer,39,15.67,2023-06-12 11:00:00.242262,A Personalized class,1 h 20 min
-211,HIIT,271,begginer,31,11.67,2023-08-31 07:30:00.242262,A HIIT class,1 h 
-212,Barre,191,intermediate,11,10.54,2023-12-16 03:30:00.242262,A Barre class,0 h 15 min
-213,Total Body Conditioning,546,begginer,9,10.79,2024-04-12 10:00:00.242262,A Total Body Conditioning class,0 h 10 min
-214,CrossFit,821,advanced,5,18.21,2023-06-07 18:00:00.242262,A CrossFit class,1 h 15 min
-215,Other,921,all levels,34,13.89,2024-02-26 05:00:00.242262,A Other class,2 h 
-216,Spinning,282,advanced,49,13.04,2024-02-10 02:30:00.242262,A Spinning class,2 h 
-217,Stretching,340,advanced,50,13.83,2024-03-27 14:00:00.242262,A Stretching class,0 h 10 min
-218,Barre,221,intermediate,44,15.02,2023-12-09 18:30:00.242262,A Barre class,0 h 50 min
-219,ABS,592,advanced,20,7.13,2024-05-18 22:00:00.242262,A ABS class,1 h 35 min
-220,Body Combat,667,begginer,22,16.2,2024-03-17 20:00:00.242262,A Body Combat class,1 h 5 min
-221,Boxing,906,all levels,26,17.37,2023-08-22 12:00:00.242262,A Boxing class,1 h 55 min
-222,Yoga,333,intermediate,18,12.95,2023-08-08 17:00:00.242262,A Yoga class,1 h 55 min
-223,Personalized,819,intermediate,16,19.71,2024-05-15 19:30:00.242262,A Personalized class,2 h 
-224,Barre,906,intermediate,34,16.37,2023-12-11 08:00:00.242262,A Barre class,1 h 15 min
-225,GAP,191,all levels,11,14.79,2023-07-25 19:30:00.242262,A GAP class,0 h 35 min
-226,Kickboxing,471,all levels,45,12.08,2023-06-12 06:30:00.242262,A Kickboxing class,2 h 
-227,Total Body Conditioning,64,all levels,27,16.64,2024-01-21 18:30:00.242262,A Total Body Conditioning class,1 h 25 min
-228,GAP,808,begginer,4,19.83,2024-02-25 02:30:00.242262,A GAP class,0 h 20 min
-229,GAP,662,advanced,41,17.79,2023-06-12 16:30:00.242262,A GAP class,2 h 
-230,Barre,852,intermediate,22,14.4,2023-11-13 01:00:00.242262,A Barre class,0 h 20 min
-231,CrossFit,796,advanced,34,8.06,2023-09-13 20:30:00.242262,A CrossFit class,1 h 15 min
-232,Other,396,all levels,49,10.97,2024-02-25 06:30:00.242262,A Other class,2 h 
-233,HIIT,741,all levels,42,12.2,2024-01-28 03:00:00.242262,A HIIT class,1 h 55 min
-234,Body Combat,502,intermediate,37,18.35,2023-07-24 17:30:00.242262,A Body Combat class,0 h 10 min
-235,Aerobics,604,begginer,26,9.29,2024-05-16 01:00:00.242262,A Aerobics class,2 h 
-236,Boxing,830,begginer,24,3.94,2023-07-25 05:00:00.242262,A Boxing class,2 h 
-237,Zumba,136,advanced,14,11.99,2023-09-14 01:00:00.242262,A Zumba class,2 h 
-238,Boxing,664,advanced,41,14.9,2023-11-21 12:00:00.242262,A Boxing class,0 h 35 min
-239,GAP,981,intermediate,26,15.52,2023-06-01 01:00:00.242262,A GAP class,2 h 
-240,Other,17,advanced,19,15.91,2024-02-02 20:00:00.242262,A Other class,0 h 20 min
-241,Boxing,365,advanced,33,16.81,2024-05-10 11:30:00.242262,A Boxing class,2 h 
-242,HIIT,396,advanced,49,11.84,2023-10-01 17:00:00.242262,A HIIT class,0 h 25 min
-243,Barre,598,intermediate,47,12.46,2024-04-13 08:00:00.242262,A Barre class,1 h 35 min
-244,Spinning,862,begginer,23,19.89,2024-01-21 16:30:00.242262,A Spinning class,1 h 50 min
-245,Body Pump,457,intermediate,30,20.96,2024-05-19 15:30:00.242262,A Body Pump class,2 h 
-246,Pilates,890,all levels,35,13.12,2023-09-02 06:30:00.242262,A Pilates class,0 h 
-247,ABS,421,begginer,27,15.85,2024-04-20 11:00:00.242262,A ABS class,2 h 
-248,Total Body Conditioning,333,advanced,1,11.45,2024-04-28 16:30:00.242262,A Total Body Conditioning class,1 h 40 min
-249,Personalized,105,all levels,1,14.16,2023-11-26 21:00:00.242262,A Personalized class,0 h 
-250,GAP,62,begginer,30,16.95,2024-01-06 22:00:00.242262,A GAP class,1 h 35 min
-251,HIIT,623,begginer,47,18.45,2024-04-25 05:00:00.242262,A HIIT class,2 h 
-252,GAP,234,advanced,20,15.59,2024-03-13 09:00:00.242262,A GAP class,1 h 35 min
-253,Personalized,853,advanced,49,18.4,2024-03-13 00:30:00.242262,A Personalized class,0 h 20 min
-254,Kickboxing,920,begginer,33,15.5,2023-07-25 04:30:00.242262,A Kickboxing class,2 h 
-255,HIIT,471,begginer,5,16.73,2023-07-12 02:00:00.242262,A HIIT class,2 h 
-256,Stretching,426,all levels,39,11.58,2023-08-15 03:00:00.242262,A Stretching class,2 h 
-257,Aerobics,807,intermediate,49,13.14,2023-12-08 07:30:00.242262,A Aerobics class,0 h 5 min
-258,ABS,905,all levels,3,14.97,2024-03-16 09:00:00.242262,A ABS class,0 h 45 min
-259,Yoga,972,advanced,42,17.07,2023-06-07 20:00:00.242262,A Yoga class,1 h 5 min
-260,Boxing,906,intermediate,23,16.54,2024-05-06 18:00:00.242262,A Boxing class,1 h 5 min
-261,Barre,858,all levels,34,18.33,2023-06-10 00:30:00.242262,A Barre class,2 h 
-262,GAP,908,advanced,28,15.5,2024-01-14 16:00:00.242262,A GAP class,1 h 15 min
-263,Other,377,intermediate,37,19.6,2024-03-21 15:00:00.242262,A Other class,1 h 30 min
-264,Kickboxing,258,all levels,34,11.19,2023-06-07 13:00:00.242262,A Kickboxing class,0 h 
-265,Spinning,538,all levels,40,13.21,2023-06-24 04:30:00.242262,A Spinning class,1 h 45 min
-266,Stretching,410,all levels,4,17.38,2024-03-14 07:00:00.242262,A Stretching class,0 h 5 min
-267,Body Pump,709,advanced,38,13.75,2024-04-25 23:00:00.242262,A Body Pump class,1 h 20 min
-268,Barre,169,begginer,35,16.79,2023-09-08 04:00:00.242262,A Barre class,2 h 
-269,Barre,460,begginer,27,20.15,2023-07-16 08:30:00.242262,A Barre class,1 h 50 min
-270,Pilates,220,intermediate,1,11.9,2023-11-19 15:00:00.242262,A Pilates class,1 h 30 min
-271,Yoga,806,advanced,29,14.82,2023-08-18 21:00:00.242262,A Yoga class,1 h 50 min
-272,Boxing,513,begginer,35,15.93,2024-02-26 18:00:00.242262,A Boxing class,0 h 5 min
-273,Stretching,221,intermediate,18,16.62,2023-12-07 17:00:00.242262,A Stretching class,1 h 40 min
-274,Barre,655,advanced,18,13.68,2023-11-18 02:30:00.242262,A Barre class,0 h 5 min
-275,Stretching,18,intermediate,18,16.21,2024-03-16 12:30:00.242262,A Stretching class,2 h 
-276,Zumba,684,all levels,8,15.87,2024-02-04 13:00:00.242262,A Zumba class,2 h 
-277,Kickboxing,384,begginer,3,15.2,2024-02-27 08:00:00.242262,A Kickboxing class,2 h 
-278,Personalized,235,intermediate,23,16.88,2023-10-25 09:00:00.242262,A Personalized class,0 h 15 min
-279,Barre,862,all levels,9,13.46,2024-02-23 00:30:00.242262,A Barre class,1 h 55 min
-280,GAP,792,intermediate,40,18.74,2024-02-29 17:30:00.242262,A GAP class,2 h 
-281,Spinning,241,all levels,44,13.59,2024-04-13 16:00:00.242262,A Spinning class,1 h 
-282,Zumba,182,begginer,36,16.14,2023-08-01 22:30:00.242262,A Zumba class,2 h 
-283,CrossFit,333,begginer,28,13.54,2023-06-26 02:30:00.242262,A CrossFit class,1 h 45 min
-284,Pilates,96,advanced,17,9.28,2023-07-19 19:00:00.242262,A Pilates class,1 h 55 min
-285,GAP,947,advanced,1,14.91,2024-04-04 00:30:00.242262,A GAP class,2 h 
-286,HIIT,890,all levels,26,17.37,2024-01-17 09:00:00.242262,A HIIT class,0 h 15 min
-287,Kickboxing,899,all levels,24,22.77,2024-04-27 20:00:00.242262,A Kickboxing class,2 h 
-288,Yoga,55,begginer,10,13.45,2023-10-13 07:00:00.242262,A Yoga class,1 h 35 min
-289,GAP,220,begginer,42,14.01,2024-02-09 03:30:00.242262,A GAP class,1 h 20 min
-290,Zumba,177,intermediate,7,18.41,2023-09-13 06:30:00.242262,A Zumba class,0 h 15 min
-291,Boxing,868,advanced,14,14.71,2024-04-19 22:30:00.242262,A Boxing class,1 h 
-292,Other,914,advanced,31,9.62,2024-01-18 11:00:00.242262,A Other class,1 h 15 min
-293,Pilates,709,all levels,39,18.15,2023-07-31 04:00:00.242262,A Pilates class,1 h 50 min
-294,Boxing,198,intermediate,20,18.42,2024-03-22 11:00:00.242262,A Boxing class,1 h 35 min
-295,Stretching,198,begginer,27,14.34,2024-02-17 16:00:00.242262,A Stretching class,0 h 50 min
-296,Stretching,947,advanced,28,15.48,2024-03-16 16:00:00.242262,A Stretching class,2 h 
-297,Other,304,begginer,49,11.22,2023-10-09 13:00:00.242262,A Other class,2 h 
-298,Spinning,251,advanced,20,11.69,2024-05-10 00:30:00.242262,A Spinning class,0 h 10 min
-299,HIIT,536,advanced,22,19.55,2024-05-09 12:00:00.242262,A HIIT class,0 h 40 min
-300,Body Pump,10,advanced,10,17.25,2023-09-21 05:00:00.242262,A Body Pump class,0 h 25 min
-301,HIIT,364,begginer,28,16.5,2023-08-24 09:30:00.242262,A HIIT class,1 h 20 min
-302,GAP,953,advanced,49,8.93,2024-05-20 15:00:00.242262,A GAP class,0 h 40 min
-303,Kickboxing,741,advanced,37,18.65,2023-08-16 13:00:00.242262,A Kickboxing class,1 h 25 min
-304,Body Pump,15,advanced,34,19.03,2024-04-28 10:00:00.242262,A Body Pump class,1 h 20 min
-305,Body Combat,182,intermediate,48,17.33,2024-05-20 12:00:00.242262,A Body Combat class,2 h 
-306,Spinning,420,advanced,13,14.44,2023-08-17 07:30:00.242262,A Spinning class,1 h 5 min
-307,GAP,913,advanced,9,14.43,2023-05-27 18:00:00.242262,A GAP class,0 h 5 min
-308,Body Combat,169,intermediate,19,15.62,2023-05-29 06:30:00.242262,A Body Combat class,0 h 50 min
-309,Body Pump,624,all levels,7,8.84,2023-12-02 04:30:00.242262,A Body Pump class,0 h 35 min
-310,Zumba,891,all levels,19,18.3,2024-02-11 14:00:00.242262,A Zumba class,0 h 25 min
-311,Personalized,275,all levels,46,15.39,2023-06-27 04:30:00.242262,A Personalized class,1 h 50 min
-312,Boxing,18,advanced,36,12.27,2024-01-29 21:30:00.242262,A Boxing class,1 h 15 min
-313,Barre,353,begginer,45,16.08,2024-02-22 04:00:00.242262,A Barre class,1 h 20 min
-314,Spinning,830,intermediate,2,17.24,2024-02-22 00:00:00.242262,A Spinning class,0 h 35 min
-315,ABS,806,intermediate,17,18.22,2024-03-29 11:30:00.242262,A ABS class,2 h 
-316,Body Combat,891,advanced,4,18.8,2023-07-22 20:00:00.242262,A Body Combat class,2 h 
-317,Yoga,592,intermediate,43,17.34,2023-07-19 14:00:00.242262,A Yoga class,0 h 15 min
-318,Boxing,708,intermediate,42,15.49,2024-01-01 00:30:00.242262,A Boxing class,0 h 40 min
-319,Barre,644,all levels,26,15.46,2023-10-17 06:30:00.242262,A Barre class,0 h 45 min
-320,Body Pump,826,begginer,3,16.58,2023-08-19 13:30:00.242262,A Body Pump class,0 h 35 min
-321,Pilates,351,all levels,39,16.03,2024-02-07 13:00:00.242262,A Pilates class,2 h 
-322,HIIT,937,intermediate,20,13.25,2024-04-17 19:30:00.242262,A HIIT class,2 h 
-323,Personalized,333,begginer,26,16.67,2023-11-18 21:30:00.242262,A Personalized class,1 h 15 min
-324,HIIT,333,all levels,36,20.61,2023-11-02 17:00:00.242262,A HIIT class,1 h 20 min
-325,Zumba,471,advanced,25,15.35,2023-06-19 17:00:00.242262,A Zumba class,2 h 
-326,Boxing,808,intermediate,40,12.68,2023-09-02 00:30:00.242262,A Boxing class,1 h 10 min
-327,ABS,624,all levels,49,18.16,2024-02-15 22:00:00.242262,A ABS class,0 h 45 min
-328,Personalized,905,all levels,16,10.36,2023-12-30 21:00:00.242262,A Personalized class,1 h 25 min
-329,CrossFit,64,advanced,46,15.06,2024-01-11 10:30:00.242262,A CrossFit class,2 h 
-330,ABS,247,all levels,8,15.24,2023-07-12 16:30:00.242262,A ABS class,2 h 
-331,Personalized,398,begginer,42,12.4,2023-10-24 17:00:00.242262,A Personalized class,0 h 5 min
-332,Spinning,77,all levels,48,20.96,2023-11-28 19:30:00.242262,A Spinning class,1 h 50 min
-333,Pilates,627,intermediate,47,13.52,2023-07-05 04:30:00.242262,A Pilates class,1 h 30 min
-334,Body Combat,638,advanced,32,10.4,2023-09-23 06:00:00.242262,A Body Combat class,2 h 
-335,Spinning,75,intermediate,16,16.34,2024-01-15 03:30:00.242262,A Spinning class,0 h 20 min
-336,Stretching,858,all levels,46,11.7,2024-05-18 11:00:00.242262,A Stretching class,2 h 
-337,Body Pump,351,advanced,49,16.01,2023-08-03 05:00:00.242262,A Body Pump class,0 h 50 min
-338,Kickboxing,409,all levels,40,11.83,2024-05-17 09:00:00.242262,A Kickboxing class,0 h 25 min
-339,Body Pump,951,advanced,27,17.91,2024-04-09 23:30:00.242262,A Body Pump class,1 h 20 min
-340,Total Body Conditioning,155,intermediate,4,18.23,2024-04-29 19:00:00.242262,A Total Body Conditioning class,1 h 55 min
-341,Yoga,774,advanced,25,14.62,2024-03-30 09:00:00.242262,A Yoga class,0 h 20 min
-342,Other,502,begginer,19,14.36,2023-11-23 00:30:00.242262,A Other class,1 h 
-343,GAP,796,all levels,43,15.87,2023-10-21 14:00:00.242262,A GAP class,1 h 15 min
-344,Yoga,830,advanced,11,12.77,2024-03-25 05:00:00.242262,A Yoga class,0 h 30 min
-345,Total Body Conditioning,460,intermediate,48,16.36,2023-12-01 04:30:00.242262,A Total Body Conditioning class,2 h 
-346,Other,861,intermediate,25,14.36,2023-12-07 04:00:00.242262,A Other class,0 h 20 min
-347,Body Combat,675,intermediate,49,12.66,2024-02-07 16:30:00.242262,A Body Combat class,1 h 50 min
-348,CrossFit,757,all levels,23,19.46,2024-03-30 19:30:00.242262,A CrossFit class,1 h 45 min
-349,Body Pump,105,begginer,19,16.39,2023-11-09 20:00:00.242262,A Body Pump class,2 h 
-350,Yoga,54,begginer,14,12.06,2023-12-01 08:00:00.242262,A Yoga class,0 h 30 min
-351,Stretching,245,intermediate,37,12.95,2023-07-15 13:00:00.242262,A Stretching class,2 h 
-352,Pilates,467,begginer,6,10.86,2024-03-11 23:30:00.242262,A Pilates class,1 h 10 min
-353,GAP,410,all levels,34,16.1,2023-08-19 05:30:00.242262,A GAP class,0 h 10 min
-354,Kickboxing,112,all levels,36,17.73,2023-06-04 16:00:00.242262,A Kickboxing class,1 h 30 min
-355,Zumba,637,all levels,13,13.78,2023-08-05 08:00:00.242262,A Zumba class,1 h 
-356,Zumba,819,advanced,37,15.75,2023-09-23 14:30:00.242262,A Zumba class,2 h 
-357,ABS,953,begginer,20,15.48,2024-01-04 09:30:00.242262,A ABS class,2 h 
-358,Total Body Conditioning,674,all levels,15,12.84,2023-12-02 11:30:00.242262,A Total Body Conditioning class,1 h 15 min
-359,Body Pump,752,advanced,41,13.36,2023-08-28 14:30:00.242262,A Body Pump class,0 h 25 min
-360,HIIT,891,intermediate,22,18.45,2023-10-21 17:00:00.242262,A HIIT class,1 h 30 min
-361,Boxing,644,advanced,1,14.64,2024-02-23 03:00:00.242262,A Boxing class,0 h 15 min
-362,Aerobics,792,advanced,35,15.39,2024-04-26 05:30:00.242262,A Aerobics class,0 h 55 min
-363,Barre,221,begginer,11,15.89,2023-07-23 09:00:00.242262,A Barre class,1 h 55 min
-364,Body Combat,745,all levels,10,12.91,2023-10-17 08:00:00.242262,A Body Combat class,0 h 5 min
-365,Spinning,537,advanced,10,17.96,2023-06-20 05:30:00.242262,A Spinning class,0 h 50 min
-366,Pilates,914,advanced,45,11.28,2024-02-09 05:00:00.242262,A Pilates class,0 h 55 min
-367,CrossFit,708,intermediate,34,11.15,2024-04-28 16:30:00.242262,A CrossFit class,2 h 
-368,HIIT,340,begginer,9,14.62,2024-02-28 17:00:00.242262,A HIIT class,0 h 25 min
-369,Other,169,all levels,29,20.87,2023-12-11 21:30:00.242262,A Other class,0 h 
-370,Total Body Conditioning,201,intermediate,15,13.41,2023-09-05 16:30:00.242262,A Total Body Conditioning class,2 h 
-371,HIIT,410,intermediate,13,19.9,2023-07-23 22:30:00.242262,A HIIT class,1 h 25 min
-372,Zumba,409,advanced,24,11.73,2024-04-21 22:30:00.242262,A Zumba class,2 h 
-373,Body Combat,17,intermediate,9,14.88,2024-03-19 12:30:00.242262,A Body Combat class,0 h 45 min
-374,Aerobics,953,all levels,18,15.92,2024-04-08 17:30:00.242262,A Aerobics class,0 h 55 min
-375,Stretching,942,advanced,24,13.43,2023-11-19 12:30:00.242262,A Stretching class,1 h 40 min
-376,CrossFit,947,all levels,26,11.84,2023-10-21 11:00:00.242262,A CrossFit class,0 h 55 min
-377,Body Combat,421,begginer,9,11.44,2023-12-15 04:30:00.242262,A Body Combat class,1 h 25 min
-378,Personalized,796,intermediate,17,16.69,2023-07-25 16:00:00.242262,A Personalized class,1 h 5 min
-379,Yoga,890,advanced,38,15.14,2023-10-07 16:00:00.242262,A Yoga class,2 h 
-380,Personalized,340,intermediate,37,17.01,2023-06-29 07:00:00.242262,A Personalized class,2 h 
-381,CrossFit,45,begginer,14,10.94,2023-07-14 14:30:00.242262,A CrossFit class,0 h 20 min
-382,Spinning,182,all levels,16,15.6,2023-06-08 20:00:00.242262,A Spinning class,0 h 5 min
-383,Body Pump,365,intermediate,34,11.25,2024-05-19 03:30:00.242262,A Body Pump class,1 h 15 min
-384,ABS,621,advanced,43,11.8,2023-08-25 16:00:00.242262,A ABS class,0 h 20 min
-385,Spinning,527,intermediate,5,11.12,2023-09-23 20:00:00.242262,A Spinning class,1 h 10 min
-386,Pilates,426,advanced,24,11.73,2023-12-17 15:30:00.242262,A Pilates class,1 h 45 min
-387,GAP,722,all levels,27,16.75,2023-10-01 20:00:00.242262,A GAP class,2 h 
-388,Kickboxing,807,begginer,9,17.92,2023-09-21 22:00:00.242262,A Kickboxing class,1 h 10 min
-389,ABS,667,intermediate,13,11.31,2023-11-23 08:00:00.242262,A ABS class,1 h 30 min
-390,Boxing,15,advanced,29,13.44,2024-04-14 07:30:00.242262,A Boxing class,1 h 40 min
-391,GAP,667,all levels,12,13.9,2023-06-25 22:00:00.242262,A GAP class,0 h 25 min
-392,Pilates,586,intermediate,6,15.84,2023-09-09 14:00:00.242262,A Pilates class,2 h 
-393,Total Body Conditioning,725,all levels,34,10.04,2023-10-29 01:00:00.242262,A Total Body Conditioning class,1 h 40 min
-394,Total Body Conditioning,39,begginer,9,13.13,2023-08-14 05:00:00.242262,A Total Body Conditioning class,1 h 15 min
-395,HIIT,39,all levels,25,17.47,2024-02-04 03:00:00.242262,A HIIT class,2 h 
-396,ABS,274,all levels,18,17.6,2024-05-13 03:00:00.242262,A ABS class,2 h 
-397,CrossFit,317,advanced,49,19.91,2024-04-26 04:30:00.242262,A CrossFit class,2 h 
-398,Kickboxing,356,begginer,43,12.2,2024-02-17 14:00:00.242262,A Kickboxing class,1 h 35 min
-399,Boxing,709,all levels,32,16.29,2024-02-22 23:30:00.242262,A Boxing class,2 h 
-400,Stretching,467,intermediate,31,17.31,2023-11-21 03:30:00.242262,A Stretching class,2 h 
-401,ABS,920,begginer,31,10.93,2023-11-17 16:30:00.242262,A ABS class,1 h 30 min
-402,Stretching,916,all levels,49,13.73,2024-05-15 15:30:00.242262,A Stretching class,2 h 
-403,Aerobics,774,all levels,28,14.93,2024-03-08 05:30:00.242262,A Aerobics class,1 h 40 min
-404,ABS,169,advanced,41,14.06,2023-10-01 01:00:00.242262,A ABS class,1 h 15 min
-405,Body Combat,981,begginer,11,15.19,2024-01-10 15:30:00.242262,A Body Combat class,1 h 5 min
-406,Kickboxing,931,begginer,6,13.69,2023-12-06 03:00:00.242262,A Kickboxing class,2 h 
-407,CrossFit,495,begginer,27,11.1,2024-03-26 04:00:00.242262,A CrossFit class,2 h 
-408,CrossFit,933,begginer,42,14.83,2023-08-20 20:00:00.242262,A CrossFit class,2 h 
-409,Pilates,716,all levels,5,21.72,2024-03-01 05:00:00.242262,A Pilates class,2 h 
-410,Spinning,110,intermediate,41,14.07,2023-12-20 19:00:00.242262,A Spinning class,0 h 50 min
-411,Kickboxing,105,advanced,37,13.21,2024-03-22 01:30:00.242262,A Kickboxing class,1 h 5 min
-412,Stretching,353,begginer,40,14.27,2024-01-09 18:30:00.242262,A Stretching class,1 h 35 min
-413,Zumba,169,intermediate,47,16.82,2023-11-21 13:00:00.242262,A Zumba class,0 h 40 min
-414,CrossFit,159,advanced,22,13.98,2024-04-14 22:00:00.242262,A CrossFit class,1 h 35 min
-415,Body Combat,518,advanced,12,22.15,2024-01-30 02:30:00.242262,A Body Combat class,2 h 
-416,Zumba,767,begginer,41,21.93,2023-09-20 09:30:00.242262,A Zumba class,1 h 40 min
-417,ABS,913,advanced,2,18.29,2023-09-29 00:00:00.242262,A ABS class,0 h 55 min
-418,Total Body Conditioning,906,advanced,2,14.91,2023-06-08 19:30:00.242262,A Total Body Conditioning class,0 h 45 min
-419,CrossFit,107,advanced,21,16.01,2023-06-21 07:00:00.242262,A CrossFit class,1 h 30 min
-420,Body Combat,110,advanced,7,15.76,2023-10-21 21:00:00.242262,A Body Combat class,0 h 25 min
-421,Aerobics,112,advanced,49,16.12,2023-08-31 15:00:00.242262,A Aerobics class,0 h 45 min
-422,Pilates,546,all levels,14,14.16,2023-07-14 17:00:00.242262,A Pilates class,1 h 30 min
-423,Body Combat,891,intermediate,5,14.78,2023-08-06 08:30:00.242262,A Body Combat class,2 h 
-424,Kickboxing,245,all levels,19,12.54,2024-01-29 19:30:00.242262,A Kickboxing class,0 h 30 min
-425,Body Combat,529,begginer,20,13.91,2024-01-08 06:00:00.242262,A Body Combat class,2 h 
-426,Kickboxing,932,begginer,5,16.34,2024-01-29 06:30:00.242262,A Kickboxing class,1 h 50 min
-427,Total Body Conditioning,197,begginer,39,14.07,2023-11-26 20:00:00.242262,A Total Body Conditioning class,0 h 45 min
-428,Aerobics,255,intermediate,47,13.74,2023-11-20 04:00:00.242262,A Aerobics class,1 h 55 min
-429,CrossFit,35,begginer,13,19.95,2024-02-14 05:00:00.242262,A CrossFit class,0 h 50 min
-430,Yoga,735,all levels,9,17.43,2023-05-30 13:30:00.242262,A Yoga class,0 h 40 min
-431,Yoga,270,all levels,14,12.39,2024-05-06 05:00:00.242262,A Yoga class,2 h 
-432,Body Pump,632,begginer,27,16.74,2023-09-07 20:30:00.242262,A Body Pump class,0 h 35 min
-433,GAP,891,advanced,3,20.1,2024-05-10 20:00:00.242262,A GAP class,1 h 5 min
-434,Body Combat,905,all levels,15,14.86,2023-08-14 01:00:00.242262,A Body Combat class,0 h 40 min
-435,GAP,592,all levels,12,10.83,2023-11-12 02:00:00.242262,A GAP class,1 h 30 min
-436,HIIT,107,all levels,13,22.8,2023-08-14 11:30:00.242262,A HIIT class,2 h 
-437,Pilates,393,begginer,8,14.87,2023-09-14 05:00:00.242262,A Pilates class,0 h 30 min
-438,Boxing,667,intermediate,44,10.85,2023-11-26 23:30:00.242262,A Boxing class,1 h 55 min
-439,GAP,81,intermediate,22,12.51,2024-05-02 10:30:00.242262,A GAP class,2 h 
-440,Spinning,906,intermediate,1,16.93,2024-03-03 19:30:00.242262,A Spinning class,2 h 
-441,HIIT,981,intermediate,38,20.07,2024-02-08 11:30:00.242262,A HIIT class,2 h 
-442,Stretching,757,advanced,16,11.35,2023-12-10 20:30:00.242262,A Stretching class,2 h 
-443,Stretching,270,intermediate,30,17.33,2023-07-08 15:00:00.242262,A Stretching class,2 h 
-444,Total Body Conditioning,939,intermediate,19,13.05,2023-07-17 20:00:00.242262,A Total Body Conditioning class,2 h 
-445,Yoga,982,begginer,24,13.52,2023-11-09 00:30:00.242262,A Yoga class,0 h 40 min
-446,Personalized,618,advanced,2,14.35,2024-04-03 04:00:00.242262,A Personalized class,1 h 25 min
-447,Body Combat,274,advanced,44,16.01,2024-03-01 06:00:00.242262,A Body Combat class,2 h 
-448,Body Combat,351,intermediate,17,13.9,2024-03-01 10:00:00.242262,A Body Combat class,2 h 
-449,Aerobics,377,intermediate,49,19.54,2023-10-28 04:00:00.242262,A Aerobics class,2 h 
-450,GAP,81,begginer,39,15.99,2023-10-24 20:00:00.242262,A GAP class,1 h 55 min
-451,Body Pump,343,all levels,41,16.13,2024-01-01 16:00:00.242262,A Body Pump class,0 h 20 min
-452,Body Pump,905,begginer,21,10.41,2024-05-17 08:30:00.242262,A Body Pump class,2 h 
-453,Personalized,239,advanced,15,11.36,2024-01-22 09:30:00.242262,A Personalized class,1 h 15 min
-454,CrossFit,664,begginer,50,14.9,2024-04-15 15:00:00.242262,A CrossFit class,2 h 
-455,Total Body Conditioning,63,begginer,9,8.2,2023-12-07 08:30:00.242262,A Total Body Conditioning class,1 h 15 min
-456,HIIT,356,intermediate,34,14.85,2023-05-27 14:00:00.242262,A HIIT class,1 h 35 min
-457,Aerobics,621,all levels,5,18.01,2023-10-10 03:30:00.242262,A Aerobics class,0 h 20 min
-458,Boxing,819,advanced,31,10.21,2023-09-09 08:00:00.242262,A Boxing class,1 h 15 min
-459,Other,391,intermediate,28,23.95,2023-12-18 09:00:00.242262,A Other class,1 h 15 min
-460,Kickboxing,155,all levels,19,13.79,2023-07-16 17:00:00.242262,A Kickboxing class,2 h 
-461,Pilates,39,begginer,25,12.6,2024-05-21 23:30:00.242262,A Pilates class,2 h 
-462,CrossFit,972,intermediate,3,10.74,2023-07-27 02:30:00.242262,A CrossFit class,2 h 
-463,Personalized,426,all levels,16,17.83,2024-02-06 20:00:00.242262,A Personalized class,2 h 
-464,HIIT,159,all levels,1,19.32,2023-08-11 02:00:00.242262,A HIIT class,1 h 20 min
-465,GAP,502,all levels,13,11.75,2023-07-19 18:30:00.242262,A GAP class,1 h 30 min
-466,Barre,169,intermediate,24,16.33,2023-06-05 17:30:00.242262,A Barre class,0 h 55 min
-467,Personalized,527,begginer,17,14.38,2023-09-30 04:30:00.242262,A Personalized class,0 h 25 min
-468,Personalized,807,all levels,43,18.34,2023-12-03 12:00:00.242262,A Personalized class,1 h 
-469,Kickboxing,241,begginer,48,16.75,2024-04-01 23:00:00.242262,A Kickboxing class,0 h 5 min
-470,Barre,220,advanced,50,12.73,2024-03-20 18:30:00.242262,A Barre class,1 h 30 min
-471,Stretching,201,all levels,26,17.2,2023-09-24 17:30:00.242262,A Stretching class,1 h 15 min
-472,Body Pump,887,all levels,27,16.39,2023-09-19 22:00:00.242262,A Body Pump class,2 h 
-473,CrossFit,618,all levels,37,16.83,2023-12-29 09:00:00.242262,A CrossFit class,0 h 30 min
-474,Barre,598,all levels,32,13.7,2023-11-10 02:30:00.242262,A Barre class,0 h 5 min
-475,Body Pump,951,advanced,30,14.33,2023-12-25 18:00:00.242262,A Body Pump class,0 h 40 min
-476,Aerobics,410,intermediate,37,17.11,2023-10-25 12:30:00.242262,A Aerobics class,2 h 
-477,Kickboxing,536,begginer,22,21.26,2024-05-16 02:30:00.242262,A Kickboxing class,0 h 25 min
-478,Yoga,939,all levels,49,14.87,2024-01-21 00:30:00.242262,A Yoga class,2 h 
-479,Personalized,11,all levels,16,11.76,2023-07-15 23:30:00.242262,A Personalized class,0 h 15 min
-480,Total Body Conditioning,177,intermediate,40,11.17,2023-10-17 14:30:00.242262,A Total Body Conditioning class,0 h 20 min
-481,Barre,275,advanced,15,15.31,2023-10-30 13:00:00.242262,A Barre class,2 h 
-482,Kickboxing,550,advanced,37,14.99,2023-09-12 18:30:00.242262,A Kickboxing class,2 h 
-483,Yoga,624,begginer,34,22.98,2024-04-03 14:30:00.242262,A Yoga class,1 h 40 min
-484,Yoga,954,advanced,20,14.37,2023-12-18 19:00:00.242262,A Yoga class,1 h 50 min
-485,CrossFit,343,advanced,41,16.54,2023-08-27 01:00:00.242262,A CrossFit class,0 h 35 min
-486,Kickboxing,7,all levels,6,16.51,2023-09-05 19:30:00.242262,A Kickboxing class,0 h 10 min
-487,Stretching,205,begginer,40,13.32,2024-02-16 13:00:00.242262,A Stretching class,0 h 10 min
-488,Pilates,365,all levels,19,14.87,2023-09-11 03:30:00.242262,A Pilates class,0 h 20 min
-489,Aerobics,916,begginer,37,13.5,2024-02-17 05:00:00.242262,A Aerobics class,1 h 
-490,Aerobics,808,advanced,20,10.86,2024-02-20 21:00:00.242262,A Aerobics class,2 h 
-491,GAP,655,advanced,3,13.82,2023-06-17 19:00:00.242262,A GAP class,2 h 
-492,Zumba,54,begginer,32,13.33,2023-09-13 14:30:00.242262,A Zumba class,1 h 
-493,Stretching,916,begginer,15,11.98,2023-07-23 14:30:00.242262,A Stretching class,1 h 50 min
-494,Yoga,205,advanced,21,9.76,2023-09-03 11:00:00.242262,A Yoga class,2 h 
-495,Other,241,advanced,12,15.89,2023-11-04 16:00:00.242262,A Other class,1 h 45 min
-496,Spinning,409,intermediate,20,18.96,2023-11-10 01:00:00.242262,A Spinning class,1 h 
-497,Spinning,390,intermediate,13,10.69,2023-10-19 06:00:00.242262,A Spinning class,0 h 
-498,Pilates,540,begginer,23,14.12,2023-10-03 12:00:00.242262,A Pilates class,0 h 55 min
-499,Pilates,987,intermediate,15,11.83,2024-01-28 23:00:00.242262,A Pilates class,0 h 55 min
-500,Barre,830,advanced,45,15.27,2023-07-01 01:30:00.242262,A Barre class,0 h 5 min
-501,Yoga,283,advanced,43,17.74,2023-12-17 16:30:00.242262,A Yoga class,0 h 15 min
-502,Pilates,887,intermediate,32,18.36,2024-05-10 20:30:00.242262,A Pilates class,1 h 15 min
-503,Zumba,282,begginer,20,18.79,2024-05-02 18:30:00.242262,A Zumba class,2 h 
-504,GAP,283,all levels,43,19.23,2023-09-01 20:00:00.242262,A GAP class,0 h 5 min
-505,Total Body Conditioning,177,all levels,48,9.79,2023-07-17 12:30:00.242262,A Total Body Conditioning class,2 h 
-506,Yoga,10,intermediate,48,15.94,2024-03-09 03:00:00.242262,A Yoga class,2 h 
-507,Pilates,868,begginer,10,11.89,2023-12-27 07:00:00.242262,A Pilates class,1 h 30 min
-508,Body Pump,28,all levels,4,15.78,2023-10-23 18:00:00.242262,A Body Pump class,0 h 
-509,GAP,852,begginer,39,15.86,2024-02-02 23:30:00.242262,A GAP class,1 h 5 min
-510,Body Pump,819,intermediate,36,14.74,2024-04-04 09:30:00.242262,A Body Pump class,1 h 50 min
-511,Body Pump,54,advanced,17,13.76,2023-10-18 03:30:00.242262,A Body Pump class,2 h 
-512,Personalized,39,all levels,25,18.07,2024-03-30 09:30:00.242262,A Personalized class,2 h 
-513,ABS,11,begginer,43,18.23,2023-11-30 12:30:00.242262,A ABS class,0 h 25 min
-514,Kickboxing,907,intermediate,32,16.87,2023-11-07 18:30:00.242262,A Kickboxing class,2 h 
-515,Pilates,35,begginer,10,15.49,2024-04-17 22:30:00.242262,A Pilates class,0 h 30 min
-516,Yoga,112,all levels,38,10.97,2023-11-30 06:00:00.242262,A Yoga class,2 h 
-517,Yoga,351,intermediate,35,20.59,2024-04-25 10:00:00.242262,A Yoga class,2 h 
-518,Pilates,133,all levels,1,17.13,2024-03-26 05:00:00.242262,A Pilates class,0 h 20 min
-519,Body Pump,63,all levels,42,8.34,2023-12-07 08:30:00.242262,A Body Pump class,1 h 15 min
-520,Other,785,advanced,8,13.38,2024-02-01 11:00:00.242262,A Other class,1 h 
-521,Body Combat,55,begginer,17,15.83,2023-07-22 14:00:00.242262,A Body Combat class,0 h 45 min
-522,HIIT,443,begginer,10,13.87,2023-10-27 19:00:00.242262,A HIIT class,1 h 45 min
-523,Aerobics,133,advanced,4,12.55,2023-10-25 13:30:00.242262,A Aerobics class,0 h 
-524,Kickboxing,806,all levels,33,11.5,2023-06-13 13:30:00.242262,A Kickboxing class,0 h 45 min
-525,Aerobics,931,advanced,14,14.43,2024-01-05 06:00:00.242262,A Aerobics class,0 h 40 min
-526,Pilates,410,begginer,29,17.09,2024-04-21 13:00:00.242262,A Pilates class,1 h 30 min
-527,Barre,761,begginer,21,13.42,2023-10-14 05:00:00.242262,A Barre class,1 h 40 min
-528,Aerobics,741,intermediate,39,10.15,2023-10-27 15:30:00.242262,A Aerobics class,2 h 
-529,GAP,821,intermediate,46,12.62,2023-06-04 14:30:00.242262,A GAP class,1 h 5 min
-530,HIIT,132,advanced,5,14.84,2023-10-26 09:30:00.242262,A HIIT class,2 h 
-531,GAP,741,advanced,25,13.56,2024-01-16 14:30:00.242262,A GAP class,1 h 15 min
-532,HIIT,725,begginer,35,15.3,2024-04-21 13:30:00.242262,A HIIT class,2 h 
-533,Body Pump,471,intermediate,11,13.78,2023-10-17 11:30:00.242262,A Body Pump class,0 h 20 min
-534,ABS,981,advanced,14,20.1,2023-06-26 16:00:00.242262,A ABS class,1 h 20 min
-535,Total Body Conditioning,198,begginer,13,10.26,2023-09-11 09:30:00.242262,A Total Body Conditioning class,1 h 30 min
-536,Body Combat,221,all levels,27,13.44,2024-05-13 02:00:00.242262,A Body Combat class,0 h 35 min
-537,Body Combat,638,advanced,3,10.93,2023-08-25 21:30:00.242262,A Body Combat class,0 h 45 min
-538,Yoga,947,begginer,21,14.89,2024-01-04 16:00:00.242262,A Yoga class,0 h 35 min
-539,Stretching,598,advanced,16,12.19,2023-08-11 01:00:00.242262,A Stretching class,2 h 
-540,Barre,351,begginer,4,15.83,2024-03-14 02:00:00.242262,A Barre class,1 h 
-541,Spinning,501,advanced,6,18.85,2023-11-09 12:30:00.242262,A Spinning class,2 h 
-542,Boxing,953,all levels,38,14.8,2023-11-29 18:30:00.242262,A Boxing class,0 h 30 min
-543,HIIT,15,begginer,24,12.29,2023-07-18 16:00:00.242262,A HIIT class,2 h 
-544,Kickboxing,285,all levels,6,19.0,2023-10-20 02:30:00.242262,A Kickboxing class,1 h 10 min
-545,Kickboxing,852,advanced,26,16.6,2023-11-15 16:30:00.242262,A Kickboxing class,2 h 
-546,Other,427,advanced,26,14.92,2023-11-13 02:00:00.242262,A Other class,1 h 30 min
-547,Pilates,105,all levels,42,10.56,2023-07-26 09:00:00.242262,A Pilates class,0 h 55 min
-548,HIIT,807,all levels,24,9.17,2023-07-24 22:30:00.242262,A HIIT class,0 h 45 min
-549,Zumba,533,advanced,28,14.96,2023-09-04 17:30:00.242262,A Zumba class,2 h 
-550,Barre,81,begginer,2,15.6,2023-09-24 20:00:00.242262,A Barre class,1 h 50 min
-551,Kickboxing,75,all levels,8,14.04,2023-10-15 05:00:00.242262,A Kickboxing class,2 h 
-552,Body Combat,862,all levels,29,10.92,2023-07-02 17:00:00.242262,A Body Combat class,0 h 25 min
-553,Yoga,475,advanced,29,16.36,2023-06-10 12:00:00.242262,A Yoga class,1 h 40 min
-554,HIIT,64,advanced,38,12.55,2023-12-07 08:00:00.242262,A HIIT class,0 h 25 min
-555,Total Body Conditioning,819,begginer,27,16.4,2023-11-23 12:00:00.242262,A Total Body Conditioning class,0 h 15 min
-556,CrossFit,343,advanced,33,12.8,2023-11-15 02:30:00.242262,A CrossFit class,2 h 
-557,Body Pump,501,intermediate,17,16.01,2023-09-11 00:30:00.242262,A Body Pump class,2 h 
-558,HIIT,241,all levels,27,12.38,2024-02-17 01:30:00.242262,A HIIT class,1 h 10 min
-559,Total Body Conditioning,220,all levels,46,14.67,2023-06-26 07:30:00.242262,A Total Body Conditioning class,1 h 55 min
-560,Spinning,792,intermediate,4,16.25,2023-11-29 00:30:00.242262,A Spinning class,0 h 50 min
-561,Barre,182,all levels,14,18.12,2024-05-05 03:30:00.242262,A Barre class,2 h 
-562,ABS,377,begginer,12,13.68,2024-03-25 00:30:00.242262,A ABS class,1 h 45 min
-563,HIIT,627,advanced,10,15.64,2023-07-06 03:00:00.242262,A HIIT class,0 h 
-564,Body Combat,722,begginer,29,14.35,2023-11-22 03:00:00.242262,A Body Combat class,2 h 
-565,CrossFit,858,all levels,9,10.36,2023-09-26 15:30:00.242262,A CrossFit class,0 h 25 min
-566,Yoga,595,intermediate,33,15.15,2023-06-28 01:00:00.242262,A Yoga class,2 h 
-567,Spinning,282,all levels,37,17.9,2023-10-16 01:00:00.242262,A Spinning class,1 h 35 min
-568,Spinning,431,intermediate,26,17.7,2023-07-14 18:00:00.242262,A Spinning class,2 h 
-569,Kickboxing,218,intermediate,32,16.35,2024-03-15 20:30:00.242262,A Kickboxing class,2 h 
-570,CrossFit,17,advanced,45,10.59,2024-03-20 00:00:00.242262,A CrossFit class,2 h 
-571,CrossFit,106,begginer,20,13.02,2023-10-02 09:30:00.242262,A CrossFit class,1 h 30 min
-572,Zumba,343,begginer,23,16.64,2023-11-25 20:00:00.242262,A Zumba class,1 h 10 min
-573,Aerobics,175,begginer,38,16.93,2023-08-15 01:00:00.242262,A Aerobics class,1 h 45 min
-574,Personalized,954,all levels,1,18.39,2023-07-08 00:00:00.242262,A Personalized class,0 h 35 min
-575,Body Pump,391,begginer,48,16.0,2023-11-10 16:00:00.242262,A Body Pump class,0 h 
-576,Body Pump,561,advanced,37,15.1,2023-10-22 17:00:00.242262,A Body Pump class,1 h 35 min
-577,Body Combat,281,begginer,24,17.94,2024-02-27 04:30:00.242262,A Body Combat class,2 h 
-578,HIIT,132,intermediate,21,10.56,2024-04-05 17:30:00.242262,A HIIT class,1 h 30 min
-579,Spinning,188,all levels,1,18.98,2023-10-12 09:30:00.242262,A Spinning class,2 h 
-580,Boxing,826,begginer,29,15.12,2024-02-08 04:00:00.242262,A Boxing class,1 h 15 min
-581,Zumba,819,begginer,43,19.98,2024-03-16 12:30:00.242262,A Zumba class,0 h 40 min
-582,Spinning,853,advanced,42,13.53,2023-07-22 06:00:00.242262,A Spinning class,0 h 50 min
-583,Pilates,274,advanced,43,14.71,2023-08-12 00:00:00.242262,A Pilates class,0 h 10 min
-584,Zumba,502,intermediate,9,17.08,2024-04-04 02:00:00.242262,A Zumba class,1 h 25 min
-585,HIIT,17,begginer,42,12.9,2023-10-20 02:30:00.242262,A HIIT class,1 h 30 min
-586,Other,623,advanced,31,18.21,2023-07-31 05:30:00.242262,A Other class,0 h 40 min
-587,ABS,409,begginer,40,14.86,2024-04-23 14:30:00.242262,A ABS class,2 h 
-588,Spinning,854,all levels,29,16.59,2023-08-28 23:00:00.242262,A Spinning class,2 h 
-589,Stretching,501,begginer,21,11.1,2024-05-09 19:30:00.242262,A Stretching class,2 h 
-590,Spinning,188,intermediate,16,16.31,2023-08-15 10:30:00.242262,A Spinning class,0 h 35 min
-591,Yoga,852,advanced,18,13.99,2023-09-01 00:30:00.242262,A Yoga class,1 h 
-592,Personalized,15,begginer,48,13.02,2023-05-29 08:30:00.242262,A Personalized class,2 h 
-593,Spinning,431,intermediate,8,16.02,2024-03-17 23:30:00.242262,A Spinning class,0 h 20 min
-594,Yoga,767,begginer,36,10.91,2024-03-22 18:00:00.242262,A Yoga class,2 h 
-595,Pilates,197,all levels,40,12.72,2024-04-27 16:00:00.242262,A Pilates class,1 h 40 min
-596,Boxing,907,begginer,21,19.2,2023-06-01 10:30:00.242262,A Boxing class,2 h 
-597,HIIT,913,begginer,31,13.68,2023-09-09 02:00:00.242262,A HIIT class,2 h 
-598,Spinning,501,advanced,46,17.68,2023-08-26 15:30:00.242262,A Spinning class,2 h 
-599,Boxing,467,all levels,14,13.57,2023-06-17 11:30:00.242262,A Boxing class,1 h 35 min
-600,Body Pump,196,begginer,24,18.0,2024-02-03 13:30:00.242262,A Body Pump class,0 h 20 min
-601,Body Pump,177,intermediate,42,18.95,2023-10-18 06:00:00.242262,A Body Pump class,0 h 
-602,Other,370,begginer,23,17.82,2023-08-03 13:30:00.242262,A Other class,0 h 50 min
-603,Spinning,343,all levels,11,11.74,2024-04-06 03:30:00.242262,A Spinning class,1 h 10 min
-604,Kickboxing,621,begginer,16,11.7,2023-12-19 14:00:00.242262,A Kickboxing class,1 h 10 min
-605,Body Pump,281,begginer,4,12.72,2023-06-02 13:30:00.242262,A Body Pump class,1 h 50 min
-606,ABS,684,intermediate,11,19.41,2023-07-08 05:00:00.242262,A ABS class,0 h 20 min
-607,CrossFit,28,intermediate,41,15.27,2023-08-18 06:30:00.242262,A CrossFit class,1 h 25 min
-608,CrossFit,421,begginer,9,16.94,2023-10-09 10:00:00.242262,A CrossFit class,0 h 50 min
-609,Spinning,99,intermediate,45,14.83,2024-05-17 19:00:00.242262,A Spinning class,1 h 10 min
-610,ABS,627,advanced,36,12.36,2023-12-29 23:00:00.242262,A ABS class,0 h 25 min
-611,Personalized,422,all levels,21,16.72,2023-08-02 05:30:00.242262,A Personalized class,0 h 30 min
-612,ABS,539,begginer,12,16.41,2024-04-30 12:30:00.242262,A ABS class,2 h 
-613,Body Combat,549,begginer,48,14.79,2023-09-11 07:00:00.242262,A Body Combat class,1 h 40 min
-614,Other,304,all levels,7,12.51,2023-07-04 10:00:00.242262,A Other class,0 h 35 min
-615,Other,907,begginer,47,15.13,2023-09-03 23:00:00.242262,A Other class,1 h 
-616,Pilates,868,advanced,24,17.95,2024-01-08 14:00:00.242262,A Pilates class,0 h 50 min
-617,Stretching,592,all levels,18,14.69,2024-03-26 19:30:00.242262,A Stretching class,1 h 20 min
-618,Boxing,755,begginer,37,11.88,2023-06-01 12:30:00.242262,A Boxing class,0 h 50 min
-619,Aerobics,155,intermediate,29,17.45,2024-02-05 15:00:00.242262,A Aerobics class,1 h 5 min
-620,Other,401,intermediate,29,15.05,2024-01-02 18:00:00.242262,A Other class,0 h 30 min
-621,HIIT,752,begginer,36,18.57,2023-08-22 06:00:00.242262,A HIIT class,0 h 45 min
-622,ABS,247,advanced,43,13.86,2023-11-20 07:00:00.242262,A ABS class,2 h 
-623,Body Pump,916,advanced,49,19.14,2023-10-07 01:30:00.242262,A Body Pump class,1 h 55 min
-624,Total Body Conditioning,745,begginer,48,12.96,2023-06-07 23:00:00.242262,A Total Body Conditioning class,0 h 20 min
-625,Total Body Conditioning,196,intermediate,11,14.57,2024-03-21 13:00:00.242262,A Total Body Conditioning class,0 h 35 min
-626,Total Body Conditioning,819,all levels,10,19.13,2024-01-28 22:30:00.242262,A Total Body Conditioning class,1 h 25 min
-627,Zumba,595,all levels,4,16.99,2023-08-22 17:30:00.242262,A Zumba class,1 h 15 min
-628,Yoga,540,intermediate,30,22.23,2023-06-12 04:30:00.242262,A Yoga class,1 h 40 min
-629,GAP,471,begginer,26,13.61,2024-04-02 12:30:00.242262,A GAP class,0 h 40 min
-630,Boxing,722,begginer,42,17.1,2024-04-25 18:00:00.242262,A Boxing class,0 h 15 min
-631,CrossFit,7,intermediate,39,18.25,2024-02-26 19:00:00.242262,A CrossFit class,0 h 55 min
-632,Personalized,105,all levels,35,13.08,2024-04-12 05:00:00.242262,A Personalized class,0 h 25 min
-633,Boxing,221,advanced,4,19.48,2023-10-19 04:00:00.242262,A Boxing class,2 h 
-634,Barre,255,all levels,5,17.96,2024-02-13 23:00:00.242262,A Barre class,2 h 
-635,CrossFit,112,intermediate,18,17.39,2023-08-02 14:30:00.242262,A CrossFit class,2 h 
-636,Other,586,intermediate,12,9.46,2023-06-18 04:00:00.242262,A Other class,2 h 
-637,Other,201,advanced,1,15.46,2023-10-22 13:00:00.242262,A Other class,2 h 
-638,Zumba,105,intermediate,12,13.5,2024-02-27 05:30:00.242262,A Zumba class,1 h 25 min
-639,Barre,527,intermediate,27,14.84,2023-12-03 01:30:00.242262,A Barre class,2 h 
-640,Other,899,advanced,10,15.95,2023-07-13 17:00:00.242262,A Other class,0 h 25 min
-641,HIIT,48,all levels,9,12.1,2023-11-05 10:00:00.242262,A HIIT class,2 h 
-642,Boxing,536,intermediate,36,15.29,2024-04-07 08:00:00.242262,A Boxing class,0 h 
-643,Pilates,539,begginer,1,15.25,2023-08-21 04:00:00.242262,A Pilates class,2 h 
-644,HIIT,716,all levels,47,19.8,2024-02-12 16:30:00.242262,A HIIT class,2 h 
-645,Personalized,241,advanced,20,15.29,2023-08-04 13:00:00.242262,A Personalized class,0 h 5 min
-646,Pilates,908,intermediate,33,14.44,2023-07-05 07:00:00.242262,A Pilates class,0 h 
-647,Aerobics,305,intermediate,9,12.48,2023-06-12 02:00:00.242262,A Aerobics class,2 h 
-648,Stretching,501,intermediate,15,14.69,2023-10-13 23:30:00.242262,A Stretching class,0 h 50 min
-649,Zumba,15,all levels,19,19.05,2024-02-16 00:30:00.242262,A Zumba class,1 h 40 min
-650,GAP,887,intermediate,17,19.46,2024-03-07 01:30:00.242262,A GAP class,2 h 
-651,CrossFit,239,intermediate,20,14.23,2023-09-04 21:30:00.242262,A CrossFit class,0 h 40 min
-652,Body Combat,351,all levels,46,9.94,2023-09-25 04:30:00.242262,A Body Combat class,2 h 
-653,Spinning,208,advanced,5,15.63,2023-09-07 00:30:00.242262,A Spinning class,1 h 30 min
-654,Zumba,460,begginer,8,16.32,2024-05-10 14:30:00.242262,A Zumba class,1 h 5 min
-655,Spinning,937,begginer,27,14.27,2023-10-27 14:30:00.242262,A Spinning class,1 h 55 min
-656,Aerobics,891,begginer,23,15.24,2024-03-10 12:30:00.242262,A Aerobics class,1 h 30 min
-657,Yoga,221,all levels,29,16.7,2023-07-29 09:30:00.242262,A Yoga class,0 h 50 min
-658,Total Body Conditioning,920,all levels,25,12.3,2024-02-29 08:30:00.242262,A Total Body Conditioning class,1 h 30 min
-659,Other,457,begginer,37,16.39,2023-12-10 02:30:00.242262,A Other class,1 h 25 min
-660,Stretching,99,advanced,50,10.37,2024-03-11 16:00:00.242262,A Stretching class,0 h 25 min
-661,Spinning,954,intermediate,25,13.14,2023-07-11 02:00:00.242262,A Spinning class,0 h 10 min
-662,Body Combat,854,advanced,32,13.78,2023-07-18 14:00:00.242262,A Body Combat class,0 h 55 min
-663,Zumba,409,intermediate,33,15.92,2024-01-01 22:30:00.242262,A Zumba class,1 h 30 min
-664,Spinning,343,all levels,14,13.71,2023-12-22 11:30:00.242262,A Spinning class,1 h 20 min
-665,Other,584,intermediate,45,15.82,2023-06-29 22:30:00.242262,A Other class,1 h 25 min
-666,Stretching,853,advanced,11,12.5,2024-02-18 13:00:00.242262,A Stretching class,0 h 5 min
-667,HIIT,745,all levels,31,13.86,2024-01-17 22:00:00.242262,A HIIT class,2 h 
-668,Kickboxing,982,intermediate,6,18.06,2023-12-21 01:30:00.242262,A Kickboxing class,1 h 30 min
-669,Body Pump,391,intermediate,17,13.12,2023-05-30 17:00:00.242262,A Body Pump class,2 h 
-670,CrossFit,177,all levels,10,11.64,2023-08-29 02:30:00.242262,A CrossFit class,2 h 
-671,Spinning,136,intermediate,20,16.58,2023-06-18 05:00:00.242262,A Spinning class,2 h 
-672,Other,735,begginer,17,12.38,2023-10-15 07:00:00.242262,A Other class,1 h 20 min
-673,Personalized,28,all levels,47,13.05,2023-12-17 14:30:00.242262,A Personalized class,2 h 
-674,Aerobics,537,begginer,44,15.68,2024-04-06 12:00:00.242262,A Aerobics class,1 h 30 min
-675,Kickboxing,335,begginer,17,16.87,2023-08-03 10:30:00.242262,A Kickboxing class,1 h 35 min
-676,Stretching,937,advanced,4,12.76,2023-07-20 10:30:00.242262,A Stretching class,2 h 
-677,Pilates,953,intermediate,40,7.17,2024-05-12 16:00:00.242262,A Pilates class,0 h 
-678,Yoga,580,intermediate,42,14.21,2023-05-31 04:00:00.242262,A Yoga class,1 h 55 min
-679,Barre,175,begginer,28,14.87,2023-09-21 04:00:00.242262,A Barre class,2 h 
-680,Zumba,77,begginer,14,20.05,2024-03-22 12:30:00.242262,A Zumba class,2 h 
-681,Boxing,767,begginer,22,19.74,2024-03-31 01:00:00.242262,A Boxing class,2 h 
-682,CrossFit,972,advanced,4,15.05,2023-10-25 18:30:00.242262,A CrossFit class,1 h 20 min
-683,Kickboxing,549,intermediate,36,14.98,2024-03-25 06:30:00.242262,A Kickboxing class,0 h 35 min
-684,GAP,539,advanced,5,14.64,2023-07-24 19:00:00.242262,A GAP class,0 h 35 min
-685,Zumba,651,intermediate,13,14.51,2023-07-18 18:00:00.242262,A Zumba class,1 h 25 min
-686,Kickboxing,939,intermediate,29,15.74,2024-03-18 10:30:00.242262,A Kickboxing class,1 h 15 min
-687,Yoga,351,intermediate,29,22.61,2023-06-01 14:00:00.242262,A Yoga class,1 h 25 min
-688,Barre,217,all levels,47,14.84,2024-04-06 14:30:00.242262,A Barre class,1 h 40 min
-689,Pilates,890,begginer,10,17.92,2024-01-17 03:00:00.242262,A Pilates class,2 h 
-690,Kickboxing,214,all levels,7,8.39,2024-05-24 06:00:00.242262,A Kickboxing class,1 h 15 min
-691,Personalized,502,all levels,15,16.8,2024-03-19 01:00:00.242262,A Personalized class,0 h 35 min
-692,Stretching,932,all levels,21,15.92,2023-09-28 08:30:00.242262,A Stretching class,2 h 
-693,Boxing,77,advanced,30,19.52,2023-12-18 09:00:00.242262,A Boxing class,2 h 
-694,Zumba,501,intermediate,25,16.75,2023-08-21 00:30:00.242262,A Zumba class,1 h 45 min
-695,GAP,651,advanced,50,18.38,2023-06-22 17:00:00.242262,A GAP class,0 h 30 min
-696,Stretching,916,intermediate,30,22.17,2023-05-29 19:30:00.242262,A Stretching class,0 h 30 min
-697,Spinning,305,begginer,39,13.82,2024-02-19 16:30:00.242262,A Spinning class,0 h 
-698,Other,107,all levels,8,12.06,2023-09-27 06:00:00.242262,A Other class,1 h 15 min
-699,Zumba,105,begginer,16,12.83,2024-02-20 06:30:00.242262,A Zumba class,2 h 
-700,Other,745,advanced,25,17.84,2023-10-09 02:30:00.242262,A Other class,2 h 
-701,HIIT,745,begginer,46,16.9,2023-07-19 19:30:00.242262,A HIIT class,2 h 
-702,Personalized,356,begginer,2,14.67,2023-07-10 00:30:00.242262,A Personalized class,0 h 25 min
-703,Boxing,972,advanced,10,15.88,2023-06-24 22:00:00.242262,A Boxing class,1 h 
-704,ABS,757,all levels,23,20.2,2023-11-24 23:00:00.242262,A ABS class,2 h 
-705,Body Combat,953,all levels,16,11.58,2023-11-17 13:00:00.242262,A Body Combat class,1 h 5 min
-706,GAP,954,advanced,20,18.46,2024-03-17 08:00:00.242262,A GAP class,2 h 
-707,Yoga,304,intermediate,9,18.74,2023-12-06 06:30:00.242262,A Yoga class,1 h 30 min
-708,Yoga,745,intermediate,36,17.98,2023-10-22 16:00:00.242262,A Yoga class,2 h 
-709,Other,343,intermediate,32,10.18,2023-12-05 10:30:00.242262,A Other class,1 h 40 min
-710,Body Pump,921,begginer,34,14.85,2023-07-20 14:00:00.242262,A Body Pump class,2 h 
-711,Zumba,221,begginer,48,13.21,2024-04-04 14:00:00.242262,A Zumba class,1 h 5 min
-712,Stretching,592,advanced,15,16.53,2024-01-24 00:00:00.242262,A Stretching class,2 h 
-713,Other,792,all levels,1,15.9,2023-07-29 04:00:00.242262,A Other class,0 h 35 min
-714,Aerobics,592,all levels,45,17.62,2024-04-16 02:30:00.242262,A Aerobics class,2 h 
-715,Yoga,785,all levels,8,13.8,2023-09-21 02:30:00.242262,A Yoga class,2 h 
-716,Personalized,427,all levels,35,16.09,2023-11-20 11:30:00.242262,A Personalized class,1 h 20 min
-717,GAP,708,all levels,45,15.71,2024-04-25 17:00:00.242262,A GAP class,0 h 45 min
-718,Body Combat,370,all levels,15,17.71,2024-02-27 19:00:00.242262,A Body Combat class,1 h 50 min
-719,Spinning,112,intermediate,11,13.85,2024-01-30 19:30:00.242262,A Spinning class,1 h 45 min
-720,HIIT,580,begginer,27,15.41,2023-10-16 21:00:00.242262,A HIIT class,2 h 
-721,Body Pump,819,advanced,33,15.27,2024-03-25 00:30:00.242262,A Body Pump class,1 h 55 min
-722,Aerobics,716,begginer,2,7.27,2023-11-28 12:00:00.242262,A Aerobics class,1 h 20 min
-723,Body Combat,501,begginer,13,19.7,2023-07-04 17:30:00.242262,A Body Combat class,0 h 25 min
-724,Spinning,655,advanced,10,14.11,2023-11-11 06:30:00.242262,A Spinning class,2 h 
-725,Body Pump,943,all levels,33,11.59,2024-03-19 04:00:00.242262,A Body Pump class,0 h 25 min
-726,Personalized,796,advanced,37,16.24,2023-10-03 07:30:00.242262,A Personalized class,0 h 40 min
-727,Kickboxing,862,all levels,9,10.23,2024-05-19 19:00:00.242262,A Kickboxing class,0 h 5 min
-728,Boxing,208,intermediate,50,15.71,2023-08-31 04:30:00.242262,A Boxing class,1 h 45 min
-729,Kickboxing,580,all levels,10,6.43,2023-09-18 09:00:00.242262,A Kickboxing class,0 h 
-730,ABS,651,intermediate,6,14.97,2023-10-17 20:30:00.242262,A ABS class,1 h 35 min
-731,HIIT,356,intermediate,45,13.84,2023-11-02 20:30:00.242262,A HIIT class,0 h 10 min
-732,Aerobics,767,all levels,41,11.79,2024-05-17 00:00:00.242262,A Aerobics class,0 h 40 min
-733,Barre,618,advanced,47,12.36,2023-06-27 21:00:00.242262,A Barre class,2 h 
-734,Barre,906,begginer,22,10.72,2024-05-16 03:30:00.242262,A Barre class,0 h 
-735,Body Combat,234,intermediate,1,17.04,2023-11-16 12:00:00.242262,A Body Combat class,1 h 35 min
-736,Other,620,advanced,3,15.26,2023-12-22 11:30:00.242262,A Other class,1 h 5 min
-737,GAP,136,advanced,16,11.83,2024-05-16 18:00:00.242262,A GAP class,0 h 50 min
-738,Barre,10,advanced,10,15.89,2024-02-21 22:00:00.242262,A Barre class,0 h 40 min
-739,GAP,334,all levels,44,12.41,2024-02-10 06:30:00.242262,A GAP class,0 h 15 min
-740,Barre,598,all levels,6,13.64,2024-04-03 07:00:00.242262,A Barre class,1 h 55 min
-741,Total Body Conditioning,305,advanced,17,15.76,2023-10-16 11:30:00.242262,A Total Body Conditioning class,0 h 50 min
-742,Spinning,716,begginer,34,11.06,2024-01-09 06:00:00.242262,A Spinning class,0 h 15 min
-743,GAP,899,begginer,8,10.57,2023-12-26 03:00:00.242262,A GAP class,0 h 55 min
-744,Pilates,592,begginer,42,19.26,2023-09-14 12:00:00.242262,A Pilates class,2 h 
-745,ABS,64,advanced,43,14.63,2023-07-08 18:00:00.242262,A ABS class,0 h 20 min
-746,ABS,244,begginer,15,13.19,2023-09-11 00:30:00.242262,A ABS class,0 h 50 min
-747,Aerobics,208,intermediate,27,18.14,2023-12-11 22:30:00.242262,A Aerobics class,2 h 
-748,Other,270,all levels,25,14.2,2023-07-27 18:00:00.242262,A Other class,2 h 
-749,Aerobics,283,begginer,24,13.96,2024-02-05 23:30:00.242262,A Aerobics class,2 h 
-750,Personalized,736,intermediate,19,12.58,2023-07-22 17:30:00.242262,A Personalized class,2 h 
-751,Boxing,981,intermediate,12,13.14,2024-02-20 06:00:00.242262,A Boxing class,1 h 15 min
-752,Pilates,54,intermediate,35,9.53,2023-10-05 20:30:00.242262,A Pilates class,1 h 25 min
-753,Stretching,11,begginer,34,15.79,2023-07-13 03:30:00.242262,A Stretching class,2 h 
-754,CrossFit,920,intermediate,13,11.01,2023-10-31 09:00:00.242262,A CrossFit class,0 h 50 min
-755,Stretching,618,intermediate,40,18.14,2024-03-20 08:00:00.242262,A Stretching class,0 h 30 min
-756,HIIT,17,all levels,30,12.41,2023-08-11 23:30:00.242262,A HIIT class,0 h 35 min
-757,Zumba,947,all levels,49,12.93,2023-12-11 13:00:00.242262,A Zumba class,0 h 55 min
-758,Other,868,intermediate,45,18.33,2024-05-02 06:00:00.242262,A Other class,1 h 25 min
-759,ABS,214,intermediate,4,11.99,2024-04-27 06:30:00.242262,A ABS class,1 h 45 min
-760,GAP,745,intermediate,12,18.8,2023-06-18 18:30:00.242262,A GAP class,2 h 
-761,Kickboxing,391,begginer,29,12.15,2023-06-19 03:30:00.242262,A Kickboxing class,0 h 30 min
-762,Yoga,63,intermediate,20,16.87,2024-01-03 15:00:00.242262,A Yoga class,0 h 40 min
-763,Stretching,244,begginer,15,10.45,2023-07-25 10:00:00.242262,A Stretching class,0 h 55 min
-764,Yoga,271,begginer,35,17.04,2024-03-22 20:00:00.242262,A Yoga class,1 h 25 min
-765,ABS,398,advanced,6,16.72,2023-07-28 02:30:00.242262,A ABS class,1 h 50 min
-766,Barre,220,advanced,7,17.98,2023-12-13 17:00:00.242262,A Barre class,2 h 
-767,HIIT,592,advanced,33,23.58,2023-08-30 08:00:00.242262,A HIIT class,1 h 20 min
-768,ABS,826,advanced,45,16.13,2024-04-07 12:30:00.242262,A ABS class,1 h 
-769,Barre,431,advanced,2,9.86,2023-08-22 22:30:00.242262,A Barre class,0 h 30 min
-770,Body Combat,954,all levels,23,13.18,2023-11-07 09:00:00.242262,A Body Combat class,1 h 10 min
-771,Kickboxing,858,intermediate,34,11.56,2023-07-17 23:00:00.242262,A Kickboxing class,0 h 20 min
-772,Personalized,987,intermediate,15,13.53,2023-12-07 18:00:00.242262,A Personalized class,0 h 25 min
-773,GAP,533,all levels,34,15.71,2023-07-12 20:00:00.242262,A GAP class,2 h 
-774,Aerobics,651,advanced,45,13.77,2023-09-09 15:30:00.242262,A Aerobics class,0 h 25 min
-775,Personalized,651,all levels,7,11.46,2024-01-19 13:30:00.242262,A Personalized class,2 h 
-776,CrossFit,270,begginer,49,24.9,2023-09-29 15:30:00.242262,A CrossFit class,0 h 50 min
-777,Body Pump,75,intermediate,27,15.16,2023-10-07 22:00:00.242262,A Body Pump class,2 h 
-778,Stretching,159,intermediate,14,13.3,2023-05-30 02:30:00.242262,A Stretching class,1 h 20 min
-779,Personalized,537,all levels,27,16.99,2023-06-15 01:00:00.242262,A Personalized class,0 h 30 min
-780,Barre,39,begginer,5,16.67,2024-02-14 13:00:00.242262,A Barre class,1 h 5 min
-781,Boxing,221,begginer,23,17.18,2023-12-03 02:00:00.242262,A Boxing class,1 h 15 min
-782,Personalized,502,begginer,13,14.05,2023-06-18 17:00:00.242262,A Personalized class,2 h 
-783,Yoga,305,all levels,3,18.65,2024-01-05 07:30:00.242262,A Yoga class,0 h 10 min
-784,Stretching,638,begginer,49,18.48,2023-12-14 13:00:00.242262,A Stretching class,0 h 5 min
-785,Yoga,11,intermediate,21,14.04,2024-05-20 20:30:00.242262,A Yoga class,1 h 25 min
-786,Total Body Conditioning,674,advanced,33,14.01,2023-06-15 08:30:00.242262,A Total Body Conditioning class,0 h 20 min
-787,Personalized,234,intermediate,42,15.14,2023-09-04 14:00:00.242262,A Personalized class,2 h 
-788,Body Pump,10,all levels,4,17.53,2024-04-12 05:00:00.242262,A Body Pump class,0 h 20 min
-789,Stretching,191,all levels,11,10.0,2024-05-15 01:30:00.242262,A Stretching class,0 h 50 min
-790,Body Combat,304,all levels,24,13.0,2023-11-06 23:30:00.242262,A Body Combat class,0 h 35 min
-791,Body Pump,920,begginer,15,19.83,2023-12-31 14:00:00.242262,A Body Pump class,2 h 
-792,HIIT,598,intermediate,10,14.13,2023-11-02 22:00:00.242262,A HIIT class,0 h 20 min
-793,Kickboxing,743,intermediate,10,16.41,2023-09-17 05:00:00.242262,A Kickboxing class,1 h 30 min
-794,Total Body Conditioning,861,advanced,43,18.0,2024-01-24 20:00:00.242262,A Total Body Conditioning class,1 h 35 min
-795,Other,890,intermediate,45,10.12,2024-04-21 18:30:00.242262,A Other class,1 h 30 min
-796,Other,460,all levels,34,16.72,2023-11-30 03:30:00.242262,A Other class,1 h 40 min
-797,Zumba,191,advanced,1,16.92,2024-02-16 11:00:00.242262,A Zumba class,1 h 5 min
-798,Body Combat,377,all levels,24,8.91,2024-05-16 07:00:00.242262,A Body Combat class,2 h 
-799,GAP,35,intermediate,22,17.28,2023-07-12 02:30:00.242262,A GAP class,1 h 10 min
-800,HIIT,220,advanced,26,11.39,2024-02-03 10:30:00.242262,A HIIT class,1 h 55 min
-801,Total Body Conditioning,536,advanced,36,15.42,2024-05-24 09:00:00.242262,A Total Body Conditioning class,1 h 15 min
-802,Pilates,421,all levels,49,14.91,2023-12-22 07:30:00.242262,A Pilates class,1 h 20 min
-803,Barre,755,intermediate,1,15.41,2024-04-28 07:00:00.242262,A Barre class,1 h 35 min
-804,CrossFit,540,begginer,18,14.65,2023-09-17 17:00:00.242262,A CrossFit class,0 h 40 min
-805,Total Body Conditioning,891,all levels,9,15.34,2024-05-24 05:00:00.242262,A Total Body Conditioning class,0 h 30 min
-806,Kickboxing,618,advanced,22,14.78,2023-09-28 04:00:00.242262,A Kickboxing class,0 h 55 min
-807,Boxing,251,begginer,33,18.27,2023-10-20 00:00:00.242262,A Boxing class,0 h 50 min
-808,Other,45,begginer,44,12.5,2024-05-15 22:30:00.242262,A Other class,1 h 5 min
-809,ABS,913,advanced,46,13.29,2023-08-29 13:30:00.242262,A ABS class,1 h 35 min
-810,Kickboxing,180,begginer,41,13.08,2023-07-10 06:00:00.242262,A Kickboxing class,1 h 45 min
-811,Other,725,all levels,1,16.14,2023-12-06 16:00:00.242262,A Other class,2 h 
-812,Body Pump,351,all levels,7,17.83,2024-04-19 02:00:00.242262,A Body Pump class,2 h 
-813,HIIT,618,intermediate,32,9.57,2023-08-15 03:30:00.242262,A HIIT class,0 h 
-814,Barre,188,advanced,34,17.4,2023-10-21 13:30:00.242262,A Barre class,0 h 20 min
-815,ABS,914,all levels,41,19.83,2023-07-01 20:00:00.242262,A ABS class,0 h 25 min
-816,HIIT,196,intermediate,10,15.75,2024-02-14 14:00:00.242262,A HIIT class,0 h 45 min
-817,GAP,580,advanced,45,11.62,2023-09-04 07:00:00.242262,A GAP class,0 h 35 min
-818,GAP,271,advanced,12,10.81,2023-10-10 21:30:00.242262,A GAP class,2 h 
-819,Spinning,245,begginer,40,11.61,2023-08-04 05:00:00.242262,A Spinning class,0 h 35 min
-820,CrossFit,598,advanced,28,16.41,2023-12-01 05:00:00.242262,A CrossFit class,2 h 
-821,Barre,356,begginer,10,19.49,2024-05-12 09:00:00.242262,A Barre class,1 h 55 min
-822,Kickboxing,255,intermediate,47,18.39,2023-07-05 04:30:00.242262,A Kickboxing class,0 h 25 min
-823,CrossFit,410,intermediate,20,16.5,2024-04-08 05:30:00.242262,A CrossFit class,0 h 30 min
-824,Stretching,247,all levels,10,17.39,2023-10-28 05:00:00.242262,A Stretching class,2 h 
-825,Body Combat,755,begginer,48,15.61,2024-04-09 19:00:00.242262,A Body Combat class,2 h 
-826,Aerobics,819,advanced,29,12.71,2024-04-11 18:30:00.242262,A Aerobics class,0 h 30 min
-827,ABS,247,begginer,27,12.38,2024-01-08 02:30:00.242262,A ABS class,0 h 
-828,Kickboxing,396,advanced,24,12.31,2023-08-06 09:30:00.242262,A Kickboxing class,1 h 
-829,GAP,858,all levels,12,15.56,2024-02-10 20:00:00.242262,A GAP class,2 h 
-830,Personalized,335,begginer,33,17.12,2024-03-30 09:00:00.242262,A Personalized class,1 h 5 min
-831,Aerobics,317,begginer,48,10.51,2024-05-09 19:00:00.242262,A Aerobics class,0 h 25 min
-832,Stretching,415,all levels,7,15.37,2023-08-15 11:00:00.242262,A Stretching class,2 h 
-833,GAP,716,advanced,37,13.82,2024-05-20 20:00:00.242262,A GAP class,2 h 
-834,Zumba,529,intermediate,3,18.78,2024-04-27 16:30:00.242262,A Zumba class,2 h 
-835,Stretching,17,advanced,2,10.38,2024-02-16 03:00:00.242262,A Stretching class,2 h 
-836,CrossFit,982,advanced,41,13.85,2023-06-14 14:00:00.242262,A CrossFit class,1 h 45 min
-837,Kickboxing,868,advanced,41,22.78,2024-04-19 06:00:00.242262,A Kickboxing class,2 h 
-838,HIIT,498,all levels,42,14.84,2024-03-15 23:30:00.242262,A HIIT class,0 h 40 min
-839,CrossFit,637,advanced,15,9.48,2023-10-31 13:00:00.242262,A CrossFit class,2 h 
-840,Aerobics,270,intermediate,1,16.94,2024-04-02 13:00:00.242262,A Aerobics class,2 h 
-841,HIIT,17,intermediate,41,13.91,2023-12-03 17:00:00.242262,A HIIT class,0 h 45 min
-842,Yoga,627,all levels,7,14.25,2024-01-21 16:00:00.242262,A Yoga class,1 h 55 min
-843,Personalized,422,intermediate,20,15.23,2023-08-04 19:30:00.242262,A Personalized class,1 h 30 min
-844,CrossFit,651,intermediate,6,13.16,2024-03-26 22:00:00.242262,A CrossFit class,1 h 30 min
-845,Barre,35,intermediate,46,17.55,2023-07-07 04:00:00.242262,A Barre class,0 h 50 min
-846,HIIT,281,advanced,6,16.43,2023-10-05 18:00:00.242262,A HIIT class,1 h 55 min
-847,Boxing,370,intermediate,24,13.62,2023-07-04 02:30:00.242262,A Boxing class,2 h 
-848,Pilates,899,begginer,49,13.57,2024-01-26 05:00:00.242262,A Pilates class,1 h 20 min
-849,CrossFit,39,begginer,20,13.66,2024-03-03 04:00:00.242262,A CrossFit class,0 h 45 min
-850,Personalized,853,all levels,25,17.27,2024-03-15 11:00:00.242262,A Personalized class,1 h 45 min
-851,Zumba,982,intermediate,41,12.09,2023-09-30 05:00:00.242262,A Zumba class,1 h 40 min
-852,Total Body Conditioning,709,advanced,48,15.07,2023-08-15 10:00:00.242262,A Total Body Conditioning class,1 h 10 min
-853,HIIT,767,intermediate,7,14.11,2023-12-10 10:30:00.242262,A HIIT class,2 h 
-854,Yoga,196,begginer,50,16.09,2024-04-13 17:30:00.242262,A Yoga class,1 h 10 min
-855,Kickboxing,460,advanced,37,17.46,2023-12-25 19:00:00.242262,A Kickboxing class,0 h 40 min
-856,Body Pump,527,intermediate,7,18.0,2023-07-19 04:30:00.242262,A Body Pump class,1 h 25 min
-857,Spinning,662,advanced,14,13.95,2023-12-17 07:00:00.242262,A Spinning class,0 h 50 min
-858,GAP,270,intermediate,12,17.44,2023-11-24 16:30:00.242262,A GAP class,1 h 45 min
-859,Body Combat,854,begginer,9,18.4,2024-05-11 08:00:00.242262,A Body Combat class,0 h 40 min
-860,HIIT,475,begginer,22,10.56,2023-10-15 20:00:00.242262,A HIIT class,0 h 20 min
-861,Spinning,667,advanced,16,16.32,2024-04-01 10:30:00.242262,A Spinning class,1 h 30 min
-862,Zumba,340,begginer,47,15.6,2024-02-02 05:30:00.242262,A Zumba class,2 h 
-863,Kickboxing,155,advanced,11,15.3,2023-08-26 21:30:00.242262,A Kickboxing class,0 h 10 min
-864,Spinning,821,advanced,25,18.81,2024-01-27 20:00:00.242262,A Spinning class,2 h 
-865,Body Pump,340,begginer,1,16.64,2023-10-22 03:00:00.242262,A Body Pump class,0 h 40 min
-866,Aerobics,398,advanced,12,9.11,2023-06-12 16:00:00.242262,A Aerobics class,1 h 
-867,Aerobics,55,advanced,36,16.28,2024-04-22 16:00:00.242262,A Aerobics class,1 h 30 min
-868,Body Combat,821,intermediate,40,9.61,2023-06-25 13:30:00.242262,A Body Combat class,2 h 
-869,Yoga,220,intermediate,2,15.17,2023-08-07 14:30:00.242262,A Yoga class,2 h 
-870,Total Body Conditioning,63,intermediate,15,15.06,2024-01-02 18:00:00.242262,A Total Body Conditioning class,0 h 40 min
-871,Yoga,550,intermediate,30,15.44,2024-03-08 20:30:00.242262,A Yoga class,2 h 
-872,GAP,304,intermediate,31,14.92,2024-01-14 20:00:00.242262,A GAP class,1 h 5 min
-873,HIIT,198,begginer,9,17.12,2024-01-02 09:30:00.242262,A HIIT class,2 h 
-874,Barre,20,all levels,21,16.32,2023-06-07 17:30:00.242262,A Barre class,0 h 55 min
-875,Body Pump,175,advanced,5,17.26,2023-09-30 09:00:00.242262,A Body Pump class,1 h 20 min
-876,Body Combat,757,advanced,34,13.94,2024-01-30 02:30:00.242262,A Body Combat class,1 h 15 min
-877,CrossFit,390,intermediate,30,11.71,2024-03-28 12:00:00.242262,A CrossFit class,1 h 10 min
-878,GAP,20,begginer,11,15.45,2024-01-11 09:00:00.242262,A GAP class,0 h 55 min
-879,Yoga,709,all levels,36,13.55,2024-05-20 23:00:00.242262,A Yoga class,0 h 10 min
-880,Yoga,281,intermediate,35,14.66,2024-04-14 08:00:00.242262,A Yoga class,1 h 15 min
-881,Aerobics,820,all levels,16,18.04,2023-10-18 02:00:00.242262,A Aerobics class,0 h 20 min
-882,Yoga,947,advanced,15,10.85,2024-01-29 01:00:00.242262,A Yoga class,1 h 40 min
-883,Boxing,664,intermediate,39,12.1,2023-08-10 22:30:00.242262,A Boxing class,1 h 25 min
-884,GAP,17,advanced,11,13.79,2024-04-10 11:30:00.242262,A GAP class,1 h 
-885,Total Body Conditioning,868,begginer,19,15.64,2023-07-28 15:00:00.242262,A Total Body Conditioning class,0 h 30 min
-886,Body Combat,537,advanced,49,15.46,2023-06-08 19:00:00.242262,A Body Combat class,0 h 45 min
-887,Barre,604,all levels,31,15.55,2023-08-19 07:00:00.242262,A Barre class,0 h 45 min
-888,Personalized,708,intermediate,23,11.19,2023-10-05 09:30:00.242262,A Personalized class,0 h 40 min
-889,Other,655,all levels,17,12.4,2023-08-01 16:30:00.242262,A Other class,2 h 
-890,Yoga,709,intermediate,43,14.76,2023-11-19 22:30:00.242262,A Yoga class,0 h 45 min
-891,Boxing,549,all levels,35,14.14,2023-09-08 12:00:00.242262,A Boxing class,2 h 
-892,Personalized,401,intermediate,40,16.2,2024-02-06 23:00:00.242262,A Personalized class,2 h 
-893,CrossFit,853,begginer,6,15.43,2024-05-13 12:30:00.242262,A CrossFit class,0 h 45 min
-894,Total Body Conditioning,972,advanced,38,13.55,2024-03-04 03:00:00.242262,A Total Body Conditioning class,2 h 
-895,Personalized,340,all levels,26,14.0,2023-08-03 08:00:00.242262,A Personalized class,2 h 
-896,Pilates,205,begginer,15,15.59,2023-05-27 08:00:00.242262,A Pilates class,1 h 25 min
-897,Pilates,406,advanced,43,14.99,2023-08-30 14:00:00.242262,A Pilates class,1 h 55 min
-898,Other,334,intermediate,26,16.11,2024-01-27 05:00:00.242262,A Other class,1 h 45 min
-899,HIIT,870,intermediate,39,16.3,2024-02-22 06:00:00.242262,A HIIT class,1 h 40 min
-900,Barre,409,advanced,42,12.41,2023-09-18 16:30:00.242262,A Barre class,0 h 30 min
-901,Spinning,951,begginer,45,21.81,2023-05-27 05:00:00.242262,A Spinning class,0 h 20 min
-902,Pilates,853,advanced,28,15.53,2023-09-16 18:00:00.242262,A Pilates class,0 h 30 min
-903,Aerobics,932,intermediate,44,15.15,2023-06-05 08:30:00.242262,A Aerobics class,2 h 
-904,Other,255,all levels,5,10.53,2023-10-11 23:00:00.242262,A Other class,2 h 
-905,GAP,972,begginer,47,16.55,2023-06-08 06:30:00.242262,A GAP class,2 h 
-906,Yoga,498,begginer,37,17.78,2023-11-06 04:30:00.242262,A Yoga class,1 h 45 min
-907,Boxing,498,advanced,32,19.64,2023-10-25 00:30:00.242262,A Boxing class,0 h 35 min
-908,Stretching,35,begginer,30,15.52,2023-12-30 04:00:00.242262,A Stretching class,2 h 
-909,Kickboxing,767,advanced,12,16.98,2023-11-17 02:30:00.242262,A Kickboxing class,1 h 5 min
-910,CrossFit,908,all levels,9,14.5,2023-10-16 01:00:00.242262,A CrossFit class,0 h 15 min
-911,Zumba,821,begginer,39,12.61,2023-08-14 06:30:00.242262,A Zumba class,0 h 15 min
-912,Other,353,intermediate,31,14.96,2023-07-05 07:00:00.242262,A Other class,1 h 55 min
-913,Barre,854,intermediate,2,13.1,2024-05-11 07:30:00.242262,A Barre class,0 h 40 min
-914,Zumba,624,all levels,25,20.73,2024-05-22 08:00:00.242262,A Zumba class,0 h 25 min
-915,Spinning,767,all levels,17,9.05,2023-08-31 02:30:00.242262,A Spinning class,0 h 45 min
-916,Stretching,953,intermediate,18,15.9,2023-08-15 07:30:00.242262,A Stretching class,2 h 
-917,HIIT,275,begginer,20,10.82,2023-11-19 19:30:00.242262,A HIIT class,0 h 30 min
-918,Kickboxing,208,advanced,31,16.09,2023-09-18 07:00:00.242262,A Kickboxing class,2 h 
-919,Barre,198,advanced,11,13.71,2024-01-21 18:30:00.242262,A Barre class,2 h 
-920,Body Pump,221,advanced,18,12.1,2023-11-03 13:00:00.242262,A Body Pump class,2 h 
-921,Barre,618,intermediate,16,14.61,2023-08-21 09:00:00.242262,A Barre class,0 h 5 min
-922,HIIT,757,intermediate,30,13.0,2023-10-10 07:30:00.242262,A HIIT class,2 h 
-923,Other,283,intermediate,10,15.23,2023-09-20 15:30:00.242262,A Other class,0 h 40 min
-924,Zumba,637,advanced,3,17.28,2023-09-21 17:00:00.242262,A Zumba class,2 h 
-925,CrossFit,410,begginer,36,10.26,2024-02-06 13:00:00.242262,A CrossFit class,0 h 40 min
-926,Personalized,271,intermediate,7,13.85,2023-12-09 11:30:00.242262,A Personalized class,2 h 
-927,Kickboxing,467,all levels,26,17.32,2024-03-15 21:30:00.242262,A Kickboxing class,2 h 
-928,HIIT,62,advanced,27,19.21,2023-10-25 08:30:00.242262,A HIIT class,1 h 10 min
-929,Body Pump,921,begginer,10,10.95,2023-09-23 01:30:00.242262,A Body Pump class,0 h 15 min
-930,Pilates,987,intermediate,15,12.96,2023-05-28 18:00:00.242262,A Pilates class,0 h 30 min
-931,ABS,234,intermediate,50,8.77,2023-09-05 19:00:00.242262,A ABS class,2 h 
-932,Zumba,540,advanced,44,17.93,2023-12-03 04:00:00.242262,A Zumba class,0 h 
-933,HIIT,807,intermediate,50,12.34,2023-08-27 02:30:00.242262,A HIIT class,1 h 15 min
-934,Body Pump,775,advanced,50,15.83,2024-01-07 03:30:00.242262,A Body Pump class,2 h 
-935,Zumba,258,all levels,17,17.11,2023-10-27 21:30:00.242262,A Zumba class,0 h 50 min
-936,Stretching,188,advanced,41,21.75,2024-02-21 18:00:00.242262,A Stretching class,2 h 
-937,GAP,39,advanced,37,17.08,2023-12-18 21:30:00.242262,A GAP class,1 h 15 min
-938,HIIT,819,intermediate,49,12.53,2024-02-01 17:00:00.242262,A HIIT class,2 h 
-939,HIIT,410,all levels,46,13.83,2023-12-14 13:00:00.242262,A HIIT class,1 h 20 min
-940,ABS,356,advanced,40,16.49,2023-08-29 05:30:00.242262,A ABS class,1 h 30 min
-941,Yoga,393,begginer,9,16.02,2024-05-06 18:00:00.242262,A Yoga class,0 h 5 min
-942,Aerobics,982,intermediate,25,16.61,2023-06-12 23:00:00.242262,A Aerobics class,0 h 50 min
-943,Body Pump,77,begginer,29,11.19,2024-05-02 23:30:00.242262,A Body Pump class,0 h 20 min
-944,Spinning,820,advanced,32,13.28,2023-11-12 14:00:00.242262,A Spinning class,0 h 50 min
-945,CrossFit,601,begginer,24,13.29,2024-04-06 03:00:00.242262,A CrossFit class,0 h 20 min
-946,CrossFit,862,advanced,11,13.52,2023-11-26 02:30:00.242262,A CrossFit class,2 h 
-947,GAP,443,intermediate,45,13.08,2024-05-15 21:30:00.242262,A GAP class,1 h 25 min
-948,Total Body Conditioning,672,all levels,49,12.16,2024-04-01 16:00:00.242262,A Total Body Conditioning class,0 h 40 min
-949,Other,716,begginer,14,13.8,2023-11-05 11:30:00.242262,A Other class,2 h 
-950,CrossFit,501,all levels,47,17.76,2023-09-28 18:30:00.242262,A CrossFit class,1 h 5 min
-951,Total Body Conditioning,471,advanced,45,14.46,2023-11-01 12:00:00.242262,A Total Body Conditioning class,1 h 15 min
-952,Pilates,891,all levels,32,13.63,2023-08-19 20:00:00.242262,A Pilates class,2 h 
-953,Boxing,644,intermediate,43,15.53,2023-08-17 06:30:00.242262,A Boxing class,0 h 40 min
-954,Pilates,471,begginer,17,20.01,2024-04-01 05:30:00.242262,A Pilates class,0 h 55 min
-955,Yoga,716,intermediate,13,14.83,2024-02-04 16:30:00.242262,A Yoga class,0 h 25 min
-956,Yoga,105,intermediate,21,19.04,2023-11-16 21:30:00.242262,A Yoga class,2 h 
-957,Yoga,809,all levels,37,11.91,2023-10-05 17:00:00.242262,A Yoga class,1 h 15 min
-958,Stretching,112,intermediate,8,10.53,2023-09-14 23:00:00.242262,A Stretching class,0 h 15 min
-959,ABS,401,all levels,35,14.64,2024-05-24 22:30:00.242262,A ABS class,0 h 30 min
-960,GAP,982,advanced,14,9.95,2023-10-21 14:00:00.242262,A GAP class,1 h 55 min
-961,CrossFit,546,begginer,43,11.55,2024-03-26 11:00:00.242262,A CrossFit class,1 h 25 min
-962,Personalized,471,begginer,33,7.44,2023-08-20 00:00:00.242262,A Personalized class,1 h 30 min
-963,Body Combat,420,advanced,33,17.62,2024-03-05 23:30:00.242262,A Body Combat class,0 h 15 min
-964,Total Body Conditioning,234,advanced,35,14.51,2024-04-18 20:30:00.242262,A Total Body Conditioning class,2 h 
-965,Body Pump,197,intermediate,42,14.96,2023-12-04 12:30:00.242262,A Body Pump class,0 h 5 min
-966,ABS,460,begginer,47,11.54,2023-09-30 00:00:00.242262,A ABS class,2 h 
-967,Personalized,783,all levels,5,10.56,2023-07-01 23:00:00.242262,A Personalized class,1 h 
-968,Body Combat,796,begginer,20,13.49,2024-04-27 04:30:00.242262,A Body Combat class,0 h 20 min
-969,Zumba,495,intermediate,25,16.0,2023-12-05 12:00:00.242262,A Zumba class,2 h 
-970,Yoga,939,intermediate,14,12.12,2024-02-13 01:30:00.242262,A Yoga class,1 h 10 min
-971,Yoga,529,advanced,35,14.03,2023-11-02 20:00:00.242262,A Yoga class,0 h 25 min
-972,Boxing,627,all levels,17,15.89,2024-04-01 07:00:00.242262,A Boxing class,2 h 
-973,ABS,561,begginer,44,12.93,2023-09-12 11:30:00.242262,A ABS class,0 h 30 min
-974,ABS,937,advanced,4,17.73,2023-06-25 02:00:00.242262,A ABS class,1 h 50 min
-975,Other,908,begginer,26,12.46,2023-07-29 21:30:00.242262,A Other class,1 h 5 min
-976,Other,196,all levels,1,11.53,2024-03-23 07:30:00.242262,A Other class,2 h 
-977,Spinning,709,intermediate,16,17.4,2024-04-25 23:00:00.242262,A Spinning class,2 h 
-978,Body Combat,356,intermediate,27,9.1,2024-01-04 13:30:00.242262,A Body Combat class,2 h 
-979,Other,745,all levels,16,15.22,2023-12-24 18:00:00.242262,A Other class,1 h 5 min
-980,Body Combat,853,advanced,39,9.69,2023-05-31 20:00:00.242262,A Body Combat class,2 h 
-981,Body Pump,757,begginer,31,14.25,2023-07-18 20:00:00.242262,A Body Pump class,0 h 45 min
-982,HIIT,774,advanced,22,24.26,2023-09-05 11:00:00.242262,A HIIT class,0 h 40 min
-983,Zumba,899,all levels,6,12.39,2023-12-20 03:00:00.242262,A Zumba class,2 h 
-984,HIIT,443,all levels,42,15.14,2023-10-04 13:00:00.242262,A HIIT class,1 h 15 min
-985,ABS,337,intermediate,24,17.6,2023-10-21 19:00:00.242262,A ABS class,2 h 
-986,Zumba,621,advanced,31,23.85,2023-06-07 16:00:00.242262,A Zumba class,0 h 40 min
-987,Barre,155,all levels,43,19.56,2024-05-11 11:30:00.242262,A Barre class,2 h 
-988,CrossFit,667,begginer,22,17.18,2024-03-21 22:30:00.242262,A CrossFit class,0 h 5 min
-989,HIIT,81,advanced,35,19.73,2024-01-10 05:30:00.242262,A HIIT class,2 h 
-990,Spinning,586,begginer,20,13.53,2023-09-02 13:30:00.242262,A Spinning class,0 h 5 min
-991,Barre,667,begginer,26,7.22,2023-12-04 04:00:00.242262,A Barre class,1 h 20 min
-992,CrossFit,28,advanced,27,13.83,2023-08-02 02:30:00.242262,A CrossFit class,0 h 
-993,Zumba,18,intermediate,12,19.23,2024-05-02 17:00:00.242262,A Zumba class,2 h 
-994,CrossFit,214,all levels,36,9.96,2024-04-22 17:30:00.242262,A CrossFit class,2 h 
-995,ABS,11,intermediate,28,16.47,2023-07-29 20:00:00.242262,A ABS class,2 h 
-996,Other,391,intermediate,18,14.65,2023-08-21 00:30:00.242262,A Other class,2 h 
-997,Personalized,155,begginer,24,14.27,2024-01-21 20:00:00.242262,A Personalized class,2 h 
-998,CrossFit,420,all levels,39,13.61,2024-02-26 22:00:00.242262,A CrossFit class,0 h 30 min
-999,Body Combat,620,all levels,23,14.94,2024-05-04 15:00:00.242262,A Body Combat class,2 h 
+0,Boxing,498,advanced,3,16.04,2024-04-10 16:30:00.393354,A Boxing class,0 h 55 min
+1,Pilates,849,advanced,34,14.63,2024-03-19 15:30:00.393354,A Pilates class,0 h 15 min
+2,Yoga,814,advanced,29,15.72,2024-05-26 00:30:00.393354,A Yoga class,2 h 
+3,CrossFit,94,advanced,3,14.81,2023-12-02 10:30:00.393354,A CrossFit class,0 h 55 min
+4,Aerobics,623,begginer,37,13.49,2024-03-21 14:30:00.393354,A Aerobics class,1 h 35 min
+5,Body Pump,365,all levels,3,10.66,2024-02-01 20:00:00.393354,A Body Pump class,1 h 45 min
+6,Other,833,all levels,1,15.62,2024-01-27 17:00:00.393354,A Other class,2 h 
+7,HIIT,47,all levels,35,10.57,2023-05-27 21:30:00.393354,A HIIT class,1 h 55 min
+8,Kickboxing,911,intermediate,30,17.36,2023-12-21 05:00:00.393354,A Kickboxing class,1 h 
+9,CrossFit,822,advanced,50,15.52,2024-03-10 02:00:00.393354,A CrossFit class,2 h 
+10,Barre,721,begginer,42,19.91,2023-09-18 18:30:00.393354,A Barre class,0 h 25 min
+11,GAP,121,intermediate,1,15.45,2024-04-17 03:30:00.393354,A GAP class,2 h 
+12,Yoga,421,advanced,32,13.08,2023-07-17 03:30:00.393354,A Yoga class,0 h 50 min
+13,Boxing,495,all levels,24,14.79,2024-01-05 11:00:00.393354,A Boxing class,2 h 
+14,CrossFit,994,begginer,37,13.36,2024-02-28 06:30:00.393354,A CrossFit class,1 h 
+15,Pilates,153,all levels,27,17.03,2023-12-04 02:30:00.393354,A Pilates class,2 h 
+16,Yoga,502,intermediate,31,12.1,2023-08-09 18:00:00.393354,A Yoga class,0 h 10 min
+17,Aerobics,250,all levels,19,15.51,2023-09-03 13:30:00.393354,A Aerobics class,1 h 50 min
+18,Body Combat,423,intermediate,13,16.53,2023-12-11 02:30:00.393354,A Body Combat class,2 h 
+19,CrossFit,174,intermediate,41,11.44,2024-02-11 03:30:00.393354,A CrossFit class,1 h 55 min
+20,Total Body Conditioning,927,intermediate,12,16.35,2023-10-28 11:00:00.393354,A Total Body Conditioning class,0 h 25 min
+21,Stretching,769,advanced,36,10.26,2023-10-17 21:00:00.393354,A Stretching class,0 h 30 min
+22,Total Body Conditioning,478,begginer,48,14.11,2023-05-28 01:00:00.393354,A Total Body Conditioning class,1 h 35 min
+23,HIIT,994,advanced,30,20.73,2023-08-11 09:00:00.393354,A HIIT class,0 h 5 min
+24,Body Combat,929,advanced,43,12.8,2024-02-28 22:00:00.393354,A Body Combat class,1 h 25 min
+25,HIIT,326,intermediate,8,15.69,2023-07-09 03:30:00.393354,A HIIT class,2 h 
+26,Pilates,94,intermediate,25,8.02,2023-08-31 14:00:00.393354,A Pilates class,0 h 55 min
+27,Zumba,15,advanced,10,10.9,2023-08-01 19:00:00.393354,A Zumba class,2 h 
+28,Pilates,647,intermediate,33,17.89,2023-12-22 15:30:00.393354,A Pilates class,0 h 15 min
+29,Kickboxing,338,intermediate,47,12.42,2023-12-02 05:00:00.393354,A Kickboxing class,1 h 25 min
+30,Aerobics,571,advanced,12,17.15,2023-08-26 02:00:00.393354,A Aerobics class,0 h 10 min
+31,Yoga,247,all levels,50,18.61,2024-02-21 19:30:00.393354,A Yoga class,1 h 35 min
+32,Aerobics,927,begginer,16,15.22,2024-04-23 13:30:00.393354,A Aerobics class,2 h 
+33,Kickboxing,109,advanced,30,14.18,2023-06-24 13:00:00.393354,A Kickboxing class,2 h 
+34,Aerobics,153,begginer,15,16.19,2023-06-20 13:00:00.393354,A Aerobics class,1 h 45 min
+35,Aerobics,927,intermediate,30,12.75,2023-09-15 13:00:00.393354,A Aerobics class,0 h 
+36,Boxing,218,all levels,21,17.38,2023-12-11 23:00:00.393354,A Boxing class,1 h 50 min
+37,ABS,480,intermediate,25,19.66,2024-02-22 10:00:00.393354,A ABS class,0 h 25 min
+38,Body Combat,222,advanced,25,15.26,2023-07-25 13:00:00.393354,A Body Combat class,2 h 
+39,Aerobics,52,advanced,10,17.45,2023-11-15 22:00:00.393354,A Aerobics class,2 h 
+40,GAP,142,intermediate,27,16.66,2023-07-08 06:00:00.393354,A GAP class,0 h 45 min
+41,Stretching,861,advanced,15,6.95,2023-06-20 09:30:00.393354,A Stretching class,2 h 
+42,Barre,104,begginer,36,12.43,2023-08-01 11:30:00.393354,A Barre class,0 h 40 min
+43,Body Combat,720,intermediate,38,15.13,2023-06-24 07:00:00.393354,A Body Combat class,1 h 40 min
+44,Body Combat,616,all levels,38,13.9,2024-04-21 04:00:00.393354,A Body Combat class,2 h 
+45,Yoga,793,advanced,13,14.85,2024-03-16 02:00:00.393354,A Yoga class,2 h 
+46,Kickboxing,678,advanced,10,19.46,2023-08-15 13:00:00.393354,A Kickboxing class,0 h 40 min
+47,Spinning,929,all levels,16,21.85,2023-09-11 21:00:00.393354,A Spinning class,0 h 10 min
+48,ABS,182,intermediate,11,14.88,2023-08-26 12:00:00.393354,A ABS class,0 h 40 min
+49,Body Pump,338,all levels,3,17.06,2024-01-30 16:30:00.393354,A Body Pump class,0 h 25 min
+50,Spinning,275,intermediate,2,10.22,2024-05-10 02:30:00.393354,A Spinning class,2 h 
+51,Other,552,begginer,17,19.27,2023-11-26 19:30:00.393354,A Other class,1 h 
+52,Stretching,726,intermediate,3,21.31,2023-07-20 21:00:00.393354,A Stretching class,1 h 50 min
+53,CrossFit,148,begginer,10,15.3,2024-03-27 23:30:00.393354,A CrossFit class,1 h 45 min
+54,Pilates,989,all levels,36,13.16,2023-12-30 18:30:00.393354,A Pilates class,1 h 10 min
+55,Aerobics,720,advanced,46,9.6,2024-05-22 16:00:00.393354,A Aerobics class,1 h 15 min
+56,Other,121,begginer,8,16.83,2024-04-20 11:30:00.393354,A Other class,0 h 10 min
+57,Zumba,709,begginer,4,12.53,2024-01-27 04:30:00.393354,A Zumba class,0 h 45 min
+58,Boxing,397,all levels,9,16.36,2024-01-12 11:30:00.393354,A Boxing class,2 h 
+59,Body Pump,841,advanced,32,16.87,2024-01-28 03:00:00.393354,A Body Pump class,1 h 
+60,GAP,246,all levels,16,16.71,2023-12-18 12:00:00.393354,A GAP class,0 h 50 min
+61,Kickboxing,685,advanced,1,17.41,2024-04-08 02:30:00.393354,A Kickboxing class,2 h 
+62,GAP,99,intermediate,41,15.84,2024-04-20 19:30:00.393354,A GAP class,2 h 
+63,Kickboxing,531,advanced,30,14.19,2023-12-16 12:30:00.393354,A Kickboxing class,2 h 
+64,Pilates,949,all levels,24,9.74,2023-12-12 05:30:00.393354,A Pilates class,2 h 
+65,Pilates,578,all levels,4,11.8,2023-09-13 08:30:00.393354,A Pilates class,1 h 50 min
+66,Total Body Conditioning,555,advanced,31,12.63,2023-12-17 01:00:00.393354,A Total Body Conditioning class,2 h 
+67,Other,574,begginer,41,13.96,2024-05-04 18:00:00.393354,A Other class,0 h 5 min
+68,Yoga,658,all levels,12,13.89,2023-10-23 09:00:00.393354,A Yoga class,0 h 10 min
+69,Other,338,advanced,36,11.42,2024-04-01 16:30:00.393354,A Other class,1 h 25 min
+70,Yoga,769,intermediate,36,10.22,2023-06-04 03:00:00.393354,A Yoga class,2 h 
+71,Total Body Conditioning,616,advanced,34,15.46,2023-07-26 05:00:00.393354,A Total Body Conditioning class,2 h 
+72,Stretching,907,begginer,36,12.38,2024-01-23 11:30:00.393354,A Stretching class,2 h 
+73,ABS,264,all levels,49,18.29,2023-08-27 06:00:00.393354,A ABS class,0 h 5 min
+74,HIIT,778,all levels,24,7.94,2023-08-09 21:00:00.393354,A HIIT class,1 h 5 min
+75,Aerobics,490,begginer,47,17.45,2023-09-21 18:30:00.393354,A Aerobics class,1 h 35 min
+76,CrossFit,861,begginer,10,14.93,2024-05-16 21:30:00.393354,A CrossFit class,1 h 25 min
+77,Personalized,984,begginer,28,13.04,2023-07-14 19:30:00.393354,A Personalized class,0 h 20 min
+78,ABS,502,advanced,26,14.08,2023-11-23 04:00:00.393354,A ABS class,1 h 25 min
+79,Barre,571,advanced,26,14.54,2023-08-27 01:30:00.393354,A Barre class,0 h 
+80,Body Pump,658,begginer,32,12.74,2023-08-25 08:30:00.393354,A Body Pump class,1 h 35 min
+81,Pilates,858,begginer,39,17.4,2023-12-10 07:00:00.393354,A Pilates class,2 h 
+82,GAP,250,begginer,26,15.31,2024-03-16 13:30:00.393354,A GAP class,1 h 10 min
+83,ABS,978,begginer,18,17.96,2023-06-05 19:30:00.393354,A ABS class,2 h 
+84,Stretching,397,advanced,12,14.41,2023-08-02 05:00:00.393354,A Stretching class,1 h 10 min
+85,Spinning,245,begginer,3,15.47,2023-10-20 01:00:00.393354,A Spinning class,0 h 45 min
+86,Other,258,begginer,5,13.19,2023-07-29 10:30:00.393354,A Other class,2 h 
+87,HIIT,704,advanced,9,14.6,2024-05-10 10:00:00.393354,A HIIT class,2 h 
+88,Pilates,942,begginer,17,9.02,2023-07-01 08:30:00.393354,A Pilates class,2 h 
+89,GAP,931,all levels,38,19.44,2024-05-02 20:00:00.393354,A GAP class,1 h 10 min
+90,ABS,498,begginer,9,15.95,2024-04-27 04:00:00.393354,A ABS class,2 h 
+91,Yoga,686,all levels,37,20.26,2023-09-27 03:30:00.393354,A Yoga class,1 h 55 min
+92,Aerobics,697,begginer,10,15.34,2023-11-18 13:30:00.393354,A Aerobics class,2 h 
+93,Zumba,416,intermediate,29,13.06,2023-07-08 09:30:00.393354,A Zumba class,1 h 25 min
+94,Yoga,421,advanced,3,13.69,2023-08-03 14:00:00.393354,A Yoga class,1 h 25 min
+95,Body Pump,50,intermediate,33,15.73,2024-01-05 12:00:00.393354,A Body Pump class,0 h 25 min
+96,Total Body Conditioning,147,advanced,39,14.22,2024-03-18 11:30:00.393354,A Total Body Conditioning class,0 h 10 min
+97,Total Body Conditioning,51,intermediate,28,10.3,2024-02-12 20:30:00.393354,A Total Body Conditioning class,1 h 
+98,Pilates,423,begginer,18,14.66,2023-10-04 12:00:00.393354,A Pilates class,0 h 30 min
+99,Boxing,394,begginer,26,12.21,2024-05-15 03:00:00.393354,A Boxing class,2 h 
+100,Boxing,246,begginer,16,16.15,2024-03-29 18:00:00.393354,A Boxing class,2 h 
+101,Kickboxing,151,intermediate,48,7.99,2023-08-08 21:00:00.393354,A Kickboxing class,0 h 20 min
+102,Spinning,704,all levels,43,13.79,2024-05-17 12:30:00.393354,A Spinning class,1 h 40 min
+103,Boxing,658,all levels,18,15.26,2024-04-11 16:00:00.393354,A Boxing class,0 h 55 min
+104,Other,937,advanced,37,16.92,2023-07-28 11:30:00.393354,A Other class,2 h 
+105,ABS,31,begginer,21,16.43,2024-04-28 14:30:00.393354,A ABS class,0 h 55 min
+106,Stretching,720,begginer,7,14.65,2023-06-22 15:30:00.393354,A Stretching class,0 h 
+107,Total Body Conditioning,945,all levels,3,14.51,2024-02-09 17:00:00.393354,A Total Body Conditioning class,2 h 
+108,Barre,825,intermediate,17,5.79,2024-03-26 06:00:00.393354,A Barre class,1 h 15 min
+109,Body Pump,490,all levels,20,10.43,2024-01-01 05:30:00.393354,A Body Pump class,0 h 25 min
+110,Boxing,99,intermediate,45,16.62,2024-04-11 19:00:00.393354,A Boxing class,2 h 
+111,Total Body Conditioning,27,begginer,3,14.65,2023-11-10 14:00:00.393354,A Total Body Conditioning class,0 h 40 min
+112,Yoga,770,advanced,23,17.54,2024-02-05 01:00:00.393354,A Yoga class,0 h 50 min
+113,Personalized,337,begginer,35,15.94,2023-10-03 18:00:00.393354,A Personalized class,1 h 15 min
+114,Total Body Conditioning,578,all levels,38,13.86,2023-07-14 02:00:00.393354,A Total Body Conditioning class,2 h 
+115,Yoga,176,intermediate,40,12.32,2023-08-08 10:00:00.393354,A Yoga class,2 h 
+116,Body Combat,801,begginer,43,16.2,2023-05-30 15:00:00.393354,A Body Combat class,0 h 30 min
+117,Boxing,778,begginer,17,9.87,2024-05-16 19:30:00.393354,A Boxing class,0 h 45 min
+118,Body Pump,52,all levels,17,21.39,2023-12-22 15:30:00.393354,A Body Pump class,0 h 
+119,Aerobics,136,all levels,7,13.64,2023-06-06 02:00:00.393354,A Aerobics class,2 h 
+120,Total Body Conditioning,997,begginer,29,15.46,2024-02-10 08:00:00.393354,A Total Body Conditioning class,2 h 
+121,Stretching,735,intermediate,12,14.29,2023-09-13 16:30:00.393354,A Stretching class,2 h 
+122,Boxing,50,begginer,21,14.32,2024-02-12 03:30:00.393354,A Boxing class,2 h 
+123,Aerobics,442,intermediate,2,13.21,2023-11-10 22:30:00.393354,A Aerobics class,0 h 35 min
+124,Total Body Conditioning,832,advanced,29,10.53,2024-05-16 11:30:00.393354,A Total Body Conditioning class,0 h 10 min
+125,CrossFit,141,advanced,44,16.22,2024-04-08 17:30:00.393354,A CrossFit class,0 h 10 min
+126,Personalized,803,advanced,49,17.78,2023-10-30 20:30:00.393354,A Personalized class,1 h 50 min
+127,CrossFit,478,intermediate,44,19.94,2023-05-31 15:00:00.393354,A CrossFit class,2 h 
+128,Zumba,147,all levels,27,13.23,2024-04-22 09:30:00.393354,A Zumba class,2 h 
+129,ABS,391,advanced,50,16.65,2023-09-11 23:30:00.393354,A ABS class,1 h 15 min
+130,Spinning,611,all levels,39,14.07,2023-07-18 11:00:00.393354,A Spinning class,1 h 25 min
+131,ABS,984,all levels,20,10.93,2023-08-03 20:00:00.393354,A ABS class,1 h 50 min
+132,Barre,131,advanced,26,10.66,2024-05-08 02:30:00.393354,A Barre class,0 h 10 min
+133,Spinning,60,all levels,13,15.92,2023-09-06 05:30:00.393354,A Spinning class,2 h 
+134,CrossFit,478,all levels,36,14.04,2024-03-23 12:30:00.393354,A CrossFit class,0 h 45 min
+135,Barre,463,advanced,30,13.88,2023-08-08 11:30:00.393354,A Barre class,0 h 25 min
+136,CrossFit,647,begginer,14,18.45,2024-03-12 13:30:00.393354,A CrossFit class,0 h 20 min
+137,Boxing,832,begginer,45,16.54,2023-09-28 10:00:00.393354,A Boxing class,1 h 35 min
+138,Body Pump,793,advanced,12,13.77,2024-05-12 00:30:00.393354,A Body Pump class,0 h 45 min
+139,Boxing,242,all levels,7,10.66,2023-07-25 04:00:00.393354,A Boxing class,1 h 5 min
+140,Spinning,103,begginer,15,16.24,2023-09-22 19:30:00.393354,A Spinning class,2 h 
+141,Personalized,737,all levels,36,16.42,2024-02-24 10:00:00.393354,A Personalized class,0 h 10 min
+142,Pilates,576,begginer,17,16.29,2023-07-29 09:00:00.393354,A Pilates class,2 h 
+143,Boxing,803,intermediate,37,10.91,2024-04-22 09:30:00.393354,A Boxing class,1 h 40 min
+144,Kickboxing,770,all levels,35,13.09,2023-11-09 20:30:00.393354,A Kickboxing class,2 h 
+145,Other,789,begginer,20,21.11,2024-01-27 18:30:00.393354,A Other class,0 h 20 min
+146,Aerobics,981,intermediate,46,4.38,2023-08-13 19:30:00.393354,A Aerobics class,1 h 30 min
+147,Total Body Conditioning,735,intermediate,24,17.67,2023-10-21 05:00:00.393354,A Total Body Conditioning class,2 h 
+148,Barre,267,all levels,26,12.65,2023-06-02 21:30:00.393354,A Barre class,1 h 35 min
+149,Stretching,981,all levels,39,13.77,2023-10-12 08:30:00.393354,A Stretching class,0 h 10 min
+150,CrossFit,900,advanced,9,15.5,2023-05-28 03:00:00.393354,A CrossFit class,2 h 
+151,HIIT,845,all levels,24,19.64,2023-06-29 18:30:00.393354,A HIIT class,1 h 45 min
+152,Total Body Conditioning,927,all levels,36,11.21,2024-01-06 19:30:00.393354,A Total Body Conditioning class,2 h 
+153,Zumba,395,advanced,26,12.93,2024-04-22 07:00:00.393354,A Zumba class,1 h 50 min
+154,Other,11,all levels,4,18.49,2023-12-22 22:30:00.393354,A Other class,1 h 35 min
+155,Aerobics,965,intermediate,18,20.96,2024-04-29 04:00:00.393354,A Aerobics class,2 h 
+156,ABS,92,intermediate,44,10.84,2024-04-22 21:30:00.393354,A ABS class,0 h 10 min
+157,Kickboxing,574,advanced,9,13.65,2023-06-21 14:30:00.393354,A Kickboxing class,2 h 
+158,Yoga,441,intermediate,30,16.82,2023-09-15 22:00:00.393354,A Yoga class,2 h 
+159,Pilates,437,begginer,49,15.32,2023-09-02 05:00:00.393354,A Pilates class,1 h 55 min
+160,HIIT,932,intermediate,31,12.51,2023-09-08 07:00:00.393354,A HIIT class,1 h 55 min
+161,Boxing,903,intermediate,20,14.88,2024-03-17 00:00:00.393354,A Boxing class,1 h 40 min
+162,Zumba,704,intermediate,47,19.57,2024-01-28 05:00:00.393354,A Zumba class,2 h 
+163,Body Combat,978,advanced,1,15.26,2024-03-24 15:00:00.393354,A Body Combat class,2 h 
+164,Yoga,900,all levels,43,16.2,2023-07-10 17:00:00.393354,A Yoga class,1 h 5 min
+165,Yoga,359,intermediate,9,11.19,2023-10-08 03:00:00.393354,A Yoga class,0 h 45 min
+166,Zumba,50,begginer,39,12.36,2024-04-09 17:30:00.393354,A Zumba class,2 h 
+167,Body Combat,989,begginer,19,10.92,2023-11-21 21:30:00.393354,A Body Combat class,0 h 10 min
+168,Kickboxing,737,all levels,9,22.75,2024-05-15 01:30:00.393354,A Kickboxing class,2 h 
+169,Personalized,455,begginer,1,17.01,2023-11-04 23:30:00.393354,A Personalized class,0 h 45 min
+170,Body Combat,942,intermediate,42,15.01,2024-02-25 19:30:00.393354,A Body Combat class,2 h 
+171,Body Pump,695,all levels,35,14.18,2024-04-25 05:00:00.393354,A Body Pump class,0 h 20 min
+172,CrossFit,697,all levels,12,10.82,2023-07-21 15:00:00.393354,A CrossFit class,2 h 
+173,Barre,174,begginer,12,16.96,2023-07-20 06:00:00.393354,A Barre class,2 h 
+174,Yoga,665,advanced,24,17.97,2024-04-12 00:00:00.393354,A Yoga class,0 h 25 min
+175,Zumba,911,intermediate,36,17.96,2024-05-07 18:00:00.393354,A Zumba class,0 h 20 min
+176,Other,490,intermediate,41,13.99,2023-06-20 22:30:00.393354,A Other class,1 h 15 min
+177,Personalized,680,advanced,9,14.54,2023-08-11 21:30:00.393354,A Personalized class,2 h 
+178,Other,470,begginer,37,20.92,2023-09-08 08:00:00.393354,A Other class,1 h 5 min
+179,Body Pump,735,begginer,35,14.82,2023-09-27 15:30:00.393354,A Body Pump class,0 h 5 min
+180,Body Pump,204,begginer,48,12.82,2024-05-10 11:30:00.393354,A Body Pump class,1 h 15 min
+181,CrossFit,228,intermediate,45,11.43,2024-01-03 22:30:00.393354,A CrossFit class,1 h 20 min
+182,Spinning,258,advanced,47,14.94,2023-06-05 06:00:00.393354,A Spinning class,1 h 
+183,Personalized,604,intermediate,8,18.39,2023-12-07 07:30:00.393354,A Personalized class,2 h 
+184,Barre,326,intermediate,24,13.18,2023-11-18 15:30:00.393354,A Barre class,1 h 50 min
+185,Barre,679,advanced,33,14.5,2023-07-23 01:00:00.393354,A Barre class,2 h 
+186,Body Pump,744,intermediate,25,14.8,2023-10-11 19:00:00.393354,A Body Pump class,2 h 
+187,Body Pump,365,begginer,11,18.51,2023-08-08 03:00:00.393354,A Body Pump class,1 h 35 min
+188,ABS,686,all levels,28,16.86,2023-08-19 07:30:00.393354,A ABS class,1 h 20 min
+189,HIIT,437,advanced,26,17.41,2023-09-30 19:30:00.393354,A HIIT class,1 h 45 min
+190,Spinning,1,all levels,25,11.65,2024-04-29 19:00:00.393354,A Spinning class,2 h 
+191,ABS,899,all levels,50,15.44,2023-08-21 14:00:00.393354,A ABS class,2 h 
+192,CrossFit,720,all levels,46,11.53,2024-03-25 12:30:00.393354,A CrossFit class,1 h 10 min
+193,ABS,47,all levels,34,15.81,2024-04-10 04:00:00.393354,A ABS class,1 h 10 min
+194,ABS,57,intermediate,13,18.01,2023-06-02 17:00:00.393354,A ABS class,2 h 
+195,Barre,922,advanced,7,14.16,2024-05-21 07:30:00.393354,A Barre class,1 h 35 min
+196,Boxing,616,advanced,48,15.55,2024-03-02 05:00:00.393354,A Boxing class,1 h 40 min
+197,Personalized,148,advanced,44,15.74,2023-12-25 07:00:00.393354,A Personalized class,0 h 10 min
+198,Aerobics,552,advanced,31,12.66,2024-02-06 13:30:00.393354,A Aerobics class,1 h 50 min
+199,Barre,531,advanced,12,13.92,2023-09-03 06:00:00.393354,A Barre class,1 h 
+200,GAP,841,advanced,13,18.39,2024-05-23 09:00:00.393354,A GAP class,2 h 
+201,GAP,27,begginer,18,14.59,2023-11-11 22:00:00.393354,A GAP class,0 h 40 min
+202,Pilates,242,advanced,42,21.58,2023-07-21 18:00:00.393354,A Pilates class,1 h 45 min
+203,Yoga,315,all levels,47,8.35,2023-12-28 01:00:00.393354,A Yoga class,0 h 30 min
+204,Aerobics,833,intermediate,11,13.18,2023-09-08 11:30:00.393354,A Aerobics class,2 h 
+205,CrossFit,932,begginer,42,13.99,2024-02-03 08:30:00.393354,A CrossFit class,0 h 35 min
+206,HIIT,218,advanced,29,14.11,2023-07-15 12:00:00.393354,A HIIT class,2 h 
+207,Total Body Conditioning,448,intermediate,46,16.29,2023-08-26 12:30:00.393354,A Total Body Conditioning class,1 h 
+208,CrossFit,989,advanced,34,18.21,2024-04-06 11:30:00.393354,A CrossFit class,0 h 20 min
+209,Zumba,665,begginer,31,10.22,2024-02-28 14:30:00.393354,A Zumba class,2 h 
+210,Boxing,148,all levels,32,11.61,2024-03-06 01:30:00.393354,A Boxing class,2 h 
+211,ABS,176,begginer,40,21.25,2024-01-20 04:00:00.393354,A ABS class,1 h 10 min
+212,Barre,176,begginer,50,22.42,2023-08-17 15:00:00.393354,A Barre class,0 h 10 min
+213,Zumba,697,all levels,32,16.3,2023-09-22 23:30:00.393354,A Zumba class,2 h 
+214,Body Pump,528,advanced,7,15.79,2023-11-26 07:30:00.393354,A Body Pump class,2 h 
+215,Zumba,84,all levels,35,9.98,2023-09-05 07:30:00.393354,A Zumba class,2 h 
+216,GAP,994,advanced,22,10.69,2023-06-26 23:30:00.393354,A GAP class,2 h 
+217,Body Combat,721,all levels,20,14.85,2024-02-06 04:00:00.393354,A Body Combat class,1 h 20 min
+218,HIIT,168,intermediate,12,19.87,2024-01-19 17:00:00.393354,A HIIT class,2 h 
+219,Kickboxing,11,all levels,10,17.0,2024-01-09 08:30:00.393354,A Kickboxing class,0 h 35 min
+220,ABS,845,advanced,16,16.78,2023-11-04 15:30:00.393354,A ABS class,1 h 40 min
+221,Total Body Conditioning,610,all levels,5,17.46,2023-07-03 00:00:00.393354,A Total Body Conditioning class,2 h 
+222,Aerobics,463,advanced,6,16.88,2024-02-15 04:30:00.393354,A Aerobics class,1 h 10 min
+223,HIIT,841,intermediate,43,16.18,2023-11-25 08:00:00.393354,A HIIT class,1 h 40 min
+224,Spinning,1,begginer,22,18.78,2023-07-31 14:00:00.393354,A Spinning class,2 h 
+225,Spinning,833,advanced,26,17.45,2023-09-24 01:30:00.393354,A Spinning class,2 h 
+226,Body Combat,669,intermediate,9,10.89,2023-07-21 13:00:00.393354,A Body Combat class,0 h 50 min
+227,Personalized,903,intermediate,42,15.76,2023-11-22 09:00:00.393354,A Personalized class,2 h 
+228,Kickboxing,574,advanced,49,15.16,2023-09-11 17:00:00.393354,A Kickboxing class,1 h 30 min
+229,Personalized,193,advanced,12,19.24,2023-11-28 08:30:00.393354,A Personalized class,1 h 
+230,Spinning,997,all levels,26,18.04,2024-04-03 23:30:00.393354,A Spinning class,0 h 5 min
+231,Spinning,84,intermediate,31,12.54,2023-08-30 05:30:00.393354,A Spinning class,0 h 45 min
+232,Zumba,845,all levels,47,13.3,2023-10-03 13:30:00.393354,A Zumba class,0 h 10 min
+233,Spinning,176,intermediate,33,10.07,2024-02-09 23:00:00.393354,A Spinning class,2 h 
+234,GAP,623,begginer,36,11.0,2023-12-29 09:30:00.393354,A GAP class,1 h 5 min
+235,GAP,359,begginer,40,19.02,2024-04-16 17:30:00.393354,A GAP class,0 h 45 min
+236,Stretching,830,all levels,7,16.06,2024-05-23 03:00:00.393354,A Stretching class,0 h 15 min
+237,Body Pump,978,intermediate,7,13.0,2023-11-13 22:30:00.393354,A Body Pump class,2 h 
+238,GAP,258,begginer,18,16.05,2023-10-13 00:30:00.393354,A GAP class,1 h 15 min
+239,Stretching,770,advanced,11,17.25,2023-12-20 19:30:00.393354,A Stretching class,2 h 
+240,Other,822,advanced,20,12.01,2023-05-30 01:00:00.393354,A Other class,1 h 35 min
+241,Aerobics,531,advanced,28,13.01,2023-11-24 20:00:00.393354,A Aerobics class,0 h 5 min
+242,Barre,201,advanced,10,15.24,2023-12-05 09:00:00.393354,A Barre class,1 h 50 min
+243,CrossFit,174,begginer,31,15.75,2024-05-12 17:00:00.393354,A CrossFit class,2 h 
+244,Yoga,652,advanced,12,16.44,2023-07-20 08:30:00.393354,A Yoga class,0 h 15 min
+245,ABS,937,begginer,22,15.2,2023-12-29 13:30:00.393354,A ABS class,1 h 40 min
+246,Boxing,121,begginer,48,14.57,2023-08-12 03:30:00.393354,A Boxing class,1 h 30 min
+247,Yoga,907,advanced,25,18.83,2024-02-10 19:30:00.393354,A Yoga class,0 h 30 min
+248,Body Pump,478,intermediate,41,15.25,2023-12-23 17:00:00.393354,A Body Pump class,2 h 
+249,Body Pump,792,begginer,47,15.48,2023-07-01 04:00:00.393354,A Body Pump class,2 h 
+250,Body Pump,222,begginer,28,19.64,2023-08-12 12:00:00.393354,A Body Pump class,2 h 
+251,Barre,608,advanced,48,21.79,2024-03-19 12:30:00.393354,A Barre class,0 h 20 min
+252,Body Pump,331,begginer,10,17.67,2024-04-29 14:00:00.393354,A Body Pump class,1 h 25 min
+253,Aerobics,416,advanced,28,19.96,2024-05-20 22:00:00.393354,A Aerobics class,0 h 10 min
+254,Total Body Conditioning,832,all levels,30,18.3,2023-06-17 06:30:00.393354,A Total Body Conditioning class,1 h 45 min
+255,Stretching,555,advanced,45,16.66,2024-03-27 12:00:00.393354,A Stretching class,0 h 20 min
+256,Stretching,867,begginer,17,19.58,2024-01-11 06:00:00.393354,A Stretching class,2 h 
+257,GAP,139,begginer,11,10.6,2023-08-27 01:00:00.393354,A GAP class,1 h 45 min
+258,Personalized,744,begginer,21,20.79,2024-03-26 00:00:00.393354,A Personalized class,2 h 
+259,Kickboxing,182,all levels,22,12.25,2023-12-22 09:00:00.393354,A Kickboxing class,0 h 50 min
+260,HIIT,945,intermediate,9,14.57,2023-12-29 23:00:00.393354,A HIIT class,2 h 
+261,Yoga,623,advanced,38,15.79,2023-11-22 12:30:00.393354,A Yoga class,1 h 5 min
+262,Body Combat,695,advanced,3,17.79,2023-10-28 10:00:00.393354,A Body Combat class,2 h 
+263,Pilates,574,all levels,34,11.8,2023-07-21 13:00:00.393354,A Pilates class,0 h 45 min
+264,Stretching,182,intermediate,48,10.3,2023-12-30 02:00:00.393354,A Stretching class,2 h 
+265,HIIT,717,advanced,34,16.05,2023-08-04 10:30:00.393354,A HIIT class,1 h 25 min
+266,Zumba,448,intermediate,47,13.52,2023-10-25 18:00:00.393354,A Zumba class,1 h 40 min
+267,Body Pump,787,advanced,4,11.72,2023-12-16 17:00:00.393354,A Body Pump class,1 h 40 min
+268,Body Combat,247,advanced,1,10.33,2024-02-19 02:30:00.393354,A Body Combat class,0 h 15 min
+269,ABS,932,intermediate,9,13.57,2024-01-12 17:30:00.393354,A ABS class,0 h 25 min
+270,Kickboxing,394,advanced,18,13.16,2023-12-13 03:00:00.393354,A Kickboxing class,2 h 
+271,Barre,204,all levels,26,17.91,2023-08-21 20:30:00.393354,A Barre class,2 h 
+272,Body Pump,258,advanced,2,12.42,2023-06-20 05:00:00.393354,A Body Pump class,2 h 
+273,Personalized,899,all levels,26,16.61,2023-12-04 00:00:00.393354,A Personalized class,0 h 40 min
+274,CrossFit,365,advanced,43,15.69,2024-03-25 15:30:00.393354,A CrossFit class,0 h 30 min
+275,Spinning,776,all levels,12,19.02,2024-04-24 21:30:00.393354,A Spinning class,2 h 
+276,Kickboxing,792,intermediate,24,17.83,2024-01-29 12:30:00.393354,A Kickboxing class,2 h 
+277,Barre,490,advanced,45,8.39,2023-09-13 23:00:00.393354,A Barre class,1 h 25 min
+278,Spinning,769,advanced,3,10.97,2024-03-21 02:30:00.393354,A Spinning class,1 h 15 min
+279,Pilates,984,all levels,23,14.36,2023-09-14 16:30:00.393354,A Pilates class,0 h 20 min
+280,Aerobics,94,begginer,45,15.81,2024-05-17 16:30:00.393354,A Aerobics class,1 h 55 min
+281,Other,247,advanced,31,12.93,2023-08-30 15:30:00.393354,A Other class,1 h 35 min
+282,Spinning,121,all levels,43,16.74,2023-07-12 02:30:00.393354,A Spinning class,1 h 5 min
+283,GAP,900,advanced,41,7.86,2024-03-20 21:00:00.393354,A GAP class,1 h 40 min
+284,Body Pump,911,intermediate,8,17.96,2023-11-19 03:30:00.393354,A Body Pump class,1 h 20 min
+285,Stretching,359,all levels,14,15.91,2023-09-06 19:30:00.393354,A Stretching class,0 h 35 min
+286,Body Combat,441,intermediate,21,18.25,2023-11-12 19:00:00.393354,A Body Combat class,0 h 5 min
+287,Yoga,241,begginer,24,23.65,2024-02-04 04:00:00.393354,A Yoga class,0 h 45 min
+288,Yoga,153,begginer,1,17.71,2023-12-22 17:30:00.393354,A Yoga class,0 h 
+289,GAP,409,advanced,13,12.73,2024-04-26 09:30:00.393354,A GAP class,2 h 
+290,Personalized,686,begginer,8,16.8,2024-04-12 10:30:00.393354,A Personalized class,1 h 40 min
+291,Stretching,267,advanced,31,18.88,2023-11-17 05:30:00.393354,A Stretching class,2 h 
+292,Other,456,intermediate,12,18.81,2024-04-12 05:30:00.393354,A Other class,2 h 
+293,Zumba,92,advanced,27,15.9,2023-08-15 20:00:00.393354,A Zumba class,2 h 
+294,Other,437,all levels,16,15.48,2023-06-12 03:00:00.393354,A Other class,0 h 5 min
+295,Body Combat,142,advanced,19,13.77,2024-01-31 00:30:00.393354,A Body Combat class,2 h 
+296,Personalized,616,intermediate,33,10.74,2024-02-27 19:00:00.393354,A Personalized class,0 h 10 min
+297,Aerobics,456,begginer,19,16.46,2023-06-08 04:30:00.393354,A Aerobics class,2 h 
+298,Yoga,174,advanced,30,14.54,2024-05-21 15:00:00.393354,A Yoga class,0 h 50 min
+299,Other,166,begginer,9,16.76,2023-07-28 04:00:00.393354,A Other class,0 h 55 min
+300,Barre,394,begginer,12,15.54,2023-07-24 16:30:00.393354,A Barre class,2 h 
+301,Body Pump,799,begginer,17,16.72,2024-03-13 03:00:00.393354,A Body Pump class,1 h 50 min
+302,Spinning,715,begginer,3,15.8,2024-04-02 06:30:00.393354,A Spinning class,2 h 
+303,Yoga,578,begginer,22,17.05,2023-11-26 16:00:00.393354,A Yoga class,2 h 
+304,CrossFit,720,begginer,26,13.19,2023-07-28 16:00:00.393354,A CrossFit class,0 h 30 min
+305,Spinning,322,begginer,23,13.33,2023-11-11 12:30:00.393354,A Spinning class,2 h 
+306,HIIT,204,begginer,25,13.37,2024-05-01 09:00:00.393354,A HIIT class,2 h 
+307,Other,22,intermediate,16,15.66,2023-06-29 22:30:00.393354,A Other class,2 h 
+308,Other,83,begginer,40,19.0,2023-07-07 19:30:00.393354,A Other class,0 h 40 min
+309,Body Pump,929,begginer,7,14.31,2024-05-14 03:00:00.393354,A Body Pump class,2 h 
+310,Aerobics,669,advanced,40,9.12,2023-06-22 22:30:00.393354,A Aerobics class,2 h 
+311,Yoga,680,all levels,30,14.1,2023-06-24 01:00:00.393354,A Yoga class,2 h 
+312,Total Body Conditioning,622,intermediate,34,21.44,2023-11-17 03:30:00.393354,A Total Body Conditioning class,0 h 10 min
+313,ABS,136,advanced,42,13.75,2023-12-04 04:30:00.393354,A ABS class,1 h 40 min
+314,Body Pump,671,begginer,16,12.56,2024-02-18 13:00:00.393354,A Body Pump class,0 h 55 min
+315,Barre,31,advanced,32,9.35,2024-04-05 16:00:00.393354,A Barre class,1 h 45 min
+316,Stretching,690,all levels,29,15.31,2023-07-15 14:00:00.393354,A Stretching class,1 h 50 min
+317,Aerobics,103,intermediate,36,18.61,2023-07-19 04:00:00.393354,A Aerobics class,0 h 40 min
+318,Total Body Conditioning,275,all levels,29,17.34,2024-05-17 02:00:00.393354,A Total Body Conditioning class,1 h 20 min
+319,Yoga,825,all levels,39,10.86,2024-05-05 02:00:00.393354,A Yoga class,0 h 50 min
+320,Zumba,148,intermediate,32,9.36,2024-05-02 16:00:00.393354,A Zumba class,1 h 20 min
+321,Kickboxing,15,all levels,4,14.48,2023-08-08 09:00:00.393354,A Kickboxing class,2 h 
+322,Total Body Conditioning,176,intermediate,40,14.42,2024-05-25 13:30:00.393354,A Total Body Conditioning class,2 h 
+323,Zumba,235,intermediate,4,13.44,2024-05-23 20:00:00.393354,A Zumba class,0 h 20 min
+324,Yoga,932,begginer,29,10.99,2023-10-29 20:30:00.393354,A Yoga class,1 h 10 min
+325,Boxing,903,intermediate,32,19.6,2023-08-26 10:00:00.393354,A Boxing class,0 h 20 min
+326,Boxing,365,intermediate,27,15.0,2023-07-14 08:30:00.393354,A Boxing class,2 h 
+327,Yoga,794,advanced,32,9.59,2023-07-07 19:30:00.393354,A Yoga class,0 h 45 min
+328,ABS,258,all levels,40,17.47,2024-02-29 04:00:00.393354,A ABS class,1 h 55 min
+329,HIIT,519,all levels,10,17.97,2023-10-04 04:00:00.393354,A HIIT class,2 h 
+330,Aerobics,136,advanced,7,15.15,2024-03-23 06:30:00.393354,A Aerobics class,0 h 35 min
+331,HIIT,27,all levels,21,14.81,2024-02-26 21:30:00.393354,A HIIT class,1 h 45 min
+332,Yoga,900,begginer,15,18.28,2024-02-10 18:00:00.393354,A Yoga class,1 h 25 min
+333,Zumba,83,all levels,39,11.51,2024-03-03 01:30:00.393354,A Zumba class,2 h 
+334,CrossFit,204,all levels,14,19.1,2024-03-06 13:30:00.393354,A CrossFit class,1 h 
+335,Pilates,250,all levels,25,15.27,2023-12-09 16:30:00.393354,A Pilates class,1 h 30 min
+336,CrossFit,337,all levels,50,14.52,2023-08-28 15:00:00.393354,A CrossFit class,0 h 35 min
+337,Body Pump,218,advanced,11,23.2,2023-11-19 19:00:00.393354,A Body Pump class,0 h 50 min
+338,Personalized,604,begginer,34,17.77,2024-05-03 10:00:00.393354,A Personalized class,1 h 10 min
+339,Spinning,166,intermediate,14,13.94,2023-06-13 07:30:00.393354,A Spinning class,0 h 50 min
+340,ABS,18,advanced,18,10.95,2023-07-10 06:00:00.393354,A ABS class,1 h 20 min
+341,Body Combat,787,intermediate,1,13.29,2023-11-06 21:00:00.393354,A Body Combat class,1 h 30 min
+342,Pilates,997,begginer,47,12.19,2023-06-28 18:30:00.393354,A Pilates class,2 h 
+343,Spinning,437,begginer,26,19.16,2023-11-06 09:00:00.393354,A Spinning class,0 h 10 min
+344,Total Body Conditioning,31,intermediate,13,11.4,2023-08-24 21:00:00.393354,A Total Body Conditioning class,0 h 
+345,Pilates,15,all levels,20,13.15,2024-01-22 20:00:00.393354,A Pilates class,1 h 30 min
+346,Pilates,397,begginer,34,16.72,2024-03-30 11:30:00.393354,A Pilates class,2 h 
+347,Stretching,690,all levels,24,13.14,2023-08-12 01:00:00.393354,A Stretching class,1 h 20 min
+348,Total Body Conditioning,997,all levels,35,13.81,2023-12-21 11:00:00.393354,A Total Body Conditioning class,1 h 40 min
+349,ABS,704,all levels,44,15.9,2023-10-29 17:30:00.393354,A ABS class,2 h 
+350,Yoga,168,intermediate,38,14.88,2024-05-18 18:30:00.393354,A Yoga class,2 h 
+351,Total Body Conditioning,792,all levels,2,12.68,2024-03-04 18:00:00.393354,A Total Body Conditioning class,0 h 30 min
+352,Barre,182,all levels,12,14.37,2023-08-18 20:00:00.393354,A Barre class,2 h 
+353,Stretching,604,all levels,48,15.81,2024-02-23 06:30:00.393354,A Stretching class,1 h 15 min
+354,Zumba,670,advanced,43,19.5,2023-09-18 00:00:00.393354,A Zumba class,2 h 
+355,Spinning,604,begginer,40,19.63,2023-12-09 14:00:00.393354,A Spinning class,0 h 30 min
+356,Barre,610,intermediate,8,16.95,2024-05-11 02:00:00.393354,A Barre class,2 h 
+357,CrossFit,679,begginer,41,15.59,2023-08-29 00:00:00.393354,A CrossFit class,2 h 
+358,Stretching,545,all levels,49,8.19,2024-04-18 13:30:00.393354,A Stretching class,1 h 55 min
+359,CrossFit,724,all levels,6,15.9,2024-05-01 06:00:00.393354,A CrossFit class,2 h 
+360,Boxing,245,begginer,37,11.67,2024-03-18 16:00:00.393354,A Boxing class,0 h 45 min
+361,Aerobics,762,all levels,34,17.08,2023-07-26 08:30:00.393354,A Aerobics class,2 h 
+362,CrossFit,267,intermediate,4,11.98,2024-02-16 00:30:00.393354,A CrossFit class,1 h 25 min
+363,Spinning,770,advanced,33,13.7,2023-12-12 05:30:00.393354,A Spinning class,2 h 
+364,GAP,778,all levels,12,12.34,2024-05-17 09:00:00.393354,A GAP class,2 h 
+365,HIIT,241,advanced,22,15.53,2024-01-02 06:30:00.393354,A HIIT class,2 h 
+366,Personalized,148,all levels,21,8.44,2023-08-12 18:00:00.393354,A Personalized class,1 h 5 min
+367,Body Pump,250,all levels,29,16.14,2024-04-18 00:00:00.393354,A Body Pump class,0 h 25 min
+368,Pilates,898,begginer,8,11.32,2023-10-07 14:30:00.393354,A Pilates class,0 h 40 min
+369,CrossFit,814,all levels,13,14.61,2023-07-09 09:30:00.393354,A CrossFit class,2 h 
+370,Stretching,441,intermediate,7,14.84,2024-01-24 21:30:00.393354,A Stretching class,2 h 
+371,Personalized,442,all levels,29,17.07,2023-12-01 03:00:00.393354,A Personalized class,1 h 20 min
+372,Stretching,927,advanced,14,15.31,2023-08-30 08:00:00.393354,A Stretching class,0 h 40 min
+373,Spinning,984,begginer,33,11.89,2024-01-06 19:30:00.393354,A Spinning class,2 h 
+374,Other,945,advanced,37,9.78,2024-02-15 03:30:00.393354,A Other class,1 h 20 min
+375,Zumba,845,advanced,10,15.14,2023-11-13 04:30:00.393354,A Zumba class,0 h 30 min
+376,CrossFit,988,all levels,12,11.24,2023-10-22 10:00:00.393354,A CrossFit class,2 h 
+377,ABS,792,advanced,28,21.52,2023-06-26 18:00:00.393354,A ABS class,0 h 25 min
+378,Aerobics,523,all levels,25,18.19,2023-11-12 14:00:00.393354,A Aerobics class,2 h 
+379,ABS,576,begginer,14,15.02,2023-07-22 02:00:00.393354,A ABS class,0 h 45 min
+380,Personalized,616,begginer,6,15.43,2023-12-12 14:30:00.393354,A Personalized class,2 h 
+381,Body Combat,988,intermediate,27,15.04,2024-03-09 09:00:00.393354,A Body Combat class,2 h 
+382,Other,441,all levels,8,14.18,2024-05-26 13:00:00.393354,A Other class,2 h 
+383,Zumba,480,intermediate,38,21.16,2023-12-25 05:00:00.393354,A Zumba class,0 h 25 min
+384,ABS,822,intermediate,6,15.85,2024-04-18 19:30:00.393354,A ABS class,2 h 
+385,GAP,571,begginer,4,18.91,2023-09-16 19:30:00.393354,A GAP class,2 h 
+386,Body Pump,918,all levels,2,20.45,2023-08-25 11:30:00.393354,A Body Pump class,0 h 40 min
+387,Other,823,intermediate,47,14.1,2023-11-02 06:00:00.393354,A Other class,1 h 45 min
+388,Spinning,571,all levels,5,16.5,2023-08-02 11:00:00.393354,A Spinning class,0 h 45 min
+389,Personalized,1,begginer,24,14.26,2024-05-09 04:00:00.393354,A Personalized class,1 h 45 min
+390,Body Combat,932,all levels,19,10.48,2024-01-31 04:00:00.393354,A Body Combat class,2 h 
+391,Kickboxing,182,advanced,21,17.15,2024-02-21 04:30:00.393354,A Kickboxing class,0 h 
+392,HIIT,545,all levels,35,14.67,2024-01-07 00:00:00.393354,A HIIT class,2 h 
+393,Body Pump,990,intermediate,18,15.43,2023-08-02 20:30:00.393354,A Body Pump class,2 h 
+394,Body Pump,57,intermediate,23,13.33,2023-10-24 18:00:00.393354,A Body Pump class,0 h 20 min
+395,Zumba,22,begginer,40,15.78,2023-08-08 05:00:00.393354,A Zumba class,1 h 5 min
+396,Pilates,147,advanced,11,14.7,2024-02-17 19:00:00.393354,A Pilates class,0 h 25 min
+397,Zumba,965,intermediate,21,13.99,2023-12-13 02:00:00.393354,A Zumba class,1 h 10 min
+398,Spinning,107,begginer,32,14.13,2023-12-05 19:30:00.393354,A Spinning class,1 h 10 min
+399,Body Combat,88,begginer,44,13.57,2023-07-08 09:00:00.393354,A Body Combat class,0 h 55 min
+400,Total Body Conditioning,394,begginer,3,15.25,2024-02-06 13:00:00.393354,A Total Body Conditioning class,2 h 
+401,Spinning,141,intermediate,18,9.29,2024-02-27 10:30:00.393354,A Spinning class,1 h 55 min
+402,Zumba,15,advanced,3,16.22,2023-06-16 08:00:00.393354,A Zumba class,0 h 
+403,ABS,94,begginer,37,12.79,2024-05-18 17:30:00.393354,A ABS class,2 h 
+404,Spinning,895,begginer,21,12.77,2023-06-22 20:30:00.393354,A Spinning class,1 h 35 min
+405,Pilates,241,all levels,20,16.15,2024-01-31 19:00:00.393354,A Pilates class,1 h 50 min
+406,Body Pump,104,intermediate,22,14.82,2023-10-11 15:30:00.393354,A Body Pump class,0 h 20 min
+407,Total Body Conditioning,991,intermediate,36,13.12,2023-11-02 02:00:00.393354,A Total Body Conditioning class,0 h 20 min
+408,Personalized,626,intermediate,46,16.39,2023-06-13 08:00:00.393354,A Personalized class,0 h 10 min
+409,CrossFit,997,all levels,27,15.98,2024-02-27 14:00:00.393354,A CrossFit class,1 h 15 min
+410,Kickboxing,833,intermediate,44,18.17,2023-12-22 08:30:00.393354,A Kickboxing class,0 h 45 min
+411,Boxing,495,all levels,8,18.45,2024-05-13 19:00:00.393354,A Boxing class,2 h 
+412,Aerobics,717,all levels,22,12.89,2023-06-15 04:30:00.393354,A Aerobics class,1 h 10 min
+413,Kickboxing,626,intermediate,3,13.24,2023-08-05 03:30:00.393354,A Kickboxing class,2 h 
+414,Stretching,793,begginer,29,13.81,2023-07-03 18:00:00.393354,A Stretching class,0 h 45 min
+415,HIIT,770,begginer,5,15.82,2023-06-06 03:30:00.393354,A HIIT class,1 h 
+416,Barre,168,all levels,8,11.23,2024-03-14 11:30:00.393354,A Barre class,0 h 35 min
+417,HIIT,658,begginer,40,14.95,2023-09-06 03:00:00.393354,A HIIT class,1 h 55 min
+418,Personalized,695,advanced,2,14.99,2023-12-29 22:30:00.393354,A Personalized class,2 h 
+419,Zumba,442,begginer,12,14.86,2024-04-10 06:00:00.393354,A Zumba class,2 h 
+420,Pilates,463,all levels,42,11.59,2024-05-09 18:30:00.393354,A Pilates class,2 h 
+421,Barre,470,advanced,9,7.06,2023-12-26 21:00:00.393354,A Barre class,0 h 35 min
+422,Kickboxing,18,all levels,41,14.92,2023-06-08 15:30:00.393354,A Kickboxing class,1 h 50 min
+423,Body Pump,737,advanced,36,12.06,2023-11-13 20:00:00.393354,A Body Pump class,1 h 15 min
+424,HIIT,801,all levels,42,19.69,2024-02-07 01:00:00.393354,A HIIT class,1 h 30 min
+425,Body Pump,611,advanced,14,14.75,2024-02-10 14:00:00.393354,A Body Pump class,0 h 
+426,Body Pump,174,intermediate,21,15.85,2023-10-01 22:30:00.393354,A Body Pump class,2 h 
+427,Body Pump,99,all levels,18,17.81,2024-05-09 21:30:00.393354,A Body Pump class,2 h 
+428,Personalized,331,advanced,6,14.0,2024-05-13 13:30:00.393354,A Personalized class,0 h 40 min
+429,Boxing,721,intermediate,30,10.72,2024-03-06 03:00:00.393354,A Boxing class,2 h 
+430,Body Pump,989,all levels,22,11.22,2023-11-22 07:30:00.393354,A Body Pump class,0 h 20 min
+431,CrossFit,174,all levels,7,12.04,2023-11-09 22:00:00.393354,A CrossFit class,0 h 5 min
+432,Other,397,intermediate,45,12.85,2023-10-30 01:30:00.393354,A Other class,0 h 35 min
+433,Other,726,begginer,9,17.1,2024-03-06 15:30:00.393354,A Other class,0 h 20 min
+434,Stretching,927,begginer,22,18.46,2024-05-19 05:30:00.393354,A Stretching class,2 h 
+435,Pilates,939,all levels,12,16.57,2023-08-24 09:00:00.393354,A Pilates class,0 h 15 min
+436,Spinning,84,all levels,47,12.08,2024-04-25 19:30:00.393354,A Spinning class,2 h 
+437,Kickboxing,337,advanced,47,11.24,2024-01-09 08:30:00.393354,A Kickboxing class,2 h 
+438,Kickboxing,160,intermediate,14,14.76,2023-10-18 15:00:00.393354,A Kickboxing class,0 h 30 min
+439,Pilates,1,intermediate,27,13.96,2024-05-01 10:30:00.393354,A Pilates class,0 h 20 min
+440,CrossFit,971,begginer,47,16.16,2023-06-07 13:00:00.393354,A CrossFit class,1 h 20 min
+441,Body Pump,18,begginer,6,19.56,2023-08-12 13:30:00.393354,A Body Pump class,1 h 55 min
+442,HIIT,365,begginer,3,12.75,2023-08-25 19:30:00.393354,A HIIT class,0 h 20 min
+443,Aerobics,697,all levels,33,13.69,2023-11-03 20:00:00.393354,A Aerobics class,2 h 
+444,Yoga,337,intermediate,34,20.18,2023-09-11 08:30:00.393354,A Yoga class,2 h 
+445,GAP,623,all levels,22,14.44,2024-01-19 18:00:00.393354,A GAP class,1 h 45 min
+446,Kickboxing,18,intermediate,10,17.06,2023-09-10 09:30:00.393354,A Kickboxing class,2 h 
+447,GAP,524,intermediate,49,8.53,2024-02-01 23:00:00.393354,A GAP class,1 h 10 min
+448,Yoga,18,intermediate,29,19.73,2023-10-14 09:00:00.393354,A Yoga class,1 h 35 min
+449,Yoga,148,all levels,35,9.22,2024-04-15 11:00:00.393354,A Yoga class,1 h 30 min
+450,Boxing,528,all levels,49,14.11,2024-01-19 08:00:00.393354,A Boxing class,2 h 
+451,Personalized,416,all levels,27,13.76,2023-10-16 02:00:00.393354,A Personalized class,2 h 
+452,ABS,337,intermediate,30,10.55,2023-07-19 11:00:00.393354,A ABS class,1 h 30 min
+453,Body Pump,720,intermediate,24,15.19,2023-11-06 13:30:00.393354,A Body Pump class,1 h 10 min
+454,Kickboxing,787,begginer,27,10.83,2024-03-01 17:00:00.393354,A Kickboxing class,0 h 15 min
+455,Boxing,686,intermediate,15,13.56,2024-03-02 06:30:00.393354,A Boxing class,1 h 10 min
+456,Body Combat,576,advanced,35,16.2,2023-11-12 08:30:00.393354,A Body Combat class,1 h 
+457,Spinning,603,intermediate,28,15.41,2023-08-08 03:00:00.393354,A Spinning class,2 h 
+458,Body Combat,888,all levels,36,14.37,2024-03-29 05:30:00.393354,A Body Combat class,0 h 10 min
+459,Kickboxing,939,advanced,10,12.83,2023-09-24 22:30:00.393354,A Kickboxing class,2 h 
+460,Spinning,861,intermediate,17,18.33,2024-05-26 00:30:00.393354,A Spinning class,2 h 
+461,Spinning,610,all levels,46,18.92,2023-10-12 15:30:00.393354,A Spinning class,1 h 45 min
+462,Spinning,88,all levels,31,13.6,2023-06-10 16:30:00.393354,A Spinning class,0 h 55 min
+463,Pilates,787,advanced,2,13.8,2024-01-19 01:00:00.393354,A Pilates class,0 h 
+464,Pilates,88,advanced,1,18.23,2024-02-11 08:30:00.393354,A Pilates class,0 h 15 min
+465,Total Body Conditioning,715,all levels,7,18.95,2024-05-22 13:30:00.393354,A Total Body Conditioning class,0 h 50 min
+466,Spinning,92,intermediate,47,14.9,2023-07-18 08:30:00.393354,A Spinning class,0 h 35 min
+467,Boxing,932,all levels,12,16.28,2024-03-11 12:00:00.393354,A Boxing class,2 h 
+468,Spinning,929,advanced,33,17.88,2023-11-18 15:00:00.393354,A Spinning class,2 h 
+469,Body Pump,247,intermediate,30,11.6,2024-03-24 20:30:00.393354,A Body Pump class,2 h 
+470,Personalized,670,advanced,34,12.7,2023-06-20 05:00:00.393354,A Personalized class,2 h 
+471,CrossFit,929,all levels,12,12.8,2024-04-19 08:00:00.393354,A CrossFit class,1 h 25 min
+472,Total Body Conditioning,104,begginer,5,16.36,2023-07-30 17:30:00.393354,A Total Body Conditioning class,0 h 20 min
+473,HIIT,735,intermediate,29,20.25,2024-04-11 19:00:00.393354,A HIIT class,1 h 55 min
+474,Boxing,949,intermediate,11,19.49,2024-01-25 11:30:00.393354,A Boxing class,1 h 20 min
+475,Other,576,all levels,21,14.81,2023-08-06 17:00:00.393354,A Other class,0 h 10 min
+476,HIIT,15,intermediate,13,16.94,2024-05-13 18:00:00.393354,A HIIT class,0 h 20 min
+477,Other,858,intermediate,45,15.19,2023-10-05 07:30:00.393354,A Other class,0 h 20 min
+478,Yoga,242,advanced,15,13.5,2023-10-31 09:00:00.393354,A Yoga class,2 h 
+479,Yoga,704,advanced,17,15.69,2023-08-12 16:30:00.393354,A Yoga class,1 h 55 min
+480,Other,939,intermediate,26,13.75,2023-06-24 01:00:00.393354,A Other class,2 h 
+481,Total Body Conditioning,776,all levels,1,11.4,2024-03-15 21:00:00.393354,A Total Body Conditioning class,0 h 20 min
+482,Body Pump,770,intermediate,1,13.8,2023-12-16 20:00:00.393354,A Body Pump class,0 h 50 min
+483,HIIT,11,intermediate,17,19.1,2024-04-04 03:00:00.393354,A HIIT class,0 h 5 min
+484,CrossFit,222,intermediate,15,15.79,2024-05-06 06:00:00.393354,A CrossFit class,0 h 40 min
+485,Kickboxing,726,intermediate,30,15.62,2024-01-16 06:30:00.393354,A Kickboxing class,1 h 45 min
+486,HIIT,830,advanced,44,13.5,2024-04-30 01:00:00.393354,A HIIT class,2 h 
+487,Body Pump,83,begginer,30,12.72,2023-11-03 11:30:00.393354,A Body Pump class,0 h 30 min
+488,GAP,470,advanced,22,14.61,2024-05-15 08:30:00.393354,A GAP class,2 h 
+489,Body Pump,895,intermediate,9,13.1,2023-11-24 09:00:00.393354,A Body Pump class,2 h 
+490,GAP,151,all levels,18,19.38,2024-02-06 09:00:00.393354,A GAP class,2 h 
+491,Barre,721,all levels,4,16.38,2024-04-02 03:30:00.393354,A Barre class,2 h 
+492,Stretching,744,begginer,26,22.23,2024-05-24 20:00:00.393354,A Stretching class,0 h 20 min
+493,Stretching,267,intermediate,49,12.44,2024-01-15 07:00:00.393354,A Stretching class,1 h 50 min
+494,GAP,15,advanced,32,13.41,2023-06-11 08:00:00.393354,A GAP class,0 h 45 min
+495,Total Body Conditioning,88,all levels,8,15.55,2023-11-06 11:00:00.393354,A Total Body Conditioning class,1 h 40 min
+496,Total Body Conditioning,922,begginer,25,11.24,2024-03-02 18:00:00.393354,A Total Body Conditioning class,0 h 40 min
+497,Pilates,971,all levels,42,12.11,2023-11-16 08:00:00.393354,A Pilates class,1 h 15 min
+498,CrossFit,166,intermediate,15,16.38,2024-01-20 17:00:00.393354,A CrossFit class,1 h 30 min
+499,Personalized,679,intermediate,12,13.36,2023-06-15 04:00:00.393354,A Personalized class,2 h 
+500,Zumba,822,intermediate,16,15.22,2024-03-21 05:30:00.393354,A Zumba class,1 h 5 min
+501,CrossFit,168,advanced,25,13.38,2023-11-23 09:00:00.393354,A CrossFit class,2 h 
+502,Yoga,350,all levels,31,14.11,2023-08-07 16:30:00.393354,A Yoga class,0 h 20 min
+503,Total Body Conditioning,88,begginer,41,14.31,2024-01-27 01:00:00.393354,A Total Body Conditioning class,1 h 
+504,Zumba,22,advanced,37,20.09,2023-12-30 08:30:00.393354,A Zumba class,0 h 55 min
+505,Stretching,997,begginer,15,15.62,2024-02-22 19:30:00.393354,A Stretching class,1 h 25 min
+506,Personalized,439,all levels,4,18.21,2024-01-29 09:00:00.393354,A Personalized class,1 h 10 min
+507,Other,322,intermediate,2,16.73,2023-09-29 01:00:00.393354,A Other class,0 h 50 min
+508,GAP,990,intermediate,25,16.13,2024-04-17 13:30:00.393354,A GAP class,0 h 5 min
+509,Personalized,858,all levels,45,15.13,2024-01-20 08:00:00.393354,A Personalized class,1 h 40 min
+510,Zumba,762,intermediate,12,16.83,2023-09-09 01:00:00.393354,A Zumba class,0 h 50 min
+511,Zumba,787,advanced,44,16.52,2024-02-21 04:30:00.393354,A Zumba class,0 h 25 min
+512,Yoga,104,all levels,21,10.85,2024-02-09 20:00:00.393354,A Yoga class,2 h 
+513,Body Pump,704,advanced,47,15.37,2023-08-13 22:00:00.393354,A Body Pump class,0 h 5 min
+514,Zumba,671,all levels,50,15.41,2023-12-07 21:00:00.393354,A Zumba class,1 h 30 min
+515,Zumba,680,all levels,48,10.2,2024-03-09 15:00:00.393354,A Zumba class,1 h 30 min
+516,Other,490,begginer,27,17.94,2024-02-12 23:00:00.393354,A Other class,0 h 55 min
+517,Other,837,begginer,12,14.69,2024-04-26 09:30:00.393354,A Other class,2 h 
+518,Aerobics,685,intermediate,9,16.64,2024-02-12 14:00:00.393354,A Aerobics class,0 h 15 min
+519,Barre,495,all levels,47,19.29,2024-03-11 04:30:00.393354,A Barre class,1 h 5 min
+520,Body Pump,678,begginer,9,18.81,2024-05-05 05:30:00.393354,A Body Pump class,0 h 55 min
+521,Aerobics,242,advanced,41,17.63,2023-09-07 15:30:00.393354,A Aerobics class,2 h 
+522,HIIT,709,all levels,20,14.64,2024-01-20 12:30:00.393354,A HIIT class,1 h 40 min
+523,Aerobics,131,advanced,21,15.59,2023-06-27 03:00:00.393354,A Aerobics class,1 h 
+524,HIIT,136,begginer,11,13.75,2023-06-21 03:30:00.393354,A HIIT class,1 h 20 min
+525,Yoga,761,intermediate,21,11.75,2024-03-12 05:00:00.393354,A Yoga class,2 h 
+526,Stretching,647,intermediate,37,13.62,2024-01-16 05:00:00.393354,A Stretching class,1 h 
+527,ABS,57,begginer,17,9.27,2023-09-13 10:30:00.393354,A ABS class,0 h 5 min
+528,Body Combat,988,advanced,3,12.62,2023-09-11 18:30:00.393354,A Body Combat class,2 h 
+529,Total Body Conditioning,160,begginer,6,15.18,2023-06-13 00:00:00.393354,A Total Body Conditioning class,2 h 
+530,Other,22,all levels,24,21.76,2023-08-08 20:30:00.393354,A Other class,0 h 20 min
+531,Personalized,669,intermediate,24,11.51,2024-04-06 14:30:00.393354,A Personalized class,0 h 45 min
+532,Aerobics,258,advanced,36,14.94,2024-04-14 04:30:00.393354,A Aerobics class,1 h 50 min
+533,Yoga,441,begginer,14,16.19,2023-11-11 04:30:00.393354,A Yoga class,1 h 15 min
+534,Boxing,616,all levels,24,16.43,2023-07-24 22:30:00.393354,A Boxing class,0 h 40 min
+535,Kickboxing,929,advanced,49,15.14,2023-11-04 22:00:00.393354,A Kickboxing class,2 h 
+536,Total Body Conditioning,228,advanced,4,16.09,2023-12-05 14:30:00.393354,A Total Body Conditioning class,1 h 25 min
+537,CrossFit,697,advanced,47,12.05,2023-06-27 19:00:00.393354,A CrossFit class,2 h 
+538,Yoga,250,all levels,46,10.89,2023-06-03 12:00:00.393354,A Yoga class,0 h 35 min
+539,Body Pump,275,begginer,27,12.66,2023-09-02 16:30:00.393354,A Body Pump class,1 h 25 min
+540,HIIT,524,begginer,47,17.81,2023-08-21 07:00:00.393354,A HIIT class,1 h 30 min
+541,Boxing,275,intermediate,37,15.15,2024-03-28 11:00:00.393354,A Boxing class,1 h 30 min
+542,Spinning,365,intermediate,8,12.92,2023-09-25 13:30:00.393354,A Spinning class,2 h 
+543,Personalized,899,advanced,48,13.69,2023-11-27 10:00:00.393354,A Personalized class,1 h 50 min
+544,Other,762,begginer,17,16.59,2023-12-30 04:30:00.393354,A Other class,0 h 30 min
+545,ABS,832,intermediate,37,10.65,2024-03-12 17:30:00.393354,A ABS class,1 h 20 min
+546,CrossFit,201,intermediate,12,13.73,2023-11-27 16:30:00.393354,A CrossFit class,0 h 10 min
+547,Pilates,394,begginer,33,12.82,2023-07-05 18:30:00.393354,A Pilates class,2 h 
+548,Yoga,576,advanced,32,16.65,2023-12-13 21:30:00.393354,A Yoga class,1 h 
+549,HIIT,331,advanced,25,11.37,2023-08-11 08:00:00.393354,A HIIT class,0 h 40 min
+550,Body Pump,671,intermediate,16,12.46,2023-11-01 04:00:00.393354,A Body Pump class,2 h 
+551,Total Body Conditioning,57,intermediate,34,12.4,2023-08-22 06:00:00.393354,A Total Body Conditioning class,1 h 25 min
+552,HIIT,139,begginer,40,11.89,2023-08-16 10:30:00.393354,A HIIT class,2 h 
+553,GAP,611,begginer,1,15.09,2023-11-17 04:00:00.393354,A GAP class,1 h 
+554,Total Body Conditioning,153,begginer,6,18.24,2024-02-04 04:00:00.393354,A Total Body Conditioning class,2 h 
+555,Boxing,455,advanced,6,25.03,2023-11-27 20:00:00.393354,A Boxing class,1 h 15 min
+556,HIIT,84,all levels,15,17.12,2024-01-26 22:00:00.393354,A HIIT class,0 h 
+557,Personalized,51,all levels,9,18.01,2024-05-17 16:00:00.393354,A Personalized class,0 h 55 min
+558,Spinning,680,all levels,1,16.3,2023-08-19 09:30:00.393354,A Spinning class,2 h 
+559,Stretching,264,all levels,18,13.89,2023-07-13 21:00:00.393354,A Stretching class,0 h 30 min
+560,Barre,166,intermediate,41,16.69,2023-09-12 00:00:00.393354,A Barre class,1 h 55 min
+561,Body Pump,528,intermediate,39,16.91,2023-06-03 10:00:00.393354,A Body Pump class,1 h 45 min
+562,Kickboxing,678,begginer,15,13.29,2023-11-06 13:00:00.393354,A Kickboxing class,0 h 55 min
+563,Spinning,744,intermediate,16,10.87,2023-10-31 04:30:00.393354,A Spinning class,2 h 
+564,Body Combat,704,intermediate,38,11.47,2023-07-15 21:00:00.393354,A Body Combat class,0 h 20 min
+565,Body Pump,991,advanced,9,20.48,2024-04-14 20:00:00.393354,A Body Pump class,1 h 45 min
+566,CrossFit,60,begginer,38,19.77,2024-03-09 00:00:00.393354,A CrossFit class,1 h 55 min
+567,Barre,903,begginer,13,15.29,2023-12-18 05:00:00.393354,A Barre class,1 h 25 min
+568,Body Combat,290,intermediate,12,15.33,2023-12-19 02:30:00.393354,A Body Combat class,1 h 5 min
+569,Body Pump,945,all levels,16,13.78,2023-12-11 22:00:00.393354,A Body Pump class,1 h 50 min
+570,Pilates,193,advanced,9,14.7,2023-12-09 09:30:00.393354,A Pilates class,0 h 45 min
+571,Total Body Conditioning,697,begginer,48,15.26,2023-06-17 04:30:00.393354,A Total Body Conditioning class,1 h 45 min
+572,Zumba,647,advanced,19,17.36,2023-11-21 23:30:00.393354,A Zumba class,2 h 
+573,Yoga,94,all levels,24,7.77,2023-10-28 06:30:00.393354,A Yoga class,0 h 35 min
+574,Body Pump,456,intermediate,37,9.03,2023-11-12 15:30:00.393354,A Body Pump class,1 h 40 min
+575,Aerobics,918,all levels,44,13.1,2024-05-06 23:30:00.393354,A Aerobics class,2 h 
+576,Boxing,927,advanced,32,17.42,2024-05-02 09:00:00.393354,A Boxing class,2 h 
+577,Spinning,849,all levels,37,14.59,2023-12-09 00:00:00.393354,A Spinning class,0 h 55 min
+578,ABS,151,begginer,12,16.03,2023-06-20 04:00:00.393354,A ABS class,0 h 15 min
+579,Kickboxing,27,begginer,49,16.44,2024-01-18 05:30:00.393354,A Kickboxing class,0 h 
+580,Body Pump,22,advanced,46,12.96,2023-10-28 10:00:00.393354,A Body Pump class,1 h 40 min
+581,Body Pump,715,begginer,17,13.33,2024-01-26 12:00:00.393354,A Body Pump class,2 h 
+582,ABS,365,advanced,18,10.7,2024-05-26 08:30:00.393354,A ABS class,0 h 5 min
+583,Other,761,advanced,16,15.44,2024-02-29 02:00:00.393354,A Other class,2 h 
+584,Spinning,794,intermediate,42,17.57,2023-11-22 00:00:00.393354,A Spinning class,2 h 
+585,Total Body Conditioning,994,intermediate,27,14.49,2024-02-14 23:00:00.393354,A Total Body Conditioning class,0 h 35 min
+586,Yoga,365,intermediate,36,15.64,2023-11-05 15:30:00.393354,A Yoga class,0 h 50 min
+587,Aerobics,604,intermediate,26,13.66,2023-12-13 02:30:00.393354,A Aerobics class,0 h 55 min
+588,Body Combat,528,advanced,2,13.68,2023-11-21 07:30:00.393354,A Body Combat class,1 h 10 min
+589,Total Body Conditioning,799,advanced,5,17.68,2024-03-03 19:00:00.393354,A Total Body Conditioning class,0 h 30 min
+590,Kickboxing,903,intermediate,38,10.1,2024-02-13 08:30:00.393354,A Kickboxing class,0 h 30 min
+591,GAP,616,intermediate,17,16.75,2024-05-03 09:30:00.393354,A GAP class,0 h 30 min
+592,Aerobics,884,intermediate,28,12.34,2023-10-12 11:30:00.393354,A Aerobics class,0 h 45 min
+593,Pilates,153,intermediate,7,11.52,2023-12-10 19:00:00.393354,A Pilates class,1 h 40 min
+594,Kickboxing,608,begginer,30,12.84,2024-02-18 18:00:00.393354,A Kickboxing class,1 h 50 min
+595,Kickboxing,423,begginer,20,18.76,2023-12-24 04:30:00.393354,A Kickboxing class,0 h 55 min
+596,Yoga,347,intermediate,47,14.89,2023-11-23 19:00:00.393354,A Yoga class,1 h 5 min
+597,Aerobics,523,all levels,20,20.92,2023-10-15 15:00:00.393354,A Aerobics class,1 h 45 min
+598,GAP,616,begginer,8,12.06,2024-02-28 02:00:00.393354,A GAP class,2 h 
+599,Boxing,147,begginer,15,21.32,2024-01-04 18:30:00.393354,A Boxing class,1 h 
+600,Boxing,322,begginer,29,11.96,2024-01-09 17:30:00.393354,A Boxing class,2 h 
+601,Barre,988,all levels,42,17.4,2024-03-24 09:30:00.393354,A Barre class,2 h 
+602,Total Body Conditioning,47,intermediate,31,14.09,2024-02-09 20:30:00.393354,A Total Body Conditioning class,2 h 
+603,ABS,991,intermediate,38,13.51,2024-04-21 22:30:00.393354,A ABS class,1 h 45 min
+604,GAP,744,intermediate,20,14.12,2024-05-02 13:30:00.393354,A GAP class,0 h 55 min
+605,Body Combat,391,advanced,7,10.99,2024-01-07 15:00:00.393354,A Body Combat class,2 h 
+606,GAP,715,intermediate,47,15.65,2023-09-28 00:00:00.393354,A GAP class,0 h 
+607,Total Body Conditioning,832,all levels,8,16.07,2023-12-10 00:30:00.393354,A Total Body Conditioning class,2 h 
+608,GAP,455,intermediate,31,12.91,2023-11-04 23:30:00.393354,A GAP class,2 h 
+609,HIIT,247,intermediate,4,13.15,2024-03-29 02:00:00.393354,A HIIT class,2 h 
+610,Spinning,837,advanced,16,14.63,2023-10-28 20:00:00.393354,A Spinning class,2 h 
+611,Kickboxing,899,advanced,12,10.76,2023-06-28 16:00:00.393354,A Kickboxing class,2 h 
+612,Barre,218,all levels,8,12.04,2024-04-27 09:30:00.393354,A Barre class,1 h 5 min
+613,Personalized,52,begginer,38,17.84,2023-06-28 00:00:00.393354,A Personalized class,1 h 25 min
+614,GAP,884,begginer,30,14.38,2023-07-05 03:00:00.393354,A GAP class,0 h 55 min
+615,Body Pump,439,advanced,42,16.91,2023-09-22 19:00:00.393354,A Body Pump class,0 h 
+616,Pilates,671,intermediate,50,14.98,2024-04-13 11:30:00.393354,A Pilates class,1 h 15 min
+617,Aerobics,455,all levels,9,16.58,2023-05-29 22:30:00.393354,A Aerobics class,2 h 
+618,Total Body Conditioning,991,begginer,46,15.38,2024-05-08 13:30:00.393354,A Total Body Conditioning class,0 h 50 min
+619,Aerobics,832,all levels,31,14.56,2023-08-17 03:00:00.393354,A Aerobics class,0 h 45 min
+620,Body Combat,148,advanced,18,16.01,2023-10-21 01:00:00.393354,A Body Combat class,2 h 
+621,Kickboxing,907,begginer,47,15.03,2023-08-28 13:30:00.393354,A Kickboxing class,1 h 15 min
+622,Boxing,715,all levels,24,10.91,2023-09-27 05:30:00.393354,A Boxing class,1 h 55 min
+623,Zumba,833,intermediate,34,17.43,2023-09-23 14:30:00.393354,A Zumba class,1 h 45 min
+624,Other,630,begginer,2,18.79,2023-07-22 01:30:00.393354,A Other class,0 h 50 min
+625,Boxing,11,begginer,9,8.46,2023-12-28 19:30:00.393354,A Boxing class,0 h 50 min
+626,Total Body Conditioning,495,advanced,37,16.86,2023-11-01 01:00:00.393354,A Total Body Conditioning class,2 h 
+627,CrossFit,671,advanced,26,13.23,2023-07-11 21:30:00.393354,A CrossFit class,1 h 30 min
+628,ABS,680,all levels,47,16.17,2023-09-18 22:30:00.393354,A ABS class,0 h 10 min
+629,Zumba,792,begginer,25,18.23,2023-06-17 08:30:00.393354,A Zumba class,2 h 
+630,Kickboxing,737,begginer,45,13.59,2023-11-07 01:00:00.393354,A Kickboxing class,0 h 10 min
+631,ABS,1,intermediate,15,14.99,2024-04-14 12:30:00.393354,A ABS class,0 h 30 min
+632,Body Pump,647,advanced,18,13.96,2023-07-30 13:00:00.393354,A Body Pump class,0 h 40 min
+633,Kickboxing,717,all levels,12,13.62,2024-02-26 23:30:00.393354,A Kickboxing class,0 h 20 min
+634,CrossFit,246,intermediate,42,10.61,2023-12-26 02:30:00.393354,A CrossFit class,1 h 30 min
+635,Kickboxing,495,intermediate,27,16.38,2023-10-30 03:00:00.393354,A Kickboxing class,1 h 15 min
+636,Personalized,519,begginer,47,17.47,2023-06-07 17:00:00.393354,A Personalized class,0 h 5 min
+637,Boxing,665,all levels,7,17.52,2024-03-23 22:30:00.393354,A Boxing class,2 h 
+638,Body Combat,658,all levels,9,11.28,2023-11-29 12:30:00.393354,A Body Combat class,0 h 35 min
+639,Personalized,803,begginer,20,11.31,2023-06-27 01:30:00.393354,A Personalized class,2 h 
+640,CrossFit,555,begginer,32,11.88,2024-02-02 19:30:00.393354,A CrossFit class,1 h 10 min
+641,HIIT,47,intermediate,28,12.34,2023-06-16 09:00:00.393354,A HIIT class,2 h 
+642,Body Combat,726,intermediate,26,13.35,2023-08-22 12:30:00.393354,A Body Combat class,2 h 
+643,Barre,193,begginer,29,13.37,2023-09-08 06:30:00.393354,A Barre class,0 h 30 min
+644,Other,148,advanced,18,15.9,2023-10-02 08:30:00.393354,A Other class,1 h 10 min
+645,ABS,872,begginer,15,13.0,2023-08-03 11:30:00.393354,A ABS class,0 h 35 min
+646,Zumba,218,advanced,28,11.73,2024-01-16 09:00:00.393354,A Zumba class,0 h 10 min
+647,GAP,762,advanced,13,12.94,2024-05-19 03:30:00.393354,A GAP class,0 h 35 min
+648,Zumba,107,intermediate,44,15.73,2023-11-14 01:00:00.393354,A Zumba class,0 h 10 min
+649,Other,264,begginer,37,14.36,2024-04-26 04:30:00.393354,A Other class,1 h 10 min
+650,GAP,523,all levels,48,11.34,2023-09-04 07:30:00.393354,A GAP class,0 h 55 min
+651,Boxing,343,all levels,17,21.44,2024-05-21 21:30:00.393354,A Boxing class,0 h 40 min
+652,CrossFit,792,all levels,39,12.19,2023-11-01 00:00:00.393354,A CrossFit class,0 h 20 min
+653,Boxing,153,all levels,44,16.42,2023-08-05 20:30:00.393354,A Boxing class,0 h 20 min
+654,Zumba,922,all levels,34,17.48,2024-04-19 08:00:00.393354,A Zumba class,2 h 
+655,Boxing,939,intermediate,22,14.0,2023-09-16 19:00:00.393354,A Boxing class,2 h 
+656,Barre,47,all levels,33,13.8,2023-07-01 20:00:00.393354,A Barre class,2 h 
+657,Boxing,250,begginer,26,9.67,2024-05-24 07:30:00.393354,A Boxing class,0 h 20 min
+658,Zumba,895,intermediate,22,13.36,2024-01-13 07:30:00.393354,A Zumba class,0 h 10 min
+659,Body Pump,792,begginer,12,15.51,2023-07-16 19:00:00.393354,A Body Pump class,1 h 40 min
+660,CrossFit,52,intermediate,12,11.79,2023-07-24 17:00:00.393354,A CrossFit class,0 h 10 min
+661,CrossFit,84,begginer,11,13.24,2024-01-02 15:30:00.393354,A CrossFit class,1 h 35 min
+662,Body Pump,264,advanced,35,12.74,2024-05-26 05:00:00.393354,A Body Pump class,0 h 35 min
+663,Pilates,858,advanced,33,14.13,2024-04-27 17:30:00.393354,A Pilates class,1 h 30 min
+664,GAP,365,intermediate,20,15.73,2024-02-25 11:30:00.393354,A GAP class,1 h 50 min
+665,Zumba,51,advanced,24,13.02,2024-04-17 00:30:00.393354,A Zumba class,2 h 
+666,Stretching,720,intermediate,44,11.8,2023-06-12 17:00:00.393354,A Stretching class,1 h 40 min
+667,Pilates,704,begginer,21,14.06,2023-12-15 08:30:00.393354,A Pilates class,0 h 30 min
+668,Pilates,778,advanced,20,13.71,2024-01-02 01:00:00.393354,A Pilates class,0 h 
+669,Body Pump,726,begginer,4,17.33,2023-09-19 10:30:00.393354,A Body Pump class,0 h 30 min
+670,Barre,937,advanced,22,14.98,2023-06-15 20:00:00.393354,A Barre class,1 h 55 min
+671,Aerobics,439,advanced,21,14.68,2023-08-26 03:30:00.393354,A Aerobics class,1 h 45 min
+672,GAP,245,begginer,38,16.15,2024-03-28 02:30:00.393354,A GAP class,0 h 50 min
+673,Body Pump,669,intermediate,1,9.54,2024-01-11 17:00:00.393354,A Body Pump class,0 h 40 min
+674,CrossFit,949,advanced,44,19.11,2024-02-18 10:00:00.393354,A CrossFit class,1 h 35 min
+675,Total Body Conditioning,695,begginer,35,18.03,2023-11-20 18:00:00.393354,A Total Body Conditioning class,1 h 55 min
+676,Other,867,advanced,14,17.39,2024-03-26 20:00:00.393354,A Other class,1 h 15 min
+677,Kickboxing,176,intermediate,5,12.61,2023-05-28 22:00:00.393354,A Kickboxing class,0 h 15 min
+678,Spinning,455,advanced,22,10.51,2023-08-16 21:30:00.393354,A Spinning class,1 h 45 min
+679,Body Pump,799,all levels,27,13.04,2024-03-15 03:30:00.393354,A Body Pump class,1 h 30 min
+680,Boxing,22,intermediate,4,18.02,2023-10-30 18:00:00.393354,A Boxing class,0 h 
+681,Zumba,51,advanced,6,11.74,2023-11-29 02:30:00.393354,A Zumba class,0 h 45 min
+682,Zumba,350,all levels,22,14.43,2023-10-06 12:30:00.393354,A Zumba class,0 h 35 min
+683,Boxing,762,intermediate,6,14.04,2023-11-19 22:00:00.393354,A Boxing class,2 h 
+684,Personalized,147,begginer,12,12.16,2023-09-05 14:00:00.393354,A Personalized class,0 h 45 min
+685,Yoga,793,intermediate,44,16.28,2024-04-27 16:30:00.393354,A Yoga class,0 h 45 min
+686,Spinning,343,begginer,26,21.09,2024-05-13 09:30:00.393354,A Spinning class,1 h 
+687,Other,250,intermediate,4,15.18,2023-06-07 23:30:00.393354,A Other class,0 h 45 min
+688,Pilates,971,intermediate,26,14.28,2023-07-13 23:00:00.393354,A Pilates class,0 h 25 min
+689,Barre,523,advanced,26,14.03,2023-08-24 20:30:00.393354,A Barre class,1 h 5 min
+690,Body Combat,630,intermediate,44,18.23,2023-10-12 02:30:00.393354,A Body Combat class,1 h 
+691,Kickboxing,981,all levels,39,12.06,2023-06-07 21:30:00.393354,A Kickboxing class,2 h 
+692,Spinning,971,begginer,49,10.97,2023-11-06 20:30:00.393354,A Spinning class,0 h 25 min
+693,Body Combat,104,begginer,29,12.38,2024-01-23 05:00:00.393354,A Body Combat class,2 h 
+694,GAP,945,intermediate,37,15.37,2023-11-21 01:00:00.393354,A GAP class,2 h 
+695,Body Combat,84,all levels,35,11.68,2024-05-04 07:30:00.393354,A Body Combat class,2 h 
+696,Spinning,439,all levels,32,16.6,2023-09-02 21:00:00.393354,A Spinning class,2 h 
+697,GAP,721,begginer,31,9.44,2024-02-24 21:30:00.393354,A GAP class,2 h 
+698,Total Body Conditioning,709,all levels,11,16.84,2024-03-02 19:00:00.393354,A Total Body Conditioning class,2 h 
+699,Body Pump,107,advanced,48,13.97,2024-02-18 00:00:00.393354,A Body Pump class,1 h 20 min
+700,Other,670,all levels,10,18.2,2023-08-10 08:00:00.393354,A Other class,1 h 45 min
+701,Body Pump,258,begginer,6,11.78,2023-11-19 14:30:00.393354,A Body Pump class,1 h 25 min
+702,Body Combat,147,advanced,14,16.64,2023-10-10 09:00:00.393354,A Body Combat class,1 h 55 min
+703,Other,528,begginer,50,10.05,2023-06-24 15:30:00.393354,A Other class,1 h 10 min
+704,Boxing,737,intermediate,7,15.52,2024-05-20 05:30:00.393354,A Boxing class,2 h 
+705,Kickboxing,822,intermediate,17,18.77,2023-07-26 01:00:00.393354,A Kickboxing class,0 h 40 min
+706,Body Combat,495,intermediate,4,17.92,2024-01-25 06:00:00.393354,A Body Combat class,1 h 30 min
+707,Zumba,832,begginer,11,16.04,2023-12-26 02:00:00.393354,A Zumba class,2 h 
+708,Personalized,109,all levels,6,14.17,2023-09-27 07:30:00.393354,A Personalized class,0 h 
+709,Other,833,advanced,10,12.75,2023-08-01 11:00:00.393354,A Other class,0 h 40 min
+710,Barre,441,advanced,23,15.6,2024-02-22 15:00:00.393354,A Barre class,1 h 5 min
+711,Barre,574,advanced,50,11.13,2024-02-03 20:30:00.393354,A Barre class,1 h 35 min
+712,Zumba,201,all levels,26,10.12,2023-09-05 12:30:00.393354,A Zumba class,0 h 
+713,GAP,793,all levels,16,16.51,2023-08-12 04:00:00.393354,A GAP class,2 h 
+714,GAP,50,intermediate,36,17.35,2023-10-20 16:00:00.393354,A GAP class,0 h 5 min
+715,Total Body Conditioning,898,all levels,9,20.19,2023-10-17 10:00:00.393354,A Total Body Conditioning class,0 h 25 min
+716,Spinning,576,advanced,50,16.97,2023-12-08 22:30:00.393354,A Spinning class,2 h 
+717,Body Pump,990,begginer,32,13.16,2023-11-10 07:00:00.393354,A Body Pump class,0 h 35 min
+718,Yoga,439,advanced,37,13.85,2024-02-09 19:30:00.393354,A Yoga class,0 h 25 min
+719,Kickboxing,981,intermediate,28,13.35,2024-01-03 17:00:00.393354,A Kickboxing class,1 h 
+720,GAP,623,intermediate,27,13.8,2023-06-25 01:30:00.393354,A GAP class,0 h 55 min
+721,Yoga,608,intermediate,4,11.78,2023-06-18 15:00:00.393354,A Yoga class,2 h 
+722,Personalized,519,intermediate,46,16.26,2023-07-25 04:30:00.393354,A Personalized class,0 h 25 min
+723,Zumba,929,intermediate,27,17.36,2023-10-20 03:30:00.393354,A Zumba class,2 h 
+724,CrossFit,343,all levels,12,10.28,2024-04-06 12:00:00.393354,A CrossFit class,2 h 
+725,Zumba,990,advanced,44,11.14,2023-08-04 10:30:00.393354,A Zumba class,0 h 45 min
+726,Personalized,918,all levels,40,18.58,2023-07-22 02:00:00.393354,A Personalized class,1 h 50 min
+727,Other,872,begginer,9,9.05,2023-09-29 01:30:00.393354,A Other class,2 h 
+728,Body Combat,744,begginer,28,18.75,2024-03-25 08:30:00.393354,A Body Combat class,0 h 5 min
+729,Other,439,begginer,21,13.57,2023-10-26 00:00:00.393354,A Other class,0 h 45 min
+730,Body Combat,218,advanced,28,12.75,2024-05-08 15:00:00.393354,A Body Combat class,0 h 30 min
+731,Barre,88,intermediate,49,16.53,2023-12-14 21:30:00.393354,A Barre class,2 h 
+732,Aerobics,861,all levels,41,16.32,2023-06-22 11:00:00.393354,A Aerobics class,1 h 35 min
+733,Zumba,168,all levels,37,9.78,2024-01-28 17:30:00.393354,A Zumba class,1 h 45 min
+734,HIIT,776,intermediate,20,15.59,2024-01-17 20:00:00.393354,A HIIT class,0 h 40 min
+735,Personalized,275,advanced,39,16.46,2024-03-20 00:00:00.393354,A Personalized class,0 h 25 min
+736,Boxing,945,advanced,17,15.41,2023-07-21 08:30:00.393354,A Boxing class,0 h 35 min
+737,Kickboxing,867,advanced,2,15.88,2023-09-19 10:00:00.393354,A Kickboxing class,1 h 35 min
+738,Personalized,603,intermediate,30,21.03,2024-05-12 05:00:00.393354,A Personalized class,2 h 
+739,Boxing,630,advanced,12,14.76,2024-04-07 22:00:00.393354,A Boxing class,1 h 30 min
+740,Spinning,608,begginer,12,14.95,2023-11-26 16:00:00.393354,A Spinning class,0 h 10 min
+741,HIIT,201,advanced,22,18.35,2024-04-09 21:30:00.393354,A HIIT class,1 h 50 min
+742,Barre,724,begginer,10,19.7,2024-04-30 00:00:00.393354,A Barre class,0 h 40 min
+743,HIIT,107,all levels,28,13.46,2023-07-09 22:30:00.393354,A HIIT class,0 h 35 min
+744,Body Combat,160,all levels,25,15.41,2023-07-15 18:30:00.393354,A Body Combat class,2 h 
+745,Zumba,92,intermediate,2,15.77,2023-12-11 14:00:00.393354,A Zumba class,0 h 55 min
+746,Yoga,652,advanced,46,16.52,2023-10-22 15:00:00.393354,A Yoga class,2 h 
+747,Spinning,442,intermediate,6,17.05,2024-04-15 04:30:00.393354,A Spinning class,2 h 
+748,Barre,861,intermediate,23,14.41,2023-08-02 20:30:00.393354,A Barre class,0 h 10 min
+749,Boxing,720,all levels,21,10.44,2024-01-02 18:30:00.393354,A Boxing class,2 h 
+750,Aerobics,94,advanced,34,12.2,2024-03-06 22:00:00.393354,A Aerobics class,2 h 
+751,Spinning,531,begginer,35,15.81,2023-06-26 19:30:00.393354,A Spinning class,0 h 10 min
+752,Total Body Conditioning,139,all levels,12,15.52,2023-09-09 19:00:00.393354,A Total Body Conditioning class,0 h 25 min
+753,Personalized,18,advanced,22,16.71,2023-10-01 00:00:00.393354,A Personalized class,2 h 
+754,Other,724,begginer,25,17.51,2024-05-21 23:30:00.393354,A Other class,0 h 35 min
+755,CrossFit,907,all levels,20,15.35,2023-10-31 13:00:00.393354,A CrossFit class,0 h 55 min
+756,HIIT,83,begginer,2,12.69,2023-07-22 11:30:00.393354,A HIIT class,0 h 
+757,Other,949,all levels,42,13.08,2024-03-03 02:30:00.393354,A Other class,2 h 
+758,Personalized,792,begginer,22,8.82,2024-02-05 12:00:00.393354,A Personalized class,1 h 10 min
+759,Total Body Conditioning,18,advanced,2,17.01,2023-10-12 16:30:00.393354,A Total Body Conditioning class,0 h 
+760,ABS,984,intermediate,28,17.87,2023-12-09 17:30:00.393354,A ABS class,0 h 55 min
+761,Body Combat,861,begginer,24,17.86,2023-11-17 07:30:00.393354,A Body Combat class,0 h 15 min
+762,Aerobics,168,advanced,7,12.91,2024-02-16 07:00:00.393354,A Aerobics class,0 h 45 min
+763,Total Body Conditioning,109,intermediate,25,18.38,2023-08-28 03:30:00.393354,A Total Body Conditioning class,0 h 45 min
+764,HIIT,610,begginer,33,12.97,2024-04-03 09:30:00.393354,A HIIT class,2 h 
+765,Aerobics,997,all levels,8,8.43,2023-06-04 07:30:00.393354,A Aerobics class,1 h 50 min
+766,Aerobics,695,advanced,14,12.45,2024-03-13 06:30:00.393354,A Aerobics class,1 h 5 min
+767,Body Pump,441,intermediate,11,13.79,2024-03-22 00:30:00.393354,A Body Pump class,1 h 55 min
+768,GAP,139,advanced,8,13.1,2024-01-16 04:00:00.393354,A GAP class,1 h 45 min
+769,Pilates,778,begginer,39,7.94,2023-11-17 06:00:00.393354,A Pilates class,0 h 25 min
+770,Zumba,715,all levels,29,13.09,2023-10-19 04:00:00.393354,A Zumba class,0 h 25 min
+771,GAP,347,begginer,7,12.73,2023-08-23 08:00:00.393354,A GAP class,1 h 5 min
+772,Zumba,776,all levels,2,17.81,2024-05-19 02:30:00.393354,A Zumba class,0 h 5 min
+773,HIIT,517,advanced,27,13.04,2023-08-14 01:00:00.393354,A HIIT class,0 h 20 min
+774,Body Combat,347,advanced,6,11.61,2024-02-07 06:00:00.393354,A Body Combat class,2 h 
+775,Spinning,858,all levels,26,13.86,2023-08-19 23:30:00.393354,A Spinning class,2 h 
+776,Barre,94,all levels,31,14.14,2023-11-03 14:30:00.393354,A Barre class,2 h 
+777,Aerobics,787,intermediate,18,16.4,2024-01-07 14:00:00.393354,A Aerobics class,2 h 
+778,Barre,658,begginer,4,14.36,2024-05-10 05:00:00.393354,A Barre class,1 h 
+779,Pilates,490,all levels,45,15.3,2023-10-15 05:00:00.393354,A Pilates class,1 h 50 min
+780,Aerobics,11,all levels,17,15.05,2023-06-09 11:00:00.393354,A Aerobics class,2 h 
+781,Barre,927,intermediate,7,11.67,2024-05-06 14:00:00.393354,A Barre class,2 h 
+782,Barre,52,all levels,17,16.43,2024-02-10 05:30:00.393354,A Barre class,1 h 10 min
+783,Boxing,685,begginer,48,16.18,2023-07-01 09:30:00.393354,A Boxing class,1 h 55 min
+784,Kickboxing,833,intermediate,11,14.04,2023-07-14 04:00:00.393354,A Kickboxing class,2 h 
+785,Pilates,837,all levels,18,20.87,2023-09-20 19:30:00.393354,A Pilates class,1 h 5 min
+786,Total Body Conditioning,823,begginer,36,14.35,2024-05-11 08:00:00.393354,A Total Body Conditioning class,1 h 50 min
+787,ABS,861,begginer,33,11.41,2024-04-04 21:30:00.393354,A ABS class,2 h 
+788,Personalized,622,advanced,28,12.19,2023-08-08 00:30:00.393354,A Personalized class,0 h 35 min
+789,Stretching,571,begginer,42,10.64,2023-08-28 01:30:00.393354,A Stretching class,0 h 15 min
+790,Boxing,347,intermediate,20,13.88,2024-05-06 23:30:00.393354,A Boxing class,1 h 45 min
+791,Stretching,258,intermediate,26,14.84,2023-08-26 06:00:00.393354,A Stretching class,0 h 45 min
+792,Body Pump,437,advanced,26,13.09,2023-08-21 18:30:00.393354,A Body Pump class,2 h 
+793,Barre,495,advanced,47,16.83,2023-12-11 23:00:00.393354,A Barre class,0 h 20 min
+794,Zumba,244,advanced,3,20.09,2023-10-13 03:30:00.393354,A Zumba class,2 h 
+795,Zumba,27,intermediate,32,16.48,2024-02-20 04:30:00.393354,A Zumba class,0 h 40 min
+796,CrossFit,52,intermediate,37,16.72,2023-06-30 12:30:00.393354,A CrossFit class,1 h 15 min
+797,Boxing,911,intermediate,27,14.45,2023-10-07 09:00:00.393354,A Boxing class,2 h 
+798,Body Pump,801,intermediate,32,19.45,2024-02-26 11:30:00.393354,A Body Pump class,2 h 
+799,ABS,442,advanced,6,13.57,2024-04-12 10:30:00.393354,A ABS class,2 h 
+800,Aerobics,193,all levels,21,8.18,2024-03-17 19:30:00.393354,A Aerobics class,1 h 30 min
+801,Boxing,50,all levels,42,17.65,2023-07-07 14:00:00.393354,A Boxing class,0 h 
+802,Boxing,849,intermediate,50,13.26,2023-08-22 15:00:00.393354,A Boxing class,1 h 40 min
+803,Aerobics,218,all levels,39,12.98,2023-06-20 10:30:00.393354,A Aerobics class,2 h 
+804,Stretching,131,advanced,25,18.84,2024-01-18 05:30:00.393354,A Stretching class,1 h 35 min
+805,Other,845,begginer,8,18.08,2023-09-05 15:30:00.393354,A Other class,2 h 
+806,Zumba,949,advanced,9,23.61,2023-07-16 19:30:00.393354,A Zumba class,1 h 25 min
+807,GAP,524,begginer,21,9.9,2023-07-30 19:30:00.393354,A GAP class,0 h 55 min
+808,ABS,94,begginer,28,19.7,2023-08-25 21:00:00.393354,A ABS class,0 h 5 min
+809,Pilates,397,begginer,48,10.17,2023-09-10 00:30:00.393354,A Pilates class,2 h 
+810,Body Combat,971,advanced,2,12.57,2023-12-21 10:30:00.393354,A Body Combat class,0 h 10 min
+811,Body Pump,899,all levels,43,16.21,2023-10-03 02:30:00.393354,A Body Pump class,0 h 40 min
+812,Personalized,884,intermediate,4,12.58,2024-04-12 09:30:00.393354,A Personalized class,2 h 
+813,Aerobics,258,advanced,4,12.12,2023-07-05 18:30:00.393354,A Aerobics class,1 h 30 min
+814,Stretching,470,begginer,47,9.82,2023-09-07 17:30:00.393354,A Stretching class,2 h 
+815,Aerobics,630,intermediate,41,11.72,2023-09-09 12:30:00.393354,A Aerobics class,1 h 5 min
+816,ABS,52,begginer,42,13.49,2024-04-09 15:00:00.393354,A ABS class,0 h 10 min
+817,Body Pump,315,intermediate,17,12.71,2023-07-07 05:00:00.393354,A Body Pump class,2 h 
+818,GAP,391,intermediate,37,14.2,2023-08-31 09:30:00.393354,A GAP class,0 h 25 min
+819,Body Combat,31,intermediate,25,19.13,2024-05-03 03:30:00.393354,A Body Combat class,2 h 
+820,Barre,832,begginer,17,12.29,2024-05-06 22:00:00.393354,A Barre class,0 h 25 min
+821,Total Body Conditioning,495,advanced,43,13.93,2023-09-13 16:30:00.393354,A Total Body Conditioning class,1 h 30 min
+822,Spinning,686,all levels,14,13.72,2024-01-08 16:30:00.393354,A Spinning class,2 h 
+823,Boxing,107,all levels,25,12.6,2023-10-11 06:30:00.393354,A Boxing class,1 h 40 min
+824,Stretching,686,all levels,42,15.57,2023-08-01 04:30:00.393354,A Stretching class,2 h 
+825,Boxing,603,all levels,43,10.61,2023-08-31 02:30:00.393354,A Boxing class,2 h 
+826,Kickboxing,244,advanced,3,19.83,2024-05-19 00:30:00.393354,A Kickboxing class,2 h 
+827,HIIT,350,advanced,21,17.25,2023-11-21 00:30:00.393354,A HIIT class,0 h 20 min
+828,Barre,517,advanced,25,15.65,2023-11-05 20:00:00.393354,A Barre class,2 h 
+829,Body Combat,669,advanced,42,14.61,2023-11-08 06:30:00.393354,A Body Combat class,1 h 5 min
+830,Pilates,704,intermediate,40,16.63,2023-12-13 14:00:00.393354,A Pilates class,1 h 20 min
+831,Aerobics,27,all levels,48,20.9,2024-01-26 17:30:00.393354,A Aerobics class,0 h 10 min
+832,Personalized,322,intermediate,48,17.64,2023-06-14 19:30:00.393354,A Personalized class,2 h 
+833,Stretching,931,advanced,13,14.22,2024-02-17 23:00:00.393354,A Stretching class,0 h 55 min
+834,Yoga,57,intermediate,13,11.06,2023-06-06 03:30:00.393354,A Yoga class,1 h 45 min
+835,Body Pump,250,all levels,26,13.42,2023-11-15 19:30:00.393354,A Body Pump class,1 h 10 min
+836,Boxing,720,begginer,36,13.69,2023-08-11 08:30:00.393354,A Boxing class,0 h 
+837,Total Body Conditioning,88,all levels,31,12.32,2024-03-30 06:00:00.393354,A Total Body Conditioning class,0 h 40 min
+838,Body Combat,918,advanced,4,11.62,2024-02-21 03:30:00.393354,A Body Combat class,2 h 
+839,Personalized,524,all levels,24,17.71,2023-08-25 05:00:00.393354,A Personalized class,1 h 50 min
+840,Aerobics,182,begginer,17,19.42,2024-01-18 21:00:00.393354,A Aerobics class,0 h 55 min
+841,Aerobics,647,intermediate,18,14.3,2023-11-04 10:00:00.393354,A Aerobics class,2 h 
+842,Kickboxing,717,advanced,40,10.53,2023-11-09 17:00:00.393354,A Kickboxing class,0 h 5 min
+843,HIIT,247,advanced,10,14.94,2023-10-31 12:30:00.393354,A HIIT class,0 h 10 min
+844,CrossFit,761,advanced,28,18.7,2024-04-24 15:00:00.393354,A CrossFit class,0 h 20 min
+845,Stretching,478,advanced,44,10.01,2024-01-26 10:00:00.393354,A Stretching class,2 h 
+846,Other,898,advanced,44,15.86,2024-05-02 10:30:00.393354,A Other class,0 h 5 min
+847,Barre,141,begginer,29,19.62,2024-03-17 19:30:00.393354,A Barre class,0 h 15 min
+848,Kickboxing,347,all levels,37,12.29,2024-05-13 07:30:00.393354,A Kickboxing class,2 h 
+849,Total Body Conditioning,92,begginer,37,16.3,2023-09-14 13:30:00.393354,A Total Body Conditioning class,2 h 
+850,HIIT,524,advanced,40,9.81,2023-09-08 06:30:00.393354,A HIIT class,1 h 50 min
+851,Body Combat,22,advanced,8,14.9,2024-03-21 11:30:00.393354,A Body Combat class,2 h 
+852,Personalized,267,all levels,1,19.7,2023-09-27 19:30:00.393354,A Personalized class,0 h 
+853,Stretching,84,intermediate,6,15.52,2023-07-02 13:30:00.393354,A Stretching class,0 h 45 min
+854,Body Pump,423,advanced,17,14.02,2023-10-16 15:30:00.393354,A Body Pump class,0 h 15 min
+855,Body Pump,315,all levels,35,11.82,2023-09-06 20:30:00.393354,A Body Pump class,1 h 15 min
+856,Body Combat,57,advanced,40,18.14,2024-03-30 21:00:00.393354,A Body Combat class,0 h 55 min
+857,Pilates,721,all levels,29,17.43,2023-08-06 00:30:00.393354,A Pilates class,1 h 55 min
+858,Total Body Conditioning,258,all levels,32,12.93,2023-12-27 20:30:00.393354,A Total Body Conditioning class,1 h 50 min
+859,Body Combat,242,begginer,33,9.94,2023-11-13 19:30:00.393354,A Body Combat class,2 h 
+860,HIIT,792,all levels,9,20.86,2023-09-13 04:00:00.393354,A HIIT class,2 h 
+861,Body Pump,241,advanced,28,12.97,2024-04-25 00:30:00.393354,A Body Pump class,0 h 
+862,Body Pump,616,advanced,31,15.78,2024-05-06 10:30:00.393354,A Body Pump class,0 h 15 min
+863,Pilates,136,begginer,43,11.98,2024-01-29 23:00:00.393354,A Pilates class,2 h 
+864,Body Pump,470,advanced,46,15.74,2023-07-08 13:00:00.393354,A Body Pump class,1 h 5 min
+865,Boxing,937,begginer,26,14.32,2024-03-16 14:00:00.393354,A Boxing class,1 h 45 min
+866,Other,51,begginer,2,12.46,2023-10-19 15:00:00.393354,A Other class,2 h 
+867,Stretching,611,all levels,22,18.59,2023-10-16 23:30:00.393354,A Stretching class,1 h 40 min
+868,Kickboxing,264,all levels,40,17.29,2023-08-23 19:30:00.393354,A Kickboxing class,2 h 
+869,CrossFit,858,all levels,11,10.37,2024-04-08 07:00:00.393354,A CrossFit class,2 h 
+870,Body Combat,704,intermediate,34,15.02,2024-01-11 07:00:00.393354,A Body Combat class,0 h 5 min
+871,Yoga,929,begginer,5,6.44,2023-08-25 21:30:00.393354,A Yoga class,1 h 15 min
+872,Total Body Conditioning,182,all levels,24,17.92,2023-07-13 16:30:00.393354,A Total Body Conditioning class,1 h 40 min
+873,CrossFit,697,intermediate,14,10.87,2023-11-24 16:00:00.393354,A CrossFit class,1 h 
+874,GAP,833,advanced,2,17.53,2024-03-24 18:30:00.393354,A GAP class,2 h 
+875,Total Body Conditioning,92,advanced,27,14.05,2023-12-17 18:30:00.393354,A Total Body Conditioning class,1 h 10 min
+876,Barre,84,all levels,43,14.3,2024-05-25 01:00:00.393354,A Barre class,2 h 
+877,Zumba,27,all levels,41,16.77,2024-04-12 17:00:00.393354,A Zumba class,0 h 40 min
+878,Spinning,331,all levels,23,11.62,2024-01-05 12:30:00.393354,A Spinning class,0 h 10 min
+879,Total Body Conditioning,502,begginer,42,14.52,2024-04-13 08:00:00.393354,A Total Body Conditioning class,0 h 30 min
+880,ABS,478,intermediate,44,16.53,2023-06-26 22:00:00.393354,A ABS class,0 h 25 min
+881,ABS,141,all levels,30,7.25,2023-08-08 18:30:00.393354,A ABS class,2 h 
+882,Body Pump,690,all levels,14,15.65,2023-08-12 21:30:00.393354,A Body Pump class,1 h 30 min
+883,Zumba,359,advanced,32,16.89,2023-10-27 16:30:00.393354,A Zumba class,1 h 30 min
+884,Pilates,552,begginer,14,10.87,2024-02-05 00:00:00.393354,A Pilates class,1 h 50 min
+885,ABS,814,all levels,2,11.14,2023-12-13 13:30:00.393354,A ABS class,1 h 25 min
+886,GAP,258,advanced,8,12.88,2024-04-06 11:00:00.393354,A GAP class,1 h 5 min
+887,HIIT,989,advanced,9,13.78,2024-02-02 09:30:00.393354,A HIIT class,2 h 
+888,Body Pump,121,all levels,45,15.54,2023-05-28 03:00:00.393354,A Body Pump class,2 h 
+889,Yoga,574,intermediate,29,20.16,2024-03-09 11:30:00.393354,A Yoga class,2 h 
+890,Total Body Conditioning,825,all levels,4,22.0,2023-09-17 10:00:00.393354,A Total Body Conditioning class,2 h 
+891,Yoga,776,all levels,12,18.77,2023-07-13 14:00:00.393354,A Yoga class,2 h 
+892,Body Combat,104,advanced,23,23.82,2023-05-28 15:00:00.393354,A Body Combat class,0 h 30 min
+893,Zumba,15,intermediate,5,18.89,2024-03-27 19:30:00.393354,A Zumba class,0 h 50 min
+894,Body Combat,981,begginer,14,13.13,2023-07-18 11:30:00.393354,A Body Combat class,2 h 
+895,GAP,147,intermediate,10,13.64,2023-06-08 09:00:00.393354,A GAP class,0 h 20 min
+896,Barre,153,all levels,12,8.76,2023-11-04 12:00:00.393354,A Barre class,2 h 
+897,Other,109,advanced,34,13.59,2024-05-13 11:30:00.393354,A Other class,0 h 35 min
+898,Pilates,622,intermediate,9,18.21,2023-12-05 06:30:00.393354,A Pilates class,1 h 40 min
+899,CrossFit,918,intermediate,17,12.06,2023-06-18 13:30:00.393354,A CrossFit class,2 h 
+900,ABS,439,advanced,46,15.77,2024-01-11 05:30:00.393354,A ABS class,0 h 35 min
+901,Spinning,720,advanced,34,12.7,2023-07-17 17:00:00.393354,A Spinning class,1 h 10 min
+902,Body Pump,787,advanced,3,19.19,2024-04-16 15:00:00.393354,A Body Pump class,2 h 
+903,CrossFit,531,intermediate,33,15.74,2024-01-25 13:00:00.393354,A CrossFit class,0 h 30 min
+904,Barre,927,begginer,48,17.79,2023-08-16 16:00:00.393354,A Barre class,0 h 50 min
+905,Kickboxing,176,begginer,25,14.42,2023-09-15 22:00:00.393354,A Kickboxing class,2 h 
+906,Body Pump,204,begginer,34,20.08,2023-06-27 18:00:00.393354,A Body Pump class,2 h 
+907,Yoga,770,all levels,25,10.7,2023-12-17 08:30:00.393354,A Yoga class,2 h 
+908,CrossFit,168,begginer,9,11.2,2023-09-04 00:30:00.393354,A CrossFit class,0 h 30 min
+909,Zumba,92,advanced,29,14.39,2023-05-31 14:30:00.393354,A Zumba class,2 h 
+910,Body Combat,611,intermediate,43,18.86,2023-06-25 10:30:00.393354,A Body Combat class,1 h 30 min
+911,Total Body Conditioning,439,all levels,49,14.64,2023-12-14 19:30:00.393354,A Total Body Conditioning class,2 h 
+912,ABS,907,all levels,28,14.89,2023-11-04 09:30:00.393354,A ABS class,1 h 
+913,Pilates,337,intermediate,34,15.84,2023-09-20 15:30:00.393354,A Pilates class,0 h 20 min
+914,GAP,576,advanced,10,16.99,2023-10-11 06:30:00.393354,A GAP class,2 h 
+915,Body Combat,623,advanced,27,14.55,2024-02-24 23:00:00.393354,A Body Combat class,1 h 25 min
+916,Pilates,397,begginer,21,15.86,2023-09-06 14:30:00.393354,A Pilates class,1 h 40 min
+917,Other,463,begginer,36,14.6,2023-10-16 16:00:00.393354,A Other class,0 h 35 min
+918,ABS,997,all levels,46,19.03,2024-02-25 22:00:00.393354,A ABS class,1 h 50 min
+919,Total Body Conditioning,715,intermediate,13,11.53,2023-07-19 06:30:00.393354,A Total Body Conditioning class,1 h 20 min
+920,Body Pump,793,advanced,21,13.35,2024-02-29 12:30:00.393354,A Body Pump class,0 h 10 min
+921,Aerobics,720,intermediate,30,16.68,2024-04-20 12:30:00.393354,A Aerobics class,2 h 
+922,CrossFit,898,intermediate,42,14.3,2023-08-17 12:00:00.393354,A CrossFit class,2 h 
+923,Pilates,922,begginer,37,15.72,2024-05-22 06:30:00.393354,A Pilates class,2 h 
+924,Pilates,623,begginer,15,17.5,2024-04-28 14:00:00.393354,A Pilates class,1 h 40 min
+925,Zumba,247,intermediate,30,14.15,2023-09-02 14:00:00.393354,A Zumba class,1 h 40 min
+926,Other,27,begginer,40,10.01,2023-11-09 16:00:00.393354,A Other class,1 h 
+927,Body Pump,603,begginer,26,15.49,2024-04-12 21:30:00.393354,A Body Pump class,0 h 50 min
+928,CrossFit,794,advanced,34,14.06,2023-09-24 15:30:00.393354,A CrossFit class,1 h 25 min
+929,Other,610,intermediate,18,12.46,2023-09-27 13:00:00.393354,A Other class,1 h 10 min
+930,Barre,895,intermediate,17,13.66,2023-12-04 08:00:00.393354,A Barre class,1 h 5 min
+931,Stretching,244,intermediate,15,16.1,2023-11-12 13:00:00.393354,A Stretching class,1 h 10 min
+932,Total Body Conditioning,737,intermediate,3,16.56,2023-10-26 14:30:00.393354,A Total Body Conditioning class,0 h 
+933,Zumba,845,advanced,11,16.93,2024-01-17 19:30:00.393354,A Zumba class,0 h 35 min
+934,HIIT,480,begginer,35,13.73,2023-11-28 15:30:00.393354,A HIIT class,0 h 10 min
+935,Yoga,478,begginer,38,12.27,2023-11-07 14:00:00.393354,A Yoga class,2 h 
+936,Stretching,490,advanced,45,13.27,2023-12-22 22:00:00.393354,A Stretching class,1 h 5 min
+937,Yoga,517,intermediate,24,13.42,2024-03-15 10:00:00.393354,A Yoga class,0 h 15 min
+938,Body Combat,903,all levels,49,10.34,2023-10-24 14:30:00.393354,A Body Combat class,1 h 35 min
+939,ABS,945,intermediate,3,14.93,2023-06-08 15:00:00.393354,A ABS class,2 h 
+940,ABS,911,intermediate,18,15.57,2024-01-15 11:30:00.393354,A ABS class,0 h 50 min
+941,Pilates,822,advanced,7,18.49,2023-12-19 23:30:00.393354,A Pilates class,0 h 25 min
+942,Pilates,478,intermediate,22,19.08,2023-11-15 19:30:00.393354,A Pilates class,2 h 
+943,Yoga,15,begginer,7,18.09,2023-08-28 06:00:00.393354,A Yoga class,2 h 
+944,Total Body Conditioning,942,intermediate,31,13.51,2024-02-28 18:30:00.393354,A Total Body Conditioning class,1 h 
+945,Personalized,331,intermediate,18,15.12,2023-08-29 09:00:00.393354,A Personalized class,1 h 5 min
+946,GAP,166,all levels,37,9.13,2023-11-15 18:30:00.393354,A GAP class,1 h 35 min
+947,CrossFit,989,intermediate,34,17.55,2023-08-29 16:30:00.393354,A CrossFit class,1 h 40 min
+948,Stretching,616,advanced,5,17.76,2024-03-19 22:00:00.393354,A Stretching class,1 h 5 min
+949,Personalized,697,all levels,1,17.67,2023-09-14 05:30:00.393354,A Personalized class,0 h 55 min
+950,Body Pump,528,all levels,39,16.65,2023-12-03 06:00:00.393354,A Body Pump class,0 h 
+951,Yoga,671,begginer,49,16.52,2023-09-03 10:00:00.393354,A Yoga class,1 h 20 min
+952,Kickboxing,148,advanced,11,10.65,2023-06-13 05:00:00.393354,A Kickboxing class,2 h 
+953,Yoga,608,begginer,21,15.7,2024-03-17 15:00:00.393354,A Yoga class,1 h 5 min
+954,Personalized,787,begginer,31,15.31,2024-02-06 02:30:00.393354,A Personalized class,1 h 50 min
+955,Kickboxing,153,begginer,23,10.52,2024-02-23 01:30:00.393354,A Kickboxing class,2 h 
+956,GAP,235,begginer,47,15.94,2024-01-17 13:30:00.393354,A GAP class,2 h 
+957,Yoga,845,begginer,8,11.25,2024-02-23 11:00:00.393354,A Yoga class,0 h 45 min
+958,Yoga,574,begginer,22,10.09,2023-09-29 12:00:00.393354,A Yoga class,2 h 
+959,Body Pump,448,intermediate,16,13.48,2024-05-05 07:00:00.393354,A Body Pump class,1 h 40 min
+960,ABS,322,all levels,1,12.7,2024-02-29 21:00:00.393354,A ABS class,2 h 
+961,Total Body Conditioning,455,begginer,45,17.92,2023-06-24 02:30:00.393354,A Total Body Conditioning class,2 h 
+962,Boxing,616,advanced,49,13.73,2024-04-09 16:30:00.393354,A Boxing class,2 h 
+963,ABS,669,begginer,7,20.04,2023-12-28 15:00:00.393354,A ABS class,0 h 50 min
+964,GAP,365,begginer,48,16.37,2023-08-18 00:00:00.393354,A GAP class,1 h 20 min
+965,Kickboxing,545,advanced,22,16.11,2024-04-18 07:00:00.393354,A Kickboxing class,1 h 35 min
+966,Zumba,322,advanced,5,15.84,2024-05-01 08:30:00.393354,A Zumba class,1 h 35 min
+967,CrossFit,610,intermediate,4,17.25,2024-01-07 05:00:00.393354,A CrossFit class,1 h 20 min
+968,Total Body Conditioning,927,advanced,2,14.09,2023-07-07 04:00:00.393354,A Total Body Conditioning class,0 h 5 min
+969,Zumba,769,all levels,14,16.14,2024-03-13 22:00:00.393354,A Zumba class,0 h 
+970,Body Pump,965,all levels,15,13.08,2023-12-08 15:00:00.393354,A Body Pump class,1 h 45 min
+971,ABS,201,all levels,47,23.19,2023-12-06 14:00:00.393354,A ABS class,2 h 
+972,Boxing,861,intermediate,31,13.0,2024-05-21 14:30:00.393354,A Boxing class,1 h 35 min
+973,Yoga,872,advanced,5,17.73,2023-09-02 08:00:00.393354,A Yoga class,2 h 
+974,Yoga,242,advanced,15,18.5,2024-01-17 19:30:00.393354,A Yoga class,1 h 30 min
+975,Barre,931,advanced,17,15.71,2023-10-24 15:00:00.393354,A Barre class,1 h 10 min
+976,Other,778,all levels,12,15.89,2023-07-29 00:00:00.393354,A Other class,2 h 
+977,Boxing,242,advanced,41,11.83,2023-12-11 19:30:00.393354,A Boxing class,2 h 
+978,Total Body Conditioning,900,advanced,48,13.4,2023-06-25 16:00:00.393354,A Total Body Conditioning class,1 h 20 min
+979,GAP,942,advanced,48,14.5,2023-10-11 19:00:00.393354,A GAP class,1 h 50 min
+980,Personalized,290,intermediate,24,18.44,2023-08-12 00:30:00.393354,A Personalized class,0 h 55 min
+981,CrossFit,141,all levels,27,10.49,2023-06-14 02:30:00.393354,A CrossFit class,2 h 
+982,ABS,395,intermediate,43,13.22,2023-10-13 14:30:00.393354,A ABS class,0 h 35 min
+983,Aerobics,658,begginer,42,14.49,2023-06-08 01:30:00.393354,A Aerobics class,1 h 45 min
+984,Pilates,931,begginer,40,20.62,2024-04-25 05:00:00.393354,A Pilates class,0 h 40 min
+985,Body Pump,365,all levels,23,14.59,2023-11-18 08:00:00.393354,A Body Pump class,0 h 25 min
+986,Body Pump,726,begginer,25,15.74,2024-02-12 01:00:00.393354,A Body Pump class,1 h 50 min
+987,ABS,439,advanced,8,14.03,2023-12-12 10:00:00.393354,A ABS class,2 h 
+988,GAP,787,begginer,41,19.61,2024-05-17 06:00:00.393354,A GAP class,2 h 
+989,Boxing,498,all levels,31,15.11,2023-12-19 14:30:00.393354,A Boxing class,2 h 
+990,Spinning,153,advanced,44,14.13,2024-04-26 09:30:00.393354,A Spinning class,2 h 
+991,ABS,264,advanced,30,12.86,2024-02-03 16:00:00.393354,A ABS class,0 h 50 min
+992,ABS,611,intermediate,30,17.12,2023-11-16 21:30:00.393354,A ABS class,0 h 15 min
+993,Kickboxing,685,intermediate,20,14.2,2023-10-15 02:00:00.393354,A Kickboxing class,1 h 20 min
+994,Spinning,160,begginer,42,18.66,2024-01-22 05:30:00.393354,A Spinning class,1 h 55 min
+995,Spinning,193,all levels,13,16.16,2023-11-11 17:00:00.393354,A Spinning class,2 h 
+996,GAP,148,advanced,3,14.75,2024-04-18 18:00:00.393354,A GAP class,1 h 45 min
+997,Aerobics,104,all levels,46,16.28,2023-07-02 19:30:00.393354,A Aerobics class,0 h 5 min
+998,Boxing,945,advanced,41,11.75,2023-09-25 14:00:00.393354,A Boxing class,1 h 5 min
+999,Stretching,830,begginer,44,14.53,2023-09-11 12:30:00.393354,A Stretching class,0 h 45 min
