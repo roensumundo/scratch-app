@@ -531,6 +531,27 @@ app.post('/my_enrollments', (req, res) => {
   });
 });
 
+
+app.get('/download_users', (req, res) => {
+  const filePath = path.join(__dirname, 'generated_data/users.csv');
+  res.download(filePath, 'file.csv', (err) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send('Error downloading the file.');
+    }
+  });
+});
+
+app.get('/download_classes', (req, res) => {
+  const filePath = path.join(__dirname, 'generated_data/classes.csv');
+  res.download(filePath, 'file.csv', (err) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send('Error downloading the file.');
+    }
+  });
+});
+
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');

@@ -122,7 +122,6 @@ def main():
     user_id = 100
     recommendations = get_recommended_classes(user_id, ratings_matrix, classes)
     similar_classes = get_similar_classes(classes, recommendations, 10)
-    print(similar_classes)
 
 
 main()

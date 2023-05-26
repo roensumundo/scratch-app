@@ -61,7 +61,8 @@ def generate_fake_users(n):
     return pd.DataFrame(fake_data)
 
 
-
+def get_username_by_id(users, user_id):
+    return users[users['id'] == user_id]['username']
 
 
 #  ------------------- FAKE CLASS DATA GENERATION -----------------------------------
@@ -113,7 +114,6 @@ def approximate_datetime(dt):
 
     return rounded_dt
 
-
 def generate_fake_classes(n, users_df):
     # Create an instance of the Faker class
     fake = Faker()
@@ -136,7 +136,7 @@ def generate_fake_classes(n, users_df):
         random_days = random.randint(1, 365)
         # Generate a random number of 30-minute intervals
         random_intervals = random.randint(0, 48)  # 48 intervals in a day (24 hours * 2 intervals per hour) 
-        record = {'id': id, 'category': fake.fitness_discipline(), 'creator': random.choice(trainers_ids(users_df)) ,
+        record = {'id': id, 'category': fake.fitness_discipline(), 'creator_id': random.choice(trainers_ids(users_df)) ,
                 'level':fake.level(), 'maxUsers': random.randint(1, 50), 'price': price, 'datetime': approx_today+ timedelta(days=random_days, minutes=30 * random_intervals)}
         record['title'] = 'A ' + record['category'] + ' class'
         duration_h = random.choice(possible_durations_h)
@@ -146,6 +146,8 @@ def generate_fake_classes(n, users_df):
             if(duration_min != 0):
                 duration +=  str(duration_min) + ' min'
         record['duration'] = duration
+
+        record['creator'] = get_username_by_id(users_df, record['creator_id'])
 
 
         classes.append(record)
