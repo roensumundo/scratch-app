@@ -82,6 +82,9 @@ def get_classes_from_trainer(trainer_id, classes_df):
 
 def get_earliest_class(classes_df):
     #earliest_entry_index = classes_df['datetime'].astype(int).idxmin()
+    if classes_df.empty:
+        return None;
+
     earliest_entry_index = pd.to_datetime(classes_df['datetime']).idxmin()
     return classes_df.loc[earliest_entry_index]
 
@@ -103,6 +106,9 @@ def get_similar_classes(classes, recommendations, n):
             skipped += 1 # Skipped classes counter
             continue
         similar_class = get_earliest_classes_from_trainer_and_category(trainer_id, classes, category)
+        if similar_class is None:
+            skipped += 1 # Skipped classes counter
+            continue
         similar_classes = similar_classes.append(similar_class)
         if index > n + skipped:
             similar_classes = similar_classes.reset_index(drop=True)
@@ -117,11 +123,12 @@ def from_csv_to_df(filename):
 def main():
 
     users = from_csv_to_df('users')
-    classes = from_csv_to_df('classes')
+    future_classes = from_csv_to_df('future_classes')
+    past_classes = from_csv_to_df('past_classes')
     ratings_matrix = from_csv_to_df('ratings_matrix')
     user_id = 100
-    recommendations = get_recommended_classes(user_id, ratings_matrix, classes)
-    similar_classes = get_similar_classes(classes, recommendations, 10)
+    recommendations = get_recommended_classes(user_id, ratings_matrix, past_classes)
+    similar_classes = get_similar_classes(future_classes, recommendations, 10)
 
 
 main()

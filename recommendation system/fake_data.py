@@ -56,6 +56,8 @@ def generate_fake_users(n):
         record['username'] = generate_username(record['name'])
         if record['gender'] != 'male' and record['gender'] != 'female':
             record['gender'] = 'Prefer not to say'
+
+        record['enrolled_classes'] = []
         fake_data.append(record)
 
     return pd.DataFrame(fake_data)
@@ -172,7 +174,7 @@ def generate_fake_classes(first_id, n, users_df, new):
             duration_min = random.choice(possible_durations_min)
             if(duration_min != 0):
                 duration +=  str(duration_min) + ' min'
-                
+
         record['duration'] = duration
         random_days = random.randint(1, 365)
         # Generate a random number of 30-minute intervals
@@ -185,10 +187,56 @@ def generate_fake_classes(first_id, n, users_df, new):
 
         record['creator'] = get_username_by_id(users_df, record['creator_id'])
         record['description'] = FitnessProvider.description(record['category'])
+        record['enrolled_users'] = []
 
         classes.append(record)
 
     return pd.DataFrame(classes)
+
+"""def enroll(user_id, class_id, users_df, classes_df):
+    enrolled_users = classes_df.loc[classes_df['id'] == class_id, 'enrolled_users'].values[0]
+    enrolled_users.append(get_username_by_id(users_df,user_id))
+
+    enrolled_classes = users_df.loc[users_df['id'] == user_id, 'enrolled_classes'].values[0]
+    enrolled_classes.append(class_id)
+
+    classes_df.loc[classes_df['id'] == class_id, 'enrolled_users'] = pd.Series([enrolled_users])
+    users_df.loc[users_df['id'] == user_id, 'enrolled_classes'] = pd.Series([enrolled_classes])
+
+    return users_df, classes_df
+
+"""
+
+def enroll(user_id, class_id, users_df, classes_df):
+
+    username = get_username_by_id(users_df, user_id)
+    classes_df.loc[classes_df['id'] == class_id, 'enrolled_users'] = classes_df.loc[
+        classes_df['id'] == class_id, 'enrolled_users'].apply(lambda x: x + [username])
+    
+    users_df.loc[users_df['id'] == user_id, 'enrolled_classes'] = users_df.loc[
+        users_df['id'] == user_id, 'enrolled_classes'].apply(lambda x: x + [class_id])
+
+    
+
+    return users_df, classes_df
+
+
+def generate_fake_enrollments(users_df, classes_df, mean):
+    NUM_USERS = users_df.shape[0]
+    first_user_id = users_df['id'].loc[0]
+
+    first_class_id = classes_df['id'].loc[0]
+    NUM_CLASSES =classes_df.shape[0]
+    NUM_ENROLLMENTS = NUM_USERS * mean
+    
+    for i in range(NUM_ENROLLMENTS):
+        rand_class_id = random.randint(first_class_id, first_class_id + NUM_CLASSES-1)
+        rand_user_id = random.randint(first_user_id, NUM_USERS-1)
+        users_df, classes_df = enroll(rand_user_id,rand_class_id, users_df, classes_df)
+    return users_df, classes_df
+    
+
+
 
 def generate_fake_ratings(num_users, num_classes):
     fake = Faker()
@@ -220,6 +268,8 @@ past_classes = generate_fake_classes(0, NUM_CLASSES, users, False)
 future_classes = generate_fake_classes(NUM_CLASSES, 2*NUM_CLASSES, users, True)
 
 ratings_matrix = generate_fake_ratings(NUM_USERS,NUM_CLASSES)
+
+users, future_classes = generate_fake_enrollments(users, future_classes, 2)
 
 export_dataframe(users, 'users')
 export_dataframe(future_classes, 'future_classes')
