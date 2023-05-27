@@ -62,7 +62,8 @@ def generate_fake_users(n):
 
 
 def get_username_by_id(users, user_id):
-    return users[users['id'] == user_id]['username']
+    username = users.loc[users['id'] == user_id, 'username'].values[0]
+    return username
 
 
 #  ------------------- FAKE CLASS DATA GENERATION -----------------------------------
@@ -93,7 +94,31 @@ class FitnessProvider:
             'Stretching',
             'Other'
         ]
+    
         return self.faker.random_element(disciplines)
+    def description(key):
+        descriptions = {
+            'Yoga': "Discover inner peace and enhance your physical and mental well-being with our invigorating yoga classes. Unwind, increase flexibility, and strengthen your body while finding balance and harmony in a serene environment.",
+            'Pilates': "Sculpt your body and improve your posture with our dynamic Pilates sessions. Strengthen your core, tone your muscles, and increase flexibility while engaging in precise movements that promote body awareness and grace.",
+            'CrossFit': "Unleash your inner athlete with our high-intensity CrossFit classes. Push your limits, increase strength and endurance, and experience the camaraderie of a supportive community as you tackle challenging workouts designed to optimize your fitness.",
+            'Zumba': "Join the dance party and get your heart pumping with our exhilarating Zumba classes. Burn calories, boost your energy, and let loose to infectious Latin and international rhythms that make exercising feel like a celebration.",
+            'Kickboxing': "Release stress and get a full-body workout with our empowering kickboxing classes. Learn striking techniques, improve your coordination, and build strength while unleashing your inner warrior in a fun and supportive environment.",
+            'Spinning': "Pedal your way to a healthier you with our energizing spinning classes. Get your heart racing, strengthen your legs, and burn calories as you ride to the rhythm of motivating music in a dynamic and immersive indoor cycling experience.",
+            'Barre': "Achieve a graceful and sculpted physique with our ballet-inspired barre classes. Combine elements of dance, Pilates, and strength training to tone your muscles, improve flexibility, and embrace your inner ballerina.",
+            'HIIT': "Get ready to torch calories and boost your metabolism with our heart-pumping HIIT sessions. Alternate between intense bursts of exercise and short recovery periods to maximize fat burning and achieve fast results.",
+            'Aerobics': "Join the fun and get your heart pumping with our vibrant aerobics classes. Move to energizing music, improve cardiovascular fitness, and enhance coordination while enjoying a lively and engaging workout.",
+            'Boxing': "Unleash your inner fighter and improve your strength and agility with our empowering boxing classes. Learn proper boxing techniques, increase endurance, and build confidence while working up a sweat and relieving stress.",
+            'Personalized': "Experience the ultimate tailored fitness program with our personalized classes. Our expert trainers will design a workout plan specifically for you, taking into account your goals, fitness level, and preferences to ensure optimal results and motivation.",
+            'Body Combat': "Channel your energy and release stress with our dynamic body combat classes. Combine martial arts-inspired moves with cardiovascular exercises to improve strength, coordination, and cardiovascular fitness in a challenging and empowering session.",
+            'Body Pump': "Sculpt and define your muscles with our invigorating body pump classes. Using barbells and adjustable weights, you'll perform a series of strength-training exercises to target all major muscle groups, leaving you feeling strong and confident.",
+            'GAP': "Focus on your lower body and core strength with our targeted GAP classes. Tone and tighten your glutes, abs, and legs through a combination of exercises designed to help you achieve a firm and toned physique.",
+            'Total Body Conditioning': "Transform your body from head to toe with our comprehensive total body conditioning classes. Combining strength, cardio, and flexibility exercises, you'll enjoy a complete workout that targets all muscle groups for improved fitness and body composition.",
+            'ABS': "Sculpt a strong and defined core with our dedicated ABS classes. Through a variety of exercises specifically targeting your abdominal muscles, you'll work towards achieving a toned midsection and improved stability.",
+            'Stretching': "Enhance your flexibility, improve posture, and prevent injuries with our rejuvenating stretching classes. Release tension, increase range of motion, and promote muscle recovery while experiencing deep relaxation and stress relief.",
+            'Other': "Embark on a journey of exploration and variety with our diverse range of specialized fitness classes. From aerial yoga to functional training, we offer unique opportunities to challenge yourself, discover new passions, and uncover hidden talents. Step outside your comfort zone"
+        }
+        return descriptions[key]
+
     def level(self):
         levels = ['begginer', 'intermediate', 'advanced', 'all levels']
         return self.faker.random_element(levels)
@@ -114,7 +139,7 @@ def approximate_datetime(dt):
 
     return rounded_dt
 
-def generate_fake_classes(n, users_df):
+def generate_fake_classes(first_id, n, users_df, new):
     # Create an instance of the Faker class
     fake = Faker()
 
@@ -124,20 +149,22 @@ def generate_fake_classes(n, users_df):
     classes = []
     mean_price = 15
     var_price = 3
+
+
     today = datetime.now()
     approx_today =  approximate_datetime(today)
+  
+    
 
     possible_durations_h = [0,1,2]
     possible_durations_min = [i for i in range(0,60,5)]
 
-    for id in range(n):
+    for id in range(first_id, n):
         price = np.random.normal(mean_price, var_price, 1)[0]
         price = round(price,2)
-        random_days = random.randint(1, 365)
-        # Generate a random number of 30-minute intervals
-        random_intervals = random.randint(0, 48)  # 48 intervals in a day (24 hours * 2 intervals per hour) 
+       
         record = {'id': id, 'category': fake.fitness_discipline(), 'creator_id': random.choice(trainers_ids(users_df)) ,
-                'level':fake.level(), 'maxUsers': random.randint(1, 50), 'price': price, 'datetime': approx_today+ timedelta(days=random_days, minutes=30 * random_intervals)}
+                'level':fake.level(), 'maxUsers': random.randint(1, 50), 'price': price}
         record['title'] = 'A ' + record['category'] + ' class'
         duration_h = random.choice(possible_durations_h)
         duration = str(duration_h) + ' h '
@@ -145,12 +172,22 @@ def generate_fake_classes(n, users_df):
             duration_min = random.choice(possible_durations_min)
             if(duration_min != 0):
                 duration +=  str(duration_min) + ' min'
+                
         record['duration'] = duration
+        random_days = random.randint(1, 365)
+        # Generate a random number of 30-minute intervals
+        random_intervals = random.randint(0, 48)  # 48 intervals in a day (24 hours * 2 intervals per hour) 
+
+        if(new):
+            record['datetime'] =  approx_today + timedelta(days=random_days, minutes=30 * random_intervals)
+        else:
+            record['datetime'] =  approx_today - timedelta(days=random_days, minutes=30 * random_intervals)
 
         record['creator'] = get_username_by_id(users_df, record['creator_id'])
-
+        record['description'] = FitnessProvider.description(record['category'])
 
         classes.append(record)
+
     return pd.DataFrame(classes)
 
 def generate_fake_ratings(num_users, num_classes):
@@ -179,10 +216,13 @@ def export_dataframe(df, filename):
 NUM_USERS = 1000
 NUM_CLASSES = 1000
 users = generate_fake_users(NUM_USERS)
-classes = generate_fake_classes(NUM_CLASSES, users)
+past_classes = generate_fake_classes(0, NUM_CLASSES, users, False)
+future_classes = generate_fake_classes(NUM_CLASSES, 2*NUM_CLASSES, users, True)
+
 ratings_matrix = generate_fake_ratings(NUM_USERS,NUM_CLASSES)
 
 export_dataframe(users, 'users')
-export_dataframe(classes, 'classes')
+export_dataframe(future_classes, 'future_classes')
+export_dataframe(past_classes, 'past_classes')
 export_dataframe(ratings_matrix, 'ratings_matrix')
 

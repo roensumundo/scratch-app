@@ -34,7 +34,15 @@ def main():
     similar_classes = re.get_similar_classes(classes, recommendations, 10)
     users = users.rename(columns={'city': 'location', 'trainer': 'isTrainer', 'name': 'fullname'})
     classes = classes.rename(columns={})
-    #upload_users(users)
+
+
+
+    this.enrolledUsers = [];
+    
+   
+
+
+
 
 main()
 

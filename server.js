@@ -371,7 +371,7 @@ function deleteFromDB(prefix) {
 
     // Delete the matching keys
     if (keys.length > 0) {
-      redis.del(...keys, (err, result) => {
+      redis_cli.del(...keys, (err, result) => {
         if (err) {
           console.error('Error:', err);
           return;
@@ -555,6 +555,9 @@ app.get('/download_classes', (req, res) => {
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');
+// const prefix = DB;
+//deleteFromDB(prefix)
+  
    
 });
 
