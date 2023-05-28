@@ -96,7 +96,7 @@ function setPassword(id, hashedPassword) {
     /*Saves hashed password in the database*/
     const credential_query = DB+':credentials:' + id;
     redis_cli.set(credential_query + ':password', hashedPassword).then(() => {
-        console.log("Password saved successfully");
+        //console.log("Password saved successfully");
     });
    
 }
@@ -120,7 +120,7 @@ function checkPassword(username, password) {
     
     return getIdByUsername(username)
       .then((id) => {
-        console.log("User exists in database and has id: " + id);
+        //console.log("User exists in database and has id: " + id);
         return getPassword(id)
           .then((hash) => {
             // compare hashes
@@ -155,13 +155,13 @@ function createNewCredentials(username, password, isTrainer) {
 
     get_and_incr_count("user_id_count")
       .then((count) => {
-        console.log("id : " + count);
+        //console.log("id : " + count);
         id = count;
         const save_id = DB+':username_to_id:' + username;
         return redis_cli.set(save_id, id.toString());
       })
       .then(() => {
-        console.log('Id count set successfully');
+        //console.log('Id count set successfully');
         const credential_query = DB+':credentials:' + id;
         redis_cli.set(credential_query + ':username', username).then(() => {
           const hash = hashPassword(password);
@@ -189,7 +189,7 @@ function createNewCredentials(username, password, isTrainer) {
           return true
         } else {
           // Key does not exist in the database
-          console.log("Non-registered user.");
+          //console.log("Non-registered user.");
   
           return false
         }
@@ -245,7 +245,7 @@ function saveClassOffer(class_id, title, category, creator, description, datetim
           console.log("Failed to set value for key: " + failedReply)
           reject(new Error(`Failed to set value for key ${failedReply}`));
         } else {
-          console.log('Class offer set successfully');
+          //console.log('Class offer set successfully');
           resolve();
         }
       }
@@ -260,13 +260,13 @@ function addElementToList(list, element) {
   return redis_cli.lrange(list, 0, -1)
     .then((reply) => {
       if (!reply.includes(element)) {
-        console.log("Element didn't exist before: " + element);
+        //console.log("Element didn't exist before: " + element);
         return redis_cli.rpush(list, element)
           .then((reply) => {
             return reply;
           });
       }
-      console.log("Element existed before: " + element);
+      //console.log("Element existed before: " + element);
       return Promise.resolve(0);
     });
 }
@@ -407,7 +407,7 @@ app.post('/signup', (req, res) => {
       .then(() => {
         // Send a response to the client
       res.json({ type: "signup", message: 'Successful', content:{username: username, name: fullName, _isTrainer: isTrainer, age, location, gender}  });
-      console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
+      //console.log("Sign up of: " + username + " with password: " + password + " --> Succesful");
         }).catch((err) => {
           console.error(err);
       });
@@ -434,7 +434,7 @@ app.post('/login', (req, res) => {
       if (result == 'logged') {
         // Send a response to the client
         retrieveUserInfo(username).then(([fullName, _isTrainer, age, gender, location]) => {
-          console.log("Sending login data to client");
+          //console.log("Sending login data to client");
           res.json({ type: 'login', message: 'Successful' , content:{username, name: fullName, _isTrainer, age, gender, location} });
         });
       } else {
@@ -452,7 +452,7 @@ app.post('/login', (req, res) => {
 
 app.post('/publish_class', (req, res) => {
   var class_object = req.body;
-  console.log("publishing class " + JSON.stringify(class_object));
+  //console.log("publishing class " + JSON.stringify(class_object));
   
   // Take class id from database. Increment counter.
   get_and_incr_count("class_id_count").then((id) => {
@@ -488,7 +488,7 @@ app.post('/enrollment', (req, res) => {
   var class_id = req.body.class_id;
   getIdByUsername(username).then((user_id) => {
     enroll_to_class(user_id, class_id).then(() => {
-      console.log(username + " Enrolled successfully to a class.");
+      //console.log(username + " Enrolled successfully to a class.");
       retrieveClassInfo(class_id).then((class_obj) => {
         res.json({ type: "enrollment", message: "Successful", content: class_obj});
       })
@@ -517,7 +517,7 @@ app.post('/my_enrollments', (req, res) => {
     return getList(DB + ":enrolled_classes:" + user_id);
   })
     .then((enrolled_classes_ids) => {
-      console.log("Classes ids list: "+ enrolled_classes_ids);
+      //console.log("Classes ids list: "+ enrolled_classes_ids);
     return createClassesDict(enrolled_classes_ids);
   })
     .then((enrolled_classes_dict) => {
@@ -532,31 +532,13 @@ app.post('/my_enrollments', (req, res) => {
 });
 
 
-app.get('/download_users', (req, res) => {
-  const filePath = path.join(__dirname, 'generated_data/users.csv');
-  res.download(filePath, 'file.csv', (err) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send('Error downloading the file.');
-    }
-  });
-});
 
-app.get('/download_classes', (req, res) => {
-  const filePath = path.join(__dirname, 'generated_data/classes.csv');
-  res.download(filePath, 'file.csv', (err) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send('Error downloading the file.');
-    }
-  });
-});
 
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');
-// const prefix = DB;
-//deleteFromDB(prefix)
+  //const prefix = DB + ':class_offers';
+  //deleteFromDB(prefix)
   
    
 });

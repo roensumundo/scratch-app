@@ -129,6 +129,7 @@ def main():
     user_id = 100
     recommendations = get_recommended_classes(user_id, ratings_matrix, past_classes)
     similar_classes = get_similar_classes(future_classes, recommendations, 10)
+    #print(users.enrolled_classes.head())
+    print(future_classes.enrolled_users.head())
 
-
-main()
+#main()
