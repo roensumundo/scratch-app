@@ -9,7 +9,6 @@ const http = require('http');
 const fs = require('fs');
 
 
-
 // Load SSL certificate and private key
 /*const options = {
   cert: fs.readFileSync('server.crt'),
@@ -296,6 +295,11 @@ function enroll_to_class(user_id, class_id) {
   classes_promise = addElementToList(classes_list, class_id);
   return Promise.all([users_promise, classes_promise]);
 }
+
+function add_recommended_class(user_id, class_id) {
+  var classes_list = DB + ":recommended_classes:" + user_id;
+  return addElementToList(classes_list, class_id);
+}
 function retrieveClassInfo(classId) {
   /* Retrieves class information from the database. It returns a promise that resolves a list 
   of class attributes.*/
@@ -525,12 +529,47 @@ app.post('/my_enrollments', (req, res) => {
       res.json({type:"enrollments_list", message: "Successful", content: enrolled_classes_dict})
   })
   .catch(err => {
-    console.log("Imposible to retrive enrolled classes dict from user " + username);
+    console.log("Imposible to retreive enrolled classes dict from user " + username);
     res.json({ type: "enrollments_list", message: "Unsuccessful" });
     console.error(err);
   });
 });
 
+app.post('/my_recommendations', (req, res) => {
+  
+  var username = req.body.username;
+  console.log("Recommendation list requested for user: " + username);
+  getIdByUsername(username).then((user_id) => {
+    return getList(DB + ":recommended_classes:" + user_id);
+  })
+    .then((rec_classes_ids) => {
+      //console.log("Classes ids list: "+ rec_classes_ids);
+    return createClassesDict(rec_classes_ids);
+  })
+    .then((rec_classes_dict) => {
+      //console.log("Recommendations dict" + JSON.stringify(rec_classes_dict));
+      res.json({type:"rec_list", message: "Successful", content: rec_classes_dict})
+  })
+  .catch(err => {
+    console.log("Imposible to retreive recommended classes dict from user " + username);
+    res.json({ type: "rec_list", message: "Unsuccessful" });
+    console.error(err);
+  });
+});
+
+app.post('/recommendation', (req, res) => {
+  var user_id = req.body.user_id;
+  var class_id = req.body.class_id;
+
+  add_recommended_class(user_id, class_id)
+    .then(() => {
+      res.json({ type: 'recommendations', message: 'Succesful' })
+    })
+    .catch((err) => {
+      res.json({ type: "recommendations", message: "Unsuccessful" });
+      console.error(err);
+    });
+});
 
 
 

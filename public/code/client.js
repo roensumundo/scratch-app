@@ -158,8 +158,12 @@ const askForEnrolledClasses = async (username) => {
         let datetime = class_object.datetime;
         let duration = class_object.duration;
         let creator = class_object.creator;
+        let maxUsers = class_object.maxUsers;
+        let level = class_object.level;
+        let price = class_object.price;
+
         // Save class in enrolled classes user's list. 
-        APP.my_user.enrolledClasses[class_id] = new Class(title, category, description, datetime, duration, creator);
+        APP.my_user.enrolledClasses[class_id] = new Class(title, category, description, datetime, duration, creator, level, price, maxUsers)
         APP.my_user.enrolledClasses[class_id].id = class_id;
       }
       console.log(APP.my_user.enrolledClasses);
@@ -168,6 +172,49 @@ const askForEnrolledClasses = async (username) => {
     }
   }
 }
+
+// Function to ask for recommendations
+const askForRecommendedClasses = async (username) => {
+  // Send a POST request with username information to the server
+  const response = await fetch(SERVER_URL +'/my_recommendations', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ username})
+  });
+  // Parse the response JSON data
+  const data = await response.json();
+  if (data.type == "rec_list") {
+    if (data.message == "Successful") {
+      //console.log("Enrollment dict for user " + username + ": "+ JSON.stringify(data.content));
+      let classes_dict = data.content;
+      console.log("data received by server" + JSON.stringify(classes_dict));
+
+      // Loop through the received classes and add them to the user's enrolled classes
+      for (const class_id in classes_dict) {
+        let class_object = classes_dict[class_id]
+        console.log(JSON.stringify(class_object));
+        let title = class_object.title;
+        let category = class_object.category;
+        let description = class_object.description;
+        let datetime = class_object.datetime;
+        let duration = class_object.duration;
+        let creator = class_object.creator;
+        let maxUsers = class_object.maxUsers;
+        let level = class_object.level;
+        let price = class_object.price;
+
+        // Save class in enrolled classes user's list. 
+        APP.recommendations[class_id] = new Class(title, category, description, datetime, duration, creator, level, price, maxUsers)
+        APP.recommendations[class_id].id = class_id;
+      }
+      //console.log("Recommendations: " + APP.recommendations[class_id]);
+    } else {
+      console.log("Couldn't retrieve recommended classes");
+    }
+  }
+}
+
+
 // Function to navigate to a new page and update the app state
 function goToPage(page) {
   APP.current_page = page;

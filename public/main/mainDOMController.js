@@ -10,17 +10,25 @@ function runMain() {
         const button = document.querySelector('.publish-offer');
         button.remove();
     }
-    /*
+    
     askForEnrolledClasses(APP.my_user.username).then(() => {
         //Displays enrolled classes information
         const enrolledClasses = APP.my_user.enrolledClasses;
         for (const class_id in enrolledClasses) {
             let class_object = enrolledClasses[class_id];
-            //TODO include duration in displayClassOffer function
-            displayClassOffer(class_id, class_object.title, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, false, 'enrolled');
+            displayClassOffer(class_id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, false, 'enrolled');
         }
     })
-    */
+
+    askForRecommendedClasses(APP.my_user.username).then(() => {
+        //Displays recommended classes information
+        const recommendations = APP.recommendations;
+        for (const class_id in recommendations) {
+            let class_object = recommendations[class_id];
+            displayClassOffer(class_id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, false, 'recommendation');
+        }
+    })
+    
      
 }
 function returnToMain() {
@@ -42,13 +50,18 @@ function showDetail(id) {
     class_detail_div.style.display = null;
     mainElement.style.display = 'none';
     APP.class_in_detail = id;
-    //TODO show class
 
-    //const class_object = APP.recommendations[id];
-    const description = "Welcome to Rhythm Fusion, a sizzling and infectious dance fitness experience that will transport you to the heart of a tropical party! Our Zumba class is a high-energy, calorie-burning extravaganza that combines Latin rhythms, easy-to-follow choreography, and non-stop fun, leaving you feeling exhilarated and ready to conquer the dance floor. \n\n As soon as the music starts, you wil feel the electrifying beats pulsating through your body, awakening your senses and setting the stage for an unforgettable journey. Our expert instructors will guide you through a fusion of Latin-inspired dance movements, easy-to-follow choreography, and exhilarating cardio exercises, creating a dynamic and engaging atmosphere that will leave you breathless and craving more."
+    // Remove previoulsy requested detailed class offers 
+    const lastChild = class_detail_div.lastChild;
+    if(lastChild.nodeName !== 'BUTTON' )
+        class_detail_div.removeChild(lastChild);
+
+    const class_object = APP.recommendations[id];
+   /* const description = "Welcome to Rhythm Fusion, a sizzling and infectious dance fitness experience that will transport you to the heart of a tropical party! Our Zumba class is a high-energy, calorie-burning extravaganza that combines Latin rhythms, easy-to-follow choreography, and non-stop fun, leaving you feeling exhilarated and ready to conquer the dance floor. \n\n As soon as the music starts, you wil feel the electrifying beats pulsating through your body, awakening your senses and setting the stage for an unforgettable journey. Our expert instructors will guide you through a fusion of Latin-inspired dance movements, easy-to-follow choreography, and exhilarating cardio exercises, creating a dynamic and engaging atmosphere that will leave you breathless and craving more."
     const datetime = new Date('2023', '6', '10', '19', '0');
     const formattedDate = datetime.toLocaleString('en-US', options);
     const class_object = new Class('Rhythm Fusion', 'Zumba',description, formattedDate, '1 h', 'supertrainer', 'Advanced', 5,20);
+    */
     displayClassOffer(id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, formattedDate, class_object.description, class_object.duration, class_object.price, true, 'recommendation');
     //displayClassOffer(id, class_object.title, class_object.category, class_object.level, class_object.maxUsers, class_object.creator, class_object.datetime, class_object.description, class_object.duration, class_object.price, true, 'recommendation' )
 

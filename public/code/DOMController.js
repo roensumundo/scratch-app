@@ -113,10 +113,12 @@ function displayClassOffer(id, classname, category, level, maxUsers, creator, da
             button.onclick = showPaymentForm;
         } else {
             button.innerText = 'View details';
+            button.onclick = () => { showDetail(id) }
         }
         
     } else {
         button.innerText = 'Go';
+        button.onclick = askForRating;
     }
     
   
