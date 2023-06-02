@@ -193,19 +193,6 @@ def generate_fake_classes(first_id, n, users_df, new):
 
     return pd.DataFrame(classes)
 
-"""def enroll(user_id, class_id, users_df, classes_df):
-    enrolled_users = classes_df.loc[classes_df['id'] == class_id, 'enrolled_users'].values[0]
-    enrolled_users.append(get_username_by_id(users_df,user_id))
-
-    enrolled_classes = users_df.loc[users_df['id'] == user_id, 'enrolled_classes'].values[0]
-    enrolled_classes.append(class_id)
-
-    classes_df.loc[classes_df['id'] == class_id, 'enrolled_users'] = pd.Series([enrolled_users])
-    users_df.loc[users_df['id'] == user_id, 'enrolled_classes'] = pd.Series([enrolled_classes])
-
-    return users_df, classes_df
-
-"""
 
 def enroll(user_id, class_id, users_df, classes_df):
 
@@ -238,7 +225,7 @@ def generate_fake_enrollments(users_df, classes_df, mean):
 
 
 
-def generate_fake_ratings(num_users, num_classes):
+def generate_fake_ratings(num_users, num_classes, sparsity):
     fake = Faker()
     data = []
     for user_id in range(num_users):  
@@ -246,7 +233,7 @@ def generate_fake_ratings(num_users, num_classes):
             course_id = fake.random_int(min=0, max=num_classes-1)  # Generate a random course ID
             is_nan = random.random()
             # Create sparsity
-            if is_nan <= 0.95:
+            if is_nan <= sparsity:
                 rating = np.nan
             else:
                 rating = random.randint(1,5) # Generate a random rating
@@ -267,7 +254,8 @@ users = generate_fake_users(NUM_USERS)
 past_classes = generate_fake_classes(0, NUM_CLASSES, users, False)
 future_classes = generate_fake_classes(NUM_CLASSES, 2*NUM_CLASSES, users, True)
 
-ratings_matrix = generate_fake_ratings(NUM_USERS,NUM_CLASSES)
+sparsity = 0.95
+ratings_matrix = generate_fake_ratings(NUM_USERS,NUM_CLASSES, sparsity)
 
 users, future_classes = generate_fake_enrollments(users, future_classes, 2)
 
