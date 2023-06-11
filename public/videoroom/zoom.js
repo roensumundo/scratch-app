@@ -1,7 +1,7 @@
-ZoomMtg.setZoomJSLib('path/to/zoom-meeting-1.9.8.min.js', '/av'); // Set the path to the Zoom Web SDK JavaScript file
-ZoomMtg.preLoadWasm(); // Preload the WebAssembly module
-ZoomMtg.prepareJssdk(); // Initialize the Zoom SDK
-
+ZoomMtg.setZoomJSLib('https://source.zoom.us/2.13.0/lib', '/av')
+// loads WebAssembly assets
+ZoomMtg.preLoadWasm()
+ZoomMtg.prepareWebSDK()
 // loads language files, also passes any error messages to the ui
 ZoomMtg.i18n.load('en-US')
 ZoomMtg.i18n.reload('en-US')

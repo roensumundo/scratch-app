@@ -11,13 +11,13 @@ const fs = require('fs');
 
 // Load SSL certificate and private key
 /*const options = {
-  cert: fs.readFileSync('server.crt'),
-  key: fs.readFileSync('server.key')
-};*/
-
+  cert: fs.readFileSync('certificate.crt'),
+  key: fs.readFileSync('private.key')
+}
+*/
 // Create HTTPS server
 //const server = https.createServer(options, app);
-const server = http.createServer(app);
+//const server = http.createServer(app);
 
 
 
@@ -572,7 +572,7 @@ app.post('/recommendation', (req, res) => {
 });
 
 
-
+//const server = https.createServer(options, app);
 // Start the server on port 9026
 app.listen(9026, () => {
   console.log('Server running on port 9026');

@@ -24,10 +24,11 @@ def print_rated_classes(user_id, rating_matrix, classes):
         print("%d %.1f %s " %
           (class_id, get_rating(user_id, class_id, rating_matrix), get_title(class_id, classes)))
 
+# Compute correlation between items in a rating matrix. 
 def get_item_similarity(ratings_matrix):
     return ratings_matrix.corr()
 
-
+# Get a list of relevant classes 
 def get_classes_relevance(user_id, ratings_matrix):
     
     # computes correlation between all combinations of items

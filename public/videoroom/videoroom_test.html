@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.13.0/css/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/2.13.0/css/react-select.css" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/{VERSION_NUMBER}/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="https://source.zoom.us/{VERSION_NUMBER}/css/react-select.css" />
     <script type="text/javascript" src="../code/main.js"></script>
     <script type="text/javascript" src="../code/DOMController.js"></script>
     <script type="text/javascript" src="../code/client.js"></script>
@@ -20,7 +20,16 @@
 </head>
 
 <body>
+    <div id="videoContainer">
+        <video id="localVideo" autoplay muted></video>
+        <video id="remoteVideo" autoplay></video>
 
+        <div id="controls">
+            <button id="muteButton">Mute</button>
+            <button id="cameraButton">Toggle Camera</button>
+            <button id="leaveButton">Leave Room</button>
+        </div>
+    </div>
 
 </body>
 
